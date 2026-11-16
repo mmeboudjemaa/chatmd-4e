@@ -1,0 +1,175 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 2 -- Un même angle, un même multiplicateur ?}
+
+\remarque{Les mesures sont approximatives. Les petits écarts entre groupes sont normaux :
+ils viennent de la précision du tracé et de la mesure.}
+
+\section*{Partie A -- Trois familles de triangles}
+
+Chaque groupe étudie une famille de triangles rectangles ayant le même angle aigu.
+
+\begin{center}
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 1 : \(35^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(7.7,0);
+  \draw[line width=0.9pt] (O)--({8*cos(35)},{8*sin(35)});
+  \foreach \r/\name in {4/A,6/B,8/C}{
+    \coordinate (\name) at ({\r*cos(35)},{\r*sin(35)});
+    \coordinate (\name-p) at ({\r*cos(35)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$35^\circ$"] {angle=C-p--O--C};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 2 : \(50^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(5.3,0);
+  \draw[line width=0.9pt] (O)--({8*cos(50)},{8*sin(50)});
+  \foreach \r/\name in {4/D,6/E,8/F}{
+    \coordinate (\name) at ({\r*cos(50)},{\r*sin(50)});
+    \coordinate (\name-p) at ({\r*cos(50)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$50^\circ$"] {angle=F-p--O--F};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 3 : \(70^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(3,0);
+  \draw[line width=0.9pt] (O)--({8*cos(70)},{8*sin(70)});
+  \foreach \r/\name in {4/G,6/H,8/I}{
+    \coordinate (\name) at ({\r*cos(70)},{\r*sin(70)});
+    \coordinate (\name-p) at ({\r*cos(70)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$70^\circ$"] {angle=I-p--O--I};
+\end{tikzpicture}
+\end{minipage}
+\end{center}
+
+\section*{Partie B -- Mesurer et calculer}
+
+Pour les trois triangles de ta famille :
+
+\begin{enumerate}
+  \item mesure l'hypoténuse ;
+  \item mesure le côté de l'angle droit qui touche l'angle étudié ;
+  \item Calcule :
+  \[
+  \text{côté adjacent}\div\text{hypoténuse},
+  \]
+  puis arrondis au centième.
+\end{enumerate}
+
+Famille n° ...
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{2.3cm}
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+\textbf{Triangle} & \textbf{Hypoténuse} & \textbf{Côté adjacent} &
+\textbf{Adjacent \(\div\) hypoténuse}\\
+\hline
+1 & & & \\
+\hline
+2 & & & \\
+\hline
+3 & & & \\
+\hline
+4 & & & \\
+\hline
+5 & & & \\
+\hline
+6 & & & \\
+\hline
+\end{tabularx}
+
+\section*{Partie C -- Conjecturer}
+
+\begin{enumerate}
+  \item Que remarques-tu dans une même famille ?
+  \item Le nombre obtenu dépend-il de la taille du triangle ?
+  \item Compare ce nombre avec celui des autres familles.
+  \item De quoi ce nombre semble-t-il dépendre ?
+\end{enumerate}
+
+\lignesreponse{8}
+
+\section*{Partie D -- Utiliser la conjecture}
+
+Dans une famille de triangles rectangles ayant un angle de \(35^\circ\),
+le nombre obtenu est environ \(0{,}82\).
+
+\begin{enumerate}
+  \item Si l'hypoténuse mesure \(10\) cm, estime le côté adjacent.
+  \item Si l'hypoténuse mesure \(25\) cm, estime le côté adjacent.
+  \item Retrouve la logique du calcul effectué.
+\end{enumerate}
+
+\lignesreponse{7}
+
+\aretenir{Pour un angle aigu fixé, le quotient
+\[
+\text{côté adjacent}\div\text{hypoténuse}
+\]
+semble constant. Ce nombre dépend de l'angle, pas de la taille du triangle.}
+
+\end{document}

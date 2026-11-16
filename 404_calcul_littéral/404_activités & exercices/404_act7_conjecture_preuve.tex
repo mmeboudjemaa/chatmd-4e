@@ -1,0 +1,96 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,patterns,arrows.meta}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 4 -- Calcul littéral}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+\begin{document}
+
+\titreseq{Activité 7 -- Une conjecture est-elle une preuve ?}
+
+\section*{Partie A -- Un programme qui semble toujours revenir au départ}
+
+\begin{tcolorbox}[colback=white,colframe=SavoirC,boxrule=0.7pt,arc=2mm]
+\begin{enumerate}
+  \item Choisir un nombre.
+  \item Le doubler.
+  \item Ajouter \(5\).
+  \item Doubler le résultat.
+  \item Retirer le triple du nombre de départ.
+  \item Retirer \(10\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{enumerate}
+  \item Applique le programme à \(2\), \(-3\) et \(10\).
+  \item Énonce une conjecture.
+  \item Trois essais constituent-ils une preuve ?
+\end{enumerate}
+
+\lignesreponse{7}
+
+\section*{Partie B -- Prouver avec une lettre}
+
+On note \(x\) le nombre de départ.
+
+\begin{enumerate}
+  \item Écris l'expression traduisant le programme.
+  \item Développe puis réduis.
+  \item Explique pourquoi le résultat constitue une preuve valable
+  pour n'importe quel nombre de départ.
+\end{enumerate}
+
+\lignesreponse{8}
+
+\section*{Partie C -- Le programme trompeur}
+
+\begin{tcolorbox}[colback=white,colframe=ActionC,boxrule=0.7pt,arc=2mm]
+\begin{enumerate}
+  \item Choisir un nombre.
+  \item Ajouter \(1\) à son carré.
+  \item Multiplier par \(6\).
+  \item Retirer le cube du nombre de départ.
+  \item Diviser par \(11\).
+\end{enumerate}
+\end{tcolorbox}
+
+Applique ce programme à \(1\), \(2\), \(3\), puis \(4\).
+
+\begin{enumerate}
+  \item Que pourrait-on conjecturer après les trois premiers essais ?
+  \item Que montre l'essai avec \(4\) ?
+  \item Complète : un exemple peut \dotfill{} une affirmation générale,
+  mais plusieurs exemples ne suffisent pas à la \dotfill
+\end{enumerate}
+
+\lignesreponse{7}
+
+\aretenir{Pour prouver que deux expressions sont égales pour toute valeur de la lettre,
+on peut les transformer jusqu'à obtenir la même expression.
+
+Pour montrer qu'une affirmation générale est fausse, un seul contre-exemple suffit.}
+
+\end{document}

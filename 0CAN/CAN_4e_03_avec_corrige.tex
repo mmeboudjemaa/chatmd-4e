@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\geometry{left=8mm,right=8mm,top=7mm,bottom=7mm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% --- Palette pensée pour une impression noir et blanc ---
+\definecolor{canlight}{gray}{0.93}
+\definecolor{canmid}{gray}{0.72}
+\definecolor{candark}{gray}{0.22}
+\definecolor{answerblue}{RGB}{0,82,165}
+
+% --- Colonnes ---
+\newcolumntype{Q}{>{\centering\arraybackslash}X}
+\newcolumntype{N}{>{\centering\arraybackslash}m{6mm}}
+\newcolumntype{R}{>{\centering\arraybackslash}m{22mm}}
+
+% --- En-tête ---
+\newcommand{\canheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 8 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textbf{Score :} \rule{13mm}{0.45pt}\,/30
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Réponse uniquement \quad$\diamond$\quad Reporter le score sur la fiche annuelle.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+\newcommand{\qrow}[2]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowfig}[2]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowcorr}[3]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+\newcommand{\qrowfigcorr}[3]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+
+\newcommand{\cantable}[1]{%
+\arrayrulecolor{canmid}
+\begin{tabularx}{\linewidth}{N|Q|R}
+\rowcolor{canlight}\textbf{N\textsuperscript{o}}&\centering\textbf{Question}&\textbf{Réponse}\\\hline
+#1
+\end{tabularx}
+\arrayrulecolor{black}
+}
+
+\newcommand{\hypotfigure}{%
+\begin{tikzpicture}[baseline=(current bounding box.center),scale=0.72,line width=0.6pt]
+  \node[font=\bfseries\normalsize] at (1.6,2.55) {Quelle est l'hypoténuse ?};
+  \coordinate (A) at (0,0); \coordinate (B) at (0,1.85); \coordinate (C) at (3.2,0);
+  \draw (A)--(B)--(C)--cycle;
+  \draw (0,0) rectangle (0.32,0.32);
+  \node[below left] at (A) {\small A};
+  \node[above left] at (B) {\small B};
+  \node[below right] at (C) {\small C};
+\end{tikzpicture}}
+
+
+\newcommand{\canheadercorr}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 8 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textcolor{answerblue}{\textbf{CORRIGÉ}}
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Les réponses apparaissent en \textcolor{answerblue}{\textbf{bleu}}.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+
+\begin{document}
+\canheader{CAN 3}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{1}{$9\times6$}
+\qrow{2}{$100-37$}
+\qrow{3}{$-3+8-2$}
+\qrow{4}{Compléter : $56\div\ldots=8$}
+\qrow{5}{$50\,\%$ de 74}
+\qrow{6}{La somme du produit de 4 par 5 et de la différence entre 12 et 7}
+\qrow{7}{$0{,}4+0{,}35$}
+\qrow{8}{$\dfrac57$ multiplié par quel nombre donne 5 ?}
+\qrow{9}{$0{,}006\times1000$}
+\qrow{10}{Dans une série de 28 valeurs, une fréquence de $0{,}25$ correspond à quel effectif ?}
+\qrow{11}{Le plus petit : $3{,}09$ ; $3{,}9$ ; $3{,}099$}
+\qrow{12}{L'opposé de $8$}
+\qrow{13}{$\dfrac34$ correspond à quel pourcentage ?}
+\qrow{14}{2 h 45 min = $\ldots$ min}
+\qrow{15}{$20-3\times4$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{16}{$\dfrac12+\dfrac14$}
+\qrow{17}{Périmètre d'un carré de côté $6{,}5$ cm}
+\qrow{18}{Moyenne de 5 ; 10 ; 15 ; 10}
+\qrow{19}{Quel nombre vaut $3\times100+4\times10+7\times0{,}1$ ?}
+\qrow{20}{Un volume de $27\,\mathrm{cm}^3$ correspond à combien de cubes de 1 cm de côté ?}
+\qrow{21}{315 est-il divisible par 9 ?}
+\qrow{22}{$17\times98+17\times2$}
+\qrow{23}{$2{,}4$ kg = $\ldots$ g}
+\qrow{24}{6 croissants coûtent 9 \texteuro. Quel est le prix d'un croissant ?}
+\qrow{25}{Dans un triangle, deux angles mesurent $90^\circ$ et $28^\circ$. Le troisième mesure :}
+\qrow{26}{Un carré a un périmètre de 36 cm. Son côté mesure :}
+\qrow{27}{Quel nombre, multiplié par lui-même, donne 81 ?}
+\qrow{28}{Encadrer $-2{,}4$ par deux entiers consécutifs.}
+\qrow{29}{Pour $x=2$, calculer $3x+1$.}
+\qrow{30}{Réduire : $4x+2x$}
+}
+\end{minipage}
+
+\clearpage
+
+\canheadercorr{CAN 3}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{1}{$9\times6$}{$54$}
+\qrowcorr{2}{$100-37$}{$63$}
+\qrowcorr{3}{$-3+8-2$}{$3$}
+\qrowcorr{4}{Compléter : $56\div\ldots=8$}{$7$}
+\qrowcorr{5}{$50\,\%$ de 74}{$37$}
+\qrowcorr{6}{La somme du produit de 4 par 5 et de la différence entre 12 et 7}{$25$}
+\qrowcorr{7}{$0{,}4+0{,}35$}{$0{,}75$}
+\qrowcorr{8}{$\dfrac57$ multiplié par quel nombre donne 5 ?}{$7$}
+\qrowcorr{9}{$0{,}006\times1000$}{$6$}
+\qrowcorr{10}{Dans une série de 28 valeurs, une fréquence de $0{,}25$ correspond à quel effectif ?}{$7$}
+\qrowcorr{11}{Le plus petit : $3{,}09$ ; $3{,}9$ ; $3{,}099$}{$3{,}09$}
+\qrowcorr{12}{L'opposé de $8$}{$-8$}
+\qrowcorr{13}{$\dfrac34$ correspond à quel pourcentage ?}{$75\,\%$}
+\qrowcorr{14}{2 h 45 min = $\ldots$ min}{165 min}
+\qrowcorr{15}{$20-3\times4$}{$8$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{16}{$\dfrac12+\dfrac14$}{$\dfrac34$}
+\qrowcorr{17}{Périmètre d'un carré de côté $6{,}5$ cm}{26 cm}
+\qrowcorr{18}{Moyenne de 5 ; 10 ; 15 ; 10}{$10$}
+\qrowcorr{19}{Quel nombre vaut $3\times100+4\times10+7\times0{,}1$ ?}{$340{,}7$}
+\qrowcorr{20}{Un volume de $27\,\mathrm{cm}^3$ correspond à combien de cubes de 1 cm de côté ?}{$27$}
+\qrowcorr{21}{315 est-il divisible par 9 ?}{oui}
+\qrowcorr{22}{$17\times98+17\times2$}{$1700$}
+\qrowcorr{23}{$2{,}4$ kg = $\ldots$ g}{$2400$ g}
+\qrowcorr{24}{6 croissants coûtent 9 \texteuro. Quel est le prix d'un croissant ?}{1,50 \texteuro}
+\qrowcorr{25}{Dans un triangle, deux angles mesurent $90^\circ$ et $28^\circ$. Le troisième mesure :}{$62^\circ$}
+\qrowcorr{26}{Un carré a un périmètre de 36 cm. Son côté mesure :}{9 cm}
+\qrowcorr{27}{Quel nombre, multiplié par lui-même, donne 81 ?}{$9$}
+\qrowcorr{28}{Encadrer $-2{,}4$ par deux entiers consécutifs.}{$-3<-2{,}4<-2$}
+\qrowcorr{29}{Pour $x=2$, calculer $3x+1$.}{$7$}
+\qrowcorr{30}{Réduire : $4x+2x$}{$6x$}
+}
+\end{minipage}
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 5 -- Calculer l'hypoténuse}
+
+\section*{Partie A -- Comprendre l'opération inverse}
+
+Dans le triangle \(JKV\) rectangle en \(K\) :
+
+\[
+JK=6{,}5\text{ cm}
+\qquad\text{et}\qquad
+\widehat{KJV}=28^\circ.
+\]
+
+On cherche \(JV\).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \coordinate (J) at (0,0);
+  \coordinate (K) at (5.2,0);
+  \coordinate (V) at (5.2,2.8);
+
+  \draw[line width=0.9pt] (J)--(K)--(V)--cycle;
+  \draw (4.82,0)--(4.82,0.38)--(5.2,0.38);
+
+  \node[left] at (J) {$J$};
+  \node[below] at (K) {$K$};
+  \node[above] at (V) {$V$};
+
+  \node[below] at (2.7,0) {$6{,}5$ cm};
+  \node[above left] at (2.7,1.6) {$JV\,?$};
+
+  \draw[ActionC,line width=1pt] (0.85,0) arc[start angle=0,end angle=28,radius=0.85];
+  \node[ActionC] at (1.2,0.34) {$28^\circ$};
+\end{tikzpicture}
+\end{center}
+
+Complète.
+
+\[
+\cos(28^\circ)=\frac{\ldots}{\ldots}
+\]
+
+Le côté adjacent est obtenu en multipliant l'hypoténuse par le cosinus :
+
+\[
+JK=JV\times\cos(28^\circ).
+\]
+
+Pour retrouver l'hypoténuse, on effectue l'opération inverse :
+
+\[
+JV=JK\div\cos(28^\circ).
+\]
+
+Donc :
+
+\[
+JV=6{,}5\div\cos(28^\circ)\approx\ldots\text{ cm}.
+\]
+
+Le résultat est-il bien supérieur à \(6{,}5\) cm ?
+
+\section*{Partie B -- Méthode de rédaction}
+
+\begin{tcolorbox}[colback=white,colframe=SavoirC,boxrule=0.7pt,arc=2mm]
+Dans le triangle \(JKV\) rectangle en \(K\), on a :
+
+\[
+\cos(\widehat{KJV})=\frac{JK}{JV}.
+\]
+
+Donc :
+
+\[
+JV=JK\div\cos(\widehat{KJV}).
+\]
+
+Ainsi :
+
+\[
+JV=6{,}5\div\cos(28^\circ)
+\approx\ldots\text{ cm}.
+\]
+\end{tcolorbox}
+
+\section*{Partie C -- S'entraîner}
+
+Calcule les hypoténuses demandées. Arrondis au dixième.
+
+\[
+\begin{array}{c|c|c|c}
+\text{Triangle rectangle} & \text{Angle aigu} &
+\text{Côté adjacent} & \text{Hypoténuse cherchée}\\
+\hline
+ABC\text{ rectangle en }B & \widehat{BAC}=41^\circ &
+AB=7{,}2\text{ cm} & AC\\
+\hline
+DEF\text{ rectangle en }E & \widehat{EDF}=63^\circ &
+DE=4{,}5\text{ cm} & DF\\
+\hline
+RST\text{ rectangle en }S & \widehat{TRS}=22^\circ &
+RS=11\text{ cm} & RT
+\end{array}
+\]
+
+\lignesreponse{10}
+
+\section*{Partie D -- Analyser une erreur}
+
+Lina cherche une hypoténuse. Elle écrit :
+
+\[
+6{,}5\times\cos(28^\circ)\approx5{,}7.
+\]
+
+Explique, sans refaire immédiatement tout le calcul, pourquoi son résultat
+ne peut pas être l'hypoténuse.
+
+Corrige ensuite son calcul.
+
+\lignesreponse{5}
+
+\aretenir{Pour calculer l'hypoténuse :
+
+\[
+\boxed{\text{hypoténuse}
+=
+\text{côté adjacent}\div\cos(\text{angle})}
+\]
+
+Diviser par un nombre compris entre \(0\) et \(1\) donne ici une longueur
+plus grande que le côté adjacent.}
+
+\end{document}

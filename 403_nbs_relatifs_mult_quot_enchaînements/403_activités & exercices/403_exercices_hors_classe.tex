@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{arrows.meta,calc}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{%
+      \lignepointillee
+    }
+  \end{tcolorbox}
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 3 -- Nombres relatifs}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Exercices hors classe}
+
+\remarque{Fiche donnée à l'avance. Ne faire que les exercices indiqués par le professeur.}
+
+\section*{A. Déterminer un signe}
+
+Indique seulement le signe du résultat.
+
+\[
+(-8)\times3
+\qquad
+(-4)\times(-7)
+\qquad
+18\div(-6)
+\qquad
+(-42)\div(-7)
+\]
+
+\[
+(-2)\times3\times(-5)
+\qquad
+(-1)\times(-4)\times(-7)
+\qquad
+(-8)\times0\times(-21)
+\]
+
+\lignesreponse{5}
+
+\section*{B. Produits et quotients simples}
+
+Calcule.
+
+\[
+(-8)\times3
+\qquad
+(-4)\times(-7)
+\qquad
+(-2{,}5)\times4
+\qquad
+(-0{,}4)\times(-30)
+\]
+
+\[
+18\div(-6)
+\qquad
+(-42)\div(-7)
+\qquad
+(-12{,}8)\div2
+\qquad
+7{,}2\div(-5)
+\]
+
+\lignesreponse{8}
+
+\section*{C. Produits de plusieurs facteurs}
+
+Calcule.
+
+\[
+(-3)\times(-2)\times(-2)\times2
+\]
+
+\[
+3\times(-2)\times2\times(-2)
+\]
+
+\[
+(-2)+(-4)\times(-5)
+\]
+
+\[
+2-4\times(-2)\times(-2)
+\]
+
+\lignesreponse{7}
+
+\section*{D. Enchaînements}
+
+Calcule en détaillant.
+
+\[
+7+(-3)\times5
+\]
+
+\[
+(-24)\div(-6)-3\times(-2)
+\]
+
+\[
+\bigl(8-3\times(-2)\bigr)\div(-7)
+\]
+
+\lignesreponse{8}
+
+\section*{E. Petit problème}
+
+Une formule donne :
+
+\[
+t_F=1{,}8\times t_C+32.
+\]
+
+Calcule la température en degrés Fahrenheit correspondant à \(-5^\circ\mathrm{C}\).
+
+Puis retrouve la température en degrés Celsius correspondant à \(41^\circ\mathrm{F}\).
+
+\lignesreponse{7}
+
+\end{document}

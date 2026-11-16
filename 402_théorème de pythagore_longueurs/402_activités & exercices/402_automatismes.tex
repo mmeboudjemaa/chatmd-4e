@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,angles,quotes}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.22em}
+
+\newcommand{\titresequence}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 2 -- Théorème de Pythagore}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+  enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+  left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+  \foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\begin{document}
+\titresequence{Automatismes -- Séries courtes}
+
+\remarque{Chaque série est prévue pour environ cinq minutes.}
+
+\section*{Série 1 -- Hypoténuse}
+Dans chaque cas, nomme l'hypoténuse.
+\begin{enumerate}[label=\alph*)]
+  \item $ABC$ rectangle en $B$ ;
+  \item $DEF$ rectangle en $F$ ;
+  \item $MNP$ rectangle en $M$ ;
+  \item $RST$ rectangle en $S$.
+\end{enumerate}
+
+\section*{Série 2 -- Égalité de Pythagore}
+Écris l'égalité adaptée à chaque triangle précédent.
+
+\section*{Série 3 -- Carrés}
+\[
+3^2=\dotfill\quad 4^2=\dotfill\quad 5^2=\dotfill\quad
+8^2=\dotfill\quad 10^2=\dotfill\quad 12^2=\dotfill
+\]
+
+\section*{Série 4 -- Racines carrées simples}
+\[
+\sqrt{9}=\dotfill\quad \sqrt{16}=\dotfill\quad \sqrt{25}=\dotfill\quad
+\sqrt{49}=\dotfill\quad \sqrt{64}=\dotfill\quad \sqrt{100}=\dotfill
+\]
+
+\section*{Série 5 -- Addition ou soustraction ?}
+Indique l'opération finale utile, sans faire le calcul.
+\begin{enumerate}[label=\alph*)]
+  \item On cherche l'hypoténuse et on connaît les deux autres côtés.
+  \item On cherche un côté de l'angle droit et on connaît l'hypoténuse.
+\end{enumerate}
+
+\section*{Série 6 -- Triplets}
+Complète.
+\[
+3-4-\dotfill
+\qquad
+5-12-\dotfill
+\qquad
+6-8-\dotfill
+\qquad
+\dotfill-15-17
+\]
+
+\section*{Série 7 -- Vrai ou faux ?}
+\begin{enumerate}
+  \item L'hypoténuse est toujours le plus grand côté.
+  \item Le théorème de Pythagore s'utilise dans tous les triangles.
+  \item Si $AB^2=25$, alors $AB=5$.
+  \item $\sqrt{36}=18$.
+\end{enumerate}
+\end{document}

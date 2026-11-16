@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\newcommand{\lignes}[1]{%
+  \begin{tcolorbox}[colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm]
+    \foreach \i in {1,...,#1}{\noindent\dotfill\par\vspace{0.45em}}
+  \end{tcolorbox}
+}
+
+\newcommand{\blocdonnees}[1]{%
+  \begin{tcolorbox}[mathsbox,colback=NeutreBg,colframe=NeutreC!45,boxrule=0.6pt,arc=2mm]
+  #1
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}Activité 2 -- Tirs cadrés}
+\end{center}
+
+On a relevé, pour six rencontres d'un championnat, le nombre total
+de tirs effectués par une équipe de football et le nombre de tirs cadrés.
+
+\begin{center}
+\begin{tikzpicture}[x=1.45cm,y=0.27cm]
+  \draw[->,line width=0.8pt] (0,0) -- (6.8,0) node[right] {\small Rencontre};
+  \draw[->,line width=0.8pt] (0,0) -- (0,21.5) node[above] {\small Nombre de tirs};
+  \foreach \y in {0,2,...,20}{
+    \draw[NeutreC!18] (0,\y) -- (6.45,\y);
+    \node[left,font=\small] at (0,\y) {\y};
+  }
+  \foreach \x/\tot/\cad in {1/7/3,2/18/7,3/8/5,4/19/8,5/19/6,6/18/6}{
+    \fill[SavoirC!70] (\x-0.28,0) rectangle (\x-0.03,\tot);
+    \fill[ActionC!80] (\x+0.03,0) rectangle (\x+0.28,\cad);
+    \node[below,font=\small] at (\x,0) {\x};
+  }
+  \fill[SavoirC!70] (4.15,20.2) rectangle (4.38,20.9);
+  \node[anchor=west,font=\small] at (4.46,20.55) {Nombre de tirs};
+  \fill[ActionC!80] (4.15,18.6) rectangle (4.38,19.3);
+  \node[anchor=west,font=\small] at (4.46,18.95) {Tirs cadrés};
+\end{tikzpicture}
+\end{center}
+
+\blocdonnees{On mesure ici l'\textbf{efficacité} d'une équipe par la proportion de tirs cadrés parmi l'ensemble des tirs d'une rencontre.}
+
+\textbf{Quelles sont les deux rencontres au cours desquelles les joueurs ont été les plus efficaces ? Justifie ta réponse.}
+
+\lignes{9}
+
+% NOTES PROFESSEUR -- NON IMPRIMÉES
+% Ne pas ajouter « calcule la fréquence de chaque match » sur la fiche.
+% Réponse : 3e rencontre, puis 1re rencontre.
+% Relances : « Le nombre de tirs cadrés suffit-il pour comparer ? »
+% puis « Compare la part de tirs cadrés dans chaque rencontre. »
+
+\end{document}

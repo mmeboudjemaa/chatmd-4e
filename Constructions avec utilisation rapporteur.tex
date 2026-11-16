@@ -1,0 +1,475 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================
+% ENCODAGE ET POLICES
+% ============================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage[scaled=0.875]{helvet}
+\renewcommand{\ttdefault}{lmtt}
+
+% ============================================================
+% MATHÉMATIQUES ET MISE EN PAGE
+% ============================================================
+\usepackage{amsmath,amssymb}
+\usepackage[french]{babel}
+\usepackage[np]{numprint}
+\usepackage{xcolor}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+% ============================================================
+% FIGURES — TikZ
+% ============================================================
+\usepackage{tikz}
+\usetikzlibrary{calc,angles,quotes}
+
+% ============================================================
+% RÉGLAGES
+% ============================================================
+\setlength{\parindent}{0pt}
+
+\renewcommand{\theenumi}{\textbf{\arabic{enumi}}}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
+\renewcommand{\theenumii}{\textbf{\alph{enumii}}}
+\renewcommand{\labelenumii}{\textbf{\theenumii.}}
+
+% Étoile = notion non encore étudiée
+\newcommand{\horsprog}{\textbf{\large $\star$}\;}
+
+% Source discrète
+\newcommand{\source}[1]{%
+    \begin{flushright}
+        \small\itshape Source : #1
+    \end{flushright}
+}
+
+% Séparation entre exercices
+\newcommand{\separation}{%
+    \vspace{0.4cm}
+    \hrule
+    \vspace{0.7cm}
+}
+
+\begin{document}
+
+% ============================================================
+% TITRE
+% ============================================================
+
+\begin{center}
+    {\LARGE\textbf{Constructions géométriques}}\\[2mm]
+    {\large Figures en vraie grandeur}
+\end{center}
+
+\medskip
+
+\begin{center}
+\fbox{%
+\begin{minipage}{0.88\linewidth}
+Les exercices suivants sont issus d'anciens sujets du Diplôme
+National du Brevet.
+
+\medskip
+
+\textbf{$\star$} Une question marquée d'une étoile fait appel à une notion
+qui n'a pas encore été étudiée en 4\ieme.
+\end{minipage}}
+\end{center}
+
+\bigskip
+
+
+% ============================================================
+% EXERCICE 1 — ASIE 2011
+% ============================================================
+
+\section*{Exercice 1}
+
+\source{DNB -- Asie -- 23 juin 2011}
+
+Dans la figure ci-dessous, le triangle ABC un triangle isocèle en A
+tel que AB = 5~cm et $\widehat{\text{ABC}} = 75\degres{}$ et le
+triangle ACE est équilatéral.
+
+\smallskip
+
+\emph{La figure ci-dessous n'est pas en vraie grandeur.}
+
+\smallskip
+
+% Figure APMEP originale traduite de PSTricks vers TikZ
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+    \coordinate (C) at (2.7,1.4);
+    \coordinate (B) at (0.8,0.7);
+    \coordinate (A) at (0.5,4.7);
+    \coordinate (E) at (4.3,5);
+
+    \draw (C)--(B)--(A)--(C)--(E)--(A);
+
+    \node[above left]  at (A) {A};
+    \node[below left]  at (B) {B};
+    \node[below right] at (C) {C};
+    \node[below right] at (E) {E};
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+
+\item Construire la figure en vraie grandeur.
+
+\item
+    \begin{enumerate}
+    \item Calculer la mesure de l'angle $\widehat{\text{BAC}}$.
+    \item Quelle est la nature du triangle ABE ?
+    \end{enumerate}
+
+\item \horsprog Calculer la longueur exacte du segment [BE].
+Donner la valeur arrondie au millimètre près.
+
+\end{enumerate}
+
+
+\separation
+
+
+% ============================================================
+% EXERCICE 2 — POLYNÉSIE 2014
+% ============================================================
+
+\section*{Exercice 2}
+
+\source{DNB -- Polynésie -- juin 2014}
+
+Dans tout cet exercice, on travaille avec des triangles ABC isocèles
+en A tels que : BC = 5 cm. La mesure de l'angle
+$\widehat{\text{ABC}}$ peut varier.
+
+\smallskip
+
+On va alors s'intéresser aux angles extérieurs de ces triangles,
+c'est-à-dire, comme l'indique la figure ci-après, aux angles qui sont
+supplémentaires et adjacents avec les angles de ce triangle.
+
+% Figure APMEP originale traduite de PSTricks vers TikZ
+\begin{center}
+\begin{tikzpicture}[x=0.85cm,y=0.85cm]
+
+    % Points
+    \coordinate (C) at (4,2);
+    \coordinate (B) at (6.3,2.8);
+    \coordinate (A) at (4,5.7);
+
+    % Triangle
+    \draw (C)--(B)--(A)--cycle;
+
+    % Prolongements
+    \draw (B)--(8.6,3.6);
+    \draw (A)--(2.85,7.15);
+    \draw (C)--(4,0.1);
+
+    % Noms des sommets
+    \node[left]        at (C) {C};
+    \node[below right] at (B) {B};
+    \node[above right] at (A) {A};
+
+    % Marques d'égalité des côtés
+    \draw (3.9,3.7)--(4.1,3.5);
+    \draw (3.9,3.6)--(4.1,3.4);
+
+    \draw (4.9,4.4)--(5.1,4.6);
+    \draw (4.9,4.3)--(5.1,4.5);
+
+    % Arcs des angles extérieurs
+    \draw (4,1.5) arc[start angle=-90,end angle=26,radius=0.5];
+    \draw (6.75,2.96) arc[start angle=20,end angle=122,radius=0.48];
+    \draw (3.71,6.10) arc[start angle=125,end angle=270,radius=0.5];
+
+    % x y z
+    \node at (2.6,6.9) {$x$};
+    \node at (9,3.6) {$y$};
+    \node at (3.85,0.2) {$z$};
+
+    % Légendes
+    \node at (1.6,6) {Angle extérieur};
+    \node at (7,4.8) {Angle extérieur};
+    \node at (6.2,1) {Angle extérieur};
+
+    % Flèches des légendes
+    \draw[->] (5,1)--(4.5,1.6);
+    \draw[->] (6.8,4.6)--(6.4,3.4);
+    \draw[->] (2.7,5.8)--(3.4,5.5);
+
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+
+\item Dans cette question uniquement, on suppose que
+$\widehat{\text{ABC}} = 40\degres$.
+
+    \begin{enumerate}
+
+    \item Construire le triangle ABC en vraie grandeur.
+    Aucune justification n'est attendue pour cette construction.
+
+    \item Calculer la mesure de chacun de ses 3 angles extérieurs.
+
+    \item Vérifier que la somme des mesures de ces 3 angles extérieurs
+    est égale à 360\degres.
+
+    \end{enumerate}
+
+\item Est-il possible de construire un triangle ABC isocèle en A tel
+que la somme des mesures de ses trois angles extérieurs soit différente
+de $360\degres$ ?
+
+\end{enumerate}
+
+
+\separation
+
+
+% ============================================================
+% EXERCICE 3 — PONDICHÉRY 2015
+% ============================================================
+
+\section*{Exercice 3}
+
+\source{DNB -- Pondichéry -- 28 avril 2015}
+
+[AB] est un segment de milieu O tel que AB = 12~cm.
+
+Le point C appartient au cercle de centre O passant par A.
+De plus AC = 6~cm.
+
+L'angle $\widehat{\text{ABC}}$ mesure 30\,\degres.
+
+\medskip
+
+\begin{enumerate}
+
+\item Construire la figure en vraie grandeur.
+
+\item Les affirmations suivantes sont-elles vraies ou fausses ?
+Justifier.
+
+    \begin{enumerate}
+
+    \item Le triangle ABC est rectangle.
+
+    \item \horsprog Le segment [BC] mesure 10~cm.
+
+    \item L'angle $\widehat{\text{AOC}}$ mesure 60\,\degres.
+
+    \item \horsprog L'aire du triangle ABC est
+    $18\sqrt{3}$~cm$^2$.
+
+    \item L'angle $\widehat{\text{BOC}}$ mesure 31\,\degres.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\separation
+
+
+% ============================================================
+% EXERCICE 4 — CENTRES ÉTRANGERS / LIBAN 2010
+% ============================================================
+
+\section*{Exercice 4}
+
+\source{DNB -- Centres étrangers / Liban -- juin 2010}
+
+Dans tout l'exercice, l'unité de longueur est le centimètre.
+
+\medskip
+
+ABC est un triangle tel que AB = 6 cm, BC = 10 cm et ABC = 120~\degres.
+
+La hauteur issue de A coupe la droite (BC) au point H.
+
+\emph{La figure ci-dessous n'est pas en vraie grandeur.}
+
+\medskip
+
+% Figure APMEP originale traduite de PSTricks vers TikZ
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+    \coordinate (C) at (0,0.5);
+    \coordinate (B) at (5,0.5);
+    \coordinate (H) at (6.5,0.5);
+    \coordinate (A) at (6.5,3.2);
+
+    % Droite (BC)
+    \draw (0,0.5)--(10,0.5);
+
+    % Triangle
+    \draw (C)--(B)--(A)--cycle;
+
+    % Hauteur
+    \draw[dashed] (A)--(H);
+
+    % Angle droit
+    \draw (6.5,0.5)--(6.75,0.5)--(6.75,0.75)--(6.5,0.75);
+
+    % Noms
+    \node[above right] at (A) {A};
+    \node[below]       at (B) {B};
+    \node[below]       at (C) {C};
+    \node[below]       at (H) {H};
+
+\end{tikzpicture}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+
+\item Tracer la figure en vraie grandeur.
+
+\item
+    \begin{enumerate}
+
+    \item \horsprog Calculer la mesure de l'angle
+    $\widehat{\text{ABH}}$. En déduire que BH = 3.
+
+    \item \horsprog Prouver que AH $= 3\sqrt{3}$, puis calculer
+    l'aire du triangle ACH (on donnera la valeur exacte).
+
+    \item \horsprog Prouver que AC = 14.
+
+    \end{enumerate}
+
+\item M est un point du segment [BC] tel que CM = 6,5.
+
+La parallèle à (AH) passant par M coupe le segment [AC] en N.
+
+    \begin{enumerate}
+
+    \item Compléter la figure.
+
+    \item \horsprog Prouver que
+    NM $= \dfrac{3\sqrt{3}}{2}$.
+
+    \item \horsprog
+    \emph{Pour cette question, toute trace de recherche, même
+    incomplète, sera prise en compte dans l'évaluation.}
+
+    \medskip
+
+    Déterminer l'aire du trapèze AHMN. Donner une valeur approchée
+    à l'unité près de cette aire.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+
+\separation
+
+
+% ============================================================
+% EXERCICE 5 — PONDICHÉRY 2018
+% ============================================================
+
+\section*{Exercice 5}
+
+\source{DNB -- Pondichéry -- 3 mai 2018}
+
+% Figure APMEP originale traduite de PSTricks vers TikZ
+\begin{center}
+
+\begin{minipage}{0.30\linewidth}
+La figure ci-contre n'est pas à l'échelle.
+\end{minipage}
+\hfill
+\begin{minipage}{0.62\linewidth}
+\centering
+
+\begin{tikzpicture}[x=0.9cm,y=0.9cm]
+
+    \coordinate (A) at (0.5,0.5);
+    \coordinate (B) at (7.2,0.5);
+    \coordinate (C) at (0.5,4.4);
+    \coordinate (H) at (2.2,3.4);
+
+    % Triangle
+    \draw (A)--(B)--(C)--cycle;
+
+    % Hauteur AH
+    \draw (A)--(H);
+
+    % Points en croix comme dans l'original
+    \foreach \P in {A,B,C,H}{
+        \draw ($( \P )+(-0.07,-0.07)$)--($( \P )+(0.07,0.07)$);
+        \draw ($( \P )+(-0.07,0.07)$)--($( \P )+(0.07,-0.07)$);
+    }
+
+    % Noms
+    \node[below left]  at (A) {A};
+    \node[above right] at (B) {B};
+    \node[above]       at (C) {C};
+    \node[above right] at (H) {H};
+
+    % Angle droit en A
+    \draw (0.5,1)--(1,1)--(1,0.5);
+
+    % Angle droit en H
+    \coordinate (h1) at ($(H)!0.45cm!(A)$);
+    \coordinate (h2) at ($(H)!0.45cm!(B)$);
+    \draw (h1) -- ($(h1)+(h2)-(H)$) -- (h2);
+
+    % Mesure AB : double flèche
+    \draw[<->] (0.5,0.2)--(7.2,0.2);
+    \node[below] at (3.85,0.2) {7 cm};
+
+    % Arc de 30 degrés en B
+    \draw (6.7,0.5)
+        arc[start angle=180,end angle=150,radius=0.5];
+
+    \node at (6.3,0.85) {30\degres};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{center}
+
+\medskip
+
+On considère ci-dessus un triangle ABC rectangle en A tel que
+$\widehat{\text{ABC}} = 30\degres$ et AB = 7 cm.
+H est le pied de la hauteur issue de A.
+
+\medskip
+
+\begin{enumerate}
+
+\item Tracer la figure en vraie grandeur sur la copie.
+Laisser les traits de construction apparents sur la copie.
+
+\item \horsprog Démontrer que AH $= 3,5$~cm.
+
+\item \horsprog Démontrer que les triangles ABC et HAC sont semblables.
+
+\item \horsprog Déterminer le coefficient de réduction permettant
+de passer du triangle ABC au triangle HAC.
+
+\end{enumerate}
+
+\vfill
+
+\begin{center}
+\small
+\textit{Exercices issus des annales du Diplôme National du Brevet --
+sources APMEP.}
+\end{center}
+
+\end{document}

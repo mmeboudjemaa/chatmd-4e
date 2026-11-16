@@ -1,0 +1,98 @@
+\ProvidesPackage{mise_en_page}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Couleurs (nécessaires pour les titres et le pied de page)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Encodage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[french]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Mise en page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[
+a4paper,
+top=1.4cm,
+bottom=1.4cm,
+left=1.4cm,
+right=1.4cm
+]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Police
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Option « tout sans-serif » (maths comprises), rendu très moderne :
+% commenter la ligne lmodern et décommenter les deux suivantes.
+% \RequirePackage[sfdefault,scaled=0.95]{FiraSans}
+% \RequirePackage[fira]{newtxsf}
+
+\RequirePackage{lmodern}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Microtypographie
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{microtype}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Paragraphes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Interligne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{setspace}
+\setstretch{1.08}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Titres (sans-serif, ardoise foncée, marqueur coloré)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{titlesec}
+
+\titleformat{\section}
+{\sffamily\Large\bfseries\color{TitreC}}
+{}
+{0pt}
+{{\color{SavoirC}\rule[-0.15em]{0.28em}{1em}}\hspace{0.5em}}
+
+\titlespacing*{\section}
+{0pt}
+{1em}
+{0.6em}
+
+\titleformat{\subsection}
+{\sffamily\large\bfseries\color{TitreC}}
+{}
+{0pt}
+{{\color{SavoirC!65}\rule[-0.12em]{0.2em}{0.85em}}\hspace{0.5em}}
+
+\titlespacing*{\subsection}
+{0pt}
+{0.8em}
+{0.4em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Pied de page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\fancyfoot[R]{\sffamily\small\color{NeutreC}\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}

@@ -1,0 +1,248 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xparse}
+
+%==================================================
+% Réglages compacts
+%==================================================
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\titreactivite}[1]{%
+  \begin{center}
+    {\sffamily\normalsize\bfseries\color{SavoirC}#1}
+  \end{center}
+  \vspace{-0.35em}
+}
+
+\newcommand{\sanscalc}{%
+  {\sffamily\small\bfseries Calculatrice interdite}
+}
+
+%==================================================
+% Barème commun
+%==================================================
+
+\newcommand{\baremestand}{%
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{
+>{\centering\arraybackslash}p{2.3cm}
+>{\centering\arraybackslash}p{2.3cm}
+>{\centering\arraybackslash}p{2.3cm}
+>{\centering\arraybackslash}p{2.3cm}
+}
+\textbf{P :} \(-3\) pts &
+\textbf{J :} \(-2\) pts &
+\textbf{B :} \(-1\) pt &
+\textbf{R :} \(+4\) pts
+\end{tabular}
+\end{center}
+}
+
+%==================================================
+% ACTIVITÉ DE BASE
+%==================================================
+
+\newcommand{\activitebase}{%
+
+\titreactivite{Réactivation -- Addition et soustraction de relatifs}
+
+\noindent
+Dans un stand de lancer, chaque joueur lance cinq fois une balle.
+Selon le résultat du lancer, il marque :
+
+\baremestand
+
+\noindent
+Voici les cinq lancers de deux joueurs :
+
+\vspace{0.15em}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{c|ccccc}
+ & 1 & 2 & 3 & 4 & 5\\
+\hline
+Adam & P & R & J & B & R\\
+Caroline & R & B & J & R & J
+\end{tabular}
+\end{center}
+
+\vspace{0.1em}
+
+\textbf{1.} Calcule le score d'Adam puis celui de Caroline.
+
+\textbf{2.} Quel est le score le plus faible possible en cinq lancers ?
+
+\textbf{3.} Un joueur obtient \(-4\) points.
+Trouve \textbf{quatre façons différentes} d'obtenir ce score.
+
+\hfill \sanscalc
+}
+
+%==================================================
+% PROLONGEMENT 1
+%==================================================
+
+\newcommand{\prolongementun}{%
+
+\titreactivite{Prolongement -- Toutes les possibilités}
+
+\noindent
+Dans un stand de lancer, cinq balles sont lancées.
+Le barème est le suivant :
+
+\baremestand
+
+\noindent
+Un joueur termine avec un score de
+
+\[
+-4.
+\]
+
+\textbf{Trouve toutes les combinaisons possibles}
+de \(P\), \(J\), \(B\) et \(R\) permettant d'obtenir ce score,
+en utilisant exactement cinq lancers.
+
+\hfill \sanscalc
+}
+
+%==================================================
+% PROLONGEMENT 2
+%==================================================
+
+\newcommand{\prolongementdeux}{%
+
+\titreactivite{Prolongement -- Modifier le barème}
+
+\noindent
+Dans le même stand, le barème de départ est :
+
+\baremestand
+
+\noindent
+Amelle et Loan ont obtenu les résultats suivants :
+
+\vspace{0.15em}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{c|cccc}
+ & P & J & B & R\\
+\hline
+Amelle & 3 & 0 & 1 & 1\\
+Loan   & 2 & 2 & 0 & 1
+\end{tabular}
+\end{center}
+
+\vspace{0.15em}
+
+\textbf{1.} Vérifie qu'Amelle et Loan obtiennent le même score.
+
+\textbf{2.} On modifie les points tout en conservant l'ordre
+\[
+R>B>J>P.
+\]
+Propose un nouveau barème pour qu'\textbf{Amelle gagne}.
+
+\textbf{3.} Peut-on choisir un nouveau barème respectant le même ordre
+pour que \textbf{Loan gagne} ?
+
+\hfill \sanscalc
+}
+
+%==================================================
+% DOCUMENT
+%==================================================
+
+\begin{document}
+
+%==================================================
+% PAGE 1 -- ACTIVITÉ DE BASE : 4 EXEMPLAIRES
+%==================================================
+
+\begin{minipage}[t][0.22\textheight][t]{\textwidth}
+\activitebase
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.22\textheight][t]{\textwidth}
+\activitebase
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.22\textheight][t]{\textwidth}
+\activitebase
+\end{minipage}
+
+\vspace{3cm}
+
+
+\newpage
+
+%==================================================
+% PAGE 2 -- PROLONGEMENT 1 : 5 EXEMPLAIRES
+%==================================================
+
+\begin{minipage}[t][0.16\textheight][t]{\textwidth}
+\prolongementun
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.16\textheight][t]{\textwidth}
+\prolongementun
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.16\textheight][t]{\textwidth}
+\prolongementun
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.16\textheight][t]{\textwidth}
+\prolongementun
+\end{minipage}
+
+
+
+\newpage
+
+%==================================================
+% PAGE 3 -- PROLONGEMENT 2 : 3 EXEMPLAIRES
+%==================================================
+
+\begin{minipage}[t][0.285\textheight][t]{\textwidth}
+\prolongementdeux
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{minipage}[t][0.285\textheight][t]{\textwidth}
+\prolongementdeux
+\end{minipage}
+
+\vspace{3cm}
+
+
+\end{document}

@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,patterns,arrows.meta}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 4 -- Calcul littéral}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+\begin{document}
+
+\titreseq{Activité 4 -- Simplifier l'écriture d'une expression}
+
+\section*{Partie A -- Des écritures différentes}
+
+Associe les écritures qui désignent le même nombre.
+
+\[
+3\times x \qquad x+x+x \qquad 3x
+\]
+
+\[
+x\times x \qquad x^2
+\]
+
+\[
+1\times x \qquad x
+\]
+
+\[
+x\times5 \qquad 5x
+\]
+
+\lignesreponse{4}
+
+\section*{Partie B -- Conventions}
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+On peut ne pas écrire le signe \(\times\) devant une lettre ou une parenthèse :
+
+\[
+3\times x=\dotfill
+\qquad
+5\times(x+2)=\dotfill
+\]
+
+On écrit le nombre avant la lettre :
+
+\[
+x\times7=\dotfill
+\]
+
+On écrit :
+
+\[
+x\times x=\dotfill
+\qquad
+1\times x=\dotfill
+\]
+\end{tcolorbox}
+
+\section*{Partie C -- Simplifier}
+
+\[
+A=8\times x
+\qquad
+B=x\times4
+\qquad
+C=2\times x\times x
+\]
+
+\[
+D=1\times x+5
+\qquad
+E=3\times(x+7)
+\qquad
+F=x\times x\times x
+\]
+
+\lignesreponse{5}
+
+\section*{Partie D -- Ne pas confondre}
+
+Explique pourquoi \(3+x\) et \(3x\) ne désignent pas la même chose.
+Choisis une valeur de \(x\) pour le montrer.
+
+\lignesreponse{4}
+
+\section*{Partie E -- Remplacer une lettre}
+
+Calcule la valeur de \(A=3x-5\) pour \(x=4\), puis pour \(x=-2\).
+Écris les parenthèses nécessaires.
+
+\lignesreponse{5}
+
+\end{document}

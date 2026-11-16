@@ -1,0 +1,263 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[most]{tcolorbox}
+
+\geometry{
+  top=10mm,
+  bottom=10mm,
+  left=12mm,
+  right=12mm
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% =========================================================
+% BOÎTE EXERCICE
+% =========================================================
+
+\newtcolorbox{exercicebox}[1]{
+  enhanced,
+  colback=white,
+  colframe=ActionC!45,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  title={#1},
+  fonttitle=\sffamily\bfseries,
+  coltitle=ActionC,
+  colbacktitle=white,
+  boxed title style={
+    colframe=white,
+    colback=white
+  },
+  attach boxed title to top left={
+    xshift=2mm,
+    yshift=-1mm
+  }
+}
+
+\begin{document}
+
+% =========================================================
+% TITRE
+% =========================================================
+
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}
+AP -- Je rédige avec le théorème de Pythagore}
+\end{center}
+
+\vspace{1mm}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!50,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm
+]
+
+Pour chaque situation :
+
+\medskip
+
+\textbf{1.} Fais un schéma à main levée et code l'angle droit.
+
+\textbf{2.} Rédige toutes les étapes du théorème de Pythagore.
+
+\end{tcolorbox}
+
+\vspace{3mm}
+
+% =========================================================
+% LIGNE 1
+% =========================================================
+
+\noindent
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle ABC}
+Le triangle \(ABC\) est rectangle en \(A\).
+
+\[
+AB=6\text{ cm}
+\qquad
+AC=9\text{ cm}
+\]
+
+Calculer \(BC\).
+
+\textbf{Donner une valeur approchée au dixième.}
+\end{exercicebox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle DEF}
+Le triangle \(DEF\) est rectangle en \(E\).
+
+\[
+DF=14\text{ cm}
+\qquad
+DE=5\text{ cm}
+\]
+
+Calculer \(EF\).
+
+\textbf{Donner une valeur approchée au centième.}
+\end{exercicebox}
+
+\end{minipage}
+
+\vspace{3mm}
+
+% =========================================================
+% LIGNE 2
+% =========================================================
+
+\noindent
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle GHI}
+Le triangle \(GHI\) est rectangle en \(H\).
+
+\[
+GH=7\text{ cm}
+\qquad
+HI=12\text{ cm}
+\]
+
+Calculer \(GI\).
+
+\textbf{Donner une valeur approchée au centième.}
+\end{exercicebox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle JKL}
+Le triangle \(JKL\) est rectangle en \(K\).
+
+\[
+JL=18\text{ cm}
+\qquad
+JK=7\text{ cm}
+\]
+
+Calculer \(KL\).
+
+\textbf{Donner une valeur approchée au dixième.}
+\end{exercicebox}
+
+\end{minipage}
+
+\vspace{3mm}
+
+% =========================================================
+% LIGNE 3
+% =========================================================
+
+\noindent
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle MNP}
+Le triangle \(MNP\) est rectangle en \(N\).
+
+\[
+MN=8\text{ cm}
+\qquad
+NP=13\text{ cm}
+\]
+
+Calculer \(MP\).
+
+\textbf{Donner une valeur approchée au dixième.}
+\end{exercicebox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle QRS}
+Le triangle \(QRS\) est rectangle en \(Q\).
+
+\[
+RS=19\text{ cm}
+\qquad
+QS=12\text{ cm}
+\]
+
+Calculer \(QR\).
+
+\textbf{Donner une valeur approchée au centième.}
+\end{exercicebox}
+
+\end{minipage}
+
+\vspace{3mm}
+
+% =========================================================
+% LIGNE 4
+% =========================================================
+
+\noindent
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle TUV}
+Le triangle \(TUV\) est rectangle en \(V\).
+
+\[
+TV=9\text{ cm}
+\qquad
+UV=14\text{ cm}
+\]
+
+Calculer \(TU\).
+
+\textbf{Donner une valeur approchée au centième.}
+\end{exercicebox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{exercicebox}{Triangle XYZ}
+Le triangle \(XYZ\) est rectangle en \(Y\).
+
+\[
+XZ=20\text{ cm}
+\qquad
+XY=7\text{ cm}
+\]
+
+Calculer \(YZ\).
+
+\textbf{Donner une valeur approchée au dixième.}
+\end{exercicebox}
+
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\geometry{left=8mm,right=8mm,top=7mm,bottom=7mm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% --- Palette pensée pour une impression noir et blanc ---
+\definecolor{canlight}{gray}{0.93}
+\definecolor{canmid}{gray}{0.72}
+\definecolor{candark}{gray}{0.22}
+\definecolor{answerblue}{RGB}{0,82,165}
+
+% --- Colonnes ---
+\newcolumntype{Q}{>{\centering\arraybackslash}X}
+\newcolumntype{N}{>{\centering\arraybackslash}m{6mm}}
+\newcolumntype{R}{>{\centering\arraybackslash}m{22mm}}
+
+% --- En-tête ---
+\newcommand{\canheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textbf{Score :} \rule{13mm}{0.45pt}\,/30
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Réponse uniquement \quad$\diamond$\quad Reporter le score sur la fiche annuelle.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+\newcommand{\qrow}[2]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowfig}[2]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowcorr}[3]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+\newcommand{\qrowfigcorr}[3]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+
+\newcommand{\cantable}[1]{%
+\arrayrulecolor{canmid}
+\begin{tabularx}{\linewidth}{N|Q|R}
+\rowcolor{canlight}\textbf{N\textsuperscript{o}}&\centering\textbf{Question}&\textbf{Réponse}\\\hline
+#1
+\end{tabularx}
+\arrayrulecolor{black}
+}
+
+\newcommand{\hypotfigure}{%
+\begin{tikzpicture}[baseline=(current bounding box.center),scale=0.72,line width=0.6pt]
+  \node[font=\bfseries\normalsize] at (1.6,2.55) {Quelle est l'hypoténuse ?};
+  \coordinate (A) at (0,0); \coordinate (B) at (0,1.85); \coordinate (C) at (3.2,0);
+  \draw (A)--(B)--(C)--cycle;
+  \draw (0,0) rectangle (0.32,0.32);
+  \node[below left] at (A) {\small A};
+  \node[above left] at (B) {\small B};
+  \node[below right] at (C) {\small C};
+\end{tikzpicture}}
+
+
+\newcommand{\canheadercorr}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textcolor{answerblue}{\textbf{CORRIGÉ}}
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Les réponses apparaissent en \textcolor{answerblue}{\textbf{bleu}}.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+
+\begin{document}
+\canheader{CAN 5}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{1}{$12\times7$}
+\qrow{2}{$800\div20$}
+\qrow{3}{$-7+5-3+1$}
+\qrow{4}{Compléter : $105-\ldots=89$}
+\qrow{5}{$20\,\%$ de 45}
+\qrow{6}{Le triple de la somme de 4 et 5}
+\qrow{7}{$888-199$}
+\qrow{8}{Quel est le nombre qui, multiplié par 4, donne 7 ? Donner une fraction.}
+\qrow{9}{$0{,}0009\times100$}
+\qrow{10}{Médiane de la série : 3 ; 8 ; 5 ; 7 ; 6}
+\qrow{11}{Le plus grand : $\dfrac23$ ou $\dfrac35$ ?}
+\qrow{12}{L'opposé de $-11$}
+\qrow{13}{$\dfrac58$ de 32}
+\qrow{14}{4 h 12 min = $\ldots$ min}
+\qrow{15}{$8-8\div2+6$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{16}{$\dfrac35+\dfrac15$}
+\qrow{17}{Aire d'un carré de côté 7 cm}
+\qrow{18}{Dans une série de 40 valeurs, une valeur apparaît 8 fois. Sa fréquence décimale est :}
+\qrow{19}{Écrire $1{,}75$ sous la forme d'une fraction de dénominateur 4.}
+\qrow{20}{Un cube de 1 cm de côté a un volume de :}
+\qrow{21}{Quel est le plus petit multiple de 7 strictement supérieur à 30 ?}
+\qrow{22}{$1{,}8\times98+2\times1{,}8$}
+\qrow{23}{$1\,\mathrm{m}^3=\ldots$ L}
+\qrow{24}{4 compas coûtent 10 \texteuro. Combien coûtent 6 compas ?}
+\qrow{25}{Dans un triangle rectangle, un côté mesure 8 cm. L'hypoténuse peut-elle mesurer 5 cm ?}
+\qrow{26}{Quel nombre, multiplié par lui-même, donne 100 ?}
+\qrow{27}{$49{,}8+51{,}1$ est plus proche de 10, de 100 ou de 1 000 ?}
+\qrow{28}{Encadrer $12{,}34$ par deux entiers consécutifs.}
+\qrow{29}{Réduire : $5x-2x$}
+\qrow{30}{$3x+2$ est-il une somme ou un produit ?}
+}
+\end{minipage}
+
+\clearpage
+
+\canheadercorr{CAN 5}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{1}{$12\times7$}{$84$}
+\qrowcorr{2}{$800\div20$}{$40$}
+\qrowcorr{3}{$-7+5-3+1$}{$-4$}
+\qrowcorr{4}{Compléter : $105-\ldots=89$}{$16$}
+\qrowcorr{5}{$20\,\%$ de 45}{$9$}
+\qrowcorr{6}{Le triple de la somme de 4 et 5}{$27$}
+\qrowcorr{7}{$888-199$}{$689$}
+\qrowcorr{8}{Quel est le nombre qui, multiplié par 4, donne 7 ? Donner une fraction.}{$\dfrac74$}
+\qrowcorr{9}{$0{,}0009\times100$}{$0{,}09$}
+\qrowcorr{10}{Médiane de la série : 3 ; 8 ; 5 ; 7 ; 6}{$6$}
+\qrowcorr{11}{Le plus grand : $\dfrac23$ ou $\dfrac35$ ?}{$\dfrac23$}
+\qrowcorr{12}{L'opposé de $-11$}{$11$}
+\qrowcorr{13}{$\dfrac58$ de 32}{$20$}
+\qrowcorr{14}{4 h 12 min = $\ldots$ min}{252 min}
+\qrowcorr{15}{$8-8\div2+6$}{$10$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{16}{$\dfrac35+\dfrac15$}{$\dfrac45$}
+\qrowcorr{17}{Aire d'un carré de côté 7 cm}{49 cm$^2$}
+\qrowcorr{18}{Dans une série de 40 valeurs, une valeur apparaît 8 fois. Sa fréquence décimale est :}{$0{,}2$}
+\qrowcorr{19}{Écrire $1{,}75$ sous la forme d'une fraction de dénominateur 4.}{$\dfrac74$}
+\qrowcorr{20}{Un cube de 1 cm de côté a un volume de :}{1 cm$^3$}
+\qrowcorr{21}{Quel est le plus petit multiple de 7 strictement supérieur à 30 ?}{$35$}
+\qrowcorr{22}{$1{,}8\times98+2\times1{,}8$}{$180$}
+\qrowcorr{23}{$1\,\mathrm{m}^3=\ldots$ L}{$1000$ L}
+\qrowcorr{24}{4 compas coûtent 10 \texteuro. Combien coûtent 6 compas ?}{15 \texteuro}
+\qrowcorr{25}{Dans un triangle rectangle, un côté mesure 8 cm. L'hypoténuse peut-elle mesurer 5 cm ?}{non}
+\qrowcorr{26}{Quel nombre, multiplié par lui-même, donne 100 ?}{$10$}
+\qrowcorr{27}{$49{,}8+51{,}1$ est plus proche de 10, de 100 ou de 1 000 ?}{$100$}
+\qrowcorr{28}{Encadrer $12{,}34$ par deux entiers consécutifs.}{$12<12{,}34<13$}
+\qrowcorr{29}{Réduire : $5x-2x$}{$3x$}
+\qrowcorr{30}{$3x+2$ est-il une somme ou un produit ?}{somme}
+}
+\end{minipage}
+\end{document}

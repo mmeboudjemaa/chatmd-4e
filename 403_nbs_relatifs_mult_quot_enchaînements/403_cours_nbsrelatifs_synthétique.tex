@@ -1,0 +1,313 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+%==================================================
+% Réglages
+%==================================================
+
+\setlist[itemize]{
+  leftmargin=1.4em,
+  itemsep=0.08em,
+  topsep=0.12em
+}
+
+\setlist[enumerate]{
+  leftmargin=*,
+  itemsep=0.12em,
+  topsep=0.12em
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 3 -- Nombres relatifs}\\[0.1em]
+  {\sffamily\large\bfseries\color{SavoirC}
+  #1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Produits, quotients et enchaînements}
+
+%==================================================
+\section*{1. Rappel : distributivité et nature d'une expression}
+%==================================================
+
+Pour reconnaître la nature d'une expression, on regarde
+\textbf{l'opération effectuée en dernier}, en tenant compte
+des parenthèses et des priorités opératoires.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabularx}{0.78\textwidth}{
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+
+\textbf{Dernière opération} & \textbf{Nature}\\
+\hline
+addition & somme\\
+\hline
+soustraction & différence\\
+\hline
+multiplication & produit\\
+\hline
+division & quotient\\
+\hline
+
+\end{tabularx}
+\end{center}
+
+\aretenir{
+\begin{itemize}
+  \item Une expression \textbf{développée} est écrite sous la forme
+  d'une somme ou d'une différence.
+  \item Une expression \textbf{factorisée} est écrite sous la forme
+  d'un produit.
+\end{itemize}
+}
+
+\exemple{
+\[
+7\times14+7\times6
+=
+7\times(14+6)
+\]
+
+À gauche, l'expression est développée ; à droite, elle est factorisée.
+}
+
+\aretenir{
+\begin{itemize}
+  \item \textbf{Développer} : transformer un produit
+  en une somme ou une différence.
+  \item \textbf{Factoriser} : transformer une somme ou une différence
+  en un produit.
+\end{itemize}
+}
+
+%==================================================
+\section*{2. Multiplier deux nombres relatifs}
+%==================================================
+
+\methode{
+Pour multiplier deux nombres relatifs :
+
+\begin{enumerate}
+  \item on détermine le \textbf{signe} du résultat ;
+  \item on multiplie les \textbf{distances à zéro}.
+\end{enumerate}
+}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabularx}{0.78\textwidth}{
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+
+\textbf{Signes des facteurs} & \textbf{Signe du produit}\\
+\hline
+même signe & positif\\
+\hline
+signes différents & négatif\\
+\hline
+
+\end{tabularx}
+\end{center}
+
+\exemple{
+\[
+(-3)\times(+7)=-21
+\qquad
+(-2{,}5)\times(-4)=10
+\]
+}
+
+%==================================================
+\section*{3. Produit de plusieurs facteurs}
+%==================================================
+
+\propriete{
+Pour un produit de plusieurs facteurs non nuls :
+
+\begin{itemize}
+  \item un nombre \textbf{pair} de facteurs négatifs
+  donne un produit positif ;
+  \item un nombre \textbf{impair} de facteurs négatifs
+  donne un produit négatif.
+\end{itemize}
+
+Si un facteur est nul, le produit est nul.
+}
+
+\exemple{
+\[
+(-2)\times3\times(-5)=30
+\qquad
+(-2)\times(-3)\times(-4)=-24
+\]
+}
+
+%==================================================
+\section*{4. Diviser deux nombres relatifs}
+%==================================================
+
+\methode{
+Pour diviser deux nombres relatifs, on utilise la
+\textbf{même règle de signes} que pour la multiplication :
+
+\begin{itemize}
+  \item même signe $\rightarrow$ quotient positif ;
+  \item signes différents $\rightarrow$ quotient négatif.
+\end{itemize}
+
+Puis on divise les distances à zéro.
+}
+
+\exemple{
+\[
+(-42)\div(+6)=-7
+\qquad
+(-35)\div(-5)=7
+\]
+}
+
+\aretenir{
+On ne peut pas diviser par zéro.
+}
+
+%==================================================
+\section*{5. Enchaînements de calculs}
+%==================================================
+
+\propriete{
+Dans une expression :
+
+\begin{enumerate}
+  \item on commence par les calculs entre parenthèses ;
+  \item on effectue les multiplications et les divisions ;
+  \item on termine par les additions et les soustractions.
+\end{enumerate}
+
+Lorsque plusieurs opérations ont la même priorité,
+on les effectue de gauche à droite.
+}
+
+%--------------------------------------------------
+% Comparaison bonne / mauvaise rédaction
+%--------------------------------------------------
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  before skip=3pt,
+  after skip=3pt
+]
+
+\noindent
+\begin{minipage}[t]{0.475\linewidth}
+
+{\sffamily\bfseries\color{SavoirC}
+Une rédaction correcte}
+
+\smallskip
+
+On effectue les opérations prioritaires et on recopie le reste :
+
+\[
+\begin{aligned}
+A&=(-24)\div(-6)+5\times(-2)\\
+ &=4+(-10)\\
+ &=-6
+\end{aligned}
+\]
+
+Chaque ligne a la \textbf{même valeur} que la précédente.
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.475\linewidth}
+
+{\sffamily\bfseries\color{ActionC}
+Ce qu'il ne faut pas faire}
+
+\smallskip
+
+\[
+\begin{aligned}
+A&=(-24)\div(-6)+5\times(-2)\\
+ &=4\\
+ &=5\times(-2)\\
+ &=-10\\
+ &=4+(-10)\\
+ &=-6
+\end{aligned}
+\]
+
+Ici, le signe \(=\) est utilisé comme s'il signifiait « puis ».
+
+Or :
+\[
+4\neq5\times(-2)
+\]
+
+Le signe \(=\) relie deux expressions de
+\textbf{même valeur}.
+
+\end{minipage}
+
+\end{tcolorbox}
+
+%--------------------------------------------------
+% Synthèse finale compacte
+%--------------------------------------------------
+
+\aretenir{
+À chaque nouvelle ligne, on effectue les opérations prioritaires,
+on recopie le reste de l'expression et on conserve une
+\textbf{égalité vraie}.
+
+\medskip
+
+Avant ou après un calcul, on peut vérifier le \textbf{signe},
+l'\textbf{ordre de grandeur} et la \textbf{cohérence du résultat}.
+
+\medskip
+
+Les parenthèses sont surtout utiles pour éviter un doute
+entre deux signes qui se suivent :
+\[
+5\times(-3)
+\qquad
+12\div(-4)
+\]
+}
+
+\end{document}

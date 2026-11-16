@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 6 -- Choisir le bon triangle et la bonne méthode}
+
+\section*{Partie A -- Préparer avant de calculer}
+
+Pour chaque situation, complète le tableau avant d'effectuer les calculs.
+
+\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{1.1cm}
+|>{\raggedright\arraybackslash}p{3cm}
+|>{\raggedright\arraybackslash}p{2.6cm}
+|>{\raggedright\arraybackslash}p{2.6cm}
+|>{\centering\arraybackslash}p{2.2cm}
+|X|}
+\hline
+ & \textbf{Triangle rectangle} & \textbf{Hypoténuse} &
+\textbf{Côté adjacent} & \textbf{Longueur cherchée} &
+\textbf{Multiplier ou diviser ?}\\
+\hline
+A & \(ABC\), rectangle en \(B\), \(AC=11\) cm,
+\(\widehat{BAC}=42^\circ\), chercher \(AB\). & & & & \\
+\hline
+B & \(DEF\), rectangle en \(E\), \(DE=6{,}3\) cm,
+\(\widehat{EDF}=51^\circ\), chercher \(DF\). & & & & \\
+\hline
+C & \(RST\), rectangle en \(S\), \(RT=14\) cm,
+\(\widehat{SRT}=67^\circ\), chercher \(RS\). & & & & \\
+\hline
+D & \(JKL\), rectangle en \(K\), \(JK=9{,}1\) cm,
+\(\widehat{KJL}=25^\circ\), chercher \(JL\). & & & & \\
+\hline
+\end{tabularx}
+
+\section*{Partie B -- Calculer et rédiger}
+
+Calcule les quatre longueurs. Arrondis au dixième.
+
+\lignesreponse{12}
+
+\section*{Partie C -- Une figure composée}
+
+Le toit \(MNP\) est isocèle en \(M\).
+La hauteur \([MH]\) coupe \([NP]\) en \(H\).
+
+On donne :
+
+\[
+MN=7{,}8\text{ m}
+\qquad\text{et}\qquad
+\widehat{MNH}=34^\circ.
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+  \coordinate (N) at (0,0);
+  \coordinate (P) at (8,0);
+  \coordinate (H) at (4,0);
+  \coordinate (M) at (4,4.3);
+
+  \draw[line width=0.9pt] (N)--(M)--(P)--cycle;
+  \draw[line width=0.9pt] (M)--(H);
+  \draw (4,0.38)--(4.38,0.38)--(4.38,0);
+
+  \node[left] at (N) {$N$};
+  \node[right] at (P) {$P$};
+  \node[above] at (M) {$M$};
+  \node[below] at (H) {$H$};
+
+  \node[above left] at (2,2.35) {$7{,}8$ m};
+  \node[below] at (2,0) {$NH\,?$};
+
+  \draw[ActionC,line width=1pt] (0.85,0) arc[start angle=0,end angle=34,radius=0.85];
+  \node[ActionC] at (1.2,0.42) {$34^\circ$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+  \item Dans quel triangle rectangle faut-il travailler ?
+  \item Calcule \(NH\).
+  \item Déduis la largeur totale \(NP\).
+  \item Explique pourquoi on ne peut pas appliquer directement le cosinus
+        dans le triangle \(MNP\).
+\end{enumerate}
+
+\lignesreponse{8}
+
+\section*{Partie D -- Trois erreurs fréquentes}
+
+Associe chaque erreur à une explication, puis corrige.
+
+\begin{enumerate}
+  \item \(\cos(\widehat A)=\dfrac{\text{côté opposé}}{\text{hypoténuse}}\).
+  \item Pour trouver une hypoténuse, on multiplie le côté adjacent par le cosinus.
+  \item On arrondit \(\cos(37^\circ)\) à \(0{,}8\) avant de poursuivre le calcul.
+\end{enumerate}
+
+Explications possibles :
+
+\begin{itemize}
+  \item le résultat risque d'être trop imprécis ;
+  \item la définition du cosinus n'utilise pas le côté opposé ;
+  \item le résultat obtenu serait plus petit que le côté adjacent.
+\end{itemize}
+
+\lignesreponse{6}
+
+\end{document}

@@ -1,0 +1,153 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Progression professeur}
+
+\remarque{Durée indicative : huit séances d'apprentissage de 50 à 55 minutes,
+deux interrogations courtes et une évaluation finale.
+
+La fiche d'exercices hors classe est distribuée en début de séquence.
+Les exercices à faire sont indiqués progressivement.}
+
+\section*{Objectifs de fin de séquence}
+
+L'élève doit pouvoir :
+
+\begin{itemize}
+  \item identifier les deux grandeurs étudiées et préciser leurs unités ;
+  \item reconnaître une situation de proportionnalité et expliquer son choix ;
+  \item compléter un tableau de proportionnalité par une méthode adaptée ;
+  \item utiliser un coefficient, un retour à l'unité, la multiplication ou division
+        d'une colonne, l'additivité ou la soustraction ;
+  \item résoudre des problèmes de prix, de recette, d'échelle ou d'agrandissement ;
+  \item rappeler population, caractère, modalité, effectif, fréquence et pourcentage ;
+  \item lire, contrôler et construire un diagramme circulaire ;
+  \item passer d'un effectif ou d'un pourcentage à un angle ;
+  \item exercer son esprit critique face à une représentation médiatique.
+\end{itemize}
+
+\section*{Déroulé réaliste}
+
+\renewcommand{\arraystretch}{1.38}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{1.05cm}
+|>{\raggedright\arraybackslash}p{4cm}
+|>{\raggedright\arraybackslash}X
+|>{\raggedright\arraybackslash}p{3.1cm}|}
+\hline
+\textbf{Séance} & \textbf{Support principal} & \textbf{Enjeu didactique} & \textbf{Production}\\
+\hline
+1 & Activité 1 : classer des situations & Identifier les grandeurs et leurs unités ; ne pas supposer que toute situation à deux grandeurs est proportionnelle. & Tableau argumenté.\\
+\hline
+2 & Activité 2 : puzzle agrandi & Faire vivre le coefficient d'agrandissement comme opérateur commun à toutes les longueurs. & Puzzle et calculs.\\
+\hline
+3 & Activité 3 : compléter des tableaux & Comparer additivité, linéarité multiplicative, coefficient et retour à l'unité. & Tableaux complétés.\\
+\hline
+4 & Activité 4 : fruits, boucher et maquette & Choisir les grandeurs pertinentes ; résoudre dans les deux sens ; travailler les unités. & Interrogation 1 au début.\\
+\hline
+5 & Activité 5 : enquête statistique & Réactiver effectifs, fréquences et pourcentages ; vérifier les totaux. & Tableau statistique.\\
+\hline
+6 & Activité 6 : diagrammes et médias & Contrôler la somme des pourcentages et la cohérence entre nombres et secteurs. & Critique argumentée.\\
+\hline
+7 & Activité 7 : construire un diagramme & Relier effectif, pourcentage et angle par proportionnalité ; construire au rapporteur. & Interrogation 2 puis diagramme.\\
+\hline
+8 & Consolidation différenciée & Choix de méthode, analyse d'erreurs, tableaux et diagrammes mixtes. & Synthèse.\\
+\hline
+9 & Évaluation finale & Mobiliser reconnaissance, calcul, représentation et esprit critique. & Évaluation sur 20.\\
+\hline
+\end{tabularx}
+
+\section*{Automatismes}
+
+Rituel de cinq minutes, quatre à six questions :
+
+\begin{itemize}
+  \item séances 1 à 3 : reconnaître une situation et nommer les grandeurs ;
+  \item séances 2 à 5 : compléter une colonne ou une ligne de tableau ;
+  \item séances 4 à 7 : calculer une quatrième proportionnelle ou revenir à l'unité ;
+  \item séances 5 à 8 : calculer fréquence, pourcentage ou angle ;
+  \item après la séquence : une question de proportionnalité et une lecture de données par semaine.
+\end{itemize}
+
+\section*{Principes didactiques}
+
+\begin{itemize}
+  \item La reconnaissance de la proportionnalité précède toute technique.
+  \item Plusieurs procédures correctes sont acceptées et comparées.
+  \item Le produit en croix n'est pas présenté comme une recette automatique.
+  \item Des situations non proportionnelles sont régulièrement proposées.
+  \item Le tableau effectif--angle donne du sens à la construction du diagramme circulaire.
+  \item Les diagrammes médiatiques sont contrôlés numériquement et visuellement.
+\end{itemize}
+
+\end{document}

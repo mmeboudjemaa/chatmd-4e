@@ -1,0 +1,193 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usepackage{xparse}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.2em,topsep=0.2em}
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.48em}}
+\newcommand{\zonelignes}[1]{%
+\begin{tcolorbox}[enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=0pt,after skip=0pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+\newcounter{exohc}
+\NewDocumentCommand{\exohc}{m +m}{%
+\refstepcounter{exohc}\par\medskip
+\noindent
+\begin{minipage}[t]{0.47\linewidth}
+\vspace{0pt}
+{\sffamily\bfseries\color{TitreC}$\square$ Exercice \theexohc}
+\vspace{0.2em}
+#2
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.50\linewidth}
+\vspace{0pt}
+\zonelignes{#1}
+\end{minipage}
+\par\medskip}
+\begin{document}
+\begin{landscape}
+
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Exercices hors classe}\\[0.2em]
+{\sffamily\large\bfseries\color{ActionC}Calcul littéral}
+\end{center}
+
+\remarque{Cette fiche est donnée à l'avance.
+Ne faire que les exercices indiqués par le professeur.}
+
+\section*{A. Écrire et calculer une expression}
+
+\exohc{5}{
+Traduis par une expression littérale.
+\begin{enumerate}[label=\alph*)]
+  \item Le triple de \(x\), augmenté de \(7\).
+  \item Le produit de \(5\) par la somme de \(x\) et de \(4\).
+  \item La différence entre le carré de \(x\) et \(9\).
+\end{enumerate}
+}
+
+\exohc{6}{
+Un programme demande de choisir un nombre, de le multiplier par \(4\),
+d'ajouter \(3\), puis de doubler le résultat.
+\begin{enumerate}[label=\alph*)]
+  \item Écris l'expression correspondant au nombre \(x\).
+  \item Calcule pour \(x=5\).
+  \item Calcule pour \(x=-2\).
+\end{enumerate}
+}
+
+\exohc{5}{
+Pour \(x=-3\), calcule :
+\[
+A=4x+7
+\qquad
+B=x^2-5
+\qquad
+C=2(x+6).
+\]
+}
+
+\section*{B. Simplifier l'écriture}
+
+\exohc{5}{
+Simplifie.
+\[
+4\times x
+\qquad
+x\times7
+\qquad
+x\times x
+\]
+\[
+1\times x+5
+\qquad
+3\times(x+2)
+\qquad
+2\times x\times x.
+\]
+}
+
+\exohc{5}{
+Explique pourquoi \(3+x\) et \(3x\) ne désignent pas la même expression.
+Choisis une valeur de \(x\) pour le vérifier.
+}
+
+\section*{C. Réduire}
+
+\exohc{6}{
+Réduis.
+\[
+A=3x+5x
+\qquad
+B=x+x+x+4
+\]
+\[
+C=7x+3-2x+5
+\qquad
+D=-4x+9+6x-2.
+\]
+}
+
+\exohc{6}{
+Réduis.
+\[
+E=5x^2+2x-3x^2+7x
+\]
+\[
+F=-3x^2+4x+8x^2-9x+2.
+\]
+}
+
+\exohc{5}{
+Deux élèves écrivent :
+\[
+3x+5=8x
+\qquad
+2x+3x^2=5x^3.
+\]
+Explique et corrige les deux erreurs.
+}
+
+\section*{D. Développer puis réduire}
+
+\exohc{6}{
+Développe.
+\[
+A=5(x+2)
+\qquad
+B=3(2x+7)
+\]
+\[
+C=-2(x+4)
+\qquad
+D=4(3x-5).
+\]
+}
+
+\exohc{7}{
+Développe puis réduis.
+\[
+E=3(x+4)+2x
+\]
+\[
+F=5(2x-1)-3x
+\]
+\[
+G=-2(x+3)+7x-4.
+\]
+}
+
+\section*{E. Prouver ou réfuter}
+
+\exohc{7}{
+Montre que les expressions suivantes sont égales pour toute valeur de \(x\) :
+\[
+4(x+3)+2x
+\qquad
+6x+12.
+\]
+}
+
+\exohc{6}{
+L'égalité suivante est-elle vraie pour toute valeur de \(x\) ?
+\[
+3(x+2)=3x+2.
+\]
+Justifie par un contre-exemple.
+}
+
+\end{landscape}
+\end{document}

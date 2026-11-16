@@ -1,0 +1,126 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xparse}
+
+%==================================================
+% Réglages compacts mais lisibles
+%==================================================
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+\vspace{-0.35em}
+}
+
+%==================================================
+% Une activité
+%==================================================
+
+\newcommand{\activiteproduits}{%
+
+\titreseq{Activité 4 -- Produits de plusieurs facteurs}
+
+\textbf{Effectue les calculs suivants.}
+
+\vspace{0.25em}
+
+\renewcommand{\arraystretch}{1.38}
+
+\begin{tabularx}{\linewidth}{
+>{\raggedright\arraybackslash}X
+@{\hspace{0.8cm}}
+>{\raggedright\arraybackslash}X
+}
+
+\textbf{Colonne 1}
+&
+\textbf{Colonne 2}
+\\[0.25em]
+
+\((-3)\times(-2)\times(-2)\times2=\)
+&
+\((-2)+(-4)\times(-5)=\)
+\\
+
+\((-3)\times2\times2\times2=\)
+&
+\(2-4\times(-2)\times(-2)=\)
+\\
+
+\(3\times(-2)\times2\times(-2)=\)
+&
+\((-3)\times(-2)-4\times(-5)-1=\)
+\\
+
+\(3\times(-2)\times2\times2=\)
+&
+\(5\times(-2)-3\times(-3)\times(-1)\times(-2)=\)
+\\
+
+\((-3)\times(-2)\times(-2)\times(-2)=\)
+&
+\\
+
+\(3\times2\times(-2)\times(-2)=\)
+&
+\\
+
+\((-3)\times2\times2\times(-2)=\)
+&
+\\
+
+\end{tabularx}
+}
+
+%==================================================
+% DOCUMENT
+%==================================================
+
+\begin{document}
+
+%--------------------------------------------------
+% EXEMPLAIRE 1
+%--------------------------------------------------
+
+\begin{minipage}[t][0.315\textheight][t]{\textwidth}
+\activiteproduits
+\end{minipage}
+
+\vfill
+
+%--------------------------------------------------
+% EXEMPLAIRE 2
+%--------------------------------------------------
+
+\begin{minipage}[t][0.315\textheight][t]{\textwidth}
+\activiteproduits
+\end{minipage}
+
+\vfill
+
+%--------------------------------------------------
+% EXEMPLAIRE 3
+%--------------------------------------------------
+
+\begin{minipage}[t][0.315\textheight][t]{\textwidth}
+\activiteproduits
+\end{minipage}
+
+\end{document}

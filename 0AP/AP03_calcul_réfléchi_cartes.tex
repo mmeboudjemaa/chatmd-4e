@@ -1,0 +1,1010 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{pgffor}
+\usepackage{pdflscape}
+
+\geometry{
+  top=1.1cm,
+  bottom=1.1cm,
+  left=1.4cm,
+  right=1.4cm
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.15em}
+
+\definecolor{DefiC}{HTML}{8B4A97}
+\definecolor{DefiBg}{HTML}{F7F0F8}
+
+% =========================================================
+% MACROS
+% =========================================================
+
+\newcommand{\lignes}[1]{%
+\foreach \i in {1,...,#1}{%
+  \noindent\dotfill\par\vspace{0.45em}
+}
+}
+
+\newcommand{\stopprof}{%
+\begin{center}
+\begin{tcolorbox}[
+  width=5.8cm,
+  colback=ActionC!6,
+  colframe=ActionC!70,
+  boxrule=0.8pt,
+  arc=2mm,
+  halign=center,
+  top=1.5mm,
+  bottom=1.5mm,
+  before skip=1.5mm,
+  after skip=1.5mm
+]
+{\sffamily\bfseries\color{ActionC}
+STOP PROF
+\qquad
+$\square$}
+\end{tcolorbox}
+\end{center}
+}
+
+% =========================================================
+% CARTES DE BASE
+% =========================================================
+
+\newtcolorbox{cartebase}[1]{
+  enhanced,
+  colback=white,
+  colframe=NeutreC!65,
+  boxrule=0.7pt,
+  arc=1mm,
+  height=4.15cm,
+  valign=center,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  title={\sffamily\bfseries Carte #1},
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+}
+
+\newcommand{\carte}[2]{%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{cartebase}{#1}
+\centering
+#2
+\end{cartebase}
+\end{minipage}
+}
+
+% =========================================================
+% CARTES DÉFI
+% =========================================================
+
+\newtcolorbox{cartedefi}[1]{
+  enhanced,
+  colback=white,
+  colframe=DefiC!70,
+  boxrule=0.8pt,
+  arc=1mm,
+  height=7.2cm,
+  valign=center,
+  left=4mm,
+  right=4mm,
+  top=3mm,
+  bottom=3mm,
+  title={\sffamily\bfseries Défi #1},
+  coltitle=DefiC,
+  colbacktitle=DefiBg
+}
+
+\newcommand{\defi}[2]{%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{cartedefi}{#1}
+\centering
+#2
+\end{cartedefi}
+\end{minipage}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% PAGE 1 -- REGROUPER + CALCULER
+% =========================================================
+
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}
+AP -- Calcul réfléchi -- Sans calculatrice}
+\end{center}
+
+\vspace{0.3em}
+
+% ---------------------------------------------------------
+% 1. REGROUPER
+% ---------------------------------------------------------
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=SavoirC!60,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,
+  right=4mm,
+  top=2.5mm,
+  bottom=2.5mm,
+  before skip=1mm,
+  after skip=1mm
+]
+
+{\sffamily\Large\bfseries\color{SavoirC}
+1. Regrouper}
+
+\smallskip
+
+Regroupez les cartes qui, selon vous, peuvent se résoudre avec
+\textbf{la même idée de calcul}.
+
+\smallskip
+
+En utilisant vos mots, donnez un nom à chaque groupe.
+
+\medskip
+
+\textbf{Noms de nos groupes :}
+
+\vspace{0.25em}
+
+\begin{tcolorbox}[
+  colback=NeutreBg!20,
+  colframe=NeutreC!30,
+  boxrule=0.4pt,
+  arc=1.5mm,
+  height=3.6cm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+\end{tcolorbox}
+
+\end{tcolorbox}
+
+\stopprof
+
+% ---------------------------------------------------------
+% 2. CALCULER
+% ---------------------------------------------------------
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=SavoirC!60,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,
+  right=4mm,
+  top=2.5mm,
+  bottom=2.5mm,
+  before skip=1mm,
+  after skip=1mm
+]
+
+{\sffamily\Large\bfseries\color{SavoirC}
+2. Calculer}
+
+\smallskip
+
+Choisissez \textbf{4 cartes de groupes différents}.
+
+Résolvez-les en expliquant votre raisonnement.
+
+\medskip
+
+\begin{center}
+
+\renewcommand{\arraystretch}{1}
+
+\begin{tabularx}{0.98\linewidth}{
+|>{\centering\arraybackslash}p{1.7cm}|
+>{\raggedright\arraybackslash}X|
+}
+
+\hline
+\textbf{Carte}
+&
+\textbf{Notre raisonnement}
+\\
+\hline
+
+\rule{0pt}{2.25cm}
+&
+\\
+\hline
+
+\rule{0pt}{2.25cm}
+&
+\\
+\hline
+
+\rule{0pt}{2.25cm}
+&
+\\
+\hline
+
+\rule{0pt}{2.25cm}
+&
+\\
+\hline
+
+\end{tabularx}
+
+\end{center}
+
+\end{tcolorbox}
+
+\stopprof
+
+% =========================================================
+% PAGE 2 -- DEUX CHEMINS + CONTRÔLER
+% =========================================================
+
+\newpage
+
+% ---------------------------------------------------------
+% 3. DEUX CHEMINS
+% ---------------------------------------------------------
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=SavoirC!60,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,
+  right=4mm,
+  top=3mm,
+  bottom=3mm
+]
+
+{\sffamily\Large\bfseries\color{SavoirC}
+3. Deux chemins}
+
+\medskip
+
+Choisissez \textbf{une carte}.
+
+Trouvez \textbf{deux façons différentes} de la résoudre.
+
+\medskip
+
+\textbf{Carte :}
+\rule{2cm}{0.4pt}
+
+\vspace{0.7em}
+
+\textbf{Chemin 1}
+
+\vspace{0.2em}
+
+\lignes{6}
+
+\vspace{0.6em}
+
+\textbf{Chemin 2}
+
+\vspace{0.2em}
+
+\lignes{6}
+
+\vspace{0.6em}
+
+\textbf{Lequel préférez-vous ? Pourquoi ?}
+
+\vspace{0.2em}
+
+\lignes{3}
+
+\end{tcolorbox}
+
+\vspace{0.5em}
+
+% ---------------------------------------------------------
+% 4. CONTRÔLER
+% ---------------------------------------------------------
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=SavoirC!60,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=4mm,
+  right=4mm,
+  top=3mm,
+  bottom=3mm
+]
+
+{\sffamily\Large\bfseries\color{SavoirC}
+4. Contrôler}
+
+\medskip
+
+Choisissez un résultat.
+
+Contrôlez-le \textbf{sans refaire le même calcul}.
+
+\vspace{0.4em}
+
+\lignes{7}
+
+\end{tcolorbox}
+
+\stopprof
+
+% =========================================================
+% PAGE 3 -- TRACE ÉCRITE
+% =========================================================
+
+\newpage
+
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}
+Nos outils pour calculer}
+\end{center}
+
+\vspace{0.8em}
+
+\textit{À compléter ensemble.}
+
+\vspace{1em}
+
+\begin{center}
+
+\renewcommand{\arraystretch}{1}
+
+\begin{tabularx}{0.96\linewidth}{
+|>{\raggedright\arraybackslash}p{10.5cm}|
+>{\raggedright\arraybackslash}X|
+}
+
+\hline
+
+\textbf{Ce qu'on peut faire}
+&
+\textbf{Un exemple}
+\\
+\hline
+
+\rule{0pt}{4cm}
+&
+\\
+\hline
+
+\rule{0pt}{4cm}
+&
+\\
+\hline
+
+\rule{0pt}{4cm}
+&
+\\
+\hline
+
+\rule{0pt}{4cm}
+&
+\\
+\hline
+
+\rule{0pt}{4cm}
+&
+\\
+\hline
+
+\end{tabularx}
+
+\end{center}
+
+% =========================================================
+% PAGE 4 -- CARTES DE BASE
+% =========================================================
+
+\clearpage
+
+\newgeometry{margin=0.7cm}
+
+\begin{landscape}
+
+\pagestyle{empty}
+
+\begin{center}
+{\sffamily\Large\bfseries\color{TitreC}
+Cartes}
+\end{center}
+
+\vspace{0.15cm}
+
+% ---------------------------------------------------------
+% LIGNE 1
+% ---------------------------------------------------------
+
+\noindent
+\carte{A}{
+{\Large
+\[
+48+39
+\]
+}
+}
+\hfill
+\carte{B}{
+{\Large
+\[
+25\times36
+\]
+}
+}
+\hfill
+\carte{C}{
+{\Large
+\[
+48\times5
+\]
+}
+}
+\hfill
+\carte{D}{
+{\Large
+\[
+125\times8
+\]
+}
+}
+
+\vspace{0.1cm}
+
+% ---------------------------------------------------------
+% LIGNE 2
+% ---------------------------------------------------------
+
+\noindent
+\carte{E}{
+{\Large
+\[
+302-198
+\]
+}
+}
+\hfill
+\carte{F}{
+{\Large
+\[
+99\times17
+\]
+}
+}
+\hfill
+\carte{G}{
+{\Large
+\[
+360\div5
+\]
+}
+}
+\hfill
+\carte{H}{
+{\Large
+\[
+8\times\boxed{\phantom{0}}=6{,}4
+\]
+}
+}
+
+\vspace{0.1cm}
+
+% ---------------------------------------------------------
+% LIGNE 3
+% ---------------------------------------------------------
+
+\noindent
+\carte{I}{
+{\Large
+\[
+\boxed{\phantom{00}}\div6=8
+\]
+}
+}
+\hfill
+\carte{J}{
+{\Large
+\[
+35\div\boxed{\phantom{0}}=7
+\]
+}
+}
+\hfill
+\carte{K}{
+{\Large
+\[
+\dfrac34\text{ de }28
+\]
+}
+}
+\hfill
+\carte{L}{
+{\Large
+\[
+25\,\%\text{ de }36
+\]
+}
+}
+
+\vspace{0.1cm}
+
+% ---------------------------------------------------------
+% LIGNE 4
+% ---------------------------------------------------------
+
+\noindent
+\carte{M}{
+{\Large
+\[
+0{,}5\times48
+\]
+}
+}
+\hfill
+\carte{N}{
+{\Large
+\[
+12\times7+12\times3
+\]
+}
+}
+\hfill
+\carte{O}{
+\large
+
+\[
+19{,}8\times5{,}1
+\]
+
+\vspace{0.2em}
+
+Plus proche de
+
+\[
+10,\qquad100\qquad\text{ou}\qquad1000\ ?
+\]
+}
+\hfill
+\carte{P}{
+\large
+
+\[
+398\div8=497{,}5
+\]
+
+\vspace{0.4em}
+
+\textbf{Possible ?}
+
+\vspace{0.2em}
+
+Justifie.
+}
+
+\end{landscape}
+
+% =========================================================
+% PAGE 5 -- DÉFIS
+% =========================================================
+
+\begin{landscape}
+
+\begin{center}
+
+{\sffamily\Large\bfseries\color{DefiC}
+Défi -- Deux idées à associer}
+
+\vspace{0.25em}
+
+{\large
+Choisissez un défi.
+
+Associez \textbf{deux idées de calcul}.
+
+Nommez-les et résolvez.}
+
+\end{center}
+
+\vspace{0.55cm}
+
+% ---------------------------------------------------------
+% LIGNE 1
+% ---------------------------------------------------------
+
+\noindent
+\defi{1}{
+{\Large
+\[
+25\,\%\text{ de }\boxed{\phantom{00}}=18
+\]
+}
+}
+\hfill
+\defi{2}{
+{\Large
+\[
+\boxed{\phantom{00}}\div5
+=
+\dfrac34\text{ de }20
+\]
+}
+}
+\hfill
+\defi{3}{
+{\Large
+\[
+25\times48+25\times52
+\]
+}
+}
+\hfill
+\defi{4}{
+{\Large
+\[
+125\times24
+\]
+}
+}
+
+\vspace{0.45cm}
+
+% ---------------------------------------------------------
+% LIGNE 2
+% ---------------------------------------------------------
+
+\noindent
+\defi{5}{
+{\Large
+\[
+48\times2{,}5
+\]
+}
+}
+\hfill
+\defi{6}{
+{\Large
+\[
+0{,}75\times48
+\]
+}
+}
+\hfill
+\defi{7}{
+\large
+
+\[
+49{,}8\times0{,}21
+\]
+
+\vspace{0.3em}
+
+Plus proche de
+
+\[
+1,\qquad10\qquad\text{ou}\qquad100\ ?
+\]
+}
+\hfill
+\defi{8}{
+\large
+
+\[
+25\,\%\text{ de }84=42
+\]
+
+\vspace{0.5em}
+
+\textbf{Possible ?}
+
+\vspace{0.2em}
+
+Justifie.
+}
+
+\end{landscape}
+
+\restoregeometry
+
+% =========================================================
+% NOTES PROF -- NON IMPRIMÉES
+% =========================================================
+%
+% ---------------------------------------------------------
+% PASSAGE PROF 1
+% ---------------------------------------------------------
+%
+% Vérifier qu'il existe une logique mathématique
+% dans les regroupements.
+%
+% Il n'y a pas de classement unique attendu.
+%
+% Relances possibles :
+% - Pourquoi ces deux cartes vont-elles ensemble ?
+% - Cette carte pourrait-elle aller ailleurs ?
+% - Quelle carte vous a fait hésiter ?
+%
+% ---------------------------------------------------------
+% PASSAGE PROF 2
+% ---------------------------------------------------------
+%
+% Choisir soi-même l'une des quatre cartes.
+%
+% Faire expliquer le raisonnement.
+%
+% Si l'idée est bonne mais le résultat faux :
+% "Ton idée me va. Vérifie ton résultat."
+%
+% ---------------------------------------------------------
+% PASSAGE PROF 3
+% ---------------------------------------------------------
+%
+% Vérifier :
+% - deux chemins réellement différents ;
+% - un contrôle qui ne refait pas exactement
+%   le calcul de départ.
+%
+% ---------------------------------------------------------
+% IDÉES QUE LA MISE EN COMMUN PEUT FAIRE ÉMERGER
+% ---------------------------------------------------------
+%
+% Ne pas donner cette liste aux élèves avant la trace.
+%
+% - Décomposer / recomposer
+% - S'appuyer sur un calcul simple que l'on connaît
+% - Utiliser une opération inverse
+% - Changer d'écriture
+% - Estimer / contrôler
+%
+% ---------------------------------------------------------
+% CARTES DE BASE : PISTES
+% ---------------------------------------------------------
+%
+% A
+% 48 + 39
+% = 48 + 40 - 1
+% = 87
+%
+% ---------------------------------------------------------
+%
+% B
+% 25 x 36
+%
+% 36 = 9 x 4
+%
+% 25 x 36
+% = 25 x 4 x 9
+% = 100 x 9
+% = 900
+%
+% ---------------------------------------------------------
+%
+% C
+% 48 x 5
+% = 48 x 10 / 2
+% = 480 / 2
+% = 240
+%
+% ---------------------------------------------------------
+%
+% D
+% 125 x 8
+% = 1000
+%
+% ---------------------------------------------------------
+%
+% E
+% 302 - 198
+% = 302 - 200 + 2
+% = 104
+%
+% Autre possibilité :
+% chercher l'écart entre 198 et 302.
+%
+% ---------------------------------------------------------
+%
+% F
+% 99 x 17
+% = 100 x 17 - 17
+% = 1683
+%
+% ---------------------------------------------------------
+%
+% G
+% 360 / 5
+%
+% 360 / 5
+% = 720 / 10
+% = 72
+%
+% ---------------------------------------------------------
+%
+% H
+% 8 x ? = 6,4
+% ? = 0,8
+%
+% ---------------------------------------------------------
+%
+% I
+% ? / 6 = 8
+% ? = 48
+%
+% ---------------------------------------------------------
+%
+% J
+% 35 / ? = 7
+% ? = 5
+%
+% ---------------------------------------------------------
+%
+% K
+% 3/4 de 28
+% = 21
+%
+% ---------------------------------------------------------
+%
+% L
+% 25 % de 36
+% = 1/4 de 36
+% = 9
+%
+% ---------------------------------------------------------
+%
+% M
+% 0,5 x 48
+% = moitié de 48
+% = 24
+%
+% ---------------------------------------------------------
+%
+% N
+% 12 x 7 + 12 x 3
+% = 12 x (7 + 3)
+% = 120
+%
+% ---------------------------------------------------------
+%
+% O
+% 19,8 x 5,1
+% environ 20 x 5
+% donc proche de 100
+%
+% ---------------------------------------------------------
+%
+% P
+% 398 / 8
+% environ 400 / 8 = 50
+%
+% 497,5 est impossible.
+%
+% =========================================================
+% DÉFIS
+% =========================================================
+%
+% DÉFI 1
+%
+% 25 % de ? = 18
+%
+% 25 % = 1/4
+%
+% Si le quart vaut 18,
+% le tout vaut 72.
+%
+% ---------------------------------------------------------
+%
+% DÉFI 2
+%
+% ? / 5 = 3/4 de 20
+%
+% 3/4 de 20 = 15
+%
+% ? / 5 = 15
+%
+% ? = 75
+%
+% ---------------------------------------------------------
+%
+% DÉFI 3
+%
+% 25 x 48 + 25 x 52
+%
+% = 25 x (48 + 52)
+% = 25 x 100
+% = 2500
+%
+% ---------------------------------------------------------
+%
+% DÉFI 4
+%
+% 125 x 24
+%
+% 24 = 8 x 3
+%
+% 125 x 24
+% = 125 x 8 x 3
+% = 1000 x 3
+% = 3000
+%
+% ---------------------------------------------------------
+%
+% DÉFI 5
+%
+% 48 x 2,5
+%
+% 2,5 = 5 / 2
+%
+% 48 x 2,5
+% = 48 x 5 / 2
+% = 120
+%
+% Autre possibilité :
+%
+% 2,5 = 2 + 0,5
+%
+% 48 x 2 + moitié de 48
+% = 96 + 24
+% = 120
+%
+% ---------------------------------------------------------
+%
+% DÉFI 6
+%
+% 0,75 x 48
+%
+% 0,75 = 3/4
+%
+% 3/4 de 48 = 36
+%
+% ---------------------------------------------------------
+%
+% DÉFI 7
+%
+% 49,8 x 0,21
+%
+% environ 50 x 0,2
+% donc environ 10
+%
+% ---------------------------------------------------------
+%
+% DÉFI 8
+%
+% 25 % de 84 = 42
+%
+% 25 % = 1/4
+%
+% 84 / 4 = 21
+%
+% donc 42 est faux.
+%
+% ---------------------------------------------------------
+%
+% Les défis sont une réserve pour les groupes rapides.
+% Il n'est pas demandé de finir le paquet.
+
+\end{document}

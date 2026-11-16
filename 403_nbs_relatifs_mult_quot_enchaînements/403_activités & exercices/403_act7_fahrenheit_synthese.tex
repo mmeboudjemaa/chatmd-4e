@@ -1,0 +1,135 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{arrows.meta,calc}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{%
+      \lignepointillee
+    }
+  \end{tcolorbox}
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 3 -- Nombres relatifs}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Activité 7 -- Formule Celsius-Fahrenheit}
+
+\remarque{Cette activité sert de synthèse : elle mobilise les produits, les sommes, les différences, les quotients et l'interprétation du résultat.}
+
+En France, on mesure la température en degrés Celsius. Dans d'autres pays, elle se mesure en degrés Fahrenheit.
+
+La formule est :
+
+\[
+t_F=1{,}8\times t_C+32.
+\]
+
+\section*{Partie A -- Calculer une température en degrés Fahrenheit}
+
+Calcule la température en degrés Fahrenheit correspondant à :
+
+\[
+10^\circ\mathrm{C}
+\qquad
+0^\circ\mathrm{C}
+\qquad
+-10^\circ\mathrm{C}.
+\]
+
+\lignesreponse{7}
+
+\section*{Partie B -- Retrouver une température en degrés Celsius}
+
+On sait que :
+
+\[
+t_F=59.
+\]
+
+Complète le programme inverse.
+
+\[
+59-32=\ldots
+\]
+
+\[
+\ldots\div1{,}8=\ldots
+\]
+
+Donc :
+
+\[
+59^\circ\mathrm{F}=\ldots^\circ\mathrm{C}.
+\]
+
+\lignesreponse{4}
+
+\section*{Partie C -- Écrire une expression unique}
+
+Écris une seule expression permettant de retrouver la température en degrés Celsius correspondant à \(59^\circ\mathrm{F}\).
+
+\[
+\dotfill
+\]
+
+Calcule-la.
+
+\lignesreponse{3}
+
+\section*{Partie D -- Calculatrice raisonnée}
+
+Une journée d'hiver, une ville américaine annonce \(-4^\circ\mathrm{F}\).
+
+\begin{enumerate}
+  \item Avant de calculer, penses-tu que la température en Celsius sera positive ou négative ?
+  \item Calcule la température en Celsius avec une expression unique.
+  \item Interprète le résultat.
+\end{enumerate}
+
+\lignesreponse{6}
+
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\newcommand{\lignes}[1]{%
+  \begin{tcolorbox}[colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm]
+    \foreach \i in {1,...,#1}{\noindent\dotfill\par\vspace{0.45em}}
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}Activité 3 -- Défi : médiane 5}
+\end{center}
+
+\remarque{Dans cette activité, il ne s'agit pas de calculer une médiane à partir d'une série donnée : c'est à toi de construire des séries qui respectent une contrainte.}
+
+\section*{C'est quoi déjà?}
+\textbf{À quoi sait-on qu'une série a bien pour médiane \(5\) ?}
+\lignes{4}
+
+\section*{Défi A}
+Construis une série de \textbf{sept nombres tous différents} dont la médiane est \(5\).
+\lignes{3}
+
+\section*{Défi B}
+Construis une série de \textbf{six nombres} dont la médiane est \(5\) et dont \textbf{au moins un nombre est égal à \(5\)}.
+\lignes{3}
+
+\section*{Défi C}
+Construis une série de \textbf{huit nombres, tous différents de \(5\)}, dont la médiane est \(5\).
+\lignes{4}
+
+% NOTES PROFESSEUR -- NON IMPRIMÉES
+% Plusieurs réponses possibles. Validation possible par échange entre binômes.
+% Relances : « Comment peux-tu vérifier ta réponse ? » ;
+% « Que se passe-t-il une fois la série rangée ? » ;
+% « Dans le défi C, la médiane doit-elle forcément appartenir à la série ? »
+
+\end{document}

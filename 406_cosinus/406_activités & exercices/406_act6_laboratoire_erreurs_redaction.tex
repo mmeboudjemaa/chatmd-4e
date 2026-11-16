@@ -1,0 +1,149 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 6 -- Laboratoire d'erreurs et rédaction}
+
+\section*{Partie A -- Une rédaction attendue}
+
+On veut calculer \(AB\) dans le triangle \(ABC\) rectangle en \(B\),
+avec \(AC=9\) cm et \(\widehat A=36^\circ\).
+
+Remets les lignes dans l'ordre.
+
+\begin{itemize}
+  \item[\(\square\)] Donc \(AB\approx7{,}3\) cm.
+  \item[\(\square\)] \(\cos(\widehat A)=AB\div AC\).
+  \item[\(\square\)] \(AB=9\times\cos 36^\circ\).
+  \item[\(\square\)] Dans le triangle \(ABC\) rectangle en \(B\), on a :
+\end{itemize}
+
+\section*{Partie B -- Quatre copies à analyser}
+
+Pour chaque copie :
+
+\begin{enumerate}
+  \item repère la première erreur ;
+  \item explique-la ;
+  \item propose une correction.
+\end{enumerate}
+
+\subsection*{Copie 1 -- Mauvais(e) ...........}
+
+Dans le triangle \(DEF\) rectangle en \(E\), on connaît
+\(DF=10\) cm et \(\widehat D=40^\circ\).
+On cherche \(DE\).
+
+\[
+\cos 40^\circ=EF\div DF.
+\]
+
+\[
+DE=10\times\cos 40^\circ.
+\]
+
+\subsection*{Copie 2 -- Mauvais(e) ...........}
+
+Dans le triangle \(GHI\) rectangle en \(H\), on connaît
+\(GH=6\) cm et \(\widehat G=52^\circ\).
+On cherche l'hypoténuse \(GI\).
+
+\[
+GI=6\times\cos 52^\circ\approx3{,}7\text{ cm}.
+\]
+
+\subsection*{Copie 3 -- Mauvais(e) ...........}
+
+Dans une figure composée, un élève écrit directement :
+
+\[
+\cos(\widehat A)=BC\div AC,
+\]
+
+sans indiquer dans quel triangle il travaille ni vérifier qu'il est rectangle.
+
+\subsection*{Copie 4 -- La calculatrice}
+
+Pour calculer \(8\times\cos 60^\circ\), la calculatrice affiche environ \(7{,}62\).
+
+L'élève conclut :
+
+\[
+AB\approx7{,}6\text{ cm}.
+\]
+
+\lignesreponse{6}
+
+\section*{Partie C -- Grille de contrôle}
+
+Voici les six questions à se poser avant de valider une solution.
+
+\begin{tcolorbox}[
+  colback=SavoirC!5,
+  colframe=SavoirC!60,
+  boxrule=0.7pt,
+  arc=2mm
+]
+\begin{enumerate}
+  \item Ai-je nommé le triangle \textbf{rectangle} ?
+  \item Ai-je précisé où se trouve l'angle \textbf{droit} ?
+  \item Ai-je correctement repéré l'\textbf{hypoténuse} ?
+  \item Ai-je choisi le bon côté \textbf{adjacent à l'angle étudié} ?
+  \item Ai-je identifié si la longueur cherchée est
+        \textbf{le côté adjacent ou l'hypoténuse} ?
+  \item Ai-je choisi la bonne opération :
+        \textbf{multiplier ou diviser par le cosinus} ?
+  \item Mon résultat est-il cohérent avec le fait que l'hypoténuse
+        est le côté le plus \textbf{long} ?
+\end{enumerate}
+\end{tcolorbox}
+
+\section*{Partie D -- Rédiger entièrement}
+
+Dans le triangle \(JKL\) rectangle en \(K\),
+on connaît \(JK=4{,}8\) cm et \(\widehat J=27^\circ\).
+
+Calcule l'hypoténuse \(JL\), arrondie au dixième de centimètre,
+en respectant la rédaction attendue.
+
+\lignesreponse{10}
+
+\end{document}

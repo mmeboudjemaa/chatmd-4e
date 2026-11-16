@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Activité 1 -- Toutes les situations sont-elles proportionnelles ?}
+
+\remarque{Une situation peut mettre en relation deux grandeurs sans être une situation
+de proportionnalité. Il faut d'abord comprendre la situation.}
+
+Pour chaque problème :
+
+\begin{enumerate}
+  \item indique les deux grandeurs et leurs unités ;
+  \item réponds à la question lorsque les données le permettent ;
+  \item décide si la situation est proportionnelle ;
+  \item justifie brièvement.
+\end{enumerate}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{
+|>{\raggedright\arraybackslash}p{5.8cm}
+|>{\raggedright\arraybackslash}p{2.6cm}
+|>{\raggedright\arraybackslash}p{2.6cm}
+|>{\centering\arraybackslash}p{2cm}
+|X|}
+\hline
+\textbf{Situation} & \textbf{Grandeur 1} & \textbf{Grandeur 2} &
+\textbf{Proportionnelle ?} & \textbf{Justification}\\
+\hline
+7 cahiers coûtent 21 €. Combien coûtent 14 cahiers identiques ? & & & & \\
+\hline
+Lucie a 8 ans et sa mère 38 ans. Quand Lucie aura 16 ans, quel âge aura sa mère ? & & & & \\
+\hline
+Une recette utilise 800 g de sucre pour 1 kg de fraises. Combien pour 500 g ? & & & & \\
+\hline
+J'ai 3 exercices. Le premier m'a demandé 5 minutes. Combien de temps pour les 3 ? & & & & \\
+\hline
+6 L d'eau s'échappent en 24 h à débit constant. Combien en 72 h ? & & & & \\
+\hline
+Le nombre de spectateurs double à chaque match. Le numéro du match et le nombre de spectateurs sont-ils proportionnels ? & & & & \\
+\hline
+\end{tabularx}
+
+\section*{Bilan}
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Deux grandeurs sont proportionnelles lorsque l'on passe de l'une à l'autre
+en \dotfill{} toujours par le même nombre.
+
+Le fait qu'une quantité augmente lorsque l'autre augmente ne suffit pas à prouver
+la \dotfill
+\end{tcolorbox}
+
+\end{document}

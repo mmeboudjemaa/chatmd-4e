@@ -1,0 +1,244 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.2em,topsep=0.2em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.48em}}
+
+\newcommand{\zonelignes}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=0pt,
+    after skip=0pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcounter{exohc}
+
+\NewDocumentCommand{\exohc}{m +m}{%
+  \refstepcounter{exohc}
+  \par\medskip
+  \noindent
+  \begin{minipage}[t]{0.47\linewidth}
+    \vspace{0pt}
+    {\sffamily\bfseries\color{TitreC}$\square$ Exercice \theexohc}
+    \vspace{0.2em}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.50\linewidth}
+    \vspace{0pt}
+    \zonelignes{#1}
+  \end{minipage}
+  \par\medskip
+}
+
+\begin{document}
+\begin{landscape}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Exercices hors classe}\\[0.2em]
+  {\sffamily\large\bfseries\color{ActionC}Arithmétique}
+\end{center}
+
+\remarque{Cette fiche est donnée à l'avance.
+Ne faire que les exercices indiqués par le professeur.
+Le mot d'ordre est : exercices courts, réguliers et correctement justifiés.}
+
+\section*{A. Multiples, diviseurs et division euclidienne}
+
+\exohc{5}{
+Complète avec « multiple » ou « diviseur ».
+
+\begin{enumerate}[label=\alph*)]
+  \item \(8\) est un \ldots{} de \(56\).
+  \item \(72\) est un \ldots{} de \(9\).
+  \item \(5\) est un \ldots{} de \(45\).
+  \item \(63\) est un \ldots{} de \(7\).
+\end{enumerate}
+}
+
+\exohc{5}{
+Écris les égalités de division euclidienne.
+
+\[
+173\div12
+\qquad
+458\div25
+\qquad
+1\,002\div17
+\]
+}
+
+\exohc{5}{
+Sans poser de division, indique si \(8\,370\) est divisible par :
+
+\[
+2,\qquad 3,\qquad 5,\qquad 9,\qquad 10.
+\]
+
+Justifie avec les critères de divisibilité.
+}
+
+\exohc{5}{
+\begin{enumerate}[label=\alph*)]
+  \item Donne les huit premiers multiples de \(6\).
+  \item Donne tous les diviseurs de \(36\).
+\end{enumerate}
+}
+
+\section*{B. Nombres premiers}
+
+\exohc{5}{
+Indique si chaque nombre est premier.
+S'il ne l'est pas, donne un diviseur différent de \(1\) et de lui-même.
+
+\[
+31\qquad 49\qquad 57\qquad 71\qquad 87.
+\]
+}
+
+\exohc{5}{
+Écris tous les nombres premiers compris entre \(40\) et \(70\).
+}
+
+\exohc{6}{
+Réponds par vrai ou faux en justifiant.
+
+\begin{enumerate}[label=\alph*)]
+  \item Tous les nombres impairs sont premiers.
+  \item Le seul nombre premier pair est \(2\).
+  \item Aucun multiple de \(5\), supérieur à \(5\), n'est premier.
+\end{enumerate}
+}
+
+\section*{C. Décomposition en facteurs premiers}
+
+\exohc{6}{
+Décompose en produit de facteurs premiers :
+
+\[
+60\qquad 84\qquad 150.
+\]
+}
+
+\exohc{6}{
+Décompose en produit de facteurs premiers :
+
+\[
+126\qquad 196\qquad 330.
+\]
+}
+
+\exohc{5}{
+Une élève écrit :
+
+\[
+180=2\times3\times30.
+\]
+
+Est-ce une décomposition en produit de facteurs premiers ?
+Explique puis termine la décomposition.
+}
+
+\section*{D. Fractions égales et simplification}
+
+\exohc{6}{
+Simplifie à l'aide des facteurs premiers :
+
+\[
+\frac{42}{63}
+\qquad
+\frac{70}{105}
+\qquad
+\frac{84}{126}.
+\]
+}
+
+\exohc{6}{
+Parmi les fractions suivantes, regroupe celles qui sont égales :
+
+\[
+\frac{6}{15}
+\qquad
+\frac{10}{25}
+\qquad
+\frac{14}{35}
+\qquad
+\frac{15}{36}.
+\]
+}
+
+\exohc{5}{
+Complète avec deux fractions égales à \(\dfrac{8}{20}\).
+
+\[
+\frac{8}{20}
+=
+\frac{\ldots}{\ldots}
+=
+\frac{\ldots}{\ldots}.
+\]
+}
+
+\section*{E. Petits problèmes}
+
+\exohc{7}{
+On veut répartir \(54\) objets rouges et \(72\) objets bleus
+dans des groupes identiques, sans reste.
+
+\begin{enumerate}[label=\alph*)]
+  \item Peut-on réaliser \(6\) groupes ?
+  \item Peut-on réaliser \(9\) groupes ?
+  \item Donne tous les nombres de groupes possibles.
+\end{enumerate}
+}
+
+\exohc{7}{
+Un panneau rectangulaire mesure \(240\) cm sur \(360\) cm.
+On veut le recouvrir avec des carreaux carrés identiques,
+sans découpe et sans espace.
+
+\begin{enumerate}[label=\alph*)]
+  \item Peut-on utiliser des carreaux de \(15\) cm de côté ?
+  \item Peut-on utiliser des carreaux de \(14\) cm de côté ?
+  \item Donne trois autres longueurs possibles pour le côté d'un carreau.
+\end{enumerate}
+}
+
+\exohc{7}{
+Je suis un entier compris entre \(100\) et \(400\).
+Je suis pair, divisible par \(11\), par \(3\) et par \(5\).
+
+Qui suis-je ? Justifie sans tester tous les entiers.
+}
+
+\end{landscape}
+\end{document}

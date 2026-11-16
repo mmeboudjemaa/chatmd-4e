@@ -1,0 +1,117 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\setlist[enumerate]{leftmargin=*,itemsep=0.35em,topsep=0.35em}
+
+\newcommand{\lignes}[1]{%
+  \begin{tcolorbox}[colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm]
+    \foreach \i in {1,...,#1}{\noindent\dotfill\par\vspace{0.45em}}
+  \end{tcolorbox}
+}
+
+\newcommand{\blocdonnees}[1]{%
+  \begin{tcolorbox}[mathsbox,colback=NeutreBg,colframe=NeutreC!45,boxrule=0.6pt,arc=2mm]
+  #1
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}Activité 4 -- Les grands lecteurs}
+\end{center}
+
+Deux classes du collège ont répondu à la question :
+
+\begin{center}
+\textit{« Combien de livres avez-vous empruntés durant les douze derniers mois ? »}
+\end{center}
+
+\blocdonnees{
+\textbf{Classe A}
+\[
+1;\ 2;\ 2;\ 2;\ 2;\ 2;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 6;\ 6;\ 6;\ 6;\ 6;\ 7;\ 7;\ 7
+\]
+
+\medskip
+\textbf{Classe B}
+
+\begin{center}
+\begin{tabular}{>{\bfseries}l c}
+Effectif total & 25\\
+Moyenne & 4\\
+Médiane & 5
+\end{tabular}
+\end{center}
+}
+
+\begin{enumerate}
+  \item Donne les résultats de la classe A sous la même forme que ceux de la classe B.
+
+  \item On appelle \textbf{grand lecteur} un élève qui a emprunté au moins \(5\) livres.
+
+  \textbf{Quelle classe a le plus de grands lecteurs ? Justifie.}
+
+  \item Peut-on connaître exactement le nombre de grands lecteurs de la classe B avec les seules informations données ? Explique.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}Activité 4 -- Les grands lecteurs}
+\end{center}
+
+Deux classes du collège ont répondu à la question :
+
+\begin{center}
+\textit{« Combien de livres avez-vous empruntés durant les douze derniers mois ? »}
+\end{center}
+
+\blocdonnees{
+\textbf{Classe A}
+\[
+1;\ 2;\ 2;\ 2;\ 2;\ 2;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 3;\ 6;\ 6;\ 6;\ 6;\ 6;\ 7;\ 7;\ 7
+\]
+
+\medskip
+\textbf{Classe B}
+
+\begin{center}
+\begin{tabular}{>{\bfseries}l c}
+Effectif total & 25\\
+Moyenne & 4\\
+Médiane & 5
+\end{tabular}
+\end{center}
+}
+
+\begin{enumerate}
+  \item Donne les résultats de la classe A sous la même forme que ceux de la classe B.
+
+  \item On appelle \textbf{grand lecteur} un élève qui a emprunté au moins \(5\) livres.
+
+  \textbf{Quelle classe a le plus de grands lecteurs ? Justifie.}
+
+  \item Peut-on connaître exactement le nombre de grands lecteurs de la classe B avec les seules informations données ? Explique.
+\end{enumerate}
+
+% NOTES PROFESSEUR -- NON IMPRIMÉES
+% Adaptation de la tâche Éduscol « Les grands lecteurs » ; étendue retirée.
+% Classe A : effectif 22 ; moyenne 86/22 ≈ 3,9 ; médiane 3 ; grands lecteurs 8.
+% Classe B : médiane 5 et effectif 25 => au moins 13 valeurs >= 5.
+% Donc B a nécessairement plus de grands lecteurs que A, sans connaître le nombre exact.
+
+\end{document}

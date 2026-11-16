@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 1 -- Ce que nous savons déjà... et ce qui manque}
+
+\section*{Partie A -- Un calcul que nous savons faire}
+
+Dans le triangle \(GHI\) rectangle en \(H\), on connaît :
+
+\[
+GH=6\text{ cm}
+\qquad\text{et}\qquad
+HI=8\text{ cm}.
+\]
+
+Calcule \(GI\). Indique la propriété utilisée.
+
+\lignesreponse{9}
+
+\section*{Partie B -- Le problème de la rampe}
+
+Une rampe rectiligne mesure \(5\) m.
+Elle forme un angle de \(28^\circ\) avec le sol horizontal.
+
+On cherche la longueur au sol \(AB\).
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (6,0);
+  \coordinate (C) at (6,3.2);
+  \draw[line width=1pt] (A)--(B)--(C)--cycle;
+  \draw (5.65,0)--(5.65,0.35)--(6,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!20,angle radius=9mm,"$28^\circ$"] {angle=B--A--C};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above right] at (C) {$C$};
+  \node[above left] at ($(A)!0.5!(C)$) {$5$ m};
+  \node[below] at ($(A)!0.5!(B)$) {$?$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+  \item Le théorème de Pythagore permet-il de calculer \(AB\) avec ces seules données ?
+  \item Quelles informations connaît-on dans le triangle ?
+  \item Quelle longueur cherche-t-on par rapport à l'angle de \(28^\circ\) ?
+  \item Propose une estimation raisonnable de \(AB\), sans chercher une valeur précise.
+\end{enumerate}
+
+\lignesreponse{4}
+
+\lignesreponse{7}
+
+\section*{Partie C -- Un cas particulier accessible}
+
+Construis un triangle équilatéral de côté \(10\) cm puis trace une hauteur.
+
+Tu obtiens deux triangles rectangles possédant un angle de \(60^\circ\).
+
+\begin{enumerate}
+  \item Quelle est la longueur de l'hypoténuse de l'un de ces triangles ?
+  \item Quelle est la longueur du côté adjacent à l'angle de \(60^\circ\) ?
+  \item Par quel nombre faut-il multiplier l'hypoténuse pour obtenir ce côté adjacent ?
+\end{enumerate}
+
+\lignesreponse{16}
+
+\aretenir{Avec une longueur et un angle aigu, il manque un outil nouveau.
+Dans le cas particulier de \(60^\circ\), le côté adjacent vaut la moitié de l'hypoténuse.}
+
+\end{document}

@@ -1,0 +1,1831 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{tikz}
+\usetikzlibrary{
+  calc,
+  angles,
+  quotes,
+  decorations.markings
+}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amssymb}
+
+% geometry est déjà chargé par mise_en_page
+\geometry{
+  a4paper,
+  landscape,
+  top=0.55cm,
+  bottom=0.55cm,
+  left=0.7cm,
+  right=0.7cm
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% =========================================================
+% TIKZ
+% =========================================================
+
+\tikzset{
+  point/.style={
+    circle,
+    fill,
+    inner sep=1.4pt
+  },
+  trait/.style={
+    thick
+  },
+  codeun/.style={
+    postaction={decorate},
+    decoration={
+      markings,
+      mark=at position 0.5 with {
+        \draw[thick] (0,-3pt)--(0,3pt);
+      }
+    }
+  },
+  codedeux/.style={
+    postaction={decorate},
+    decoration={
+      markings,
+      mark=at position 0.5 with {
+        \draw[thick] (-1.5pt,-3pt)--(-1.5pt,3pt);
+        \draw[thick] (1.5pt,-3pt)--(1.5pt,3pt);
+      }
+    }
+  }
+}
+
+% =========================================================
+% MISE EN PAGE
+% =========================================================
+
+\newcommand{\titreRDV}[2]{%
+{\sffamily\LARGE\bfseries\color{TitreC}#1}
+\hfill
+{\sffamily\small #2}
+
+\vspace{0.16cm}
+}
+
+\newcommand{\flashcalcul}[1]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!55,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+\textbf{\sffamily Calcul réfléchi}
+\hfill
+\small Réponse seule. Pas de calculatrice.
+
+\vspace{0.15cm}
+
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\flashgeo}[1]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!55,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+\textbf{\sffamily Flash géométrie}
+
+\vspace{0.1cm}
+
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\calcquatre}[4]{%
+\begin{tabularx}{\linewidth}{
+>{\centering\arraybackslash}X
+>{\centering\arraybackslash}X
+>{\centering\arraybackslash}X
+>{\centering\arraybackslash}X
+}
+#1 & #2 & #3 & #4 \\[0.25cm]
+\rule{3.7cm}{0.4pt} &
+\rule{3.7cm}{0.4pt} &
+\rule{3.7cm}{0.4pt} &
+\rule{3.7cm}{0.4pt}
+\end{tabularx}
+}
+
+\newcommand{\grandeactivite}[2]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2.5mm,
+  bottom=2.5mm,
+  title={\sffamily\bfseries\color{TitreC}#1},
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+]
+#2
+\end{tcolorbox}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% RENDEZ-VOUS 1
+% FIGURE TÉLÉPHONÉE
+%
+% Cette page est à imprimer puis à couper en deux.
+% Une moitié de la classe reçoit A, l'autre reçoit B.
+%
+% Les dessins sources sont exacts.
+% Le croquis produit par l'élève est à main levée
+% et n'est pas à l'échelle.
+% =========================================================
+
+\titreRDV
+{Rendez-vous 1 -- Transmettre une figure}
+{Modèles A et B -- à couper}
+
+\flashcalcul{
+\calcquatre
+{\(57+29\)}
+{\(403-197\)}
+{\(39\times7\)}
+{\(420\div5\)}
+}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{tcolorbox}[
+  enhanced,
+  height=14.7cm,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  title={\sffamily\bfseries\color{TitreC}Modèle A},
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+]
+
+\begin{center}
+\textbf{Le dessin ci-dessous est exact.}
+
+\smallskip
+
+Tu peux utiliser tes instruments pour l'analyser.
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.83]
+
+% Rectangle exact 8 x 5
+\coordinate (A) at (0,0);
+\coordinate (B) at (8,0);
+\coordinate (C) at (8,5);
+\coordinate (D) at (0,5);
+
+\coordinate (M) at (4,0);
+\coordinate (N) at (4,5);
+\coordinate (O) at (4,2.5);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(D);
+\draw[trait] (M)--(N);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\node[below] at (M) {$M$};
+\node[above] at (N) {$N$};
+\node[right] at (O) {$O$};
+
+\end{tikzpicture}
+\end{center}
+
+\vfill
+
+\textbf{Ta mission}
+
+\medskip
+
+Sur une feuille à part, réalise un \textbf{croquis à main levée}
+qui permette à un camarade de reconstruire ce dessin.
+
+\medskip
+
+Ton croquis \textbf{n'a pas besoin d'être à l'échelle}.
+
+\medskip
+
+Tu peux écrire et coder toutes les informations
+que tu juges nécessaires.
+
+\medskip
+
+\textbf{Ne montre pas le modèle à ton camarade.}
+
+\vspace{0.3cm}
+
+Quand ton croquis est prêt, rends ce modèle au professeur
+et donne seulement ton croquis à un élève qui avait le modèle B.
+
+\medskip
+
+S'il lui manque une information,
+il doit écrire sa question au lieu de deviner.
+
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\linewidth}
+
+\begin{tcolorbox}[
+  enhanced,
+  height=14.7cm,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  title={\sffamily\bfseries\color{TitreC}Modèle B},
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+]
+
+\begin{center}
+\textbf{Le dessin ci-dessous est exact.}
+
+\smallskip
+
+Tu peux utiliser tes instruments pour l'analyser.
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+
+% Losange exact de côté 4
+% A(0,0), B(4,0), C(6,3.464), D(2,3.464)
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4,0);
+\coordinate (C) at (6,3.464);
+\coordinate (D) at (2,3.464);
+
+\coordinate (O) at (3,1.732);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(D);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\node[right] at (O) {$O$};
+
+\end{tikzpicture}
+\end{center}
+
+\vfill
+
+\textbf{Ta mission}
+
+\medskip
+
+Sur une feuille à part, réalise un \textbf{croquis à main levée}
+qui permette à un camarade de reconstruire ce dessin.
+
+\medskip
+
+Ton croquis \textbf{n'a pas besoin d'être à l'échelle}.
+
+\medskip
+
+Tu peux écrire et coder toutes les informations
+que tu juges nécessaires.
+
+\medskip
+
+\textbf{Ne montre pas le modèle à ton camarade.}
+
+\vspace{0.3cm}
+
+Quand ton croquis est prêt, rends ce modèle au professeur
+et donne seulement ton croquis à un élève qui avait le modèle A.
+
+\medskip
+
+S'il lui manque une information,
+il doit écrire sa question au lieu de deviner.
+
+\end{tcolorbox}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 1
+%
+% Calcul :
+%
+% 57+29 = 86
+% -> 57+30-1
+%
+% 403-197 = 206
+% -> 403-200+3
+%
+% 39x7 = 273
+% -> 40x7-7
+%
+% 420÷5 = 84
+% -> 840÷10
+%
+%
+% FIGURE A
+%
+% Rectangle 8 x 5 exactement.
+% M et N sont les milieux de [AB] et [DC].
+% O est l'intersection des diagonales,
+% et appartient également à [MN].
+%
+% Les élèves peuvent mesurer puisque le modèle est exact.
+%
+%
+% FIGURE B
+%
+% Losange exact de côté 4.
+% Les diagonales sont tracées.
+%
+% Intérêt didactique :
+% "losange de côté 4 cm" ne suffit pas à déterminer
+% un losange unique.
+%
+% Une mesure supplémentaire pertinente
+% (diagonale, angle...) devient nécessaire.
+%
+%
+% ORGANISATION
+%
+% 1. Distribuer A à une moitié, B à l'autre.
+% 2. Analyse individuelle avec instruments.
+% 3. Croquis sur feuille séparée.
+% 4. Récupérer les modèles exacts.
+% 5. Échanger uniquement les croquis A <-> B.
+% 6. Reconstruction.
+% 7. Si une donnée manque : écrire une question.
+%
+%
+% MISE EN COMMUN
+%
+% Choisir peu de productions :
+% - une reconstruction réussie ;
+% - une reconstruction possible mais différente ;
+% - un destinataire ayant dû demander une information.
+%
+% Questions :
+%
+% "Qu'est-ce qui était vrai sur le dessin exact
+% mais qui n'a pas été transmis ?"
+%
+% "Qu'est-ce qu'un croquis doit conserver ?"
+%
+% Ne pas institutionnaliser toute la liste avant le travail.
+% =========================================================
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 2
+% DESSIN / INFORMATIONS
+% =========================================================
+
+\titreRDV
+{Rendez-vous 2 -- Le dessin n'est pas la figure}
+{Deux tâches courtes}
+
+\flashcalcul{
+\calcquatre
+{\(25\times44\)}
+{\(64\times5\)}
+{\(125\times16\)}
+{\(98\times23\)}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{A. Le même croquis, des informations différentes}{
+
+Les trois croquis sont identiques.
+
+\medskip
+
+\textbf{Ils ne sont pas à l'échelle.}
+
+\vspace{0.15cm}
+
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+
+\textbf{1}
+
+\begin{tikzpicture}[scale=0.6]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.6,0.35);
+\coordinate (C) at (5.4,2.2);
+\coordinate (D) at (0.8,1.85);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\end{tikzpicture}
+
+Aucune autre information.
+
+\medskip
+
+Nature la plus précise :
+
+\vspace{0.25cm}
+
+\rule{5cm}{0.4pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+
+\textbf{2}
+
+\begin{tikzpicture}[scale=0.6]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.6,0.35);
+\coordinate (C) at (5.4,2.2);
+\coordinate (D) at (0.8,1.85);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\end{tikzpicture}
+
+\[
+(AB)\parallel(CD)
+\qquad
+(AD)\parallel(BC)
+\]
+
+Nature la plus précise :
+
+\vspace{0.25cm}
+
+\rule{5cm}{0.4pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\centering
+
+\textbf{3}
+
+\begin{tikzpicture}[scale=0.6]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.6,0.35);
+\coordinate (C) at (5.4,2.2);
+\coordinate (D) at (0.8,1.85);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\end{tikzpicture}
+
+\[
+AB=BC=CD=DA
+\]
+
+Nature la plus précise :
+
+\vspace{0.25cm}
+
+\rule{5cm}{0.4pt}
+
+\end{minipage}
+
+% PROF :
+% 1 : on peut seulement garantir "quadrilatère".
+% 2 : parallélogramme.
+% 3 : losange.
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{B. Des croquis différents, les mêmes informations}{
+
+Dans les trois cas :
+
+\[
+AB=AC.
+\]
+
+Les croquis ne sont pas à l'échelle.
+
+\medskip
+
+\begin{minipage}[c]{0.26\linewidth}
+
+Écris une affirmation qui est
+\textbf{certaine dans les trois cas}.
+
+\vspace{0.5cm}
+
+\rule{\linewidth}{0.4pt}
+
+\vspace{0.5cm}
+
+\rule{\linewidth}{0.4pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.70\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.72]
+
+% triangle 1
+\begin{scope}[shift={(0,0)}]
+\coordinate (A) at (1.7,2.5);
+\coordinate (B) at (0,0);
+\coordinate (C) at (3.4,0);
+
+\draw[trait] (A)--(B);
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(C);
+
+\node[above] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[below] at (C) {$C$};
+\end{scope}
+
+% triangle 2
+\begin{scope}[shift={(5.2,0)}]
+\coordinate (A) at (0.6,2.3);
+\coordinate (B) at (0,0);
+\coordinate (C) at (4.4,0.5);
+
+\draw[trait] (A)--(B);
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(C);
+
+\node[above] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[right] at (C) {$C$};
+\end{scope}
+
+% triangle 3
+\begin{scope}[shift={(11.5,0)}]
+\coordinate (A) at (3.4,1.0);
+\coordinate (B) at (0,0);
+\coordinate (C) at (0.5,3.2);
+
+\draw[trait] (A)--(B);
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(C);
+
+\node[right] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[above] at (C) {$C$};
+\end{scope}
+
+\end{tikzpicture}
+\end{center}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 2
+%
+% Calcul :
+%
+% 25x44 = 1100
+% 44 = 4x11 -> 25x4x11
+%
+% 64x5 = 320
+% x10 puis moitié
+%
+% 125x16 = 2000
+% 125x8=1000 puis doubler
+%
+% 98x23 = 2254
+% 100x23 - 2x23
+%
+% Partie B :
+% ABC est isocèle en A.
+%
+% On peut aussi accepter :
+% angles ABC et BCA de même mesure,
+% si cette propriété est connue.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 3
+% INFORMATION SUFFISANTE / INSUFFISANTE
+% =========================================================
+
+\titreRDV
+{Rendez-vous 3 -- A-t-on assez d'informations ?}
+{Construction}
+
+\flashgeo{
+
+\begin{minipage}[c]{0.27\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+
+\node[point,label=below:$A$] at (0,0) {};
+\node[point,label=below:$B$] at (2.2,0.05) {};
+\node[point,label=below:$C$] at (4.5,0) {};
+
+\end{tikzpicture}
+\end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.69\linewidth}
+
+\textbf{Affirmation :}
+\(A\), \(B\) et \(C\) sont alignés.
+
+\medskip
+
+$\square$ Certain
+\qquad
+$\square$ Faux
+\qquad
+$\square$ On ne peut pas savoir
+
+\end{minipage}
+
+% PROF :
+% On ne peut pas savoir.
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{Deux figures possibles}{
+
+On veut construire un quadrilatère \(ABCD\) tel que :
+
+\[
+AB=CD=4\text{ cm}
+\qquad\text{et}\qquad
+BC=DA=3\text{ cm}.
+\]
+
+\vspace{0.15cm}
+
+\textbf{Construis deux quadrilatères différents}
+qui respectent ces informations
+et qui ne sont pas superposables.
+
+\vspace{0.25cm}
+
+\begin{minipage}[t]{0.48\linewidth}
+
+\begin{center}
+\textbf{Construction 1}
+\end{center}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!30,
+  boxrule=0.4pt,
+  height=7.5cm
+]
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+
+\begin{center}
+\textbf{Construction 2}
+\end{center}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!30,
+  boxrule=0.4pt,
+  height=7.5cm
+]
+\end{tcolorbox}
+
+\end{minipage}
+
+\vspace{0.35cm}
+
+\textbf{Ajoute une seule information pour être certain que \(ABCD\) est un rectangle :}
+
+\vspace{0.25cm}
+
+\rule{15cm}{0.4pt}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 3
+%
+% Les données imposent des côtés opposés de même longueur :
+% le quadrilatère est un parallélogramme.
+%
+% On peut construire par exemple :
+% - un rectangle 4 x 3 ;
+% - un parallélogramme oblique de côtés 4 et 3.
+%
+% Une information suffisante :
+% (AB) ⟂ (BC)
+%
+% Si la propriété du parallélogramme n'est pas disponible,
+% accepter une information plus forte comme :
+% "ABCD possède quatre angles droits".
+%
+% Relances :
+%
+% 1. "Les longueurs fixent-elles les angles ?"
+%
+% 2. "Peux-tu garder les quatre longueurs
+%     tout en inclinant la figure ?"
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 4
+% RESTAURATION
+% =========================================================
+
+\titreRDV
+{Rendez-vous 4 -- Les propriétés deviennent des outils}
+{Restauration}
+
+\flashcalcul{
+\calcquatre
+{\(6\times\Box=4{,}8\)}
+{\(\Box\div7=9\)}
+{\(42\div\Box=6\)}
+{\(20\%\text{ de }\Box=14\)}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{Le losange effacé}{
+
+\begin{minipage}[t]{0.30\linewidth}
+
+On sait que \(ABCD\) était un \textbf{losange}.
+
+Trois sommets ont été conservés.
+
+\medskip
+
+\textbf{Restaure la figure.}
+
+\medskip
+
+Instruments autorisés :
+
+\[
+\text{règle non graduée}
+\qquad
+\text{compas}
+\]
+
+\vspace{0.5cm}
+
+Quand tu penses avoir terminé,
+demande le calque de validation.
+
+\vspace{0.7cm}
+
+\textbf{Après validation :}
+
+Quelle propriété du losange
+t'a permis de placer \(D\) ?
+
+\vspace{0.35cm}
+
+\rule{\linewidth}{0.4pt}
+
+\vspace{0.4cm}
+
+\rule{\linewidth}{0.4pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.6]
+
+% AB = BC = 2.5
+
+\coordinate (B) at (0,0);
+\coordinate (A) at (-2.5,0);
+\coordinate (C) at (1.5,2);
+
+\node[point,label=below:$A$] at (A) {};
+\node[point,label=below:$B$] at (B) {};
+\node[point,label=above right:$C$] at (C) {};
+
+\draw[trait] (A)--(B)--(C);
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!20,
+  boxrule=0.4pt,
+  height=5.8cm
+]
+\textbf{Traces de recherche}
+\end{tcolorbox}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 4
+%
+% Calcul :
+%
+% 6 x ? = 4,8        -> 0,8
+% ? ÷ 7 = 9          -> 63
+% 42 ÷ ? = 6         -> 7
+% 20 % de ? = 14     -> 70
+%
+%
+% Restauration :
+%
+% D doit vérifier :
+% AD = AB
+% CD = CB
+%
+% Construction possible :
+% cercle de centre A et rayon AB
+% cercle de centre C et rayon CB
+%
+% Les deux intersections sont B et D.
+%
+% Relances graduées :
+%
+% 1. "Que sais-tu des côtés d'un losange ?"
+%
+% 2. "À quelle distance de A doit être D ?"
+%
+% 3. "À quelle distance de C doit être D ?"
+%
+% Ne pas donner la procédure avant la recherche.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 5
+% DONNÉ / DÉDUIT / NON GARANTI
+% =========================================================
+
+\titreRDV
+{Rendez-vous 5 -- Donné, déduit, non garanti}
+{Deux tâches intermédiaires}
+
+\flashcalcul{
+\calcquatre
+{\(0{,}5\times74\)}
+{\(50\%\text{ de }46\)}
+{\(\dfrac34\text{ de }44\)}
+{\(0{,}25\times68\)}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{A. Quel est le statut de chaque affirmation ?}{
+
+\begin{minipage}[c]{0.32\linewidth}
+
+On sait que \(ABCD\) est un rectangle.
+
+\(O\) est le point d'intersection de ses diagonales.
+
+\medskip
+
+\textbf{Le dessin est un croquis.}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.75]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.8,0.4);
+\coordinate (C) at (4.45,2.5);
+\coordinate (D) at (-0.35,2.1);
+\coordinate (O) at (2.22,1.25);
+
+\draw[trait] (A)--(B)--(C)--(D)--cycle;
+\draw[trait] (A)--(C);
+\draw[trait] (B)--(D);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+\node[above] at (O) {$O$};
+
+\end{tikzpicture}
+\end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.64\linewidth}
+
+Pour chaque affirmation, écris :
+
+\[
+\boxed{\text{Donnée}}
+\qquad
+\boxed{\text{Déduite}}
+\qquad
+\boxed{\text{Non garantie}}
+\]
+
+\renewcommand{\arraystretch}{1.4}
+
+\begin{tabularx}{\linewidth}{|X|p{4cm}|}
+\hline
+\(ABCD\) est un rectangle. & \\ \hline
+\((AB)\perp(BC)\) & \\ \hline
+\(AC=BD\) & \\ \hline
+\(AO=OC\) & \\ \hline
+\((AC)\perp(BD)\) & \\ \hline
+\(AB=BC\) & \\ \hline
+\end{tabularx}
+
+\end{minipage}
+
+% PROF :
+% donnée
+% déduite
+% déduite
+% déduite
+% non garantie
+% non garantie
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{B. Organiser un raisonnement}{
+
+Remets les trois informations dans un ordre logique.
+
+\vspace{0.35cm}
+
+\begin{center}
+\begin{tikzpicture}
+
+\node[
+draw,
+rounded corners,
+minimum width=6cm,
+minimum height=1.5cm
+] at (0,0)
+{\(AB=AC\)};
+
+\node[
+draw,
+rounded corners,
+minimum width=6cm,
+minimum height=1.5cm
+] at (8,0)
+{\(ABC\) est isocèle en \(A\)};
+
+\node[
+draw,
+rounded corners,
+minimum width=7cm,
+minimum height=1.5cm
+] at (16,0)
+{\(\widehat{ABC}=\widehat{BCA}\)};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.45cm}
+
+\textbf{Qu'est-ce qui permet de passer d'une affirmation à la suivante ?}
+
+\vspace{0.25cm}
+
+\rule{\linewidth}{0.4pt}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 5
+%
+% Calcul :
+%
+% 0,5 x 74 = 37
+% 50 % de 46 = 23
+% 3/4 de 44 = 33
+% 0,25 x 68 = 17
+%
+% Graphe :
+%
+% AB=AC
+% -> définition / reconnaissance d'un triangle isocèle
+% -> ABC isocèle en A
+% -> propriété des angles à la base
+% -> ABC=BCA
+%
+% Pas de rédaction formelle imposée.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 6
+% CONTRE-EXEMPLE
+% =========================================================
+
+\titreRDV
+{Rendez-vous 6 -- Vrai parce que... faux parce que...}
+{Travail en groupe}
+
+\flashcalcul{
+\calcquatre
+{\(18\times6+18\times4\)}
+{\(25\times63+25\times37\)}
+{\(32\times2{,}5\)}
+{\(125\times32\)}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{Convaincre}{
+
+Choisissez \textbf{deux affirmations}.
+
+\medskip
+
+Si vous pensez qu'elle est fausse,
+\textbf{fabriquez un contre-exemple}.
+
+Si vous pensez qu'elle est vraie,
+\textbf{expliquez pourquoi elle doit toujours être vraie}.
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.48\linewidth}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+\textbf{A}
+
+\vspace{0.3cm}
+
+Si un quadrilatère a quatre côtés de même longueur,
+alors c'est un carré.
+
+\vfill
+
+\textbf{Recherche :}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+\textbf{C}
+
+\vspace{0.3cm}
+
+Si un triangle a deux côtés de même longueur,
+alors il a deux angles de même mesure.
+
+\vfill
+
+\textbf{Recherche :}
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+\textbf{B}
+
+\vspace{0.3cm}
+
+Si un quadrilatère a quatre angles droits,
+alors c'est un carré.
+
+\vfill
+
+\textbf{Recherche :}
+\end{tcolorbox}
+
+\vspace{0.2cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+\textbf{D}
+
+\vspace{0.3cm}
+
+Si deux droites sont perpendiculaires
+à une même droite,
+alors elles sont parallèles.
+
+\vfill
+
+\textbf{Recherche :}
+\end{tcolorbox}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 6
+%
+% Calcul :
+%
+% 18x6 + 18x4
+% = 18x10 = 180
+%
+% 25x63 + 25x37
+% = 25x100 = 2500
+%
+% 32x2,5
+% = 32x5/2 = 80
+%
+% 125x32
+% = 125x8x4
+% = 1000x4
+% = 4000
+%
+%
+% A faux : losange non carré.
+% B faux : rectangle non carré.
+% C vrai.
+% D vrai.
+%
+% Point à faire émerger :
+%
+% Un seul contre-exemple suffit pour rendre
+% une affirmation générale fausse.
+%
+% Plusieurs exemples ne prouvent pas
+% qu'une affirmation générale est vraie.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 7
+% SITUATION DENSE
+% =========================================================
+
+\titreRDV
+{Rendez-vous 7 -- Exactement ou à peu près ?}
+{Situation de recherche}
+
+\flashgeo{
+
+\begin{minipage}[c]{0.45\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.65]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (3,0);
+\coordinate (C) at (6,0);
+\coordinate (D) at (1.3,2.3);
+
+\draw[trait,codeun] (A)--(D);
+\draw[trait,codeun] (D)--(B);
+\draw[trait,codeun] (A)--(B);
+\draw[trait] (D)--(C);
+\draw[trait,codeun] (B)--(C);
+
+\node[below] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[below] at (C) {$C$};
+\node[above] at (D) {$D$};
+
+\end{tikzpicture}
+\end{center}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.51\linewidth}
+
+\textbf{Ce dessin est un croquis.}
+
+Les quatre segments marqués ont la même longueur.
+
+\medskip
+
+Écris une question mathématique
+à laquelle on peut répondre exactement.
+
+\vspace{0.3cm}
+
+\rule{\linewidth}{0.4pt}
+
+\end{minipage}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{Quelle est la nature exacte du triangle \(ACD\) ?}{
+
+\begin{minipage}[c]{0.34\linewidth}
+
+\textbf{Le dessin est un croquis.}
+
+\medskip
+
+Les points \(A\), \(B\) et \(C\) sont alignés.
+
+\medskip
+
+Les quatre segments marqués ont la même longueur.
+
+\vspace{0.7cm}
+
+{\large
+\textbf{Quelle est la nature exacte du triangle \(ACD\) ?}
+}
+
+\vspace{0.8cm}
+
+Tu peux écrire, coder et ajouter
+des mesures sur le croquis.
+
+\vspace{0.8cm}
+
+\textbf{Conclusion :}
+
+\vspace{0.35cm}
+
+\rule{8cm}{0.5pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.62\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.45]
+
+% Croquis volontairement non conforme.
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (3,0);
+\coordinate (C) at (6,0);
+\coordinate (D) at (1.15,2.45);
+
+\draw[very thick,codeun] (A)--(D);
+\draw[very thick,codeun] (D)--(B);
+\draw[very thick] (D)--(C);
+\draw[very thick,codeun] (A)--(B);
+\draw[very thick,codeun] (B)--(C);
+
+\node[below] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[below] at (C) {$C$};
+\node[above] at (D) {$D$};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=5.2cm
+]
+\textbf{Recherche}
+\end{tcolorbox}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 7
+%
+% AD = DB = AB
+% -> ADB est équilatéral
+% -> angle ADB = 60°
+%
+% A, B, C alignés
+% -> angle DBC = 120°
+%
+% DB = BC
+% -> DBC est isocèle en B
+%
+% Ses deux autres angles valent :
+% (180 - 120) / 2 = 30°
+%
+% ADC = ADB + BDC
+%     = 60 + 30
+%     = 90°
+%
+% Donc ACD est rectangle en D.
+%
+%
+% Relances graduées :
+%
+% 1. "Quelles petites figures reconnais-tu ?"
+%
+% 2. "Regarde ADB."
+%
+% 3. "Que sais-tu de ses trois côtés ?"
+%
+% 4. "Que change l'alignement de A, B et C ?"
+%
+% 5. "Regarde maintenant DBC."
+%
+% Pas de démonstration rédigée imposée.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 8
+% CONTRÔLER
+% =========================================================
+
+\titreRDV
+{Rendez-vous 8 -- Où le raisonnement casse-t-il ?}
+{Retour sur la situation précédente}
+
+\flashcalcul{
+\calcquatre
+{\(31{,}2\times2{,}9\approx ?\)}
+{\(602\div9\approx ?\)}
+{\(25\%\text{ de }96=48\ ?\)}
+{\(4{,}08\times24{,}9\approx ?\)}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{A. Trouver la première erreur}{
+
+Voici trois productions concernant la figure du rendez-vous précédent.
+
+\medskip
+
+\textbf{Pour chaque production :}
+entoure la première phrase qui n'est pas justifiée.
+
+Si tout est correct, écris \textbf{correct}.
+
+\vspace{0.25cm}
+
+\begin{minipage}[t]{0.315\linewidth}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+\textbf{Production 1}
+
+\medskip
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(\widehat{ADB}=60^\circ\).
+
+4. \(A,B,C\) sont alignés.
+
+5. Donc \(\widehat{DBC}=120^\circ\).
+
+6. \(DB=BC\), donc \(DBC\) est isocèle en \(B\).
+
+7. Donc \(\widehat{BDC}=30^\circ\).
+
+8. Donc \(\widehat{ADC}=90^\circ\).
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+\textbf{Production 2}
+
+\medskip
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(\widehat{ADB}=60^\circ\).
+
+4. \(DB=BC\).
+
+5. Donc \(DBC\) est équilatéral.
+
+6. Donc \(\widehat{BDC}=60^\circ\).
+
+7. Donc \(\widehat{ADC}=120^\circ\).
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+\textbf{Production 3}
+
+\medskip
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(\widehat{ADB}=60^\circ\).
+
+4. \(A,B,C\) sont alignés.
+
+5. Donc \(\widehat{DBC}=120^\circ\).
+
+6. \(DB=BC\), donc \(DBC\) est isocèle en \(B\).
+
+7. Donc \(\widehat{BDC}=60^\circ\).
+\end{tcolorbox}
+
+\end{minipage}
+
+% PROF :
+% P1 correcte.
+% P2 : première erreur = ligne 5.
+% P3 : première erreur = ligne 7.
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{B. Réparer}{
+
+Choisis une des deux productions incorrectes.
+
+\medskip
+
+\textbf{Change le moins possible pour la rendre correcte.}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=3.2cm
+]
+\end{tcolorbox}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 8
+%
+% Calcul :
+%
+% 31,2 x 2,9
+% proche de 30 x 3 = 90
+%
+% 602 ÷ 9
+% proche de 600 ÷ 9
+% soit environ 67
+%
+% 25 % de 96 = 48 ?
+% Faux.
+% 25 % = 1/4
+% donc 24.
+%
+% 4,08 x 24,9
+% proche de 4 x 25 = 100
+%
+%
+% Nœud :
+% ne pas seulement repérer une phrase fausse,
+% mais le PREMIER passage qui cesse d'être garanti.
+% =========================================================
+}
+
+\newpage
+
+% =========================================================
+% RENDEZ-VOUS 9
+% TRANSFERT / COMMUNICATION
+% =========================================================
+
+\titreRDV
+{Rendez-vous 9 -- Chercher, organiser, communiquer}
+{Situation de transfert}
+
+\flashcalcul{
+
+\begin{tabularx}{\linewidth}{
+>{\centering\arraybackslash}X
+>{\centering\arraybackslash}X
+}
+\textbf{Calcul 1} &
+\textbf{Calcul 2} \\[0.1cm]
+
+\(28\times25\) &
+\(75\%\text{ de }64\) \\[0.2cm]
+
+\multicolumn{1}{c}{
+Trouve \textbf{deux façons différentes}.
+}
+&
+\multicolumn{1}{c}{
+Trouve \textbf{deux façons différentes}.
+}
+\\[0.3cm]
+
+\rule{7cm}{0.4pt}
+&
+\rule{7cm}{0.4pt}
+\end{tabularx}
+}
+
+\vspace{0.15cm}
+
+\grandeactivite{Une nouvelle figure}{
+
+\begin{minipage}[c]{0.37\linewidth}
+
+\textbf{Le dessin est un croquis.}
+
+\medskip
+
+Les points \(A\), \(B\) et \(C\) sont alignés.
+
+\[
+AB=AD
+\]
+
+\[
+DB=BC
+\]
+
+\[
+\widehat{BAD}=40^\circ
+\]
+
+\vspace{0.45cm}
+
+{\large
+\textbf{Détermine la mesure de l'angle \(\widehat{ADC}\).}
+}
+
+\vspace{0.6cm}
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=4.8cm
+]
+\textbf{Recherche}
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.59\linewidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.4]
+
+% Croquis volontairement non conforme.
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (3,0);
+\coordinate (C) at (6,0);
+\coordinate (D) at (1.35,2.55);
+
+\draw[trait,codeun] (A)--(D);
+\draw[trait,codeun] (A)--(B);
+
+\draw[trait,codedeux] (D)--(B);
+\draw[trait,codedeux] (B)--(C);
+
+\draw[trait] (D)--(C);
+
+\node[below] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[below] at (C) {$C$};
+\node[above] at (D) {$D$};
+
+\node at (0.75,0.35) {$40^\circ$};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.35cm}
+
+\textbf{Quand ta recherche est terminée :}
+
+\medskip
+
+Explique ton raisonnement en quelques lignes.
+
+\vspace{0.3cm}
+
+\rule{\linewidth}{0.4pt}
+
+\vspace{0.4cm}
+
+\rule{\linewidth}{0.4pt}
+
+\vspace{0.4cm}
+
+\rule{\linewidth}{0.4pt}
+
+\vspace{0.4cm}
+
+\rule{\linewidth}{0.4pt}
+
+\end{minipage}
+
+% =========================================================
+% PROF -- RENDEZ-VOUS 9
+%
+% Calcul 1 :
+%
+% 28 x 25 = 700
+%
+% Par exemple :
+% 28 x 100 ÷ 4
+%
+% ou
+%
+% 28 = 7 x 4
+% donc 7 x (4 x 25)
+% = 7 x 100
+%
+%
+% Calcul 2 :
+%
+% 75 % de 64 = 48
+%
+% par 3/4
+%
+% ou
+%
+% 50 % + 25 %
+% = 32 + 16
+%
+%
+% GÉOMÉTRIE
+%
+% AB = AD
+% -> ABD isocèle en A.
+%
+% BAD = 40°
+% -> ABD = BDA
+% -> chacun vaut 70°.
+%
+% A, B, C alignés
+% -> DBC = 180 - 70 = 110°.
+%
+% DB = BC
+% -> DBC isocèle en B.
+%
+% BDC = DCB
+% -> chacun vaut (180 - 110)/2 = 35°.
+%
+% ADC = ADB + BDC
+%     = 70 + 35
+%     = 105°.
+%
+% Réponse : 105°.
+%
+%
+% Ici seulement, la rédaction devient explicitement
+% un objet du travail.
+%
+% Relances graduées :
+%
+% 1. "Quelles sous-figures peux-tu étudier ?"
+%
+% 2. "Commence par ABD."
+%
+% 3. "Que te donne ensuite l'alignement ?"
+%
+% 4. "Regarde DBC."
+%
+% Ne pas transformer ces relances en questions
+% imprimées sur la fiche.
+% =========================================================
+}
+
+\end{document}

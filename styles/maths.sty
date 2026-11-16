@@ -1,0 +1,63 @@
+\ProvidesPackage{maths}
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}
+
+%==================================================
+% Ensembles de nombres
+%==================================================
+
+\providecommand{\N}{}\renewcommand{\N}{\ensuremath{\mathbb{N}}}
+\providecommand{\Z}{}\renewcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\providecommand{\Q}{}\renewcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\providecommand{\R}{}\renewcommand{\R}{\ensuremath{\mathbb{R}}}
+
+% Décimaux : on évite \D, souvent déjà défini
+\providecommand{\Dec}{}\renewcommand{\Dec}{\ensuremath{\mathbb{D}}}
+
+%==================================================
+% Géométrie
+%==================================================
+
+\providecommand{\longueur}{}\renewcommand{\longueur}[1]{\ensuremath{\mathrm{#1}}}
+
+\providecommand{\segment}{}\renewcommand{\segment}[2]{\ensuremath{[#1#2]}}
+
+\providecommand{\droite}{}\renewcommand{\droite}[2]{\ensuremath{(#1#2)}}
+
+\providecommand{\demidroite}{}\renewcommand{\demidroite}[2]{\ensuremath{[#1#2)}}
+
+\providecommand{\vecteur}{}\renewcommand{\vecteur}[2]{\ensuremath{\overrightarrow{#1#2}}}
+
+\providecommand{\anglegeo}{}\renewcommand{\anglegeo}[3]{\ensuremath{\widehat{#1#2#3}}}
+
+%==================================================
+% Calcul
+%==================================================
+
+\providecommand{\abs}{}\renewcommand{\abs}[1]{\ensuremath{\left|#1\right|}}
+
+\providecommand{\pa}{}\renewcommand{\pa}[1]{\ensuremath{\left(#1\right)}}
+
+\providecommand{\cro}{}\renewcommand{\cro}[1]{\ensuremath{\left[#1\right]}}
+
+\providecommand{\acco}{}\renewcommand{\acco}[1]{\ensuremath{\left\{#1\right\}}}
+
+\providecommand{\fracd}{}\renewcommand{\fracd}[2]{\ensuremath{\dfrac{#1}{#2}}}
+
+%==================================================
+% Probabilités / statistiques
+%==================================================
+
+\providecommand{\proba}{}\renewcommand{\proba}[1]{\ensuremath{P\left(#1\right)}}
+
+\providecommand{\moyenne}{}\renewcommand{\moyenne}[1]{\ensuremath{\overline{#1}}}
+
+%==================================================
+% Fonctions
+%==================================================
+
+\providecommand{\image}{}\renewcommand{\image}[2]{\ensuremath{#1\left(#2\right)}}
+
+\providecommand{\antecedent}{}\renewcommand{\antecedent}{antécédent}

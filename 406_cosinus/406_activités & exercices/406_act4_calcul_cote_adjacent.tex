@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 4 -- Calculer le côté adjacent}
+
+\section*{Partie A -- Le cosinus comme multiplicateur}
+
+Dans le triangle \(ABC\) rectangle en \(B\), on donne :
+
+\[
+AC=12\text{ cm}
+\qquad
+\widehat{A}=38^\circ.
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (6,0);
+  \coordinate (C) at (6,4.7);
+  \draw[line width=0.9pt] (A)--(B)--(C)--cycle;
+  \draw (5.65,0)--(5.65,0.35)--(6,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$38^\circ$"] {angle=B--A--C};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above right] at (C) {$C$};
+  \node[above left] at ($(A)!0.52!(C)$) {$12$ cm};
+  \node[below] at ($(A)!0.5!(B)$) {$?$};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+  \item Quelle est l'hypoténuse ?
+  \item Quel est le côté adjacent à l'angle \(\widehat A\) ?
+  \item Complète :
+  \[
+  \cos(\widehat A)=\ldots \div \ldots.
+  \]
+  \item À partir de cette égalité, complète :
+  \[
+  AB=
+  \]
+  \item Calcule \(AB\), arrondi au dixième de centimètre.
+\end{enumerate}
+
+\lignesreponse{7}
+
+\remarque{\textbf{Aide — le sens d'un quotient}\\[0.3em]
+Dire que $a\div b=q$, c'est dire que $q\times b=a$ :
+le quotient est \textbf{le nombre qui, multiplié par $b$, donne $a$}.\\[0.3em]
+\emph{Exemple : $15\div 5=3$ car $3\times 5=15$.}\\[0.3em]
+Ici : $\cos(\widehat A)$ est donc le nombre qui, multiplié par $\ldots$,
+donne $\ldots$}
+
+\newpage
+
+\section*{Partie B -- Une phrase opératoire}
+
+Complète.
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Pour calculer le côté adjacent connaissant l'hypoténuse et l'angle :
+
+\[
+\text{côté adjacent}
+=
+\]
+\end{tcolorbox}
+
+\section*{Partie C -- Calculer}
+
+Pour chaque figure, commence par écrire une estimation et le nom du triangle rectangle.
+
+\begin{enumerate}
+  \item Dans le triangle \(DEF\) rectangle en \(E\),
+        \(DF=8\) cm et \(\widehat D=24^\circ\). Calculer \(DE\).
+  \item Dans le triangle \(GHI\) rectangle en \(H\),
+        \(GI=15\) m et \(\widehat I=67^\circ\). Calculer \(HI\).
+  \item Dans le triangle \(JKL\) rectangle en \(K\),
+        \(JL=5{,}4\) cm et \(\widehat J=42^\circ\). Calculer \(JK\).
+\end{enumerate}
+
+\lignesreponse{15}
+
+\section*{Partie D -- Contrôler}
+
+Pour chacun des résultats précédents, vérifie :
+
+\begin{itemize}
+  \item que la longueur est positive ;
+  \item qu'elle est plus petite que l'hypoténuse ;
+  \item que l'unité et l'arrondi sont indiqués.
+\end{itemize}
+
+\end{document}

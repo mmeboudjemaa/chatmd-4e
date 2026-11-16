@@ -1,0 +1,149 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Automatismes -- Séries courtes}
+
+\section*{Série 1 -- Triangle rectangle}
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\begin{enumerate}
+  \item nomme l'hypoténuse ;
+  \item nomme les deux angles aigus ;
+  \item nomme le côté adjacent à \(\widehat A\) ;
+  \item nomme le côté adjacent à \(\widehat C\).
+\end{enumerate}
+
+\section*{Série 2 -- Écrire un cosinus}
+
+Dans le triangle \(DEF\) rectangle en \(E\), complète :
+
+\[
+\cos(\widehat D)=\ldots\div\ldots
+\]
+
+\[
+\cos(\widehat F)=\ldots\div\ldots
+\]
+
+\section*{Série 3 -- Calculatrice}
+
+Donne une valeur approchée au centième.
+
+\[
+\cos 20^\circ
+\qquad
+\cos 35^\circ
+\qquad
+\cos 60^\circ
+\qquad
+\cos 75^\circ
+\]
+
+Quel calcul permet de contrôler rapidement que la calculatrice est en mode degré ?
+
+\section*{Série 4 -- Multiplier ou diviser ?}
+
+Pour chaque cas, indique seulement l'opération.
+
+\begin{enumerate}
+  \item Hypoténuse \(=12\) cm, angle \(=40^\circ\), côté adjacent cherché.
+  \item Côté adjacent \(=7\) cm, angle \(=52^\circ\), hypoténuse cherchée.
+  \item Hypoténuse \(=5{,}4\) m, angle \(=18^\circ\), côté adjacent cherché.
+\end{enumerate}
+
+\section*{Série 5 -- Calcul direct}
+
+Calcule au dixième.
+
+\[
+8\times\cos 37^\circ
+\qquad
+15\times\cos 64^\circ
+\]
+
+\[
+6\div\cos 42^\circ
+\qquad
+3{,}5\div\cos 70^\circ
+\]
+
+\section*{Série 6 -- Compléter une rédaction}
+
+Dans le triangle \(GHI\) rectangle en \(H\), on connaît
+\(GI=9\) cm et \(\widehat G=31^\circ\).
+
+\[
+\cos(\widehat G)=\ldots\div\ldots
+\]
+
+\[
+GH=\ldots\times\cos\ldots
+\]
+
+\[
+GH\approx\ldots\text{ cm}.
+\]
+
+\section*{Série 7 -- Vrai ou faux ?}
+
+\begin{enumerate}
+  \item Le cosinus d'un angle aigu est une longueur.
+  \item Le côté adjacent est toujours plus petit que l'hypoténuse.
+  \item Pour calculer une hypoténuse, on multiplie le côté adjacent par le cosinus.
+  \item Si l'angle augmente, son cosinus diminue.
+\end{enumerate}
+
+\section*{Série 8 -- Repérer une erreur}
+
+Un élève écrit :
+
+\[
+\text{Dans }ABC\text{ rectangle en }B,\quad
+AC=6\times\cos 40^\circ=4{,}6\text{ cm}.
+\]
+
+On sait que \(AB=6\) cm et que \(AC\) est l'hypoténuse.
+
+Explique l'erreur et corrige le calcul.
+
+\end{document}

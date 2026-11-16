@@ -1,0 +1,227 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 3 -- Nommer avant de calculer}
+
+\section*{Partie A -- Le côté adjacent dépend de l'angle}
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (5,0);
+  \coordinate (C) at (5,3.5);
+  \draw[line width=0.9pt] (A)--(B)--(C)--cycle;
+  \draw (4.65,0)--(4.65,0.35)--(5,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=8mm] {angle=B--A--C};
+  \draw pic[draw=SavoirC,fill=SavoirC!12,angle radius=7mm] {angle=A--C--B};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above right] at (C) {$C$};
+\end{tikzpicture}
+\end{center}
+
+Complète.
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{0.88\textwidth}{
+|>{\raggedright\arraybackslash}p{4.2cm}
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+ & \textbf{Angle en \(A\)} & \textbf{Angle en \(C\)}\\
+\hline
+\textbf{Hypoténuse} & & \\
+\hline
+\textbf{Côté adjacent} & & \\
+\hline
+\end{tabularx}
+
+\vspace{0.3cm}
+
+Explique pourquoi l'hypoténuse ne change pas, mais le côté adjacent change.
+
+\vspace{0.3cm}
+
+
+\lignesreponse{5}
+
+\section*{Partie B -- Définition du cosinus}
+
+Dans un triangle rectangle, pour un angle aigu donné :
+
+\[
+\cos(\text{angle})
+=
+\text{côté adjacent}\div\text{hypoténuse}.
+\]
+
+\vspace{0.3cm}
+
+Complète dans le triangle précédent :
+
+\[
+\cos(\widehat{A})
+=
+\ldots\div\ldots
+\]
+
+\[
+\cos(\widehat{C})
+=
+\ldots\div\ldots
+\]
+
+\newpage
+
+\section*{Partie C -- Un protocole qui évite les confusions}
+
+Remets les étapes dans l'ordre.
+
+\begin{itemize}
+  \item[\(\square\)] Je repère l'angle aigu étudié.
+  \item[\(\square\)] Je nomme le triangle rectangle dans lequel je travaille.
+  \item[\(\square\)] Je repère le côté adjacent à cet angle.
+  \item[\(\square\)] Je repère l'hypoténuse, opposée à l'angle droit.
+  \item[\(\square\)] J'écris le cosinus avec les noms des segments.
+\end{itemize}
+
+\section*{Partie D -- La calculatrice en mode degré}
+
+Vérifie que la calculatrice est en mode degré, puis complète au centième.
+
+\[
+\cos 20^\circ\approx\ldots
+\qquad
+\cos 35^\circ\approx\ldots
+\]
+
+\[
+\cos 60^\circ=\ldots
+\qquad
+\cos 80^\circ\approx\ldots
+\]
+
+Que remarques-tu lorsque l'angle aigu augmente ?
+
+\lignesreponse{4}
+
+\aretenir{Le cosinus d'un angle aigu est un nombre sans unité compris entre \(0\) et \(1\).}
+
+%==================================================
+% Encart calculatrice : mode degré
+%==================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  title={\sffamily\bfseries
+    \faCalculator\ Calculatrice : vérifier le mode degré},
+  coltitle=SavoirC,
+  fonttitle=\sffamily\bfseries
+]
+
+Avant d'effectuer un calcul avec un cosinus, vérifie que la calculatrice
+est réglée en \textbf{degrés}.
+
+\vspace{0.3em}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{
+  @{}
+  >{\sffamily\bfseries\color{TitreC}}p{3.2cm}
+  X
+  @{}
+}
+\textbf{Casio fx-92}
+&
+\texttt{CONFIG}
+\(\longrightarrow\)
+\texttt{Unité d'angle}
+\(\longrightarrow\)
+\texttt{Degré}
+\\
+
+\textbf{TI-Collège Plus}
+&
+\texttt{MODE}
+\(\longrightarrow\)
+sélectionner \texttt{DEG}
+\(\longrightarrow\)
+valider
+\end{tabularx}
+
+\begin{center}
+  \sffamily\bfseries
+  L'écran doit afficher
+  \tcbox[
+    on line,
+    colback=white,
+    colframe=SavoirC,
+    boxrule=0.6pt,
+    arc=1mm,
+    left=1.5mm,
+    right=1.5mm,
+    top=0.4mm,
+    bottom=0.4mm
+  ]{\texttt{D} ou \texttt{DEG}}.
+\end{center}
+
+\textbf{Test rapide :}
+
+\[
+\cos(60^\circ)=0{,}5.
+\]
+
+Si la calculatrice n'affiche pas \(0{,}5\), vérifie à nouveau le mode.
+
+\end{tcolorbox}
+
+\end{document}

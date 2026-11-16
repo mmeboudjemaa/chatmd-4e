@@ -1,0 +1,194 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+\begin{document}
+
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 4 -- Calcul littéral}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}Écrire, simplifier et réduire}
+\end{center}
+
+\section{Expressions littérales}
+
+\definition{Une \textbf{expression littérale} est une expression contenant une ou plusieurs lettres.
+Une lettre représente un nombre dont la valeur peut varier ou être encore inconnue.}
+
+\exemple{Le programme « multiplier un nombre par \(3\), puis ajouter \(5\) »
+se traduit par :
+\[
+3x+5,
+\]
+où \(x\) représente le nombre de départ.}
+
+\subsection{Calculer la valeur d'une expression}
+
+\methode{Pour calculer la valeur d'une expression :
+\begin{enumerate}
+  \item remplacer chaque lettre par la valeur donnée ;
+  \item écrire des parenthèses autour d'un nombre négatif ;
+  \item effectuer le calcul en respectant les priorités.
+\end{enumerate}}
+
+\exemple{Pour \(x=-2\) :
+\[
+3x+5=3\times(-2)+5=-6+5=-1.
+\]}
+
+\section{Conventions d'écriture}
+
+\propriete{Dans une expression littérale :
+\[
+3\times x=3x,
+\qquad
+x\times5=5x,
+\qquad
+1\times x=x,
+\]
+\[
+x\times x=x^2,
+\qquad
+3\times(x+2)=3(x+2).
+\]}
+
+\remarque{On écrit généralement le nombre avant la lettre.
+
+Une addition ne se transforme pas en multiplication :
+\[
+3+x\neq3x.
+\]}
+
+\definition{Les nombres qui multiplient les lettres sont appelés les
+\textbf{coefficients}. Dans \(5x\), le coefficient de \(x\) est \(5\).}
+
+\section{Réduire une expression}
+
+\definition{Réduire une expression, c'est regrouper les termes de même nature
+afin de l'écrire avec le moins de termes possible.}
+
+\propriete{On peut regrouper :
+\[
+3x+5x=(3+5)x=8x,
+\]
+\[
+4x^2-2x^2=(4-2)x^2=2x^2,
+\]
+et les nombres entre eux.
+
+On ne peut pas regrouper \(x\), \(x^2\) et les nombres.}
+
+\methode{Pour réduire :
+\begin{enumerate}
+  \item repérer les termes en \(x^2\), les termes en \(x\) et les nombres ;
+  \item additionner séparément leurs coefficients ;
+  \item conserver les catégories qui ne peuvent pas être regroupées.
+\end{enumerate}}
+
+\exemple{
+\[
+\begin{aligned}
+7x+3-2x+5
+&=(7x-2x)+(3+5)\\
+&=5x+8.
+\end{aligned}
+\]}
+
+\exemple{
+\[
+\begin{aligned}
+5x^2+2x-3x^2+7x
+&=(5x^2-3x^2)+(2x+7x)\\
+&=2x^2+9x.
+\end{aligned}
+\]}
+
+\erreur{
+\[
+3x+5\neq8x
+\]
+car \(3x\) et \(5\) ne sont pas de même nature.
+
+De même :
+\[
+2x+3x^2\neq5x^3.
+\]}
+
+\section{Développer une expression}
+
+\definition{Développer, c'est transformer un produit en une somme ou une différence.}
+
+\propriete{Pour tous nombres \(k\), \(a\) et \(b\) :
+\[
+k(a+b)=ka+kb
+\]
+et
+\[
+k(a-b)=ka-kb.
+\]}
+
+\methode{Pour développer, on multiplie chacun des termes placés dans la parenthèse
+par le facteur situé devant la parenthèse.}
+
+\exemple{
+\[
+3(2x+5)=3\times2x+3\times5=6x+15.
+\]}
+
+\exemple{On peut ensuite réduire :
+\[
+\begin{aligned}
+4(x+3)+2x
+&=4x+12+2x\\
+&=6x+12.
+\end{aligned}
+\]}
+
+\section{Expressions équivalentes et preuve}
+
+\definition{Deux expressions sont \textbf{équivalentes} lorsqu'elles ont la même valeur
+pour toute valeur autorisée de la lettre.}
+
+\exemple{
+\[
+4(x+3)+2x=6x+12
+\]
+pour toute valeur de \(x\), car le développement et la réduction transforment
+la première expression en la seconde.}
+
+\remarque{Tester quelques valeurs peut aider à conjecturer ou à repérer une erreur,
+mais ne prouve pas une égalité valable pour toutes les valeurs.
+
+En revanche, un seul contre-exemple suffit pour montrer qu'une égalité générale est fausse.}
+
+\exemple{L'égalité
+\[
+3(x+2)=3x+2
+\]
+est fausse. Pour \(x=0\) :
+\[
+3(0+2)=6
+\qquad\text{mais}\qquad
+3\times0+2=2.
+\]}
+
+\aretenir{
+\begin{itemize}
+  \item Une lettre représente un nombre.
+  \item Simplifier l'écriture consiste notamment à utiliser \(3x\), \(x^2\) et \(3(x+2)\).
+  \item Réduire consiste à regrouper les termes de même nature.
+  \item Développer consiste à distribuer la multiplication à chaque terme de la parenthèse.
+  \item Une transformation littérale correcte conserve la valeur de l'expression.
+\end{itemize}}
+
+\end{document}

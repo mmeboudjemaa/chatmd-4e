@@ -1,0 +1,161 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=4pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\newcommand{\reponseeleve}[2]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=NeutreBg,
+  colframe=NeutreC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  before skip=4pt,
+  after skip=4pt
+]
+{\sffamily\bfseries\color{TitreC}#1}
+
+#2
+\end{tcolorbox}
+}
+
+\begin{document}
+
+\titreseq{Activité 1.5 -- Peut-on valider ces médianes ?}
+
+\consigne{Pour chaque réponse, décide si tu la valides.
+Si tu ne la valides pas, corrige-la et explique l'erreur.}
+
+\reponseeleve{Réponse d'Inès}{
+La série étudiée est :
+\[
+8\ ;\ 4\ ;\ 11\ ;\ 6\ ;\ 7\ ;\ 5\ ;\ 9
+\]
+
+Inès écrit :
+
+\begin{quote}
+« Il y a 7 valeurs. La valeur du milieu est la 4\ieme{} :
+la médiane est donc 6. »
+\end{quote}
+}
+
+\lignesreponse{3}
+
+\reponseeleve{Réponse de Sami}{
+La série ordonnée est :
+\[
+4\ ;\ 6\ ;\ 7\ ;\ 9\ ;\ 12\ ;\ 14
+\]
+
+Sami écrit :
+
+\begin{quote}
+« Il y a 6 valeurs. Je prends une des deux valeurs du milieu :
+la médiane est 7. »
+\end{quote}
+}
+
+\lignesreponse{3}
+
+\reponseeleve{Réponse de Zoé}{
+La série ordonnée est :
+\[
+3\ ;\ 5\ ;\ 6\ ;\ 10\ ;\ 12\ ;\ 15
+\]
+
+Zoé calcule :
+\[
+(6+10)\div2=8
+\]
+
+puis écrit :
+
+\begin{quote}
+« Mais 8 n'apparaît pas dans la série, donc ça ne peut pas être la médiane. »
+\end{quote}
+}
+
+\lignesreponse{3}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  before skip=6pt
+]
+{\sffamily\bfseries\color{SavoirC}Pour finir}
+
+Dans la dernière série, comment peut-on vérifier que \(8\) joue bien le rôle de médiane ?
+\end{tcolorbox}
+
+\lignesreponse{3}
+
+% Relances enseignant (commentées)
+% Inès : « Qu'est-ce qui te gêne ou non dans son raisonnement ? »
+% puis « La position d'une valeur a-t-elle un sens dans cette présentation ? »
+% puis « Essaie de ranger les valeurs. »
+%
+% Sami : « Que se passe-t-il au centre quand l'effectif est pair ? »
+% puis « Quelles sont les deux valeurs centrales ? »
+%
+% Zoé : « Une médiane doit-elle forcément appartenir à la série ? »
+% puis « Combien de valeurs sont situées de chaque côté de 8 ? »
+%
+% Réponses attendues :
+% Inès : 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 11, donc médiane 7.
+% Sami : (7+9)/2 = 8.
+% Zoé : 8 est bien une médiane.
+
+\end{document}

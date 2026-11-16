@@ -1,0 +1,244 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+
+\setbeamersize{
+  text margin left=4mm,
+  text margin right=4mm
+}
+
+\definecolor{bleufonce}{RGB}{32,57,95}
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+
+%=========================================================
+% CELLULE
+%=========================================================
+
+\newcommand{\cellule}[3]{%
+\begin{minipage}[t][3.45cm][t]{0.235\textwidth}
+\centering
+{\small\bfseries Triangle #1}
+
+\vspace{0.06cm}
+
+#2
+
+\vspace{-0.03cm}
+
+{\scriptsize Calculer \(#3\).}
+\end{minipage}
+}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+
+\vspace{0.12cm}
+
+\begin{center}
+{\Large\bfseries\color{bleufonce}
+Je m'entraîne à calculer avec le théorème de Pythagore}
+
+\vspace{0.05cm}
+
+{\small Toutes les longueurs sont en cm.}
+\end{center}
+
+\vspace{0.22cm}
+
+%=========================================================
+% LIGNE 1
+%=========================================================
+
+\noindent
+\cellule{ABC}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=-8]
+\coordinate (A) at (0,0);
+\coordinate (B) at (0,3);
+\coordinate (C) at (4.3,0);
+
+\draw[thick] (A)--(B)--(C)--cycle;
+\draw[thick] (A) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[below left] at (A) {$A$};
+\node[above left] at (B) {$B$};
+\node[below right] at (C) {$C$};
+
+\node[left] at ($(A)!0.5!(B)$) {$8$};
+\node[below] at ($(A)!0.5!(C)$) {$15$};
+\node[above right] at ($(B)!0.5!(C)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{BC}
+\hfill
+%
+\cellule{DEF}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=15]
+\coordinate (E) at (0,0);
+\coordinate (D) at (0,3);
+\coordinate (F) at (4.2,0);
+
+\draw[thick] (D)--(E)--(F)--cycle;
+\draw[thick] (E) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[left] at (D) {$D$};
+\node[below left] at (E) {$E$};
+\node[right] at (F) {$F$};
+
+\node[left] at ($(D)!0.5!(E)$) {$9$};
+\node[above right] at ($(D)!0.5!(F)$) {$41$};
+\node[below] at ($(E)!0.5!(F)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{EF}
+\hfill
+%
+\cellule{GHI}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=-15]
+\coordinate (G) at (0,0);
+\coordinate (H) at (0,3);
+\coordinate (I) at (4.2,0);
+
+\draw[thick] (G)--(H)--(I)--cycle;
+\draw[thick] (G) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[below left] at (G) {$G$};
+\node[above] at (H) {$H$};
+\node[below right] at (I) {$I$};
+
+\node[left] at ($(G)!0.5!(H)$) {$12$};
+\node[below] at ($(G)!0.5!(I)$) {$35$};
+\node[above right] at ($(H)!0.5!(I)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{HI}
+\hfill
+%
+\cellule{JKL}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=12]
+\coordinate (J) at (0,0);
+\coordinate (K) at (0,3);
+\coordinate (L) at (4.2,0);
+
+\draw[thick] (J)--(K)--(L)--cycle;
+\draw[thick] (J) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[below left] at (J) {$J$};
+\node[above left] at (K) {$K$};
+\node[right] at (L) {$L$};
+
+\node[left] at ($(J)!0.5!(K)$) {$33$};
+\node[above right] at ($(K)!0.5!(L)$) {$65$};
+\node[below] at ($(J)!0.5!(L)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{JL}
+
+\vspace{0.18cm}
+
+%=========================================================
+% LIGNE 2
+%=========================================================
+
+\noindent
+\cellule{MNP}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\coordinate (M) at (0,0);
+\coordinate (N) at (0,3);
+\coordinate (P) at (4.2,0);
+
+\draw[thick] (M)--(N)--(P)--cycle;
+\draw[thick] (M) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[below left] at (M) {$M$};
+\node[above left] at (N) {$N$};
+\node[below right] at (P) {$P$};
+
+\node[left] at ($(M)!0.5!(N)$) {$2{,}4$};
+\node[below] at ($(M)!0.5!(P)$) {$4{,}5$};
+\node[above right] at ($(N)!0.5!(P)$) {$?$};
+\end{tikzpicture}
+}{NP}
+\hfill
+%
+\cellule{QRS}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=18]
+\coordinate (Q) at (0,0);
+\coordinate (R) at (0,3);
+\coordinate (S) at (4.2,0);
+
+\draw[thick] (Q)--(R)--(S)--cycle;
+\draw[thick] (Q) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[below left] at (Q) {$Q$};
+\node[above] at (R) {$R$};
+\node[right] at (S) {$S$};
+
+\node[left] at ($(Q)!0.5!(R)$) {$1{,}8$};
+\node[below] at ($(Q)!0.5!(S)$) {$8$};
+\node[above right] at ($(R)!0.5!(S)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{RS}
+\hfill
+%
+\cellule{TUV}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\begin{scope}[rotate=-14]
+\coordinate (U) at (0,0);
+\coordinate (T) at (0,3);
+\coordinate (V) at (4.2,0);
+
+\draw[thick] (T)--(U)--(V)--cycle;
+\draw[thick] (U) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[left] at (T) {$T$};
+\node[below left] at (U) {$U$};
+\node[right] at (V) {$V$};
+
+\node[left] at ($(T)!0.5!(U)$) {$39$};
+\node[below] at ($(U)!0.5!(V)$) {$80$};
+\node[above right] at ($(T)!0.5!(V)$) {$?$};
+\end{scope}
+\end{tikzpicture}
+}{TV}
+\hfill
+%
+\cellule{EFG}{
+\begin{tikzpicture}[scale=0.46,every node/.style={font=\scriptsize}]
+\coordinate (F) at (0,0);
+\coordinate (E) at (0,3);
+\coordinate (G) at (3,0);
+
+\draw[thick] (E)--(F)--(G)--cycle;
+\draw[thick] (F) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+\node[left] at (E) {$E$};
+\node[below left] at (F) {$F$};
+\node[below right] at (G) {$G$};
+
+\node[left] at ($(E)!0.5!(F)$) {$5$};
+\node[below] at ($(F)!0.5!(G)$) {$5$};
+\node[above right] at ($(E)!0.5!(G)$) {$?$};
+\end{tikzpicture}
+}{EG}
+
+\end{frame}
+
+\end{document}

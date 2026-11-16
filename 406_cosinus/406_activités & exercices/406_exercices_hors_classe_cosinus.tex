@@ -1,0 +1,240 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.2em,topsep=0.2em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.48em}}
+
+\newcommand{\zonelignes}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=0pt,
+    after skip=0pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcounter{exohc}
+
+\NewDocumentCommand{\exohc}{m +m}{%
+  \refstepcounter{exohc}
+  \par\medskip
+  \noindent
+  \begin{minipage}[t]{0.47\linewidth}
+    \vspace{0pt}
+    {\sffamily\bfseries\color{TitreC}$\square$ Exercice \theexohc}
+    \vspace{0.2em}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.50\linewidth}
+    \vspace{0pt}
+    \zonelignes{#1}
+  \end{minipage}
+  \par\medskip
+}
+
+\begin{document}
+\begin{landscape}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Exercices hors classe}\\[0.2em]
+  {\sffamily\large\bfseries\color{ActionC}
+  Cosinus d'un angle aigu -- Calculer des longueurs}
+\end{center}
+
+\section*{A. Vocabulaire et formule}
+
+\exohc{4}{
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\begin{enumerate}[label=\alph*)]
+  \item nomme l'hypoténuse ;
+  \item nomme le côté adjacent à \(\widehat A\) ;
+  \item nomme le côté adjacent à \(\widehat C\).
+\end{enumerate}
+}
+
+\exohc{4}{
+Dans le triangle \(DEF\) rectangle en \(E\), complète :
+
+\[
+\cos(\widehat D)=\ldots\div\ldots
+\]
+
+\[
+\cos(\widehat F)=\ldots\div\ldots
+\]
+}
+
+\exohc{4}{
+Donne une valeur approchée au centième :
+
+\[
+\cos 25^\circ
+\qquad
+\cos 48^\circ
+\qquad
+\cos 72^\circ.
+\]
+
+Puis vérifie que \(\cos 60^\circ=0{,}5\).
+}
+
+\section*{B. Calculer le côté adjacent}
+
+\exohc{6}{
+Dans le triangle \(GHI\) rectangle en \(H\),
+
+\[
+GI=8\text{ cm}
+\qquad
+\widehat G=37^\circ.
+\]
+
+Calcule \(GH\), arrondi au dixième de centimètre.
+}
+
+\exohc{6}{
+Dans le triangle \(JKL\) rectangle en \(K\),
+
+\[
+JL=15\text{ m}
+\qquad
+\widehat L=64^\circ.
+\]
+
+Calcule \(KL\), arrondi au dixième de mètre.
+}
+
+\exohc{6}{
+Dans le triangle \(MNP\) rectangle en \(N\),
+
+\[
+MP=5{,}6\text{ km}
+\qquad
+\widehat M=18^\circ.
+\]
+
+Calcule \(MN\), arrondi au centième de kilomètre.
+}
+
+\section*{C. Calculer l'hypoténuse}
+
+\exohc{6}{
+Dans le triangle \(RST\) rectangle en \(S\),
+
+\[
+RS=6\text{ cm}
+\qquad
+\widehat R=42^\circ.
+\]
+
+Calcule \(RT\), arrondi au dixième de centimètre.
+}
+
+\exohc{6}{
+Dans le triangle \(UVW\) rectangle en \(V\),
+
+\[
+VW=3{,}5\text{ m}
+\qquad
+\widehat W=70^\circ.
+\]
+
+Calcule \(UW\), arrondi au dixième de mètre.
+}
+
+\exohc{6}{
+Dans le triangle \(XYZ\) rectangle en \(Y\),
+
+\[
+XY=12{,}4\text{ mm}
+\qquad
+\widehat X=53^\circ.
+\]
+
+Calcule \(XZ\), arrondi au millimètre.
+}
+
+\section*{D. Choisir l'opération et contrôler}
+
+\exohc{6}{
+Sans calculer d'abord, indique s'il faut multiplier ou diviser.
+
+\begin{enumerate}[label=\alph*)]
+  \item On connaît l'hypoténuse et on cherche le côté adjacent.
+  \item On connaît le côté adjacent et on cherche l'hypoténuse.
+  \item Explique le choix à l'aide de la relation
+  \[
+  \text{adjacent}=\text{hypoténuse}\times\cos(\text{angle}).
+  \]
+\end{enumerate}
+}
+
+\exohc{6}{
+Un élève obtient \(11{,}8\) cm pour le côté adjacent
+d'un triangle rectangle dont l'hypoténuse mesure \(9\) cm.
+
+Sans refaire le calcul, explique pourquoi le résultat est impossible.
+}
+
+\section*{E. Petits problèmes}
+
+\exohc{7}{
+Une échelle fait un angle de \(67^\circ\) avec le sol.
+Son pied est à \(1{,}8\) m du mur.
+
+Calcule la longueur de l'échelle nécessaire,
+arrondie au dixième de mètre.
+}
+
+\exohc{7}{
+Un câble de \(24\) m est tendu entre le sommet d'un pylône
+et un point du sol. Il forme un angle de \(62^\circ\) avec le sol.
+
+Calcule la distance horizontale entre le pylône et le point d'ancrage,
+arrondie au dixième de mètre.
+}
+
+\exohc{8}{
+Une observatrice se trouve à \(20\) m d'un arbre.
+Ses yeux sont à \(1{,}60\) m du sol.
+La ligne de visée vers le sommet forme un angle de \(40^\circ\)
+avec l'horizontale.
+
+\begin{enumerate}[label=\alph*)]
+  \item Calcule la longueur de la ligne de visée avec le cosinus.
+  \item Calcule ensuite la différence de hauteur avec Pythagore.
+  \item Déduis la hauteur de l'arbre.
+\end{enumerate}
+}
+
+\end{landscape}
+\end{document}

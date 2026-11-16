@@ -1,0 +1,343 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{colortbl}
+
+\usetikzlibrary{calc,arrows.meta,positioning,patterns}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Cours -- Lire, résumer et représenter des données}
+
+\section{Vocabulaire}
+
+\definition{
+\begin{itemize}
+  \item La \textbf{population} est l'ensemble étudié.
+  \item Le \textbf{caractère} est la question ou la propriété étudiée.
+  \item Les \textbf{valeurs} ou \textbf{modalités} sont les réponses possibles.
+  \item L'\textbf{effectif} d'une valeur est le nombre de fois où elle apparaît.
+  \item L'\textbf{effectif total} est le nombre total de données.
+\end{itemize}}
+
+\exemple{On étudie le mode de transport de \(24\) élèves.
+
+La population est l'ensemble des \(24\) élèves.
+Le caractère étudié est le mode de transport.
+Les modalités peuvent être : bus, voiture, vélo, à pied.}
+
+\section{Fréquences}
+
+\definition{La fréquence d'une valeur est :
+
+\[
+\boxed{
+\text{fréquence}
+=
+\text{effectif de la valeur}
+\div
+\text{effectif total}
+}
+\]}
+
+\propriete{Une fréquence peut s'écrire sous forme de fraction,
+de nombre décimal ou de pourcentage.
+
+La somme des fréquences d'une répartition complète vaut \(1\),
+soit \(100\%\).}
+
+\exemple{Dans une classe de \(25\) élèves, \(10\) viennent à pied.
+
+\[
+10\div25=0{,}4=40\%.
+\]}
+
+\section{Moyenne}
+
+\definition{La moyenne d'une série est :
+
+\[
+\boxed{
+\text{moyenne}
+=
+\text{somme des valeurs}
+\div
+\text{nombre de valeurs}
+}
+\]}
+
+\exemple{Pour la série \(8\), \(10\), \(12\), \(14\) :
+
+\[
+(8+10+12+14)\div4=11.
+\]}
+
+\remarque{La moyenne est le nombre qui pourrait remplacer toutes les valeurs
+si elles devenaient égales tout en conservant la même somme totale.
+
+Elle ne correspond pas nécessairement à une valeur réellement observée.}
+
+\subsection{Moyenne à partir d'un tableau d'effectifs}
+
+\methode{On multiplie chaque valeur par son effectif,
+on additionne les produits, puis on divise par l'effectif total :
+
+\[
+\boxed{
+\text{moyenne}
+=
+\text{somme des produits valeur}\times\text{effectif}
+\div
+\text{effectif total}
+}
+\]}
+
+\exemple{
+\[
+\begin{array}{c|ccc}
+\text{Valeur} & 5 & 10 & 15\\
+\hline
+\text{Effectif} & 2 & 3 & 1
+\end{array}
+\]
+
+\[
+(5\times2+10\times3+15\times1)\div6
+=
+55\div6
+\approx9{,}2.
+\]}
+
+\section{Médiane}
+
+\definition{Une médiane partage une série ordonnée en deux groupes
+de même effectif :
+
+\begin{itemize}
+  \item au moins la moitié des valeurs sont inférieures ou égales à la médiane ;
+  \item au moins la moitié des valeurs sont supérieures ou égales à la médiane.
+\end{itemize}}
+
+\methode{\textbf{Étape 1 :} ranger les valeurs dans l'ordre croissant.
+
+\textbf{Étape 2 :} repérer la ou les valeurs centrales.
+
+\begin{itemize}
+  \item Si l'effectif est impair, la médiane est la valeur centrale.
+  \item Si l'effectif est pair, on prend la moyenne des deux valeurs centrales.
+\end{itemize}}
+
+\exemple{\textbf{Effectif impair}
+
+\[
+4\quad7\quad9\quad10\quad12.
+\]
+
+La valeur centrale est \(9\), donc la médiane est \(9\).}
+
+\exemple{\textbf{Effectif pair}
+
+\[
+3\quad5\quad6\quad8\quad11\quad14.
+\]
+
+Les deux valeurs centrales sont \(6\) et \(8\).
+
+\[
+(6+8)\div2=7.
+\]
+
+La médiane est \(7\).}
+
+\remarque{La médiane peut être déterminée à partir de données brutes,
+d'un tableau d'effectifs ou d'un diagramme en bâtons,
+à condition de repérer les positions dans la série ordonnée.}
+
+\section{Moyenne ou médiane ?}
+
+\propriete{
+\begin{itemize}
+  \item La moyenne utilise toutes les valeurs et conserve la somme totale.
+  \item La médiane dépend de la position des valeurs dans la série ordonnée.
+  \item Une valeur extrême peut modifier fortement la moyenne.
+  \item La médiane est généralement moins sensible aux valeurs extrêmes.
+\end{itemize}}
+
+\exemple{Dans la série :
+
+\[
+1500\quad1550\quad1600\quad1650\quad1700\quad9000,
+\]
+
+le salaire de \(9000\) euros augmente fortement la moyenne,
+mais il ne modifie pas les deux valeurs centrales.}
+
+\remarque{Le choix de l'indicateur dépend de la question posée.
+
+\begin{itemize}
+  \item Pour une répartition équitable d'un total, la moyenne est souvent pertinente.
+  \item Pour décrire une valeur centrale malgré une valeur extrême,
+        la médiane peut être plus informative.
+\end{itemize}}
+
+\section*{Checklist}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm
+]
+Avant de terminer, je vérifie :
+
+\begin{itemize}
+  \item[\(\square\)] que mes effectifs ont le bon total ;
+  \item[\(\square\)] que mes fréquences totalisent \(100\%\) ;
+  \item[\(\square\)] que ma série est rangée avant de chercher la médiane ;
+  \item[\(\square\)] que j'ai pris les bonnes positions centrales ;
+  \item[\(\square\)] que la moyenne possède la bonne unité ;
+  \item[\(\square\)] que j'ai interprété l'indicateur dans le contexte ;
+  \item[\(\square\)] que mon graphique comporte titre, légende et informations utiles.
+\end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+\section{Tableaux et représentations}
+
+\remarque{Une représentation est choisie pour répondre à une question.
+
+\begin{itemize}
+  \item Un tableau organise précisément les données.
+  \item Un diagramme en bâtons compare des effectifs ou des fréquences.
+  \item Un diagramme circulaire montre la part de chaque catégorie
+        dans un total.
+\end{itemize}}
+
+\subsection{Diagramme circulaire}
+
+\propriete{Dans un diagramme circulaire, les angles sont proportionnels
+aux effectifs ou aux fréquences.
+
+Le cercle entier représente :
+
+\[
+\text{effectif total}
+\longleftrightarrow
+100\%
+\longleftrightarrow
+360^\circ.
+\]}
+
+\methode{Pour calculer l'angle d'un secteur :
+
+\[
+\boxed{
+\text{angle}
+=
+\text{effectif de la modalité}
+\times360
+\div
+\text{effectif total}
+}
+\]
+
+ou
+
+\[
+\boxed{
+\text{angle}
+=
+\text{pourcentage}
+\times360
+\div100
+}
+\]}
+
+\exemple{Une catégorie représente \(25\%\) du total.
+
+\[
+25\times360\div100=90.
+\]
+
+Le secteur mesure \(90^\circ\).}
+
+\aretenir{Pour contrôler un diagramme circulaire :
+
+\begin{itemize}
+  \item la somme des pourcentages doit valoir \(100\%\) ;
+  \item la somme des angles doit valoir \(360^\circ\) ;
+  \item un secteur plus grand doit représenter une part plus grande ;
+  \item le titre, la légende, la source et l'effectif total doivent être précisés.
+\end{itemize}}
+
+
+
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[11pt,a4paper,landscape]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{multicol}
+
+\usetikzlibrary{calc}
+
+\geometry{
+  a4paper,
+  landscape,
+  top=0.8cm,
+  bottom=0.8cm,
+  left=1cm,
+  right=1cm
+}
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.12em}
+\setlength{\columnsep}{0.85cm}
+
+\setlist[enumerate]{
+  leftmargin=*,
+  itemsep=0.08em,
+  topsep=0.08em,
+  parsep=0pt
+}
+
+\titlespacing*{\section}
+  {0pt}
+  {0.35em}
+  {0.12em}
+
+\newcommand{\soustitreexo}[1]{%
+  {\sffamily\bfseries\color{TitreC}#1}\par
+  \vspace{0.04em}
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Correction -- Séance d'AP : Statistiques}\\[-0.05em]
+
+  {\sffamily\normalsize\bfseries\color{SavoirC}
+  Vocabulaire, effectifs, moyenne et fréquences}
+\end{center}
+
+\vspace{-0.45em}
+
+\begin{multicols*}{2}
+
+%==================================================
+\section*{1. Vocabulaire et effectifs}
+%==================================================
+
+\soustitreexo{Exercice 1}
+
+On étudie les livres lus par \(24\) élèves.
+
+\begin{enumerate}[label=\alph*)]
+  \item \textbf{Population :} les \(24\) élèves interrogés.
+  \item \textbf{Caractère étudié :} le nombre de livres lus pendant les vacances.
+  \item \textbf{Valeurs prises :} \(0;\ 1;\ 2;\ 3;\ 4;\ 5\).
+  \item La valeur \(2\) apparaît \(6\) fois : son \textbf{effectif est \(6\)}.
+\end{enumerate}
+
+\soustitreexo{Exercice 2}
+
+\begin{enumerate}[label=\alph*)]
+  \item Effectif des élèves venant en bus : \(\boxed{11}\).
+  \item Effectif total :
+  \[
+  6+11+4+7=\boxed{28}.
+  \]
+  \item Élèves ne venant pas en bus :
+  \[
+  28-11=\boxed{17}.
+  \]
+\end{enumerate}
+
+%==================================================
+\section*{2. Lire un document}
+%==================================================
+
+\soustitreexo{Exercice 3}
+
+\begin{enumerate}[label=\alph*)]
+  \item Effectif en natation : \(\boxed{9}\).
+  \item L'activité d'effectif le plus faible est la \textbf{danse}, avec \(\boxed{5}\) élèves.
+  \item Effectif total :
+  \[
+  8+5+9+6=\boxed{28}.
+  \]
+\end{enumerate}
+
+%==================================================
+\section*{3. Moyenne}
+%==================================================
+
+\soustitreexo{Exercice 4 -- Une petite série}
+
+\[
+M=\frac{9+5+5+9+9+9+5+6+2+6}{10}
+=\frac{65}{10}
+=\boxed{6{,}5}.
+\]
+
+\textbf{Interprétation :} la moyenne des notes de Charles est de
+\(\boxed{6{,}5/20}\).
+
+\soustitreexo{Exercice 5 -- Une série plus longue}
+
+La somme des \(31\) températures est \(424\).
+
+\[
+M=\frac{424}{31}\approx\boxed{13{,}7}.
+\]
+
+\textbf{Interprétation :} durant ce mois, la température quotidienne
+a été en moyenne d'environ \(\boxed{13{,}7\,^\circ\mathrm{C}}\).
+
+\columnbreak
+
+%==================================================
+\section*{3. Moyenne -- suite}
+%==================================================
+
+\soustitreexo{Exercice 6 -- Des données regroupées}
+
+Chaque pointure doit être comptée autant de fois que l'indique son effectif :
+
+\[
+M=
+\frac{
+35\times7+
+36\times9+
+37\times5+
+38\times2+
+39\times7
+}{
+7+9+5+2+7
+}.
+\]
+
+\[
+M=\frac{1103}{30}\approx\boxed{36{,}8}.
+\]
+
+\textbf{Interprétation :} la pointure moyenne des membres du club
+est d'environ \(\boxed{36{,}8}\).
+
+\remarque{Une moyenne n'est pas obligatoirement une valeur observée :
+aucun membre du club n'a besoin de chausser du \(36{,}8\).}
+
+
+\end{multicols*}
+
+\end{document}

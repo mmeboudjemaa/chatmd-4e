@@ -1,0 +1,275 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{geometry}
+
+\geometry{top=1cm,bottom=1cm,left=1.15cm,right=1.15cm}
+
+\setlength{\parindent}{0pt}
+
+\setlist[itemize]{
+  leftmargin=1.35em,
+  itemsep=0.18em,
+  topsep=0.12em,
+  parsep=0pt
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Le mode d'emploi pour rédiger en maths}\\[-0.05em]
+  {\sffamily\small\color{SavoirC}
+  À garder sous la main quand j'écris une solution}
+\end{center}
+
+\vspace{0.15em}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,right=3mm,top=1.5mm,bottom=1.5mm,
+  before skip=1mm,after skip=2mm
+]
+\centering
+{\sffamily\bfseries\color{SavoirC}
+Mon objectif : qu'un camarade puisse comprendre ma solution dès la première lecture.}
+\end{tcolorbox}
+
+\vspace{0.2em}
+
+% =========================================================
+% DEUX COLONNES ALIGNÉES EN HAUT
+% =========================================================
+
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+
+% =========================================================
+% JE ME FAIS COMPRENDRE
+% =========================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=ActionC!65,
+  boxrule=0.6pt,
+  arc=2mm,
+  title={\sffamily\bfseries Je me fais comprendre},
+  coltitle=ActionC,
+  fonttitle=\normalsize,
+  left=2.5mm,right=2.5mm,top=1.4mm,bottom=1.4mm
+]
+\small
+\begin{itemize}
+  \item J'écris comme si j'expliquais à un camarade.
+
+  \item Je ne raconte pas tout : j'écris ce qui aide vraiment à comprendre mon raisonnement.
+
+  \item J'utilise les symboles et les notations mathématiques quand ils rendent l'écriture plus claire.
+
+  \item Quand une phrase est nécessaire, je fais une vraie phrase.
+
+  \item J'ai le droit de laisser dans ma rédaction un raisonnement qui n'aboutit pas,
+  \textbf{sans l'effacer}, si j'indique clairement que j'abandonne cette piste.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.3em}
+
+% =========================================================
+% CALCULS
+% =========================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=SavoirC!65,
+  boxrule=0.6pt,
+  arc=2mm,
+  title={\sffamily\bfseries Mes calculs doivent rester vrais},
+  coltitle=SavoirC,
+  fonttitle=\normalsize,
+  left=2.5mm,right=2.5mm,top=1.4mm,bottom=1.4mm
+]
+\small
+
+\begin{itemize}
+  \item Le signe \(=\) signifie \textbf{« a la même valeur que »}.
+  Il ne veut pas dire « et puis ».
+
+  \item Je peux écrire plusieurs égalités \textbf{sur la même ligne}
+  si elles sont toutes vraies :
+\end{itemize}
+
+\vspace{-0.25em}
+
+\[
+24+6-5 = 30-5 = 25
+\]
+
+\vspace{-0.4em}
+
+\begin{itemize}
+  \item Je peux aussi écrire les étapes \textbf{les unes sous les autres} :
+\end{itemize}
+
+\vspace{-0.25em}
+
+\[
+\begin{aligned}
+24+6-5 &= 30-5\\
+       &= 25
+\end{aligned}
+\]
+
+\vspace{-0.4em}
+
+\begin{center}
+\scriptsize\itshape
+Les deux écritures sont correctes.
+En colonne, il est souvent plus facile de suivre et de vérifier chaque étape.
+\end{center}
+
+\vspace{-0.25em}
+
+\begin{itemize}
+  \item Si un nombre n'était pas dans l'énoncé, je dois pouvoir expliquer d'où il vient par un calcul.
+
+  \item Je peux séparer mes opérations si cela rend mon raisonnement plus clair.
+\end{itemize}
+
+\end{tcolorbox}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+
+% =========================================================
+% JUSTIFIER AVEC UNE PROPRIÉTÉ
+% =========================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=AttentionC!5,
+  colframe=AttentionC!70,
+  boxrule=0.7pt,
+  arc=2mm,
+  title={\sffamily\bfseries Quand je justifie avec une propriété},
+  coltitle=AttentionC,
+  fonttitle=\normalsize,
+  left=2.5mm,right=2.5mm,top=1.4mm,bottom=1.4mm
+]
+
+\centering
+{\sffamily\bfseries\large
+On sait que \(\ldots\)\\[0.25em]
+Or \(\ldots\)\\[0.25em]
+Donc \(\ldots\)}
+\par
+
+\vspace{0.4em}
+
+\raggedright
+\small
+\begin{itemize}
+  \item \textbf{On sait que} : j'écris les informations connues dans l'exercice.
+
+  \item \textbf{Or} : j'écris la propriété, le théorème ou la règle que j'utilise.
+
+  \item \textbf{Donc} : j'écris ce que j'en conclus.
+\end{itemize}
+
+\begin{center}
+\scriptsize\itshape
+Ce squelette m'aide à démarrer.
+Je peux rédiger autrement si mon raisonnement reste clair.
+\end{center}
+
+\end{tcolorbox}
+
+\vspace{0.3em}
+
+% =========================================================
+% BROUILLON
+% =========================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  title={\sffamily\bfseries Mon brouillon fait partie du travail},
+  coltitle=TitreC,
+  fonttitle=\normalsize,
+  left=2.5mm,right=2.5mm,top=1.4mm,bottom=1.4mm
+]
+\small
+\begin{itemize}
+  \item Un brouillon n'est pas « sale » : il garde la trace de ma recherche.
+
+  \item Une piste qui ne marche pas peut quand même m'aider.
+
+  \item Le brouillon m'aide à \textbf{commencer ma rédaction} :
+  je peux m'appuyer sur les étapes que j'ai déjà trouvées.
+
+  \item J'évite de faire \textbf{recherche et rédaction en même temps},
+  sauf si je suis sûre de moi.
+
+  \item Je garde ce qui permet de comprendre comment j'ai trouvé.
+
+  \item Avant de prendre la calculatrice, j’écris ce que je veux calculer ou tester.
+\end{itemize}
+\end{tcolorbox}
+
+\end{minipage}
+
+\vspace{0.35em}
+
+% =========================================================
+% CHECK-LIST FINALE
+% =========================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=NeutreC!4,
+  colframe=NeutreC!40,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,right=3mm,top=1.4mm,bottom=1.4mm,
+  before skip=1mm,after skip=0mm
+]
+{\sffamily\bfseries\color{TitreC}Avant de rendre, je vérifie :}
+
+\vspace{0.25em}
+
+\small
+\(\square\) On comprend ce que j'ai fait.
+\qquad
+\(\square\) Mes signes \(=\) sont vrais.
+
+\vspace{0.15em}
+
+\(\square\) Les nombres nouveaux sont expliqués.
+\qquad
+\(\square\) J'ai justifié ce qui devait l'être.
+\end{tcolorbox}
+
+\end{document}

@@ -1,0 +1,631 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{microtype}
+
+\usetikzlibrary{calc,positioning}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
+
+\setlist[itemize]{
+  leftmargin=1.25em,
+  itemsep=0.05em,
+  topsep=0.1em
+}
+
+% =========================================================
+% IMAGES
+% Toutes les images sont dans le dossier images/
+% =========================================================
+
+\newcommand{\copieimage}[2][]{%
+  \IfFileExists{images/#2.png}{%
+    \includegraphics[#1]{images/#2.png}%
+  }{%
+    \IfFileExists{images/#2.jpg}{%
+      \includegraphics[#1]{images/#2.jpg}%
+    }{%
+      \IfFileExists{images/#2.jpeg}{%
+        \includegraphics[#1]{images/#2.jpeg}%
+      }{%
+        \fbox{%
+          \parbox[c][3cm][c]{0.9\linewidth}{%
+            \centering\sffamily\small
+            Image introuvable :\\
+            \texttt{\detokenize{#2}}
+          }%
+        }%
+      }%
+    }%
+  }%
+}
+
+% Cadre léger autour des scans.
+% Aucun recadrage : on conserve l'image entière.
+\newcommand{\copieencadree}[2][]{%
+  \begingroup
+  \setlength{\fboxsep}{1.5pt}%
+  \setlength{\fboxrule}{0.35pt}%
+  \fcolorbox{black!28}{white}{%
+    \copieimage[#1]{#2}%
+  }%
+  \endgroup
+}
+
+% =========================================================
+% TITRE
+% =========================================================
+
+\newcommand{\titreAP}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  AP -- J'écris des maths}\\[-0.08em]
+
+  {\sffamily\large\bfseries\color{SavoirC}
+  #1}
+\end{center}
+
+\vspace{-0.35em}
+}
+
+% =========================================================
+% BOUSSOLE
+% =========================================================
+
+\newcommand{\boussole}{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!42,
+  boxrule=0.45pt,
+  arc=1.5mm,
+  left=2mm,
+  right=2mm,
+  top=0.8mm,
+  bottom=0.8mm,
+  before skip=0.4mm,
+  after skip=1.3mm
+]
+
+\small
+
+{\sffamily\bfseries\color{SavoirC}
+Si cela t'aide :}
+\qquad
+\textbf{\(+\)} quelque chose qui m'aide
+\qquad
+\textbf{\(?\)} quelque chose qui m'interroge
+\qquad
+\textbf{\(\rightarrow\)} quelque chose que je modifierais
+
+\end{tcolorbox}
+}
+
+% =========================================================
+% CORRECTION ÉCLAIR
+% =========================================================
+
+\newcommand{\correctioneclair}[1]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=NeutreBg,
+  colframe=NeutreC!35,
+  boxrule=0.45pt,
+  arc=1.5mm,
+  borderline west={1mm}{0pt}{NeutreC},
+  left=2.3mm,
+  right=2.3mm,
+  top=1mm,
+  bottom=1mm,
+  before skip=0.8mm,
+  after skip=1.2mm
+]
+
+{\small
+\textbf{Correction éclair :}\quad #1
+}
+
+\end{tcolorbox}
+}
+
+% =========================================================
+% MISSION OUVERTE
+% =========================================================
+
+\newcommand{\missionouverte}[1]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!48,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=2.4mm,
+  right=2.4mm,
+  top=1mm,
+  bottom=1mm,
+  before skip=0.8mm,
+  after skip=1.4mm
+]
+
+{\sffamily\bfseries\small\color{ActionC}
+Mission}
+\quad
+{\small #1}
+
+\end{tcolorbox}
+}
+
+% =========================================================
+% ZONE DE REMARQUES
+% =========================================================
+
+\newcommand{\remarques}[1]{%
+\begin{tcolorbox}[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!28,
+  boxrule=0.45pt,
+  arc=1.5mm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.5mm,
+  bottom=1.5mm,
+  height=#1,
+  before skip=1.2mm,
+  after skip=0.6mm
+]
+
+{\sffamily\bfseries\small\color{NeutreC}
+Mes remarques}
+
+\end{tcolorbox}
+}
+
+% =========================================================
+% ÉTIQUETTES
+% =========================================================
+
+\newcommand{\etiquette}[1]{%
+  {\sffamily\bfseries\small\color{TitreC}#1}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% PAGE 1
+% GÉOMÉTRIE : PRODUCTIONS 1 ET 3
+% =========================================================
+
+\titreAP{Problème de géométrie -- productions 1 et 3}
+
+\boussole
+
+\noindent
+\begin{minipage}[c]{0.60\linewidth}
+
+{\sffamily\bfseries\small\color{TitreC}
+Énoncé}
+
+\smallskip
+
+\small
+
+\(ABC\) est un triangle rectangle en \(B\) tel que
+\(\widehat{BAC}=50^\circ\) et \(AC=4\) cm.
+
+\(BCD\) est un triangle équilatéral.
+
+\(CDE\) est un triangle tel que
+\(\widehat{DCE}=80^\circ\) et \(CE=2{,}4\) cm.
+
+\textbf{Calculer la longueur \(AE\).}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.37\linewidth}
+
+\centering
+
+\copieencadree[
+  width=0.96\linewidth,
+  height=0.15\textheight,
+  keepaspectratio
+]{problème de longueur figure}
+
+\end{minipage}
+
+\correctioneclair{%
+\(\widehat{ACB}=40^\circ\) et
+\(\widehat{BCD}=60^\circ\).
+Donc
+\(40^\circ+60^\circ+80^\circ=180^\circ\) :
+\(A\), \(C\) et \(E\) sont alignés.
+Ainsi
+\(AE=4+2{,}4=6{,}4\) cm.
+}
+
+\missionouverte{%
+Observe les deux productions.
+Annote-les librement et note ce que tu remarques.
+}
+
+% ---------- Production 1 ----------
+
+\etiquette{Production 1}
+
+\vspace{0.2em}
+
+\begin{center}
+
+\copieencadree[
+  width=0.94\linewidth,
+  height=0.12\textheight,
+  keepaspectratio
+]{production 1}
+
+\end{center}
+
+\vspace{0.4em}
+
+% ---------- Production 3 ----------
+
+\etiquette{Production 3}
+
+\vspace{0.2em}
+
+\noindent
+\begin{minipage}[c]{0.49\linewidth}
+\centering
+
+\copieencadree[
+  width=0.95\linewidth,
+  height=0.22\textheight,
+  keepaspectratio
+]{production 3 (1)}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.49\linewidth}
+\centering
+
+\copieencadree[
+  width=0.95\linewidth,
+  height=0.22\textheight,
+  keepaspectratio
+]{production 3 (2)}
+
+\end{minipage}
+
+\remarques{2.7cm}
+
+
+% =========================================================
+% PAGE 2
+% GÉOMÉTRIE : PRODUCTION 4
+% =========================================================
+
+\newpage
+
+\titreAP{Problème de géométrie -- production 4}
+
+\boussole
+
+\correctioneclair{%
+\(\widehat{ACB}=40^\circ\),
+\(\widehat{BCD}=60^\circ\) et
+\(40^\circ+60^\circ+80^\circ=180^\circ\).
+Donc \(A,C,E\) sont alignés et
+\(AE=6{,}4\) cm.
+}
+
+\missionouverte{%
+Observe cette production.
+Annote-la et écris ce que tu en penses.
+}
+
+\begin{center}
+
+\etiquette{Production 4 -- brouillon}
+
+\vspace{0.3em}
+
+\copieencadree[
+  width=0.92\linewidth,
+  height=0.58\textheight,
+  keepaspectratio
+]{production 4}
+
+\end{center}
+
+\remarques{3.3cm}
+
+
+% =========================================================
+% PAGE 3
+% GÉOMÉTRIE : PRODUCTION 5
+% =========================================================
+
+\newpage
+
+\titreAP{Problème de géométrie -- production 5}
+
+\boussole
+
+\correctioneclair{%
+\(\widehat{ACB}=40^\circ\),
+\(\widehat{BCD}=60^\circ\),
+puis
+\(40^\circ+60^\circ+80^\circ=180^\circ\).
+Donc \(A,C,E\) sont alignés et
+\(AE=6{,}4\) cm.
+}
+
+\missionouverte{%
+Observe et annote cette production.
+Écris ensuite tes remarques.
+}
+
+\begin{center}
+
+\etiquette{Production 5}
+
+\vspace{0.3em}
+
+\copieencadree[
+  width=0.93\linewidth,
+  height=0.31\textheight,
+  keepaspectratio
+]{production 5 (1)}
+
+\vspace{0.5em}
+
+\copieencadree[
+  width=0.93\linewidth,
+  height=0.31\textheight,
+  keepaspectratio
+]{production 5 (2)}
+
+\end{center}
+
+\remarques{2.7cm}
+
+
+% =========================================================
+% PAGE 4
+% GÉOMÉTRIE : PRODUCTION 6
+% =========================================================
+
+\newpage
+
+\titreAP{Problème de géométrie -- production 6}
+
+\boussole
+
+\correctioneclair{%
+\(\widehat{ACB}=40^\circ\),
+\(\widehat{BCD}=60^\circ\),
+puis
+\(40^\circ+60^\circ+80^\circ=180^\circ\).
+Donc \(A,C,E\) sont alignés et
+\(AE=6{,}4\) cm.
+}
+
+\missionouverte{%
+Observe et annote cette production.
+Écris ensuite tes remarques.
+}
+
+\begin{center}
+
+\etiquette{Production 6}
+
+\vspace{0.3em}
+
+\copieencadree[
+  width=0.92\linewidth,
+  height=0.60\textheight,
+  keepaspectratio
+]{production 6}
+
+\end{center}
+
+\remarques{3cm}
+
+
+% =========================================================
+% PAGE 5
+% ALLUMETTES : RÉPONSES 2 ET 4
+% =========================================================
+
+\newpage
+
+\titreAP{Problème des allumettes -- réponses 2 et 4}
+
+\boussole
+
+\noindent
+\begin{minipage}[c]{0.44\linewidth}
+
+\centering
+
+\copieencadree[
+  width=0.96\linewidth,
+  height=0.17\textheight,
+  keepaspectratio
+]{allumettes maisons}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.53\linewidth}
+
+\small
+
+On construit des maisons avec des allumettes comme sur la figure.
+
+Il fallait trouver le nombre d'allumettes aux étapes
+4, 10 et 2007, puis donner une méthode valable pour
+une \textbf{étape quelconque}.
+
+\end{minipage}
+
+\correctioneclair{%
+À l'étape \(n\),
+on peut écrire
+\[
+5+4(n-1)=4n+1.
+\]
+Donc :
+étape 4 : \(17\) ;
+étape 10 : \(41\) ;
+étape 2007 : \(8029\).
+}
+
+\missionouverte{%
+Observe et annote les deux réponses.
+Écris ce que tu remarques.
+}
+
+% ---------- Réponse 2 ----------
+
+\etiquette{Réponse 2}
+
+\vspace{0.25em}
+
+\begin{center}
+
+\copieencadree[
+  width=0.92\linewidth,
+  height=0.13\textheight,
+  keepaspectratio
+]{reponse 2}
+
+\end{center}
+
+\vspace{0.5em}
+
+% ---------- Réponse 4 ----------
+
+\etiquette{Réponse 4}
+
+\vspace{0.25em}
+
+\begin{center}
+
+\copieencadree[
+  width=0.92\linewidth,
+  height=0.14\textheight,
+  keepaspectratio
+]{reponse 4}
+
+\end{center}
+
+\remarques{3.4cm}
+
+
+% =========================================================
+% PAGE 6
+% ALLUMETTES : RÉPONSES 6, 7 ET 8
+% =========================================================
+
+\newpage
+
+\titreAP{Problème des allumettes -- autres réponses}
+
+\boussole
+
+\correctioneclair{%
+Une expression correcte est
+\(\boxed{4n+1}\),
+où \(n\) désigne le numéro de l'étape.
+}
+
+\missionouverte{%
+Observe et annote les trois réponses.
+Écris ce que tu remarques.
+}
+
+% ---------- Réponses 6 et 7 ----------
+
+\noindent
+\begin{minipage}[t]{0.47\linewidth}
+
+\etiquette{Réponse 6}
+
+\vspace{0.3em}
+
+\centering
+
+\copieencadree[
+  width=0.94\linewidth,
+  height=0.20\textheight,
+  keepaspectratio
+]{reponse 6}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.50\linewidth}
+
+\etiquette{Réponse 7}
+
+\vspace{0.3em}
+
+\centering
+
+\copieencadree[
+  width=0.94\linewidth,
+  height=0.20\textheight,
+  keepaspectratio
+]{reponse 7}
+
+\end{minipage}
+
+\vspace{0.9em}
+
+% ---------- Réponse 8 ----------
+
+\begin{center}
+
+\begin{minipage}{0.80\linewidth}
+
+\etiquette{Réponse 8}
+
+\vspace{0.3em}
+
+\centering
+
+\copieencadree[
+  width=0.94\linewidth,
+  height=0.25\textheight,
+  keepaspectratio
+]{reponse 8}
+
+\end{minipage}
+
+\end{center}
+
+\remarques{3.7cm}
+
+\end{document}

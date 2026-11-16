@@ -1,0 +1,79 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xparse}
+\usepackage{enumitem}
+
+\setlist[enumerate]{
+  leftmargin=*,
+  itemsep=0.15em,
+  topsep=0.2em
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+\vspace{-0.2em}
+}
+
+\newcommand{\activitefahrenheit}{%
+
+\titreseq{Activité 2 -- Découvrir la multiplication des nombres relatifs}
+
+\noindent
+En France, on mesure la température en degrés Celsius.
+Dans d'autres pays, elle se mesure en degrés Fahrenheit.
+
+\medskip
+
+\noindent
+La température \(t_F\), en degrés Fahrenheit, se calcule lorsqu'on connaît
+la température \(t_C\), en degrés Celsius, avec la formule :
+
+\[
+t_F = 1{,}8\times t_C + 32
+\]
+
+\begin{enumerate}
+    \item À quelle température en degrés Fahrenheit correspond
+    \(10\,^\circ\mathrm{C}\) ?
+
+    \item À quelle température en degrés Fahrenheit correspond
+    \(-10\,^\circ\mathrm{C}\) ?
+
+    \item À quelle température en degrés Celsius correspond
+    \(59\,^\circ\mathrm{F}\) ?
+    \textit{(Calculatrice autorisée.)}
+\end{enumerate}
+}
+
+\begin{document}
+
+\begin{minipage}[t][0.31\textheight][t]{\textwidth}
+\activitefahrenheit
+\end{minipage}
+
+\vfill
+
+\begin{minipage}[t][0.31\textheight][t]{\textwidth}
+\activitefahrenheit
+\end{minipage}
+
+\vfill
+
+\begin{minipage}[t][0.31\textheight][t]{\textwidth}
+\activitefahrenheit
+\end{minipage}
+
+\end{document}

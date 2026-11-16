@@ -1,0 +1,238 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{fontawesome5}
+\usepackage{styles/couleurs}
+\usepackage{styles/maths}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+%==================================================
+% Style général
+%==================================================
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\setbeamercolor{frametitle}{
+  fg=SavoirC,
+  bg=white
+}
+
+\setbeamerfont{frametitle}{
+  series=\bfseries,
+  size=\Large
+}
+
+\setbeamerfont{normal text}{
+  size=\large
+}
+
+\newcommand{\consigne}{%
+\begin{beamercolorbox}[
+  rounded=true,
+  sep=0.8em,
+  wd=\textwidth
+]{block body}
+\centering
+\textbf{1. Trouve l'opération qui traduit la situation.}
+
+\medskip
+
+\textbf{2. Calcule le résultat.}
+\end{beamercolorbox}
+}
+
+%==================================================
+% DOCUMENT
+%==================================================
+
+\begin{document}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Réactiver additions et soustractions}
+
+\centering
+
+{\Huge\bfseries Nombres relatifs}
+
+\vspace{0.6cm}
+
+{\Large
+Pour chaque situation :
+
+\medskip
+
+\textbf{trouver l'opération, puis calculer.}
+}
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 1 -- Kelvin et degrés Celsius}
+
+Le \textbf{kelvin}, noté \(\mathrm{K}\), est une unité de température.
+
+\medskip
+
+Le zéro absolu correspond à \(0\,\mathrm{K}\).
+
+\medskip
+
+Pour passer d'une température en kelvins à une température
+en degrés Celsius, on \textbf{soustrait 273}.
+
+\vspace{0.6cm}
+
+\begin{block}{Question}
+À combien de degrés Celsius correspond \(0\,\mathrm{K}\) ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 2 -- Du Celsius au kelvin}
+
+Le record absolu de froid en France a été enregistré
+à une température de
+
+\[
+-41\,^\circ\mathrm{C}.
+\]
+
+\vspace{0.5cm}
+
+Pour passer des degrés Celsius aux kelvins,
+on effectue l'opération inverse.
+
+\vspace{0.4cm}
+
+\begin{block}{Question}
+À quelle température en kelvins correspond
+\(-41\,^\circ\mathrm{C}\) ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 3 -- Températures sur la Lune}
+
+Sur la Lune, il peut faire :
+
+\[
+130\,^\circ\mathrm{C}
+\]
+
+dans les zones exposées au Soleil,
+
+\medskip
+
+et
+
+\[
+-150\,^\circ\mathrm{C}
+\]
+
+dans les zones à l'ombre.
+
+\vspace{0.4cm}
+
+\begin{block}{Question}
+Quel est l'écart entre ces deux températures ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 4 -- Une matinée froide}
+
+À \(7\) h, la température est de
+
+\[
+-6\,^\circ\mathrm{C}.
+\]
+
+À midi, elle est de
+
+\[
+4\,^\circ\mathrm{C}.
+\]
+
+\vspace{0.4cm}
+
+\begin{block}{Question}
+De combien de degrés la température a-t-elle augmenté ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 5 -- Le sous-marin}
+
+Un sous-marin se trouve à l'altitude
+
+\[
+-35\text{ m}.
+\]
+
+Il \textbf{remonte de \(18\) m}.
+
+\vspace{0.5cm}
+
+\begin{block}{Question}
+À quelle altitude se trouve-t-il maintenant ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Situation 6 -- Le sous-marin continue}
+
+Le sous-marin se trouve maintenant à l'altitude obtenue
+dans la situation précédente.
+
+\medskip
+
+Il \textbf{descend ensuite de \(27\) m}.
+
+\vspace{0.5cm}
+
+\begin{block}{Question}
+À quelle altitude se trouve-t-il maintenant ?
+\end{block}
+
+\vfill
+
+\consigne
+
+\end{frame}
+
+\end{document}

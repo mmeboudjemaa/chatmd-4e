@@ -1,0 +1,239 @@
+\documentclass[9.5pt,a4paper,landscape]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,landscape,margin=0.8cm]{geometry}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{amsmath}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{bleu}{HTML}{245B78}
+\definecolor{gris}{HTML}{F7F7F7}
+
+\newtcolorbox{exo}[1]{
+  colback=white,
+  colframe=black!55,
+  boxrule=0.45pt,
+  arc=1.2mm,
+  left=1.8mm,
+  right=1.8mm,
+  top=1.5mm,
+  bottom=1.3mm,
+  height=5.35cm,
+  valign=top,
+  title=\textbf{Exercice hors classe #1},
+  coltitle=bleu,
+  fonttitle=\small,
+  colbacktitle=gris,
+  titlerule=0.25pt
+}
+
+\begin{document}
+
+\fontsize{9}{10.5}\selectfont
+
+\begin{center}
+{\large\bfseries\color{bleu}
+Séquence 1 -- Statistiques : exercices hors classe}\par
+
+\vspace{0.1em}
+
+{\small
+À faire dans le cahier.
+Chaque exercice est court et reprend directement un travail déjà rencontré en classe.}
+\end{center}
+
+\vspace{0.25em}
+
+%==================================================
+% LIGNE 1
+%==================================================
+
+\noindent
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{1}
+Dans un parking de 50 voitures, on compte 8 voitures blanches,
+12 noires et 14 bleues. Les autres sont rouges.
+
+\medskip
+Combien y a-t-il de voitures rouges ?
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{2}
+Dans une classe de 24 élèves, 6 viennent au collège à vélo.
+
+\medskip
+Donne la fréquence correspondante sous forme de fraction puis de pourcentage.
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{3}
+Dans un groupe de 32 élèves, 25\% ont choisi l'option théâtre.
+
+\medskip
+Combien d'élèves cela représente-t-il ?
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{4}
+Voici cinq nombres :
+
+\[
+8\quad 11\quad 9\quad 12\quad 10
+\]
+
+Calcule leur moyenne.
+\end{exo}
+\end{minipage}
+
+\vspace{0.16cm}
+
+%==================================================
+% LIGNE 2
+%==================================================
+
+\noindent
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{5}
+Une joueuse a obtenu :
+
+\begin{center}
+\begin{tabular}{c|ccc}
+Score & 8 & 10 & 12\\
+\hline
+Effectif & 2 & 3 & 1
+\end{tabular}
+\end{center}
+
+Calcule son score moyen.
+Arrondis au dixième si besoin.
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{6}
+Détermine la médiane de la série :
+
+\[
+11;\ 17;\ 14;\ 26;\ 19;\ 30;\ 12
+\]
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{7}
+Détermine la médiane de la série :
+
+\[
+13;\ 21;\ 19;\ 18;\ 27;\ 15
+\]
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{8}
+La médiane d'une série est 14.
+
+\medskip
+Complète :
+
+Au moins la moitié des valeurs sont \dotfill{} 14
+et au moins la moitié sont \dotfill{} 14.
+\end{exo}
+\end{minipage}
+
+\vspace{0.16cm}
+
+%==================================================
+% LIGNE 3
+%==================================================
+
+\noindent
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{9}
+Voici des profondeurs atteintes en apnée :
+
+\[
+-82;\ -96;\ -86;\ -92;\ -87\ \text{m}
+\]
+
+Quelle est la profondeur médiane ?
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{10}
+On interroge 28 élèves sur le nombre de frères et sœurs qu'ils ont.
+
+\medskip
+Indique :
+\begin{itemize}
+  \item la population étudiée ;
+  \item le caractère étudié.
+\end{itemize}
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{11}
+Dans un groupe de 40 élèves, 14 viennent au collège en bus.
+
+\medskip
+Donne la fréquence correspondante :
+\begin{itemize}
+  \item sous forme de fraction ;
+  \item en écriture décimale ;
+  \item en pourcentage.
+\end{itemize}
+\end{exo}
+\end{minipage}
+\hfill
+%
+\begin{minipage}[t]{0.242\linewidth}
+\begin{exo}{12}
+La durée moyenne du trajet domicile--collège d'un groupe d'élèves
+est de 18 minutes.
+
+\medskip
+Écris une phrase qui interprète cette moyenne.
+\end{exo}
+\end{minipage}
+
+%==================================================
+% CORRIGÉ PROF (non imprimé)
+%==================================================
+%
+% 1) 16.
+% 2) 6/24 = 1/4 = 25 %.
+% 3) 8.
+% 4) 10.
+% 5) (2x8 + 3x10 + 1x12)/6 = 58/6 ≈ 9,7.
+% 6) 17.
+% 7) 18,5.
+% 8) inférieures ou égales à / supérieures ou égales à.
+% 9) -87 m.
+% 10) Population : les 28 élèves interrogés.
+%     Caractère : le nombre de frères et sœurs.
+% 11) 14/40 = 7/20 = 0,35 = 35 %.
+% 12) Interprétation possible :
+%     si la durée totale des trajets était répartie également
+%     entre les élèves, chacun aurait un trajet de 18 minutes.
+%
+\end{document}

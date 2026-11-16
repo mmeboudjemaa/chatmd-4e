@@ -1,0 +1,132 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 7 -- Mesurer une hauteur inaccessible}
+
+Une observatrice se tient à \(30\) m d'un arbre.
+Ses yeux sont à \(1{,}75\) m du sol.
+La ligne horizontale passant par ses yeux rencontre le tronc en \(H\).
+Elle voit le sommet \(A\) sous un angle de \(35^\circ\).
+
+On suppose le sol horizontal et le tronc vertical.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.13]
+  \coordinate (S) at (0,12);
+  \coordinate (H) at (30,12);
+  \coordinate (A) at (30,33);
+  \coordinate (P) at (0,0);
+  \coordinate (T) at (30,0);
+
+  \draw[line width=1pt] (-3,0)--(34,0);
+  \draw[line width=1pt] (T)--(A);
+  \draw[line width=0.9pt] (S)--(H);
+  \draw[line width=0.9pt] (S)--(A);
+  \draw[dashed] (P)--(S);
+  \draw[dashed] (H)--(T);
+
+  \draw (30,12)--(28.2,12)--(28.2,13.8);
+
+  \node[left] at (S) {$S$};
+  \node[right] at (H) {$H$};
+  \node[above] at (A) {$A$};
+  \node[below] at (P) {$P$};
+  \node[below] at (T) {$T$};
+
+  \node[below] at (15,0) {$PT=30$ m};
+  \node[left] at (0,6) {$PS=1{,}75$ m};
+
+  \draw[ActionC,line width=1.2pt] (4,12) arc[start angle=0,end angle=35,radius=4];
+  \node[ActionC] at (5.3,14) {$35^\circ$};
+\end{tikzpicture}
+\end{center}
+
+\section*{Partie A -- Comprendre la figure}
+
+\begin{enumerate}
+  \item Pourquoi le triangle \(SHA\) est-il rectangle en \(H\) ?
+  \item Quelle longueur vaut \(30\) m dans ce triangle ?
+  \item La hauteur cherchée est-elle directement \(AH\) ? Explique.
+  \item Quelle est l'hypoténuse du triangle \(SHA\) ?
+\end{enumerate}
+
+\lignesreponse{5}
+
+\section*{Partie B -- Première étape : calculer la ligne de visée}
+
+Dans le triangle \(SHA\) rectangle en \(H\), écris le cosinus de l'angle
+\(\widehat{HSA}=35^\circ\).
+
+Déduis la longueur \(SA\), arrondie seulement pour l'affichage,
+mais conserve la valeur complète dans la calculatrice pour la suite.
+
+\lignesreponse{6}
+
+\section*{Partie C -- Deuxième étape : calculer la hauteur au-dessus des yeux}
+
+Utilise le théorème de Pythagore dans le triangle \(SHA\)
+pour calculer \(AH\).
+
+\lignesreponse{6}
+
+\section*{Partie D -- Conclure}
+
+Calcule la hauteur totale \(AT\) de l'arbre.
+
+Donne un résultat arrondi au centimètre et rédige une phrase de conclusion.
+
+\lignesreponse{5}
+
+\section*{Partie E -- Contrôler le résultat}
+
+\begin{enumerate}
+  \item La ligne de visée \(SA\) doit-elle être plus grande ou plus petite que \(SH\) ?
+  \item Pourquoi \(AH\) est-il inférieur à \(SA\) ?
+  \item Que se passerait-il si l'on oubliait la hauteur des yeux ?
+\end{enumerate}
+
+\lignesreponse{4}
+
+\aretenir{Dans un problème complexe, le cosinus ne donne pas toujours directement
+la longueur finale. Il peut fournir une longueur intermédiaire,
+puis un autre outil géométrique permet de poursuivre.}
+
+\end{document}

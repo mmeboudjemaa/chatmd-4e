@@ -1,0 +1,461 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Cours -- Calculer des longueurs dans un triangle rectangle}
+
+\section{Vocabulaire du triangle rectangle}
+
+\definition{Dans un triangle rectangle :
+
+\begin{itemize}
+  \item l'\textbf{hypoténuse} est le côté opposé à l'angle droit ;
+  \item c'est aussi le plus long côté du triangle ;
+  \item pour un angle aigu donné, le \textbf{côté adjacent} est le côté de l'angle droit
+        qui touche cet angle.
+\end{itemize}}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (5.5,0);
+  \coordinate (C) at (5.5,3.8);
+  \draw[line width=0.9pt] (A)--(B)--(C)--cycle;
+  \draw (5.15,0)--(5.15,0.35)--(5.5,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=8mm] {angle=B--A--C};
+  \node[below left] at (A) {$A$};
+  \node[below right] at (B) {$B$};
+  \node[above right] at (C) {$C$};
+  \node[below] at ($(A)!0.5!(B)$) {côté adjacent à \(\widehat A\)};
+  \node[above left] at ($(A)!0.55!(C)$) {hypoténuse};
+\end{tikzpicture}
+\end{center}
+
+\remarque{Le côté adjacent dépend de l'angle étudié.
+Dans le même triangle, le côté adjacent à \(\widehat A\) n'est pas
+le côté adjacent à \(\widehat C\).}
+
+\section{Définition du cosinus}
+
+\definition{Dans un triangle rectangle, le cosinus d'un angle aigu est le quotient :
+
+\[
+\cos(\text{angle})
+=
+\text{côté adjacent}\div\text{hypoténuse}.
+\]}
+
+\exemple{Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\[
+\cos(\widehat A)=AB\div AC
+\]
+
+et
+
+\[
+\cos(\widehat C)=BC\div AC.
+\]}
+
+\propriete{Le cosinus d'un angle aigu est un nombre sans unité compris entre \(0\) et \(1\).}
+
+\remarque{Le cosinus dépend de l'angle, mais pas de la taille du triangle.
+Des triangles rectangles ayant le même angle aigu donnent le même quotient
+« côté adjacent divisé par hypoténuse ».}
+
+\begin{center}
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 1 : \(35^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(7.7,0);
+  \draw[line width=0.9pt] (O)--({8*cos(35)},{8*sin(35)});
+  \foreach \r/\name in {4/A,6/B,8/C}{
+    \coordinate (\name) at ({\r*cos(35)},{\r*sin(35)});
+    \coordinate (\name-p) at ({\r*cos(35)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$35^\circ$"] {angle=C-p--O--C};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 2 : \(50^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(5.3,0);
+  \draw[line width=0.9pt] (O)--({8*cos(50)},{8*sin(50)});
+  \foreach \r/\name in {4/D,6/E,8/F}{
+    \coordinate (\name) at ({\r*cos(50)},{\r*sin(50)});
+    \coordinate (\name-p) at ({\r*cos(50)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$50^\circ$"] {angle=F-p--O--F};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\textbf{Famille 3 : \(70^\circ\)}\par\medskip
+\begin{tikzpicture}[scale=0.62]
+  \coordinate (O) at (0,0);
+  \draw[line width=0.9pt] (O)--(3,0);
+  \draw[line width=0.9pt] (O)--({8*cos(70)},{8*sin(70)});
+  \foreach \r/\name in {4/G,6/H,8/I}{
+    \coordinate (\name) at ({\r*cos(70)},{\r*sin(70)});
+    \coordinate (\name-p) at ({\r*cos(70)},0);
+    \draw (\name)--(\name-p);
+    \draw ($(\name-p)+(-0.28,0)$)--($(\name-p)+(-0.28,0.28)$)--($(\name-p)+(0,0.28)$);
+  }
+  \draw pic[draw=ActionC,angle radius=8mm,"$70^\circ$"] {angle=I-p--O--I};
+\end{tikzpicture}
+\end{minipage}
+\end{center}
+
+
+\section{Utiliser la calculatrice}
+
+\methode{Avant tout calcul :
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item vérifier que la calculatrice est en mode degré ;
+  \item utiliser la touche \(\cos\) avec la mesure de l'angle ;
+  \item conserver la valeur affichée jusqu'à la dernière étape ;
+  \item arrondir seulement le résultat final.
+\end{enumerate}}
+
+\exemple{Contrôle rapide du mode degré :
+
+\[
+\cos 60^\circ=0{,}5.
+\]
+
+Si la calculatrice n'affiche pas \(0{,}5\), son réglage doit être vérifié.}
+
+\newpage
+
+\section{Calculer le côté adjacent}
+
+\propriete{À partir de la définition :
+
+\[
+\cos(\text{angle})
+=
+\text{adjacent}\div\text{hypoténuse},
+\]
+
+on obtient :
+
+\[
+\boxed{
+\text{côté adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle})
+}
+\]}
+
+\methode{Pour calculer le côté adjacent :
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item nommer le triangle rectangle ;
+  \item repérer l'hypoténuse et le côté adjacent ;
+  \item écrire la relation du cosinus avec les noms des segments ;
+  \item multiplier l'hypoténuse par le cosinus de l'angle ;
+  \item arrondir et écrire l'unité.
+\end{enumerate}}
+
+\exemple{Dans le triangle \(DEF\) rectangle en \(E\),
+on connaît \(DF=12\) cm et \(\widehat D=38^\circ\).
+On cherche \(DE\).
+
+\[
+\cos(\widehat D)=DE\div DF.
+\]
+
+Donc :
+
+\[
+DE=DF\times\cos(\widehat D).
+\]
+
+\[
+DE=12\times\cos 38^\circ\approx9{,}5.
+\]
+
+Ainsi :
+
+\[
+\boxed{DE\approx9{,}5\text{ cm}}.
+\]}
+
+\newpage
+
+\section{Calculer l'hypoténuse}
+
+\propriete{Comme :
+
+\[
+\text{adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle}),
+\]
+
+on défait la multiplication en divisant :
+
+\[
+\boxed{
+\text{hypoténuse}
+=
+\text{côté adjacent}\div\cos(\text{angle})
+}
+\]}
+
+\methode{Pour calculer l'hypoténuse :
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item nommer le triangle rectangle ;
+  \item repérer l'hypoténuse et le côté adjacent ;
+  \item écrire la relation du cosinus avec les noms des segments ;
+  \item diviser le côté adjacent par le cosinus de l'angle ;
+  \item arrondir et écrire l'unité.
+\end{enumerate}}
+
+\exemple{Dans le triangle \(GHI\) rectangle en \(H\),
+on connaît \(GH=7\) cm et \(\widehat G=41^\circ\).
+On cherche \(GI\).
+
+\[
+\cos(\widehat G)=GH\div GI.
+\]
+
+Donc :
+
+\[
+GI=GH\div\cos(\widehat G).
+\]
+
+\[
+GI=7\div\cos 41^\circ\approx9{,}3.
+\]
+
+Ainsi :
+
+\[
+\boxed{GI\approx9{,}3\text{ cm}}.
+\]}
+
+\newpage
+
+\section{Choisir entre multiplier et diviser}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{0.9\textwidth}{
+|>{\raggedright\arraybackslash}X
+|>{\centering\arraybackslash}p{5cm}|}
+\hline
+\textbf{Longueur cherchée} & \textbf{Calcul}\\
+\hline
+Côté adjacent &
+\(\text{hypoténuse}\times\cos(\text{angle})\)\\
+\hline
+Hypoténuse &
+\(\text{côté adjacent}\div\cos(\text{angle})\)\\
+\hline
+\end{tabularx}
+\end{center}
+
+\remarque{Il est préférable de repartir de la phrase :
+
+\[
+\text{adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle})
+\]
+
+plutôt que de mémoriser deux formules sans les comprendre.}
+
+\section{Rédiger et contrôler}
+
+\methode{Une rédaction complète contient :
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item le nom du triangle et le sommet de l'angle droit ;
+  \item la relation du cosinus avec les noms des segments ;
+  \item l'égalité donnant la longueur cherchée ;
+  \item le calcul à la calculatrice ;
+  \item l'arrondi, l'unité et une phrase de conclusion.
+\end{enumerate}}
+
+\propriete{Dans un triangle rectangle :
+
+\begin{itemize}
+  \item l'hypoténuse est plus longue que chacun des deux autres côtés ;
+  \item le côté adjacent est donc plus petit que l'hypoténuse ;
+  \item multiplier l'hypoténuse par un cosinus compris entre \(0\) et \(1\)
+        donne une longueur plus petite ;
+  \item diviser le côté adjacent par un cosinus compris entre \(0\) et \(1\)
+        donne une longueur plus grande.
+\end{itemize}}
+
+\erreur{Erreurs fréquentes :
+
+\begin{itemize}
+  \item utiliser le cosinus dans un triangle qui n'est pas rectangle ;
+  \item choisir un côté adjacent sans préciser l'angle étudié ;
+  \item confondre côté adjacent et hypoténuse ;
+  \item multiplier alors que l'on cherche l'hypoténuse ;
+  \item utiliser la calculatrice en mode radian ;
+  \item arrondir les valeurs intermédiaires ;
+  \item oublier l'unité ou obtenir un côté adjacent plus long que l'hypoténuse.
+\end{itemize}}
+
+\section{Dans un problème}
+
+\methode{Pour résoudre un problème :
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item faire un schéma simple et codé ;
+  \item repérer ou construire le triangle rectangle utile ;
+  \item traduire les données dans ce triangle ;
+  \item choisir le calcul de cosinus adapté ;
+  \item utiliser, si nécessaire, une autre propriété ensuite,
+        par exemple le théorème de Pythagore ;
+  \item interpréter le résultat dans la situation.
+\end{enumerate}}
+
+%==================================================
+% Encart calculatrice : mode degré
+%==================================================
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  title={\sffamily\bfseries
+    \faCalculator\ Calculatrice : vérifier le mode degré},
+  coltitle=SavoirC,
+  fonttitle=\sffamily\bfseries
+]
+
+Avant d'effectuer un calcul avec un cosinus, vérifie que la calculatrice
+est réglée en \textbf{degrés}.
+
+\vspace{0.3em}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{
+  @{}
+  >{\sffamily\bfseries\color{TitreC}}p{3.2cm}
+  X
+  @{}
+}
+\textbf{Casio fx-92}
+&
+\texttt{CONFIG}
+\(\longrightarrow\)
+\texttt{Unité d'angle}
+\(\longrightarrow\)
+\texttt{Degré}
+\\
+
+\textbf{TI-Collège Plus}
+&
+\texttt{MODE}
+\(\longrightarrow\)
+sélectionner \texttt{DEG}
+\(\longrightarrow\)
+valider
+\end{tabularx}
+
+\begin{center}
+  \sffamily\bfseries
+  L'écran doit afficher
+  \tcbox[
+    on line,
+    colback=white,
+    colframe=SavoirC,
+    boxrule=0.6pt,
+    arc=1mm,
+    left=1.5mm,
+    right=1.5mm,
+    top=0.4mm,
+    bottom=0.4mm
+  ]{\texttt{D} ou \texttt{DEG}}.
+\end{center}
+
+\textbf{Test rapide :}
+
+\[
+\cos(60^\circ)=0{,}5.
+\]
+
+Si la calculatrice n'affiche pas \(0{,}5\), vérifie à nouveau le mode.
+
+\end{tcolorbox}
+
+
+\aretenir{\textbf{La phrase essentielle :}
+
+\[
+\boxed{
+\text{côté adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle aigu})
+}
+\]
+
+Le cosinus ne s'utilise que dans un triangle rectangle.
+Le côté adjacent dépend de l'angle étudié.
+On contrôle toujours le mode degré, la cohérence du résultat, l'arrondi et l'unité.}
+
+\end{document}

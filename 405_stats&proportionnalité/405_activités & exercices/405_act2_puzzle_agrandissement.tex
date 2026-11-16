@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Activité 2 -- Agrandir ou réduire un puzzle}
+
+\remarque{Travail par groupes de trois ou quatre. Chaque groupe traite un niveau.
+Le puzzle final est construit en vraie grandeur.}
+
+\begin{center}
+\imageactivite
+  {0.76\textwidth}
+  {0.38\textheight}
+  {images/puzzle_brousseau.png}
+\end{center}
+
+\section*{Consigne commune}
+
+Toutes les longueurs du puzzle doivent être multipliées par le même nombre.
+
+\begin{itemize}
+  \item \textbf{Niveau 1 :} le segment de \(4\) cm doit mesurer \(2\) cm.
+  \item \textbf{Niveau 2 :} le segment de \(3\) cm doit mesurer \(4{,}5\) cm.
+  \item \textbf{Niveau 3 :} le segment de \(5\) cm doit mesurer \(7\) cm.
+\end{itemize}
+
+\section*{Partie A -- Trouver le coefficient}
+
+Pour ton niveau, complète :
+
+\[
+\text{nouvelle longueur}
+=
+\text{longueur du modèle}\times\ldots
+\]
+
+Le nombre utilisé est appelé \textbf{coefficient d'agrandissement ou de réduction}.
+
+\lignesreponse{3}
+
+\section*{Partie B -- Préparer la construction}
+
+Complète la ligne correspondant à ton niveau.
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{2.2cm}|*{7}{>{\centering\arraybackslash}X|}}
+\hline
+\textbf{Longueur modèle} & \(2\) & \(3\) & \(4\) & \(5\) & \(6\) & \(8\) & \(10\)\\
+\hline
+\textbf{Niveau 1} & & & & & & & \\
+\hline
+\textbf{Niveau 2} & & & & & & & \\
+\hline
+\textbf{Niveau 3} & & & & & & & \\
+\hline
+\end{tabularx}
+
+\section*{Partie C -- Construire et contrôler}
+
+Construis les six pièces, découpe-les puis vérifie qu'elles reconstituent
+le même puzzle.
+
+Explique pourquoi il serait faux d'ajouter le même nombre à toutes les longueurs.
+
+\lignesreponse{5}
+
+\end{document}

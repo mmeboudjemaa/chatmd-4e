@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\geometry{left=8mm,right=8mm,top=7mm,bottom=7mm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% --- Palette pensée pour une impression noir et blanc ---
+\definecolor{canlight}{gray}{0.93}
+\definecolor{canmid}{gray}{0.72}
+\definecolor{candark}{gray}{0.22}
+\definecolor{answerblue}{RGB}{0,82,165}
+
+% --- Colonnes ---
+\newcolumntype{Q}{>{\centering\arraybackslash}X}
+\newcolumntype{N}{>{\centering\arraybackslash}m{6mm}}
+\newcolumntype{R}{>{\centering\arraybackslash}m{22mm}}
+
+% --- En-tête ---
+\newcommand{\canheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textbf{Score :} \rule{13mm}{0.45pt}\,/30
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Réponse uniquement \quad$\diamond$\quad Reporter le score sur la fiche annuelle.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+\newcommand{\qrow}[2]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowfig}[2]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowcorr}[3]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+\newcommand{\qrowfigcorr}[3]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+
+\newcommand{\cantable}[1]{%
+\arrayrulecolor{canmid}
+\begin{tabularx}{\linewidth}{N|Q|R}
+\rowcolor{canlight}\textbf{N\textsuperscript{o}}&\centering\textbf{Question}&\textbf{Réponse}\\\hline
+#1
+\end{tabularx}
+\arrayrulecolor{black}
+}
+
+\newcommand{\hypotfigure}{%
+\begin{tikzpicture}[baseline=(current bounding box.center),scale=0.72,line width=0.6pt]
+  \node[font=\bfseries\normalsize] at (1.6,2.55) {Quelle est l'hypoténuse ?};
+  \coordinate (A) at (0,0); \coordinate (B) at (0,1.85); \coordinate (C) at (3.2,0);
+  \draw (A)--(B)--(C)--cycle;
+  \draw (0,0) rectangle (0.32,0.32);
+  \node[below left] at (A) {\small A};
+  \node[above left] at (B) {\small B};
+  \node[below right] at (C) {\small C};
+\end{tikzpicture}}
+
+
+\newcommand{\canheadercorr}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textcolor{answerblue}{\textbf{CORRIGÉ}}
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Les réponses apparaissent en \textcolor{answerblue}{\textbf{bleu}}.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+
+\begin{document}
+\canheader{CAN 1}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{1}{$7\times 8$}
+\qrow{2}{Dans $52{,}374$, quel est le chiffre des centièmes ?}
+\qrow{3}{$-4+9$}
+\qrow{4}{Compléter : $4\times\ldots=36$}
+\qrow{5}{$25\,\%$ de 80}
+\qrow{6}{Le tiers du quadruple de 18}
+\qrow{7}{$46+29$}
+\qrow{8}{Donner sous forme de fraction le nombre qui, multiplié par 5, donne 3.}
+\qrow{9}{$4{,}07\times100$}
+\qrow{10}{Moyenne de 8 ; 10 ; 12}
+\qrow{11}{Le plus grand : $2{,}7$ ou $2{,}07$ ?}
+\qrow{12}{L'opposé de $-7$}
+\qrow{13}{$\dfrac34$ de 20}
+\qrow{14}{$1{,}5$ h = $\ldots$ h $\ldots$ min}
+\qrow{15}{$3+7\times2$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{16}{Simplifier $\dfrac{18}{24}$}
+\qrow{17}{Périmètre d'un rectangle de 7 cm sur 3 cm}
+\qrow{18}{Une valeur a une fréquence de $0{,}2$ dans une série de 30 données. Son effectif est :}
+\qrow{19}{Écriture décimale de $\dfrac14$}
+\qrow{20}{Une aire de $24\,\mathrm{cm}^2$ correspond à combien de carrés de $1\,\mathrm{cm}^2$ ?}
+\qrow{21}{486 est-il divisible par 3 ?}
+\qrow{22}{$0{,}5\times36$}
+\qrow{23}{Un volume s'exprime en : cm, cm$^2$ ou cm$^3$ ?}
+\qrow{24}{3 kg de pommes coûtent 6 \texteuro. Combien coûtent 5 kg ?}
+\qrowfig{25}{\hypotfigure}
+\qrow{26}{Quel est le côté d'un carré d'aire $49\,\mathrm{cm}^2$ ?}
+\qrow{27}{$19\times5$ est-il plus proche de 50, de 100 ou de 500 ?}
+\qrow{28}{Encadrer $7{,}6$ par deux entiers consécutifs.}
+\qrow{29}{Réduire : $3x+2x$}
+\qrow{30}{Pour $x=4$, calculer $2x+3$.}
+}
+\end{minipage}
+
+\clearpage
+
+\canheadercorr{CAN 1}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{1}{$7\times 8$}{$56$}
+\qrowcorr{2}{Dans $52{,}374$, quel est le chiffre des centièmes ?}{$7$}
+\qrowcorr{3}{$-4+9$}{$5$}
+\qrowcorr{4}{Compléter : $4\times\ldots=36$}{$9$}
+\qrowcorr{5}{$25\,\%$ de 80}{$20$}
+\qrowcorr{6}{Le tiers du quadruple de 18}{$24$}
+\qrowcorr{7}{$46+29$}{$75$}
+\qrowcorr{8}{Donner sous forme de fraction le nombre qui, multiplié par 5, donne 3.}{$\dfrac35$}
+\qrowcorr{9}{$4{,}07\times100$}{$407$}
+\qrowcorr{10}{Moyenne de 8 ; 10 ; 12}{$10$}
+\qrowcorr{11}{Le plus grand : $2{,}7$ ou $2{,}07$ ?}{$2{,}7$}
+\qrowcorr{12}{L'opposé de $-7$}{$7$}
+\qrowcorr{13}{$\dfrac34$ de 20}{$15$}
+\qrowcorr{14}{$1{,}5$ h = $\ldots$ h $\ldots$ min}{1 h 30 min}
+\qrowcorr{15}{$3+7\times2$}{$17$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{16}{Simplifier $\dfrac{18}{24}$}{$\dfrac34$}
+\qrowcorr{17}{Périmètre d'un rectangle de 7 cm sur 3 cm}{20 cm}
+\qrowcorr{18}{Une valeur a une fréquence de $0{,}2$ dans une série de 30 données. Son effectif est :}{$6$}
+\qrowcorr{19}{Écriture décimale de $\dfrac14$}{$0{,}25$}
+\qrowcorr{20}{Une aire de $24\,\mathrm{cm}^2$ correspond à combien de carrés de $1\,\mathrm{cm}^2$ ?}{$24$}
+\qrowcorr{21}{486 est-il divisible par 3 ?}{oui}
+\qrowcorr{22}{$0{,}5\times36$}{$18$}
+\qrowcorr{23}{Un volume s'exprime en : cm, cm$^2$ ou cm$^3$ ?}{cm$^3$}
+\qrowcorr{24}{3 kg de pommes coûtent 6 \texteuro. Combien coûtent 5 kg ?}{10 \texteuro}
+\qrowfigcorr{25}{\hypotfigure}{[BC]}
+\qrowcorr{26}{Quel est le côté d'un carré d'aire $49\,\mathrm{cm}^2$ ?}{7 cm}
+\qrowcorr{27}{$19\times5$ est-il plus proche de 50, de 100 ou de 500 ?}{$100$}
+\qrowcorr{28}{Encadrer $7{,}6$ par deux entiers consécutifs.}{$7<7{,}6<8$}
+\qrowcorr{29}{Réduire : $3x+2x$}{$5x$}
+\qrowcorr{30}{Pour $x=4$, calculer $2x+3$.}{$11$}
+}
+\end{minipage}
+\end{document}

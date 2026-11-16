@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,angles,quotes}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.22em}
+
+\newcommand{\titresequence}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 2 -- Théorème de Pythagore}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+  enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+  left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+  \foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\begin{document}
+\titresequence{Activité 4 -- Deux calculs, une rédaction}
+
+\section*{Cas 1 -- Calculer l'hypoténuse}
+
+Le triangle $ABC$ est rectangle en $A$, avec $AB=4$ cm et $AC=7$ cm.
+
+\begin{enumerate}
+  \item Quel côté cherche-t-on ? Est-ce l'hypoténuse ?
+  \item Écris l'égalité de Pythagore.
+  \item Calcule $BC^2$.
+  \item Donne la valeur exacte de $BC$, puis une valeur approchée au dixième.
+\end{enumerate}
+\lignesreponse{8}
+
+\section*{Cas 2 -- Calculer un côté de l'angle droit}
+
+Le triangle $DEF$ est rectangle en $E$, avec $DF=8$ cm et $EF=6$ cm.
+
+\begin{enumerate}
+  \item Quel côté est l'hypoténuse ?
+  \item Écris l'égalité de Pythagore sans transformer immédiatement la formule.
+  \item Isole ensuite $DE^2$.
+  \item Donne la valeur exacte de $DE$, puis une valeur approchée au dixième.
+\end{enumerate}
+\lignesreponse{9}
+
+\section*{Comparer les deux méthodes}
+
+Pourquoi additionne-t-on dans le premier calcul et soustrait-on dans le second ?
+\lignesreponse{4}
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.6pt,arc=2mm]
+\textbf{Trame de rédaction.}
+\begin{enumerate}
+  \item On sait que le triangle est rectangle en \ldots
+  \item D'après le théorème de Pythagore : \ldots
+  \item On remplace par les longueurs connues et on calcule.
+  \item On conclut avec une unité et, si nécessaire, un arrondi.
+\end{enumerate}
+\end{tcolorbox}
+\end{document}

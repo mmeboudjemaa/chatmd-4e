@@ -1,0 +1,107 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,patterns,arrows.meta}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 4 -- Calcul littéral}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+\begin{document}
+
+\titreseq{Progression proposée -- Écrire, simplifier et réduire}
+
+\remarque{Durée indicative : huit séances d'apprentissage de 50 à 55 minutes,
+deux interrogations courtes et une évaluation finale.
+
+La fiche d'exercices hors classe est distribuée en début de séquence ;
+les exercices sont indiqués au fur et à mesure.}
+
+\section*{Objectifs de fin de séquence}
+
+L'élève doit pouvoir :
+\begin{itemize}
+  \item traduire une phrase, une figure ou un programme par une expression littérale ;
+  \item expliquer ce que représente une lettre ;
+  \item calculer la valeur d'une expression pour une valeur donnée ;
+  \item utiliser les conventions d'écriture du calcul littéral ;
+  \item reconnaître la structure d'une expression : somme ou produit ;
+  \item réduire une somme algébrique simple ;
+  \item développer par distributivité simple, puis réduire si nécessaire ;
+  \item distinguer une vérification sur quelques valeurs d'une preuve générale ;
+  \item utiliser une expression réduite pour calculer plus efficacement.
+\end{itemize}
+
+\section*{Déroulé réaliste}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{1.1cm}
+|>{\raggedright\arraybackslash}p{4cm}
+|>{\raggedright\arraybackslash}X
+|>{\raggedright\arraybackslash}p{3cm}|}
+\hline
+\textbf{Séance} & \textbf{Support} & \textbf{Enjeu didactique} & \textbf{Production}\\
+\hline
+1 & Act. 1 : programmes de calcul & Passer des étapes à une expression unique ; faire émerger le besoin d'une lettre. & Expression numérique puis littérale.\\
+\hline
+2 & Act. 2 : bandes de carrés & Donner du sens à une formule ; faire coexister plusieurs stratégies. & Formules testées.\\
+\hline
+3 & Act. 3 : mur de briques & Calculer un résultat général ; faire apparaître naturellement la réduction. & Formule \(6x+5\).\\
+\hline
+4 & Act. 4 : conventions & Stabiliser \(3x\), \(x^2\), \(1x=x\) et la substitution avec parenthèses. & Interro 1 au début.\\
+\hline
+5 & Act. 5 : réduire & Regrouper les termes de même nature sans mélanger \(x\), \(x^2\) et les nombres. & Réductions simples et mixtes.\\
+\hline
+6 & Act. 6 : rectangles & Réactiver la distributivité ; développer puis réduire. & Deux écritures équivalentes.\\
+\hline
+7 & Act. 7 : programmes & Distinguer conjecture, contre-exemple et preuve. & Interro 2 au début.\\
+\hline
+8 & Consolidation & Automatismes, erreurs, calculs de valeurs, réduction et développement. & Synthèse du cours.\\
+\hline
+9 & Évaluation finale & Mobiliser écriture, substitution, simplification, réduction et preuve courte. & Évaluation sur 20.\\
+\hline
+\end{tabularx}
+
+\section*{Automatismes}
+
+Rituel de cinq minutes, quatre à six questions :
+\begin{itemize}
+  \item séances 1 à 3 : traduire un programme et calculer une valeur ;
+  \item séances 3 à 5 : simplifier une écriture et repérer les termes semblables ;
+  \item séances 5 à 7 : réduire ;
+  \item séances 6 à 8 : développer puis réduire ;
+  \item après la séquence : une ou deux questions chaque semaine.
+\end{itemize}
+
+\section*{Principes didactiques}
+
+\begin{itemize}
+  \item La lettre répond à une question portant sur \textbf{n'importe quelle valeur}.
+  \item Plusieurs formules correctes sont conservées pour donner du sens à leur égalité.
+  \item Tester une valeur peut aider à comprendre ou réfuter, mais ne prouve pas une identité.
+  \item La technique vient après la situation, la verbalisation et l'écriture littérale.
+  \item La résolution d'équations n'est pas l'objectif de cette séquence.
+\end{itemize}
+
+\end{document}

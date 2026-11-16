@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Progression professeur -- Calculer des longueurs seulement}
+
+\remarque{Durée indicative : sept séances d'apprentissage de 50 à 55 minutes,
+deux interrogations courtes, une séance de consolidation et une évaluation finale.
+
+La progression choisit une route volontairement progressive :
+\textbf{le cosinus est d'abord compris comme un multiplicateur dépendant de l'angle},
+puis seulement comme un rapport. Cette entrée limite les inversions de formule
+et donne du sens au calcul du côté adjacent.}
+
+\section*{Objectifs de fin de séquence}
+
+L'élève doit pouvoir :
+
+\begin{itemize}
+  \item repérer un triangle rectangle dans une figure simple ou composée ;
+  \item identifier l'hypoténuse ;
+  \item identifier le côté adjacent à l'angle aigu étudié ;
+  \item exprimer le cosinus d'un angle aigu comme le quotient
+        « côté adjacent divisé par hypoténuse » ;
+  \item utiliser la calculatrice en mode degré ;
+  \item calculer le côté adjacent connaissant l'hypoténuse et l'angle ;
+  \item calculer l'hypoténuse connaissant le côté adjacent et l'angle ;
+  \item choisir entre une multiplication et une division ;
+  \item rédiger un calcul de longueur en nommant le triangle rectangle utilisé ;
+  \item contrôler la vraisemblance d'un résultat ;
+  \item résoudre un problème où le triangle rectangle doit être modélisé ;
+  \item combiner, dans un problème de synthèse, cosinus et théorème de Pythagore.
+\end{itemize}
+
+\section*{Prérequis à réactiver}
+
+\begin{itemize}
+  \item reconnaître un triangle rectangle et son angle droit ;
+  \item savoir que l'hypoténuse est le côté opposé à l'angle droit
+        et le plus long côté du triangle rectangle ;
+  \item lire et nommer un angle ;
+  \item résoudre un calcul du type \(a=x\times b\) lorsque \(a\) ou \(x\) est inconnu ;
+  \item utiliser les parenthèses et l'arrondi sur la calculatrice ;
+  \item connaître le théorème de Pythagore pour le problème final.
+\end{itemize}
+
+\section*{Déroulé réaliste}
+
+\renewcommand{\arraystretch}{1.38}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{1.05cm}
+|>{\raggedright\arraybackslash}p{4.2cm}
+|>{\raggedright\arraybackslash}X
+|>{\raggedright\arraybackslash}p{3.2cm}|}
+\hline
+\textbf{Séance} & \textbf{Support principal} & \textbf{Enjeu didactique} & \textbf{Production}\\
+\hline
+1 & Activité 1 : diagnostic et problème de la rampe & Réactiver le triangle rectangle ; faire constater que Pythagore ne suffit pas avec une longueur et un angle. & Besoin d'un nouvel outil.\\
+\hline
+2 & Activité 2 : familles de triangles & Mesurer plusieurs triangles ayant le même angle et conjecturer la constance du quotient adjacent/hypoténuse. & Tableau de mesures et conjecture.\\
+\hline
+3 & Activité 3 : vocabulaire et définition & Stabiliser la dépendance du côté adjacent à l'angle choisi ; introduire le cosinus et la touche calculatrice. & Interrogation 1 en début de séance.\\
+\hline
+4 & Activité 4 : calculer le côté adjacent & Utiliser le cosinus comme multiplicateur : \(\text{adjacent}=\text{hypoténuse}\times\cos(\text{angle})\). & Calculs directs et contrôle de vraisemblance.\\
+\hline
+5 & Activité 5 : calculer l'hypoténuse & Comprendre la division comme opération inverse ; éviter l'apprentissage mécanique d'une formule isolée. & Calculs d'hypoténuses.\\
+\hline
+6 & Activité 6 : laboratoire d'erreurs & Travailler la rédaction, le choix du triangle, le mode degré, l'arrondi et le sens de l'opération. & Interrogation 2 en début de séance.\\
+\hline
+7 & Activité 7 : problèmes de terrain & Modéliser des situations simples puis combiner cosinus et Pythagore dans un problème de hauteur. & Solutions rédigées.\\
+\hline
+8 & Consolidation différenciée & Automatismes, calculs gradués, choix de méthode et analyse d'erreurs. & Préparation à l'évaluation.\\
+\hline
+9 & Évaluation finale & Mobiliser vocabulaire, formule, calcul, rédaction et modélisation. & Évaluation sur 20.\\
+\hline
+\end{tabularx}
+
+\section*{Automatismes}
+
+Rituel de cinq minutes, quatre à six questions :
+
+\begin{itemize}
+  \item séances 1 à 3 : angle droit, hypoténuse, côté adjacent ;
+  \item séances 3 à 5 : écrire un cosinus et utiliser la touche \(\cos\) ;
+  \item séances 4 à 7 : décider « multiplier ou diviser » avant de calculer ;
+  \item séances 5 à 8 : rédaction en trois lignes et contrôle du résultat ;
+  \item après la séquence : une question de vocabulaire et un calcul court par semaine.
+\end{itemize}
+
+\section*{Obstacles anticipés et réponses}
+
+\begin{itemize}
+  \item \textbf{Le côté adjacent serait toujours le même.}
+        Faire changer l'angle étudié sur un même triangle.
+  \item \textbf{Le cosinus serait une longueur.}
+        Répéter qu'il s'agit d'un nombre sans unité, compris entre \(0\) et \(1\)
+        pour un angle aigu.
+  \item \textbf{L'élève choisit multiplication ou division selon la taille attendue.}
+        Revenir à la phrase opératoire :
+        « l'adjacent est l'hypoténuse multipliée par le cosinus ».
+  \item \textbf{La formule est écrite sans préciser le triangle rectangle.}
+        Imposer d'abord la phrase :
+        « Dans le triangle \ldots{} rectangle en \ldots{} ».
+  \item \textbf{La calculatrice est en radians.}
+        Installer un contrôle rapide :
+        \(\cos 60^\circ=0{,}5\).
+  \item \textbf{L'élève arrondit trop tôt.}
+        Conserver la valeur affichée et n'arrondir qu'à la dernière ligne.
+  \item \textbf{Le résultat est plus grand que l'hypoténuse.}
+        Institutionnaliser le test de vraisemblance avant toute validation.
+\end{itemize}
+
+\section*{Choix assumés}
+
+\begin{itemize}
+  \item Aucun calcul d'angle n'est demandé dans cette séquence.
+  \item La mémorisation d'un moyen mnémotechnique n'est pas l'entrée principale.
+  \item La preuve complète par triangles semblables ou par Thalès n'est pas exigée ;
+        l'investigation donne du sens au rapport constant.
+  \item Les problèmes complexes arrivent seulement après la maîtrise des deux cas directs.
+\end{itemize}
+
+\end{document}

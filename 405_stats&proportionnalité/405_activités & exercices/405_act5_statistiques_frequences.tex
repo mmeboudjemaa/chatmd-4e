@@ -1,0 +1,144 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Activité 5 -- D'une enquête aux fréquences}
+
+On interroge \(40\) élèves sur leur mode de transport principal pour venir au collège.
+
+\[
+\begin{array}{c|cccc}
+\text{Mode de transport} & \text{Bus} & \text{À pied} & \text{Voiture} & \text{Vélo}\\
+\hline
+\text{Effectif} & 16 & 10 & 8 & 6
+\end{array}
+\]
+
+\section*{Partie A -- Vocabulaire}
+
+Complète.
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+La population étudiée est : \dotfill
+
+Le caractère étudié est : \dotfill
+
+Les modalités sont : \dotfill
+
+L'effectif total est : \dotfill
+\end{tcolorbox}
+
+\section*{Partie B -- Fréquences et pourcentages}
+
+Complète le tableau.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{
+|>{\raggedright\arraybackslash}p{3cm}
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+ & \textbf{Bus} & \textbf{À pied} & \textbf{Voiture} & \textbf{Vélo} & \textbf{Total}\\
+\hline
+\textbf{Effectif} & 16 & 10 & 8 & 6 & \\
+\hline
+\textbf{Fréquence} & & & & & \\
+\hline
+\textbf{Pourcentage} & & & & & \\
+\hline
+\end{tabularx}
+
+\section*{Partie C -- Interpréter}
+
+Réponds par une phrase.
+
+\begin{enumerate}
+  \item Quel est le mode de transport le plus fréquent ?
+  \item Quelle proportion des élèves vient à pied ?
+  \item Combien d'élèves viennent autrement qu'en bus ?
+  \item Vérifie que la somme des fréquences vaut \(1\) et que celle des pourcentages vaut \(100\%\).
+\end{enumerate}
+
+\lignesreponse{6}
+
+\section*{Partie D -- Comparer}
+
+Dans une autre classe, \(30\%\) des élèves viennent en bus.
+Peut-on affirmer qu'il y a moins d'élèves qui viennent en bus que dans cette classe ?
+Explique pourquoi il faut connaître l'effectif total.
+
+\lignesreponse{4}
+
+\end{document}

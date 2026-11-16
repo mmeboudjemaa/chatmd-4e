@@ -1,0 +1,99 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,angles,quotes}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.22em}
+
+\newcommand{\titresequence}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 2 -- Théorème de Pythagore}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+  enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+  left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+  \foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\begin{document}
+\titresequence{Activité 3 -- Introduction rapide à la racine carrée}
+
+On veut construire un carré dont l'aire est $50$ cm$^2$.
+On cherche la longueur de son côté.
+
+\begin{enumerate}
+  \item Complète :
+  \[
+  7^2=\dotfill
+  \qquad\text{et}\qquad
+  8^2=\dotfill
+  \]
+  Entre quels deux entiers se trouve la longueur cherchée ?
+  \lignesreponse{3}
+
+  \item Calcule :
+  \[
+  7{,}0^2=\dotfill
+  \qquad
+  7{,}1^2=\dotfill
+  \qquad
+  7{,}2^2=\dotfill
+  \]
+  Donne un encadrement au dixième de la longueur cherchée.
+  \lignesreponse{3}
+
+  \item La longueur cherchée se note $\sqrt{50}$.
+  Complète :
+  \begin{quote}
+  La racine carrée de $50$ est le nombre positif qui, multiplié par lui-même, donne \dotfill
+  \end{quote}
+
+  \item À la calculatrice, donne une valeur approchée au dixième de $\sqrt{50}$.
+  \lignesreponse{2}
+\end{enumerate}
+
+\definition{La \textbf{racine carrée} d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$.
+On la note $\sqrt{a}$.}
+
+\exemple{
+\[
+\sqrt{25}=5
+\qquad
+\sqrt{49}=7
+\qquad
+\sqrt{81}=9.
+\]}
+
+\section*{Retour à Pythagore}
+
+Le triangle $RST$ est rectangle en $R$, avec $RS=2$ cm et $RT=7$ cm.
+
+\begin{enumerate}
+  \item Calcule $ST^2$.
+  \item Donne la valeur exacte de $ST$.
+  \item Donne une valeur approchée au dixième de $ST$.
+\end{enumerate}
+\lignesreponse{7}
+\end{document}

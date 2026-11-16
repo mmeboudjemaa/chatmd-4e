@@ -1,0 +1,268 @@
+\ProvidesPackage{boites}
+
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{xparse}
+\RequirePackage{etoolbox}
+\RequirePackage{fontawesome5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% STYLE GÉNÉRAL
+%% Design plat : coins arrondis uniformes, pas de cadre par
+%% défaut, fonds très clairs, accent coloré à gauche.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tcbset{
+  mathsbox/.style={
+    enhanced,
+    breakable,
+    arc=2.5mm,
+    boxsep=2mm,
+    left=4mm,
+    right=4mm,
+    top=2.5mm,
+    bottom=2.5mm,
+    before skip=12pt,
+    after skip=12pt,
+    before upper={\clubpenalty=10000 \widowpenalty=10000 \displaywidowpenalty=10000}
+  }
+}
+
+%% Titre intérieur des boîtes plates : icône + libellé sans serif
+\NewDocumentCommand{\titreboite}{m m m}{%
+  {\sffamily\bfseries\small\color{#1}#2\hspace{0.6em}#3}\par
+  \nobreak\vspace{0.45em}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DÉFINITION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\definition}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+frame hidden,
+colback=DefBg,
+borderline west={1.2mm}{0pt}{DefC}
+]
+
+\titreboite{DefC}{\faBook}{DÉFINITION}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROPRIÉTÉ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\propriete}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+colback=PropBg,
+colframe=PropC!40,
+boxrule=0.6pt,
+borderline west={1.2mm}{0pt}{PropC}
+]
+
+\titreboite{PropC}{\faStar}{PROPRIÉTÉ}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% THÉORÈME (titre en onglet, boîte la plus « solennelle »)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\theoreme}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+colback=TheoBg,
+colframe=TheoC,
+boxrule=0.8pt,
+top=5mm,
+attach boxed title to top left={xshift=4mm,yshift=-2.5mm},
+boxed title style={
+colback=TheoC,
+boxrule=0pt,
+arc=1.2mm,
+left=2.5mm, right=2.5mm, top=1.2mm, bottom=1.2mm
+},
+coltitle=white,
+fonttitle=\sffamily\bfseries\small,
+title={\faGem\hspace{0.5em}THÉORÈME}
+]
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MÉTHODE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\methode}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+frame hidden,
+colback=MethBg,
+borderline west={1.2mm}{0pt}{MethC}
+]
+
+\titreboite{MethC}{\faRoute}{MÉTHODE}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXEMPLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\exemple}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+frame hidden,
+colback=ExBg,
+borderline west={1mm}{0pt}{ExC!70}
+]
+
+\titreboite{ExC}{\faIcon{pencil-alt}}{EXEMPLE}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMARQUE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\remarque}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+frame hidden,
+colback=RemBg,
+borderline west={1mm}{0pt}{RemC!70}
+]
+
+\titreboite{RemC}{\faInfoCircle}{REMARQUE}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% À RETENIR (seule boîte encadrée en couleur « action »)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\aretenir}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+colback=RetBg,
+colframe=RetC,
+boxrule=0.8pt
+]
+
+\titreboite{RetC}{\faThumbtack}{À RETENIR}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ERREUR FRÉQUENTE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand{\erreur}{+m}{
+\begin{tcolorbox}[
+mathsbox,
+frame hidden,
+colback=ErrBg,
+borderline west={1.2mm}{0pt}{ErrC}
+]
+
+\titreboite{ErrC}{\faExclamationTriangle}{ERREUR FRÉQUENTE}
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% EXERCICE CORRIGÉ (bandeau de titre clair)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{correction}
+
+\NewDocumentCommand{\correction}{+m}{
+\refstepcounter{correction}
+
+\begin{tcolorbox}[
+mathsbox,
+colback=white,
+colframe=CorrC!40,
+boxrule=0.6pt,
+colbacktitle=CorrBg,
+coltitle=CorrC,
+fonttitle=\sffamily\bfseries\small,
+title={\faCheckCircle\hspace{0.5em}EXERCICE CORRIGÉ \thecorrection}
+]
+
+#1
+
+\end{tcolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SOUS-PARTIES D'UN EXERCICE CORRIGÉ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\enonce}{
+\par\medskip
+{\sffamily\bfseries\small\color{NeutreC}ÉNONCÉ}
+\par\smallskip
+}
+
+\newcommand{\redaction}{
+\par\medskip
+{\sffamily\bfseries\small\color{NeutreC}RÉDACTION ATTENDUE}
+\par\smallskip
+}
+
+\newcommand{\solution}{
+\par\medskip
+{\sffamily\bfseries\small\color{NeutreC}SOLUTION}
+\par\smallskip
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BREVET
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{brevet}
+
+\NewDocumentCommand{\brevet}{+m}{
+\refstepcounter{brevet}
+
+\begin{tcolorbox}[
+mathsbox,
+colback=white,
+colframe=BrevC!40,
+boxrule=0.6pt,
+colbacktitle=BrevBg,
+coltitle=BrevC,
+fonttitle=\sffamily\bfseries\small,
+title={\faGraduationCap\hspace{0.5em}EXERCICE TYPE BREVET \thebrevet}
+]
+
+#1
+
+\end{tcolorbox}
+}

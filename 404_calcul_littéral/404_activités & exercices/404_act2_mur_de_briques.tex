@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc,patterns,arrows.meta}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.25em,topsep=0.25em}
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+\begin{document}
+
+\titreseq{Activité 2 -- Le mur de briques}
+
+Le contenu d'une brique est la somme des deux briques placées juste en dessous.
+Les deux briques grises contiennent le même nombre, noté \(x\).
+
+\begin{center}
+\begin{tikzpicture}[scale=1.05]
+  \def\w{1.7}
+  \def\h{0.75}
+  \foreach \i/\lab/\fillc in {0/2/white,1/\(x\)/NeutreC!20,2/\(x\)/NeutreC!20,3/3/white}{
+    \fill[\fillc] (\i*\w,0) rectangle ++(\w,\h);
+    \draw[line width=0.8pt] (\i*\w,0) rectangle ++(\w,\h);
+    \node at (\i*\w+0.5*\w,0.5*\h) {\lab};
+  }
+  \foreach \i in {0,1,2}{\draw[line width=0.8pt] (\i*\w+0.5*\w,\h) rectangle ++(\w,\h);}
+  \foreach \i in {0,1}{\draw[line width=0.8pt] (\i*\w+\w,2*\h) rectangle ++(\w,\h);}
+  \draw[line width=0.8pt] (1.5*\w,3*\h) rectangle ++(\w,\h);
+\end{tikzpicture}
+\end{center}
+
+\section*{Partie A -- Essayer avec des nombres}
+
+Complète le mur pour \(x=1\) et \(x=10\).
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{0.8\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\textbf{Valeur de \(x\)} & \textbf{Sommet}\\
+\hline
+\(1\) & \\
+\hline
+\(10\) & \\
+\hline
+\end{tabularx}
+
+\section*{Partie B -- Compléter avec des expressions}
+
+Ecris une expression dans chaque brique.
+
+\vspace{1cm}
+
+\begin{center}
+\begin{tikzpicture}[scale=2.5]
+  \def\w{1.7}
+  \def\h{0.75}
+  \foreach \i/\lab/\fillc in {0/2/white,1/\(x\)/NeutreC!20,2/\(x\)/NeutreC!20,3/3/white}{
+    \fill[\fillc] (\i*\w,0) rectangle ++(\w,\h);
+    \draw[line width=0.8pt] (\i*\w,0) rectangle ++(\w,\h);
+    \node at (\i*\w+0.5*\w,0.5*\h) {\lab};
+  }
+  \foreach \i in {0,1,2}{\draw[line width=0.8pt] (\i*\w+0.5*\w,\h) rectangle ++(\w,\h);}
+  \foreach \i in {0,1}{\draw[line width=0.8pt] (\i*\w+\w,2*\h) rectangle ++(\w,\h);}
+  \draw[line width=0.8pt] (1.5*\w,3*\h) rectangle ++(\w,\h);
+\end{tikzpicture}
+\end{center}
+
+\section*{Partie C -- Trouver une formule courte}
+
+Montre que le sommet peut s'écrire \(6x+5\).
+
+Explique pourquoi \(x+x=2x\) et \(2x+2x+2x=6x\).
+
+\lignesreponse{6}
+
+\section*{Partie D -- Utiliser la formule}
+
+Calcule rapidement le sommet pour \(x=100\), \(x=-15\) et \(x=2{,}5\).
+
+\lignesreponse{3}
+
+\end{document}

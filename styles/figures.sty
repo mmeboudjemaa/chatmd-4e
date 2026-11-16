@@ -1,0 +1,366 @@
+\ProvidesPackage{figures}
+
+\RequirePackage{tikz}
+\usetikzlibrary{calc,angles,quotes,arrows.meta,patterns}
+
+%==================================================
+% Styles généraux
+%==================================================
+
+\tikzset{
+  point/.style={
+    circle,
+    fill=black,
+    inner sep=1.4pt
+  },
+  segmentfig/.style={
+    line width=0.8pt
+  },
+  codage/.style={
+    line width=0.7pt
+  },
+  etiquette/.style={
+    font=\small
+  },
+  axe/.style={
+    -{Latex[length=2mm]},
+    line width=0.8pt
+  },
+  grille/.style={
+    step=1,
+    line width=0.3pt,
+    gray!25
+  }
+}
+
+%==================================================
+% Triangle quelconque ABC
+%==================================================
+
+\newcommand{\triangleABC}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0.4);
+  \coordinate (C) at (1.3,2.7);
+
+  \draw[segmentfig] (A)--(B)--(C)--cycle;
+
+  \fill[point] (A) circle;
+  \fill[point] (B) circle;
+  \fill[point] (C) circle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above] at (C) {$C$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Triangle rectangle ABC rectangle en A
+%==================================================
+
+\newcommand{\triangleRectangleABC}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (0,3);
+
+  \draw[segmentfig] (A)--(B)--(C)--cycle;
+
+  \draw[codage] (0.35,0)--(0.35,0.35)--(0,0.35);
+
+  \fill[point] (A) circle;
+  \fill[point] (B) circle;
+  \fill[point] (C) circle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above left] at (C) {$C$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Triangle isocèle ABC, AC = BC
+%==================================================
+
+\newcommand{\triangleIsoceleABC}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (2,2.8);
+
+  \draw[segmentfig] (A)--(B)--(C)--cycle;
+
+  % Codage AC = BC
+  \draw[codage] (0.90,1.47)--(1.10,1.33);
+  \draw[codage] (2.90,1.33)--(3.10,1.47);
+
+  \fill[point] (A) circle;
+  \fill[point] (B) circle;
+  \fill[point] (C) circle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above] at (C) {$C$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Triangle équilatéral ABC
+%==================================================
+
+\newcommand{\triangleEquilateralABC}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (2,3.46);
+
+  \draw[segmentfig] (A)--(B)--(C)--cycle;
+
+  % Codage des trois côtés
+  \draw[codage] (1.90,0.10)--(2.10,-0.10);
+  \draw[codage] (0.90,1.67)--(1.10,1.55);
+  \draw[codage] (2.90,1.55)--(3.10,1.67);
+
+  \fill[point] (A) circle;
+  \fill[point] (B) circle;
+  \fill[point] (C) circle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above] at (C) {$C$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Cercle de centre O
+%==================================================
+
+\newcommand{\cercleO}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (O) at (0,0);
+  \coordinate (A) at (2,0);
+
+  \draw[segmentfig] (O) circle (2);
+
+  \draw[segmentfig] (O)--(A);
+
+  \fill[point] (O) circle;
+  \fill[point] (A) circle;
+
+  \node[etiquette, below left] at (O) {$O$};
+  \node[etiquette, right] at (A) {$A$};
+  \node[etiquette, above] at (1,0) {$r$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Cercle avec diamètre AB
+%==================================================
+
+\newcommand{\cercleDiametreAB}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (-2,0);
+  \coordinate (B) at (2,0);
+  \coordinate (O) at (0,0);
+
+  \draw[segmentfig] (O) circle (2);
+  \draw[segmentfig] (A)--(B);
+
+  \fill[point] (A) circle;
+  \fill[point] (B) circle;
+  \fill[point] (O) circle;
+
+  \node[etiquette, left] at (A) {$A$};
+  \node[etiquette, right] at (B) {$B$};
+  \node[etiquette, below] at (O) {$O$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Repère orthonormé simple
+%==================================================
+
+\newcommand{\repereSimple}{
+\begin{tikzpicture}[scale=0.75]
+  \draw[grille] (-4,-3) grid (4,3);
+
+  \draw[axe] (-4.2,0)--(4.4,0) node[right] {$x$};
+  \draw[axe] (0,-3.2)--(0,3.4) node[above] {$y$};
+
+  \foreach \xx in {-4,-3,-2,-1,1,2,3,4} {
+    \draw (\xx,0.08)--(\xx,-0.08) node[below] {\small \xx};
+  }
+
+  \foreach \yy in {-3,-2,-1,1,2,3} {
+    \draw (0.08,\yy)--(-0.08,\yy) node[left] {\small \yy};
+  }
+
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Repère avec point A
+%==================================================
+
+\newcommand{\reperePointA}{
+\begin{tikzpicture}[scale=0.75]
+  \draw[grille] (-4,-3) grid (4,3);
+
+  \draw[axe] (-4.2,0)--(4.4,0) node[right] {$x$};
+  \draw[axe] (0,-3.2)--(0,3.4) node[above] {$y$};
+
+  \foreach \xx in {-4,-3,-2,-1,1,2,3,4} {
+    \draw (\xx,0.08)--(\xx,-0.08) node[below] {\small \xx};
+  }
+
+  \foreach \yy in {-3,-2,-1,1,2,3} {
+    \draw (0.08,\yy)--(-0.08,\yy) node[left] {\small \yy};
+  }
+
+  \coordinate (A) at (2,1);
+
+  % Croix pour le point
+  \draw[line width=0.8pt] ($(A)+(-0.10,-0.10)$)--($(A)+(0.10,0.10)$);
+  \draw[line width=0.8pt] ($(A)+(-0.10,0.10)$)--($(A)+(0.10,-0.10)$);
+
+  \node[etiquette, above right] at (A) {$A$};
+
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Droite graduée simple
+%==================================================
+
+\newcommand{\droiteGradueeSimple}{
+\begin{tikzpicture}[scale=0.9]
+  \draw[axe] (-4.2,0)--(4.4,0);
+
+  \foreach \xx in {-4,-3,-2,-1,0,1,2,3,4} {
+    \draw (\xx,0.10)--(\xx,-0.10) node[below] {\small \xx};
+  }
+\end{tikzpicture}
+}
+
+%==================================================
+% Droite graduée avec un point A
+%==================================================
+
+\newcommand{\droiteGradueePointA}{
+\begin{tikzpicture}[scale=0.9]
+  \draw[axe] (-4.2,0)--(4.4,0);
+
+  \foreach \xx in {-4,-3,-2,-1,0,1,2,3,4} {
+    \draw (\xx,0.10)--(\xx,-0.10) node[below] {\small \xx};
+  }
+
+  \coordinate (A) at (2,0);
+
+  \draw[line width=0.8pt] ($(A)+(-0.10,-0.10)$)--($(A)+(0.10,0.10)$);
+  \draw[line width=0.8pt] ($(A)+(-0.10,0.10)$)--($(A)+(0.10,-0.10)$);
+
+  \node[etiquette, above] at (A) {$A$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Carré ABCD
+%==================================================
+
+\newcommand{\carreABCD}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (3,0);
+  \coordinate (C) at (3,3);
+  \coordinate (D) at (0,3);
+
+  \draw[segmentfig] (A)--(B)--(C)--(D)--cycle;
+
+  \draw[codage] (0.30,0)--(0.30,0.30)--(0,0.30);
+  \draw[codage] (2.70,0)--(2.70,0.30)--(3,0.30);
+  \draw[codage] (2.70,3)--(2.70,2.70)--(3,2.70);
+  \draw[codage] (0.30,3)--(0.30,2.70)--(0,2.70);
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above right] at (C) {$C$};
+  \node[etiquette, above left] at (D) {$D$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Rectangle ABCD
+%==================================================
+
+\newcommand{\rectangleABCD}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (4,2.5);
+  \coordinate (D) at (0,2.5);
+
+  \draw[segmentfig] (A)--(B)--(C)--(D)--cycle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above right] at (C) {$C$};
+  \node[etiquette, above left] at (D) {$D$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Parallélogramme ABCD
+%==================================================
+
+\newcommand{\parallelogrammeABCD}{
+\begin{tikzpicture}[scale=1]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (5,2.3);
+  \coordinate (D) at (1,2.3);
+
+  \draw[segmentfig] (A)--(B)--(C)--(D)--cycle;
+
+  \node[etiquette, below left] at (A) {$A$};
+  \node[etiquette, below right] at (B) {$B$};
+  \node[etiquette, above right] at (C) {$C$};
+  \node[etiquette, above left] at (D) {$D$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Fonction affine simple
+%==================================================
+
+\newcommand{\fonctionAffineSimple}{
+\begin{tikzpicture}[scale=0.75]
+  \draw[grille] (-4,-3) grid (4,3);
+
+  \draw[axe] (-4.2,0)--(4.4,0) node[right] {$x$};
+  \draw[axe] (0,-3.2)--(0,3.4) node[above] {$y$};
+
+  \draw[line width=1pt] (-2.5,-2)--(3,2.4);
+
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+}
+
+%==================================================
+% Fonction courbe simple
+%==================================================
+
+\newcommand{\courbeSimple}{
+\begin{tikzpicture}[scale=0.75]
+  \draw[grille] (-4,-3) grid (4,3);
+
+  \draw[axe] (-4.2,0)--(4.4,0) node[right] {$x$};
+  \draw[axe] (0,-3.2)--(0,3.4) node[above] {$y$};
+
+  \draw[line width=1pt, smooth, domain=-2.2:2.2] plot(\x,{0.5*\x*\x-1});
+
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+}

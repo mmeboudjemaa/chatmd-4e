@@ -1,0 +1,284 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% =========================================================
+% AUTOMATISMES -- STATISTIQUES 4e
+% Une série par diapositive.
+% Mise en page simple et lisible en classe.
+% =========================================================
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,array}
+
+% Palette sobre
+\definecolor{TitreC}{RGB}{39,55,80}
+\definecolor{SavoirC}{RGB}{50,105,170}
+\definecolor{NeutreC}{RGB}{80,88,100}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+  \hfill
+  {\scriptsize\color{NeutreC}\insertframenumber}
+  \hspace{0.4cm}\vspace{0.2cm}
+}
+
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=TitreC,bg=white}
+\setbeamercolor{frametitle}{fg=TitreC,bg=SavoirC!10}
+
+\setbeamerfont{normal text}{size=\large}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+
+\setbeamersize{text margin left=0.8cm,text margin right=0.8cm}
+
+\newcommand{\serie}[2]{%
+\begin{frame}[t]{#1}
+\vspace{0.25cm}
+#2
+\end{frame}
+}
+
+\begin{document}
+
+% =========================================================
+% TITRE
+% =========================================================
+\begin{frame}[plain]
+\vfill
+\centering
+{\Huge\bfseries\color{TitreC} Automatismes -- Statistiques\par}
+\vspace{0.5cm}
+{\Large\color{SavoirC}4\ieme{} -- Séries courtes}
+\vfill
+\end{frame}
+
+% =========================================================
+% SÉRIE 1
+% =========================================================
+\serie{Série 1 -- Lire des données brutes}{
+
+On considère la série :
+
+\[
+2\quad3\quad1\quad2\quad4\quad2\quad0\quad3\quad2\quad1.
+\]
+
+\begin{enumerate}
+  \item Quel est l'effectif total ?
+  \item Quel est l'effectif de la valeur \(2\) ?
+  \item Quelle est la valeur la plus fréquente ?
+\end{enumerate}
+}
+
+% =========================================================
+% SÉRIE 2
+% =========================================================
+\serie{Série 2 -- Fréquences}{
+
+Dans une classe de \(25\) élèves, \(10\) viennent à pied.
+
+\begin{enumerate}
+  \item Écris la fréquence sous forme d'une fraction.
+  \item Donne son écriture décimale.
+  \item Donne le pourcentage correspondant.
+\end{enumerate}
+}
+
+% =========================================================
+% SÉRIE 3
+% =========================================================
+\serie{Série 3 -- Contrôler un tableau}{
+
+Un tableau d'effectifs contient :
+
+\[
+4\qquad7\qquad5\qquad3\qquad6.
+\]
+
+\begin{enumerate}
+  \item Calcule l'effectif total.
+  \item Les fréquences suivantes peuvent-elles convenir ?
+\end{enumerate}
+
+\[
+16\%\qquad28\%\qquad20\%\qquad12\%\qquad24\%.
+\]
+}
+
+% =========================================================
+% SÉRIE 4
+% =========================================================
+\serie{Série 4 -- Moyenne simple}{
+
+Calcule puis interprète la moyenne de :
+
+\[
+8\qquad10\qquad12\qquad14.
+\]
+}
+
+% =========================================================
+% SÉRIE 5
+% =========================================================
+\serie{Série 5 -- Retrouver une valeur}{
+
+La moyenne de cinq valeurs est \(12\).
+
+Quatre de ces valeurs sont :
+
+\[
+9\qquad11\qquad13\qquad15.
+\]
+
+\medskip
+
+Quelle est la cinquième valeur ?
+}
+
+% =========================================================
+% SÉRIE 6
+% =========================================================
+\serie{Série 6 -- Moyenne avec effectifs}{
+
+\[
+\begin{array}{c|ccc}
+\text{Valeur} & 5 & 10 & 15\\
+\hline
+\text{Effectif} & 2 & 3 & 1
+\end{array}
+\]
+
+\medskip
+
+Calcule la moyenne.
+}
+
+% =========================================================
+% SÉRIE 7
+% =========================================================
+\serie{Série 7 -- Médiane, effectif impair}{
+
+Détermine puis interprète la médiane :
+
+\[
+9\qquad4\qquad12\qquad7\qquad10.
+\]
+}
+
+% =========================================================
+% SÉRIE 8
+% =========================================================
+\serie{Série 8 -- Médiane, effectif pair}{
+
+Détermine la médiane :
+
+\[
+3\qquad8\qquad5\qquad11\qquad6\qquad14.
+\]
+}
+
+% =========================================================
+% SÉRIE 9
+% =========================================================
+\serie{Série 9 -- Médiane à partir d'effectifs}{
+
+\[
+\begin{array}{c|ccccc}
+\text{Valeur} & 1 & 2 & 3 & 4 & 5\\
+\hline
+\text{Effectif} & 2 & 4 & 5 & 3 & 1
+\end{array}
+\]
+
+\begin{enumerate}
+  \item Quel est l'effectif total ?
+  \item Quelle position occupe la médiane ?
+  \item Détermine la médiane.
+\end{enumerate}
+}
+
+% =========================================================
+% SÉRIE 10
+% =========================================================
+\serie{Série 10 -- Pourcentages et angles}{
+
+Complète mentalement :
+
+\[
+50\%\longleftrightarrow\ldots^\circ
+\qquad\qquad
+25\%\longleftrightarrow\ldots^\circ
+\]
+
+\[
+10\%\longleftrightarrow\ldots^\circ
+\qquad\qquad
+20\%\longleftrightarrow\ldots^\circ
+\]
+}
+
+% =========================================================
+% SÉRIE 11
+% =========================================================
+\serie{Série 11 -- Angle d'un secteur}{
+
+Dans une enquête portant sur \(40\) personnes,
+\(14\) choisissent la réponse A.
+
+\medskip
+
+Calcule l'angle du secteur correspondant.
+}
+
+% =========================================================
+% SÉRIE 12
+% =========================================================
+\serie{Série 12 -- Moyenne ou médiane ?}{
+
+Une entreprise a les salaires suivants :
+
+\[
+1500\quad1550\quad1600\quad1650\quad1700\quad9000.
+\]
+
+\medskip
+
+Sans tout calculer, quel indicateur sera le plus influencé
+par le salaire de \(9000\) euros ?
+}
+
+% =========================================================
+% SÉRIE 13
+% =========================================================
+\serie{Série 13 -- Vrai ou faux ?}{
+
+Justifie chaque réponse en une phrase.
+
+\begin{enumerate}
+  \item La somme des fréquences d'une série vaut \(100\).
+  \item La médiane appartient toujours à la série.
+  \item Une moyenne peut ne pas être une valeur observée.
+  \item Dans un diagramme circulaire, la somme des angles vaut \(360^\circ\).
+\end{enumerate}
+}
+
+% =========================================================
+% SÉRIE 14
+% =========================================================
+\serie{Série 14 -- Contrôler une affirmation}{
+
+Dans une série, la médiane vaut \(17\).
+
+\medskip
+
+Complète une phrase correcte commençant par :
+
+\begin{center}
+\Large\bfseries
+« Au moins la moitié des valeurs... »
+\end{center}
+}
+
+\end{document}

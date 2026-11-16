@@ -1,0 +1,697 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\usepackage{styles/couleurs}
+
+\graphicspath{{images/}}
+
+% =========================================================
+% STYLE GÉNÉRAL
+% =========================================================
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}{%
+  \hfill
+  \scriptsize\insertframenumber
+  \hspace{0.4cm}
+  \vspace{0.15cm}
+}
+
+\setbeamercolor{normal text}{
+  fg=black,
+  bg=white
+}
+
+\setbeamercolor{frametitle}{
+  fg=TitreC,
+  bg=white
+}
+
+\setbeamerfont{frametitle}{
+  series=\bfseries,
+  size=\Large
+}
+
+\setbeamersize{
+  text margin left=0.5cm,
+  text margin right=0.5cm
+}
+
+% =========================================================
+% OUTILS
+% =========================================================
+
+% ---------------------------------------------------------
+% Image encadrée
+% Aucun trim, aucun clip :
+% l'image entière est toujours conservée.
+% ---------------------------------------------------------
+
+\newcommand{\imagecadree}[2][]{%
+  \begingroup
+  \setlength{\fboxsep}{1pt}%
+  \setlength{\fboxrule}{0.4pt}%
+  \fcolorbox{black!25}{white}{%
+    \includegraphics[#1]{#2}%
+  }%
+  \endgroup
+}
+
+% ---------------------------------------------------------
+% Correction éclair : géométrie
+% Format volontairement compact pour laisser
+% le maximum de place à la production.
+% ---------------------------------------------------------
+
+\newcommand{\correctiongeo}{%
+\begin{beamercolorbox}[
+  wd=\textwidth,
+  sep=0.12cm,
+  rounded=true
+]{block body}
+
+\footnotesize
+
+\textbf{Correction éclair :}
+\(\widehat{ACB}=40^\circ\),
+\(\widehat{BCD}=60^\circ\),
+\(40^\circ+60^\circ+80^\circ=180^\circ\).
+
+Donc \(A,C,E\) sont alignés et
+\(AE=4+2{,}4=6{,}4\) cm.
+
+\end{beamercolorbox}
+
+\vspace{0.08cm}
+}
+
+% ---------------------------------------------------------
+% Correction éclair : allumettes
+% ---------------------------------------------------------
+
+\newcommand{\correctionallumettes}{%
+\begin{beamercolorbox}[
+  wd=\textwidth,
+  sep=0.12cm,
+  rounded=true
+]{block body}
+
+\footnotesize
+
+\textbf{Correction éclair :}
+si \(n\) est le numéro de l'étape,
+
+\[
+5+4(n-1)=4n+1.
+\]
+
+\end{beamercolorbox}
+
+\vspace{0.05cm}
+}
+
+% ---------------------------------------------------------
+% Question orale
+% ---------------------------------------------------------
+
+\newcommand{\questionorale}{%
+\begin{center}
+  {\color{ActionC}\bfseries
+  Qu'est-ce que vous remarquez ?}
+\end{center}
+
+\vspace{-0.15cm}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% DIAPO 1
+% TITRE
+% =========================================================
+
+\begin{frame}[plain]
+
+\vfill
+
+\begin{center}
+
+{\Huge\bfseries\color{TitreC}
+J'écris des maths}
+
+\vspace{0.3cm}
+
+{\Large\color{SavoirC}
+Étude de productions d'élèves}
+
+\vspace{1cm}
+
+{\large
+\textbf{\(+\)}
+quelque chose qui m'aide
+\qquad
+\textbf{\(?\)}
+quelque chose qui m'interroge
+\qquad
+\textbf{\(\rightarrow\)}
+quelque chose que je modifierais
+}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 2
+% ÉNONCÉ GÉOMÉTRIE
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Problème de géométrie}
+
+\vspace{-0.15cm}
+
+\begin{columns}[T,onlytextwidth]
+
+% ---------------------------------------------------------
+% COLONNE ÉNONCÉ
+% ---------------------------------------------------------
+
+\begin{column}{0.53\textwidth}
+
+\small
+
+\(ABC\) est un triangle rectangle en \(B\) tel que
+
+\[
+\widehat{BAC}=50^\circ
+\qquad\text{et}\qquad
+AC=4\text{ cm}.
+\]
+
+\(BCD\) est un triangle équilatéral.
+
+\medskip
+
+\(CDE\) est un triangle tel que
+
+\[
+\widehat{DCE}=80^\circ
+\qquad\text{et}\qquad
+CE=2{,}4\text{ cm}.
+\]
+
+\medskip
+
+{\bfseries Calculer la longueur \(AE\).}
+
+\end{column}
+
+% ---------------------------------------------------------
+% COLONNE FIGURE
+% ---------------------------------------------------------
+
+\begin{column}{0.44\textwidth}
+
+\centering
+
+\imagecadree[
+  width=\linewidth,
+  height=0.52\textheight,
+  keepaspectratio
+]{problème de longueur figure.png}
+
+\end{column}
+
+\end{columns}
+
+\vspace{0.25cm}
+
+\begin{beamercolorbox}[
+  wd=\textwidth,
+  sep=0.18cm,
+  rounded=true
+]{block body}
+
+\small
+\textbf{Correction éclair}
+
+\[
+\widehat{ACB}=40^\circ,
+\qquad
+\widehat{BCD}=60^\circ,
+\qquad
+40^\circ+60^\circ+80^\circ=180^\circ.
+\]
+
+Donc \(A,C,E\) sont alignés et
+
+\[
+AE=4+2{,}4=6{,}4\text{ cm}.
+\]
+
+\end{beamercolorbox}
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 3
+% PRODUCTION 1
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 1}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.96\textwidth,
+  height=0.59\textheight,
+  keepaspectratio
+]{production 1.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 4
+% PRODUCTION 3 - PARTIE 1
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 3}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.94\textwidth,
+  height=0.64\textheight,
+  keepaspectratio
+]{production 3 (1).png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 5
+% PRODUCTION 3 - PARTIE 2
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 3 -- suite}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.94\textwidth,
+  height=0.64\textheight,
+  keepaspectratio
+]{production 3 (2).png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 6
+% PRODUCTION 4
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 4 -- brouillon}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.94\textwidth,
+  height=0.65\textheight,
+  keepaspectratio
+]{production 4.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 7
+% PRODUCTION 5 - PARTIE 1
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 5}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.95\textwidth,
+  height=0.65\textheight,
+  keepaspectratio
+]{production 5 (1).png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 8
+% PRODUCTION 5 - PARTIE 2
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 5 -- suite}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.96\textwidth,
+  height=0.65\textheight,
+  keepaspectratio
+]{production 5 (2).png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 9
+% PRODUCTION 6
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Production 6}
+
+\correctiongeo
+\questionorale
+
+\vfill
+
+\begin{center}
+
+% Production très verticale :
+% on privilégie ici la hauteur.
+\imagecadree[
+  width=0.75\textwidth,
+  height=0.66\textheight,
+  keepaspectratio
+]{production 6.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 10
+% ÉNONCÉ ALLUMETTES
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Problème des allumettes}
+
+\vspace{0.1cm}
+
+\begin{columns}[T,onlytextwidth]
+
+% ---------------------------------------------------------
+% IMAGE
+% ---------------------------------------------------------
+
+\begin{column}{0.49\textwidth}
+
+\centering
+
+\imagecadree[
+  width=\linewidth,
+  height=0.49\textheight,
+  keepaspectratio
+]{allumettes maisons.png}
+
+\end{column}
+
+% ---------------------------------------------------------
+% ÉNONCÉ
+% ---------------------------------------------------------
+
+\begin{column}{0.48\textwidth}
+
+\small
+
+On construit des maisons avec des allumettes
+comme sur la figure.
+
+\medskip
+
+Il fallait :
+
+\begin{itemize}
+  \item trouver le nombre d'allumettes aux étapes
+  \(4\), \(10\) et \(2007\) ;
+  \item donner une méthode valable pour une
+  \textbf{étape quelconque}.
+\end{itemize}
+
+\end{column}
+
+\end{columns}
+
+\vspace{0.25cm}
+
+\begin{beamercolorbox}[
+  wd=\textwidth,
+  sep=0.18cm,
+  rounded=true
+]{block body}
+
+\small
+\textbf{Correction éclair}
+
+\[
+5+4(n-1)=4n+1
+\]
+
+\[
+\text{Étape 4 : }17
+\qquad
+\text{Étape 10 : }41
+\qquad
+\text{Étape 2007 : }8029
+\]
+
+\end{beamercolorbox}
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 11
+% RÉPONSE 2
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Réponse 2}
+
+\correctionallumettes
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.94\textwidth,
+  height=0.54\textheight,
+  keepaspectratio
+]{reponse 2.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 12
+% RÉPONSE 4
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Réponse 4}
+
+\correctionallumettes
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.94\textwidth,
+  height=0.54\textheight,
+  keepaspectratio
+]{reponse 4.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 13
+% RÉPONSE 6
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Réponse 6}
+
+\correctionallumettes
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.90\textwidth,
+  height=0.57\textheight,
+  keepaspectratio
+]{reponse 6.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 14
+% RÉPONSE 7
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Réponse 7}
+
+\correctionallumettes
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.91\textwidth,
+  height=0.59\textheight,
+  keepaspectratio
+]{reponse 7.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+
+% =========================================================
+% DIAPO 15
+% RÉPONSE 8
+% =========================================================
+
+\begin{frame}[t]
+\frametitle{Réponse 8}
+
+\correctionallumettes
+\questionorale
+
+\vfill
+
+\begin{center}
+
+\imagecadree[
+  width=0.82\textwidth,
+  height=0.59\textheight,
+  keepaspectratio
+]{reponse 8.png}
+
+\end{center}
+
+\vfill
+
+\end{frame}
+
+\end{document}

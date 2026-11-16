@@ -1,0 +1,246 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{colortbl}
+
+\usetikzlibrary{calc,arrows.meta,positioning,patterns}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Progression professeur}
+
+\remarque{Durée indicative : sept séances d'apprentissage de 50 à 55 minutes,
+deux interrogations courtes et une évaluation finale.
+
+Les acquis de 5e ne sont pas repris sous forme d'une « liste de rappels » :
+ils sont mobilisés comme des outils nécessaires pour résoudre des questions
+courtes dès les deux premières activités.}
+
+\section*{Place dans le programme}
+
+En 4e, on poursuit le travail sur les effectifs, les fréquences,
+la moyenne, les tableaux et les représentations graphiques.
+Les nouveautés centrales de cette séquence sont :
+
+\begin{itemize}
+  \item la \textbf{médiane}, pour des séries de petit effectif total,
+        pair ou impair ;
+  \item la lecture, l'interprétation et la construction de
+        \textbf{diagrammes circulaires}.
+\end{itemize}
+
+L'étendue et les histogrammes ne sont pas étudiés dans cette séquence :
+ils relèvent de la suite de la progression du cycle.
+
+\section*{Objectifs de fin de séquence}
+
+L'élève doit pouvoir :
+
+\begin{itemize}
+  \item identifier population, caractère, valeurs ou modalités ;
+  \item déterminer un effectif total et les effectifs de chaque valeur ;
+  \item calculer une fréquence en écriture décimale ou en pourcentage ;
+  \item organiser des données brutes dans un tableau ;
+  \item choisir et lire une représentation adaptée ;
+  \item construire un diagramme circulaire ;
+  \item calculer et interpréter une moyenne simple ou à partir d'un tableau d'effectifs ;
+  \item déterminer et interpréter une médiane pour un effectif pair ou impair ;
+  \item comparer moyenne et médiane dans une situation comportant une valeur extrême ;
+  \item rédiger quelques phrases pour communiquer ce que montrent les données ;
+  \item contrôler un résultat ou une représentation.
+\end{itemize}
+
+\section*{Déroulé réaliste}
+
+\renewcommand{\arraystretch}{1.38}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{1.05cm}
+|>{\raggedright\arraybackslash}p{4.2cm}
+|>{\raggedright\arraybackslash}X
+|>{\raggedright\arraybackslash}p{3.15cm}|}
+\hline
+\textbf{Séance} & \textbf{Support principal} &
+\textbf{Enjeu didactique} & \textbf{Production}\\
+\hline
+
+1 &
+Activité 1 : Quelle équipe choisir ? &
+Faire comparer deux séries avant de nommer les outils.
+Réactiver la moyenne et faire apparaître son insuffisance
+lorsque deux équipes ont la même moyenne. Introduire la médiane. &
+Argument individuel, débat en groupe puis trace courte.\\
+\hline
+
+2 &
+Activité 2 : Mini data challenge &
+Réactiver vocabulaire, effectifs, fréquences, tableaux et choix
+de représentations à partir de données déjà recueillies.
+Éviter le coût d'une enquête complète. &
+Une mission par groupe puis mise en commun.\\
+\hline
+
+3 &
+Activité 3 : Du tableau au disque &
+Construire un diagramme circulaire en reliant effectifs,
+fréquences, pourcentages et angles. &
+Diagramme construit et contrôlé.\\
+\hline
+
+4 &
+Activité 4 : Une moyenne sans recopier 29 valeurs &
+Donner du sens au calcul d'une moyenne à partir d'un tableau
+d'effectifs. &
+Interrogation 1 en début de séance, puis calcul organisé.\\
+\hline
+
+5 &
+Activité 5 : Moyenne ou médiane ? &
+Comparer les deux indicateurs, étudier l'effet d'une valeur extrême
+et choisir un résumé adapté au contexte. &
+Justification écrite courte.\\
+\hline
+
+6 &
+Activité 6 : Diagrammes et médias &
+Développer des outils de contrôle : somme des pourcentages,
+cohérence entre secteurs et nombres, titre, source, effectif. &
+Interrogation 2 en début de séance, puis critique argumentée.\\
+\hline
+
+7 &
+Consolidation &
+Médiane à partir de données brutes, d'un tableau ou d'un diagramme
+en bâtons ; fréquence, moyenne pondérée, interprétation. &
+Automatismes et exercices différenciés.\\
+\hline
+
+8 &
+Évaluation finale &
+Mobiliser les outils dans des formes variées et expliquer les résultats. &
+Évaluation sur 20.\\
+\hline
+\end{tabularx}
+
+\section*{Organisation des deux premières activités}
+
+\subsection*{Activité 1}
+
+\begin{enumerate}
+  \item Recherche individuelle : chacun prend position avec les outils de son choix.
+  \item Mise en commun par groupes de trois : les élèves confrontent leurs critères.
+  \item Débat bref : on constate que la moyenne seule ne permet pas de départager.
+  \item Institutionnalisation : construction de la médiane et interprétation.
+\end{enumerate}
+
+\subsection*{Activité 2}
+
+Les données sont déjà collectées et anonymisées.
+Chaque groupe reçoit une mission différente, ce qui réduit le temps
+de traitement tout en permettant une mise en commun riche :
+
+\begin{itemize}
+  \item organiser les réponses qualitatives ;
+  \item organiser les réponses quantitatives ;
+  \item calculer et interpréter des indicateurs ;
+  \item rédiger un portrait statistique de la classe fictive.
+\end{itemize}
+
+\section*{Automatismes}
+
+Rituel de cinq minutes, quatre à six questions :
+
+\begin{itemize}
+  \item séances 1 à 3 : effectif total, effectif d'une valeur,
+        fréquence simple et lecture de tableau ;
+  \item séances 2 à 5 : calcul et interprétation de moyenne ;
+  \item séances 3 à 7 : classement d'une série et recherche de médiane ;
+  \item séances 4 à 7 : moyenne à partir d'un tableau d'effectifs ;
+  \item séances 3 à 7 : conversions entre pourcentage et angle ;
+  \item après la séquence : une question statistique courte toutes les deux semaines.
+\end{itemize}
+
+\section*{Principes didactiques}
+
+\begin{itemize}
+  \item Les élèves rencontrent d'abord une question à résoudre,
+        pas une définition à recopier.
+  \item Plusieurs procédures sont autorisées lors des recherches.
+  \item La rédaction intervient après la recherche :
+        on améliore une production pour la rendre compréhensible.
+  \item Les automatismes sont reliés à un obstacle réellement rencontré.
+  \item Une représentation est choisie pour répondre à une question,
+        pas seulement pour « faire un graphique ».
+  \item Les élèves construisent des outils de contrôle :
+        total des effectifs, somme des fréquences, somme des angles,
+        ordre de grandeur de la moyenne, position de la médiane.
+  \item Les valeurs extrêmes sont utilisées pour distinguer
+        le rôle de la moyenne et celui de la médiane.
+\end{itemize}
+
+\end{document}

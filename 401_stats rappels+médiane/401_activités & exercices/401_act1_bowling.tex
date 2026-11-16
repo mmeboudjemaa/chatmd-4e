@@ -1,0 +1,96 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\setlist[enumerate]{leftmargin=*,itemsep=0.35em,topsep=0.35em}
+
+\newcommand{\lignes}[1]{%
+  \begin{tcolorbox}[
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,right=3mm,top=2mm,bottom=1mm
+  ]
+    \foreach \i in {1,...,#1}{\noindent\dotfill\par\vspace{0.45em}}
+  \end{tcolorbox}
+}
+
+\newcommand{\blocdonnees}[1]{%
+  \begin{tcolorbox}[
+    mathsbox,
+    colback=NeutreBg,
+    colframe=NeutreC!45,
+    boxrule=0.6pt,
+    arc=2mm
+  ]
+  #1
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}Séquence 1 -- Statistiques}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}Activité 1 -- Bowling}
+\end{center}
+
+\blocdonnees{
+Treize élèves jouent une partie de bowling.
+
+\medskip
+\textbf{Équipe des Verts -- 7 joueurs}
+\[
+105 \qquad 120 \qquad 104 \qquad 121 \qquad 99 \qquad 127 \qquad 108
+\]
+
+\textbf{Équipe des Bleus -- 6 joueurs}
+\[
+93 \qquad 181 \qquad 89 \qquad 98 \qquad 117 \qquad 94
+\]
+}
+
+\begin{enumerate}
+  \item Calculer puis interpréter la moyenne des deux équipes.
+
+  \medskip
+  \noindent\textbf{Moyenne des Verts =}
+
+  \vspace{1.1em}
+
+  \noindent\textbf{Moyenne des Bleus =}
+
+  \lignes{4}
+
+  \item Les élèves de l'équipe verte étudient leurs résultats.
+  Après avoir calculé la moyenne, ils utilisent le nombre \(108\)
+  pour parler de leur performance.
+
+  \medskip
+  \textbf{Comment ont-ils choisi ce nombre ?}
+
+  \lignes{7}
+
+  \item Calculer la médiane de l'équipe bleue.
+
+  \lignes{5}
+\end{enumerate}
+
+% NOTES PROFESSEUR -- NON IMPRIMÉES
+% Activité volontairement concise.
+% Relances graduées possibles :
+% 1. « La présentation actuelle des scores vous aide-t-elle ? »
+% 2. « Peut-on écrire les scores autrement pour mieux voir ce qui se passe ? »
+% 3. « Essaie de les ranger. »
+
+\end{document}

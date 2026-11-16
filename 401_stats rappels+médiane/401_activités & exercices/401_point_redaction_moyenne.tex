@@ -1,0 +1,150 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+
+\geometry{
+  a4paper,
+  top=1.2cm,
+  bottom=1.2cm,
+  left=1.4cm,
+  right=1.4cm
+}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Point rédaction -- Calculer une moyenne}
+\end{center}
+
+\vspace{-0.25em}
+
+\remarque{Une moyenne est un \textbf{quotient} :
+on additionne toutes les valeurs, puis on divise par le nombre de valeurs.
+
+Dans une chaîne de calculs, le signe \(=\) relie toujours des expressions
+qui ont la \textbf{même valeur}.}
+
+\begin{tcolorbox}[
+  mathsbox,
+  colback=SavoirBg,
+  colframe=SavoirC,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+{\sffamily\bfseries\color{SavoirC}
+Méthode 1 -- En une seule expression}
+
+\smallskip
+
+Pour les valeurs
+\[
+7 \ ;\ 12 \ ;\ 10 \ ;\ 5 \ ;\ 9 \ ;\ 8,
+\]
+on peut écrire avec une \textbf{barre de fraction} :
+
+\[
+M=
+\frac{7+12+10+5+9+8}{6}
+=
+\frac{51}{6}
+=
+8{,}5.
+\]
+
+Ou avec le symbole \(\div\) :
+
+\[
+M=
+(7+12+10+5+9+8)\div 6
+=
+51\div 6
+=
+8{,}5.
+\]
+
+\textbf{Attention :} avec \(\div\), les parenthèses permettent de montrer
+que l'on divise \textbf{toute la somme} par \(6\).
+
+\medskip
+\textbf{À privilégier :} cette écriture permet de s'entraîner à lire
+et à manipuler une expression numérique complète.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  mathsbox,
+  colback=NeutreBg,
+  colframe=NeutreC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+{\sffamily\bfseries\color{NeutreC}
+Méthode 2 -- En deux étapes}
+
+\smallskip
+
+Cette rédaction est \textbf{tout aussi correcte} :
+
+\[
+7+12+10+5+9+8=51
+\]
+
+Il y a \(6\) valeurs.
+
+\[
+M=51\div 6=8{,}5.
+\]
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  mathsbox,
+  colback=ActionBg,
+  colframe=ActionC,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+{\sffamily\bfseries\color{ActionC}
+Et avec un tableau d'effectifs ?}
+
+\smallskip
+
+Même principe : chaque valeur est multipliée par son effectif.
+
+\[
+M=
+\frac{35\times7+36\times9+37\times5+38\times2+39\times7}
+     {7+9+5+2+7}
+=
+\frac{1103}{30}
+\approx
+36{,}8.
+\]
+
+\end{tcolorbox}
+
+\end{document}

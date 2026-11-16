@@ -1,0 +1,200 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 4 -- Calculer le côté adjacent}
+
+\section*{Partie A -- Comprendre l'opération}
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\[
+AC=12\text{ cm}
+\qquad\text{et}\qquad
+\widehat{BAC}=37^\circ.
+\]
+
+On cherche \(AB\).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (5.2,0);
+  \coordinate (C) at (5.2,3.9);
+
+  \draw[line width=0.9pt] (A)--(B)--(C)--cycle;
+  \draw (4.82,0)--(4.82,0.38)--(5.2,0.38);
+
+  \node[left] at (A) {$A$};
+  \node[below] at (B) {$B$};
+  \node[above] at (C) {$C$};
+
+  \node[above left] at (2.7,2.2) {$12$ cm};
+  \node[below] at (2.7,0) {$AB\,?$};
+
+  \draw[ActionC,line width=1pt] (0.8,0) arc[start angle=0,end angle=37,radius=0.8];
+  \node[ActionC] at (1.15,0.43) {$37^\circ$};
+\end{tikzpicture}
+\end{center}
+
+Complète.
+
+\[
+\cos(37^\circ)=\frac{\ldots}{\ldots}
+\]
+
+Le cosinus est le nombre qui multiplie l'hypoténuse pour obtenir le côté adjacent :
+
+\[
+AB=AC\times\cos(37^\circ).
+\]
+
+Donc :
+
+\[
+AB=12\times\cos(37^\circ)\approx\ldots\text{ cm}.
+\]
+
+Le résultat est-il cohérent avec \(AB<AC\) ?
+
+\section*{Partie B -- Méthode de rédaction}
+
+Complète le modèle.
+
+\begin{tcolorbox}[colback=white,colframe=SavoirC,boxrule=0.7pt,arc=2mm]
+Dans le triangle \(ABC\) rectangle en \(B\), on a :
+
+\[
+\cos(\widehat{BAC})=\frac{AB}{AC}.
+\]
+
+Donc :
+
+\[
+AB=AC\times\cos(\widehat{BAC}).
+\]
+
+Ainsi :
+
+\[
+AB=12\times\cos(37^\circ)
+\approx\ldots\text{ cm}.
+\]
+\end{tcolorbox}
+
+\section*{Partie C -- S'entraîner}
+
+Pour chaque figure :
+
+\begin{enumerate}
+  \item nomme le triangle rectangle ;
+  \item écris le cosinus de l'angle donné ;
+  \item calcule la longueur demandée ;
+  \item arrondis au dixième et contrôle le résultat.
+\end{enumerate}
+
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.55]
+  \coordinate (J) at (0,0);
+  \coordinate (V) at (4.5,0);
+  \coordinate (K) at (4.5,2.2);
+  \draw[line width=0.9pt] (J)--(V)--(K)--cycle;
+  \draw (4.15,0)--(4.15,0.35)--(4.5,0.35);
+  \node[left] at (J) {$J$};
+  \node[below] at (V) {$V$};
+  \node[above] at (K) {$K$};
+  \node[above left] at (2.3,1.25) {$8$ cm};
+  \node[below] at (2.4,0) {$JV\,?$};
+  \draw[ActionC] (0.75,0) arc[start angle=0,end angle=26,radius=0.75];
+  \node[ActionC] at (1.05,0.35) {$20^\circ$};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.55]
+  \coordinate (R) at (0,0);
+  \coordinate (S) at (4.4,0);
+  \coordinate (T) at (4.4,3.1);
+  \draw[line width=0.9pt] (R)--(S)--(T)--cycle;
+  \draw (4.05,0)--(4.05,0.35)--(4.4,0.35);
+  \node[left] at (R) {$R$};
+  \node[below] at (S) {$S$};
+  \node[above] at (T) {$T$};
+  \node[above left] at (2.3,1.65) {$15$ cm};
+  \node[below] at (2.3,0) {$RS\,?$};
+  \draw[ActionC] (0.75,0) arc[start angle=0,end angle=35,radius=0.75];
+  \node[ActionC] at (1.05,0.42) {$35^\circ$};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.55]
+  \coordinate (D) at (0,0);
+  \coordinate (E) at (4.2,0);
+  \coordinate (F) at (4.2,4.3);
+  \draw[line width=0.9pt] (D)--(E)--(F)--cycle;
+  \draw (3.85,0)--(3.85,0.35)--(4.2,0.35);
+  \node[left] at (D) {$D$};
+  \node[below] at (E) {$E$};
+  \node[above] at (F) {$F$};
+  \node[above left] at (2.2,2.3) {$9{,}5$ cm};
+  \node[below] at (2.2,0) {$DE\,?$};
+  \draw[ActionC] (0.75,0) arc[start angle=0,end angle=46,radius=0.75];
+  \node[ActionC] at (1.02,0.5) {$46^\circ$};
+\end{tikzpicture}
+\end{minipage}
+
+\lignesreponse{10}
+
+\aretenir{Pour calculer le côté adjacent :
+
+\[
+\boxed{\text{côté adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle})}
+\]
+
+Comme le cosinus d'un angle aigu est inférieur à \(1\),
+le résultat doit être plus petit que l'hypoténuse.}
+
+\end{document}

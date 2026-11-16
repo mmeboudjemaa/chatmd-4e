@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\geometry{left=8mm,right=8mm,top=7mm,bottom=7mm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% --- Palette pensée pour une impression noir et blanc ---
+\definecolor{canlight}{gray}{0.93}
+\definecolor{canmid}{gray}{0.72}
+\definecolor{candark}{gray}{0.22}
+\definecolor{answerblue}{RGB}{0,82,165}
+
+% --- Colonnes ---
+\newcolumntype{Q}{>{\centering\arraybackslash}X}
+\newcolumntype{N}{>{\centering\arraybackslash}m{6mm}}
+\newcolumntype{R}{>{\centering\arraybackslash}m{22mm}}
+
+% --- En-tête ---
+\newcommand{\canheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 8 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textbf{Score :} \rule{13mm}{0.45pt}\,/30
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Réponse uniquement \quad$\diamond$\quad Reporter le score sur la fiche annuelle.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+\newcommand{\qrow}[2]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowfig}[2]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowcorr}[3]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+\newcommand{\qrowfigcorr}[3]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+
+\newcommand{\cantable}[1]{%
+\arrayrulecolor{canmid}
+\begin{tabularx}{\linewidth}{N|Q|R}
+\rowcolor{canlight}\textbf{N\textsuperscript{o}}&\centering\textbf{Question}&\textbf{Réponse}\\\hline
+#1
+\end{tabularx}
+\arrayrulecolor{black}
+}
+
+\newcommand{\hypotfigure}{%
+\begin{tikzpicture}[baseline=(current bounding box.center),scale=0.72,line width=0.6pt]
+  \node[font=\bfseries\normalsize] at (1.6,2.55) {Quelle est l'hypoténuse ?};
+  \coordinate (A) at (0,0); \coordinate (B) at (0,1.85); \coordinate (C) at (3.2,0);
+  \draw (A)--(B)--(C)--cycle;
+  \draw (0,0) rectangle (0.32,0.32);
+  \node[below left] at (A) {\small A};
+  \node[above left] at (B) {\small B};
+  \node[below right] at (C) {\small C};
+\end{tikzpicture}}
+
+
+\newcommand{\canheadercorr}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 8 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textcolor{answerblue}{\textbf{CORRIGÉ}}
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Les réponses apparaissent en \textcolor{answerblue}{\textbf{bleu}}.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+
+\begin{document}
+\canheader{CAN 4}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{1}{$63\div7$}
+\qrow{2}{$125+99$}
+\qrow{3}{$(-6)-(-2)$}
+\qrow{4}{Compléter : $3{,}7+\ldots=8$}
+\qrow{5}{$1\,\%$ de 600}
+\qrow{6}{La moitié du carré de 6}
+\qrow{7}{Le plus grand : $2{,}04$ ou $2{,}4$ ?}
+\qrow{8}{Donner sous forme de fraction le nombre qui, multiplié par 8, donne 3.}
+\qrow{9}{$270{,}5\times0{,}01$}
+\qrow{10}{Moyenne de 14 ; 9 ; 12 ; 5}
+\qrow{11}{3 objets sur 12 sont rouges. Quelle fraction simplifiée des objets est rouge ?}
+\qrow{12}{Quelle est la distance à zéro de $-3{,}5$ ?}
+\qrow{13}{$\dfrac23$ de 27}
+\qrow{14}{$3{,}25$ h = $\ldots$ h $\ldots$ min}
+\qrow{15}{$54-4\times(18-8)$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{16}{Simplifier $\dfrac{21}{35}$}
+\qrow{17}{Aire d'un triangle de base 8 cm et de hauteur 5 cm}
+\qrow{18}{Dans une série de 25 valeurs, 10 sont identiques. Leur fréquence décimale est :}
+\qrow{19}{Écriture décimale de $\dfrac7{20}$}
+\qrow{20}{Le périmètre d'une figure s'exprime en : cm, cm$^2$ ou cm$^3$ ?}
+\qrow{21}{Parmi 705 ; 540 ; 1 340, lequel est divisible par 2, par 3 et par 5 ?}
+\qrow{22}{$0{,}25\times28$}
+\qrow{23}{45 L = $\ldots\,\mathrm{cm}^3$}
+\qrow{24}{5 kg de melons coûtent 15 \texteuro. Combien coûtent 7 kg ?}
+\qrow{25}{Un triangle rectangle a un angle aigu de $39^\circ$. L'autre angle aigu mesure :}
+\qrow{26}{Parmi 50 ; 64 ; 72, quel nombre est un carré parfait ?}
+\qrow{27}{Un rectangle de 3 cm sur 8 cm peut-il avoir un périmètre de 24 cm ?}
+\qrow{28}{Le plus grand : $\dfrac56$ ou $\dfrac45$ ?}
+\qrow{29}{Dans $3x$, le symbole caché entre 3 et $x$ est : $+$ ou $\times$ ?}
+\qrow{30}{Pour $x=4$, l'égalité $2x+1=9$ est-elle vraie ?}
+}
+\end{minipage}
+
+\clearpage
+
+\canheadercorr{CAN 4}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{1}{$63\div7$}{$9$}
+\qrowcorr{2}{$125+99$}{$224$}
+\qrowcorr{3}{$(-6)-(-2)$}{$-4$}
+\qrowcorr{4}{Compléter : $3{,}7+\ldots=8$}{$4{,}3$}
+\qrowcorr{5}{$1\,\%$ de 600}{$6$}
+\qrowcorr{6}{La moitié du carré de 6}{$18$}
+\qrowcorr{7}{Le plus grand : $2{,}04$ ou $2{,}4$ ?}{$2{,}4$}
+\qrowcorr{8}{Donner sous forme de fraction le nombre qui, multiplié par 8, donne 3.}{$\dfrac38$}
+\qrowcorr{9}{$270{,}5\times0{,}01$}{$2{,}705$}
+\qrowcorr{10}{Moyenne de 14 ; 9 ; 12 ; 5}{$10$}
+\qrowcorr{11}{3 objets sur 12 sont rouges. Quelle fraction simplifiée des objets est rouge ?}{$\dfrac14$}
+\qrowcorr{12}{Quelle est la distance à zéro de $-3{,}5$ ?}{$3{,}5$}
+\qrowcorr{13}{$\dfrac23$ de 27}{$18$}
+\qrowcorr{14}{$3{,}25$ h = $\ldots$ h $\ldots$ min}{3 h 15 min}
+\qrowcorr{15}{$54-4\times(18-8)$}{$14$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{16}{Simplifier $\dfrac{21}{35}$}{$\dfrac35$}
+\qrowcorr{17}{Aire d'un triangle de base 8 cm et de hauteur 5 cm}{20 cm$^2$}
+\qrowcorr{18}{Dans une série de 25 valeurs, 10 sont identiques. Leur fréquence décimale est :}{$0{,}4$}
+\qrowcorr{19}{Écriture décimale de $\dfrac7{20}$}{$0{,}35$}
+\qrowcorr{20}{Le périmètre d'une figure s'exprime en : cm, cm$^2$ ou cm$^3$ ?}{cm}
+\qrowcorr{21}{Parmi 705 ; 540 ; 1 340, lequel est divisible par 2, par 3 et par 5 ?}{$540$}
+\qrowcorr{22}{$0{,}25\times28$}{$7$}
+\qrowcorr{23}{45 L = $\ldots\,\mathrm{cm}^3$}{$45\,000$ cm$^3$}
+\qrowcorr{24}{5 kg de melons coûtent 15 \texteuro. Combien coûtent 7 kg ?}{21 \texteuro}
+\qrowcorr{25}{Un triangle rectangle a un angle aigu de $39^\circ$. L'autre angle aigu mesure :}{$51^\circ$}
+\qrowcorr{26}{Parmi 50 ; 64 ; 72, quel nombre est un carré parfait ?}{$64$}
+\qrowcorr{27}{Un rectangle de 3 cm sur 8 cm peut-il avoir un périmètre de 24 cm ?}{non (22 cm)}
+\qrowcorr{28}{Le plus grand : $\dfrac56$ ou $\dfrac45$ ?}{$\dfrac56$}
+\qrowcorr{29}{Dans $3x$, le symbole caché entre 3 et $x$ est : $+$ ou $\times$ ?}{$\times$}
+\qrowcorr{30}{Pour $x=4$, l'égalité $2x+1=9$ est-elle vraie ?}{oui}
+}
+\end{minipage}
+\end{document}

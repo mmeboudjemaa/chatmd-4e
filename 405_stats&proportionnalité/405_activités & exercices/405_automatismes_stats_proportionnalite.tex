@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Automatismes -- Séries courtes}
+
+\remarque{Chaque série est prévue pour environ cinq minutes.
+On peut projeter une seule série au début d'une séance.}
+
+\section*{Série 1 -- Grandeurs et unités}
+
+Pour chaque situation, nomme les deux grandeurs et leurs unités.
+
+\begin{enumerate}
+  \item \(4\) cahiers coûtent \(12\) €.
+  \item Une voiture parcourt \(150\) km en \(2\) h.
+  \item Une recette utilise \(300\) g de farine pour \(4\) personnes.
+\end{enumerate}
+
+\section*{Série 2 -- Proportionnel ou non ?}
+
+\begin{enumerate}
+  \item Nombre de stylos identiques et prix total.
+  \item Âge d'un enfant et âge de son père.
+  \item Côté d'un carré et périmètre.
+  \item Côté d'un carré et aire.
+\end{enumerate}
+
+\section*{Série 3 -- Compléter une colonne}
+
+\[
+\begin{array}{c|ccc}
+\text{Quantité} & 3 & 5 & 8\\
+\hline
+\text{Prix en €} & 7{,}5 & & 20
+\end{array}
+\]
+
+\section*{Série 4 -- Retour à l'unité}
+
+\[
+6\text{ kg}\longleftrightarrow15\text{ €}
+\]
+
+Calcule le prix de \(1\) kg, puis de \(4\) kg.
+
+\section*{Série 5 -- Coefficient}
+
+Dans chaque tableau, trouve le coefficient de la première ligne vers la seconde.
+
+\[
+\begin{array}{c|ccc}
+ & 2 & 5 & 9\\
+\hline
+ & 7 & 17{,}5 & 31{,}5
+\end{array}
+\qquad
+\begin{array}{c|ccc}
+ & 4 & 7 & 10\\
+\hline
+ & 1 & 1{,}75 & 2{,}5
+\end{array}
+\]
+
+\section*{Série 6 -- Effectifs et fréquences}
+
+Dans une classe de \(25\) élèves, \(10\) viennent à pied.
+
+Calcule la fréquence puis le pourcentage.
+
+\section*{Série 7 -- Pourcentages et angles}
+
+Complète mentalement.
+
+\[
+50\%\longleftrightarrow\ldots^\circ
+\qquad
+25\%\longleftrightarrow\ldots^\circ
+\]
+
+\[
+10\%\longleftrightarrow\ldots^\circ
+\qquad
+20\%\longleftrightarrow\ldots^\circ
+\]
+
+\section*{Série 8 -- Contrôle d'un diagramme}
+
+Un diagramme annonce \(35\%\), \(28\%\), \(22\%\) et \(20\%\).
+
+Peut-il représenter une répartition complète ? Justifie.
+
+\end{document}

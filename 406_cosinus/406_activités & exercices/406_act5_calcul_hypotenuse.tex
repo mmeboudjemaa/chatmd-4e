@@ -1,0 +1,153 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 5 -- Calculer l'hypoténuse}
+
+\section*{Partie A -- Défaire une multiplication}
+
+Dans le triangle \(MNP\) rectangle en \(N\), on donne :
+
+\[
+MN=7\text{ cm}
+\qquad
+\widehat M=41^\circ.
+\]
+
+On cherche l'hypoténuse \(MP\).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (M) at (0,0);
+  \coordinate (N) at (5.5,0);
+  \coordinate (P) at (5.5,4.8);
+  \draw[line width=0.9pt] (M)--(N)--(P)--cycle;
+  \draw (5.15,0)--(5.15,0.35)--(5.5,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$41^\circ$"] {angle=N--M--P};
+  \node[below left] at (M) {$M$};
+  \node[below right] at (N) {$N$};
+  \node[above right] at (P) {$P$};
+  \node[below] at ($(M)!0.5!(N)$) {$7$ cm};
+  \node[above left] at ($(M)!0.5!(P)$) {$?$};
+\end{tikzpicture}
+\end{center}
+
+On sait que :
+
+\[
+MN=MP\times\cos(\widehat M).
+\]
+
+Complète le programme inverse :
+
+\[
+MP=MN\div\cos(\widehat M).
+\]
+
+Puis calcule \(MP\), arrondi au dixième de centimètre.
+
+\lignesreponse{6}
+
+\section*{Partie B -- Deux cas à ne pas confondre}
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\textwidth}{
+|>{\raggedright\arraybackslash}p{5.5cm}
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+ & \textbf{Longueur cherchée} & \textbf{Opération}\\
+\hline
+Hypoténuse et angle connus & côté adjacent & \\
+\hline
+Côté adjacent et angle connus & hypoténuse & \\
+\hline
+\end{tabularx}
+
+\newpage
+
+Complète les deux phrases.
+
+\[
+\text{adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle})
+\]
+
+\[
+\text{hypoténuse}
+=
+\text{adjacent}\div\cos(\text{angle})
+\]
+
+\section*{Partie C -- Calculer}
+
+\begin{enumerate}
+  \item Dans le triangle \(RST\) rectangle en \(R\),
+        \(ST\) est l'hypoténuse, \(RT=6\) cm et \(\widehat T=55^\circ\).
+        Calculer \(ST\).
+  \item Dans le triangle \(UVW\) rectangle en \(V\),
+        \(UW\) est l'hypoténuse, \(UV=9{,}5\) m et \(\widehat U=32^\circ\).
+        Calculer \(UW\).
+  \item Dans le triangle \(XYZ\) rectangle en \(Y\),
+        \(XZ\) est l'hypoténuse, \(XY=2{,}4\) km et \(\widehat X=76^\circ\).
+        Calculer \(XZ\).
+\end{enumerate}
+
+\lignesreponse{10}
+
+\section*{Partie D -- Vraisemblance}
+
+Pourquoi une hypoténuse calculée doit-elle être plus grande que le côté adjacent connu ?
+
+\lignesreponse{3}
+
+\erreur{Ne choisis pas l'opération uniquement parce que tu veux obtenir
+un nombre plus grand ou plus petit.
+
+Pars toujours de la relation :
+\[
+\text{adjacent}
+=
+\text{hypoténuse}\times\cos(\text{angle}).
+\]}
+
+\end{document}

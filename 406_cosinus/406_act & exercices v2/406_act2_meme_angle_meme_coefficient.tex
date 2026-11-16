@@ -1,0 +1,135 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=1mm,before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\LARGE\bfseries\color{TitreC}Séquence 6 -- Cosinus d'un angle aigu}\\[0.2em]
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 2 -- Même angle, même coefficient}
+
+\remarque{Les mesures sont arrondies. Les quotients obtenus ne seront donc pas
+exactement identiques, mais ils doivent être très proches.}
+
+\section*{Partie A -- Une famille d'angle \(60^\circ\)}
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{0.92\textwidth}{
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+\textbf{Hypoténuse} & \textbf{Côté adjacent} &
+\(\textbf{adjacent}\div\textbf{hypoténuse}\)\\
+\hline
+\(4\) cm & \(2\) cm & \\
+\hline
+\(6\) cm & \(3\) cm & \\
+\hline
+\(10\) cm & \(5\) cm & \\
+\hline
+\end{tabularx}
+
+Que remarques-tu ?
+
+\lignesreponse{3}
+
+\section*{Partie B -- D'autres familles de triangles}
+
+Chaque colonne correspond à plusieurs triangles rectangles ayant le même angle aigu.
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\textwidth}{
+|>{\centering\arraybackslash}p{2.3cm}
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X
+|>{\centering\arraybackslash}X|}
+\hline
+ & \textbf{Triangle 1} & \textbf{Triangle 2} & \textbf{Triangle 3}\\
+\hline
+\multicolumn{4}{|c|}{\textbf{Famille d'angle \(40^\circ\)}}\\
+\hline
+Hypoténuse & \(5\) & \(8\) & \(12\)\\
+\hline
+Côté adjacent & \(3{,}83\) & \(6{,}13\) & \(9{,}19\)\\
+\hline
+Adjacent \(\div\) hypoténuse & & & \\
+\hline
+\multicolumn{4}{|c|}{\textbf{Famille d'angle \(70^\circ\)}}\\
+\hline
+Hypoténuse & \(5\) & \(8\) & \(12\)\\
+\hline
+Côté adjacent & \(1{,}71\) & \(2{,}74\) & \(4{,}10\)\\
+\hline
+Adjacent \(\div\) hypoténuse & & & \\
+\hline
+\end{tabularx}
+
+Arrondis les quotients au centième.
+
+\section*{Partie C -- Conjecturer}
+
+Complète.
+
+\begin{tcolorbox}[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Dans des triangles rectangles qui possèdent le même angle aigu,
+le quotient
+
+\[
+\text{côté adjacent}\div\text{hypoténuse}
+\]
+
+semble être \dotfill
+
+Ce quotient dépend de \dotfill{} mais ne dépend pas de \dotfill
+\end{tcolorbox}
+
+\section*{Partie D -- Utiliser le coefficient}
+
+Pour la famille d'angle \(40^\circ\), le coefficient est proche de \(0{,}77\).
+
+\begin{enumerate}
+  \item Quelle longueur adjacente prévoit-on avec une hypoténuse de \(20\) cm ?
+  \item Quelle hypoténuse prévoit-on avec un côté adjacent de \(15{,}4\) cm ?
+  \item Pourquoi le coefficient est-il inférieur à \(1\) ?
+\end{enumerate}
+
+\lignesreponse{6}
+
+\aretenir{Le coefficient qui relie l'hypoténuse au côté adjacent
+porte un nom : le \textbf{cosinus de l'angle aigu}.}
+
+\end{document}

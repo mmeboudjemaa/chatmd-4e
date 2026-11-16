@@ -1,0 +1,206 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage[most]{tcolorbox}
+
+% =========================================================
+% MISE EN PAGE
+% =========================================================
+
+\geometry{
+  a4paper,
+  landscape,
+  top=8mm,
+  bottom=8mm,
+  left=9mm,
+  right=9mm
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
+
+% =========================================================
+% TITRE D'EXERCICE
+% =========================================================
+
+\newcommand{\minititre}[1]{%
+{\sffamily\bfseries\color{SavoirC}#1}\par
+\vspace{0.15em}
+}
+
+% =========================================================
+% UNE FICHE
+% =========================================================
+
+\newcommand{\ficheRacines}{%
+
+\begin{center}
+{\sffamily\Large\bfseries\color{TitreC}
+Racines carrées -- Entraînement}
+\end{center}
+
+\vspace{0.3em}
+
+% =========================================================
+% COLONNE GAUCHE
+% =========================================================
+
+\noindent
+\begin{minipage}[t]{0.47\linewidth}
+\vspace{0pt}
+
+% ---------------------------------------------------------
+% 1
+% ---------------------------------------------------------
+
+\minititre{1. Carré ou racine carrée ?}
+
+Complète.
+
+\[
+\begin{array}{cc}
+6^2=\ldots
+&
+\sqrt{49}=\ldots
+\\[0.8em]
+9^2=\ldots
+&
+\sqrt{81}=\ldots
+\\[0.8em]
+\sqrt{\ldots}=11
+&
+\sqrt{144}=\ldots
+\end{array}
+\]
+
+\vspace{0.8em}
+
+% ---------------------------------------------------------
+% 2
+% ---------------------------------------------------------
+
+\minititre{2. Encadrer}
+
+Sans calculatrice, complète avec deux entiers consécutifs.
+
+\[
+\ldots < \sqrt{30} < \ldots
+\]
+
+\[
+\ldots < \sqrt{70} < \ldots
+\]
+
+\[
+\ldots < \sqrt{110} < \ldots
+\]
+
+\end{minipage}
+\hfill
+% =========================================================
+% COLONNE DROITE
+% =========================================================
+\begin{minipage}[t]{0.49\linewidth}
+\vspace{0pt}
+
+% ---------------------------------------------------------
+% 3
+% ---------------------------------------------------------
+
+\minititre{3. Avec la calculatrice}
+
+Donne une valeur approchée au dixième.
+
+\[
+\sqrt{35}\approx\ldots
+\qquad
+\sqrt{92}\approx\ldots
+\]
+
+\vspace{0.8em}
+
+% ---------------------------------------------------------
+% 4
+% ---------------------------------------------------------
+
+\minititre{4. Aire et côté d'un carré}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+
+\textbf{a)} Un carré a un côté de \(7\) cm.
+
+\[
+\text{Aire}=\ldots\ \text{cm}^2
+\]
+
+\textbf{b)} Un carré a une aire de \(64\ \text{cm}^2\).
+
+\[
+\text{Côté}=\ldots\ \text{cm}
+\]
+
+\textbf{c)} Un carré a une aire de \(50\ \text{cm}^2\).
+
+\[
+\text{Côté exact}=\ldots\ \text{cm}
+\]
+
+\[
+\text{Au dixième} \approx \ldots\ \text{cm}
+\]
+
+\end{tcolorbox}
+
+\end{minipage}
+
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+
+\ficheRacines
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+
+\ficheRacines
+
+\end{minipage}
+
+\end{document}

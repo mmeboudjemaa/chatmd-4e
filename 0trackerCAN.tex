@@ -1,0 +1,34 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[
+    landscape,
+    margin=0.8cm
+]{geometry}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\newcommand{\trackerCAN}{%
+    \includegraphics[
+        width=\linewidth,
+        keepaspectratio
+    ]{tracker can 30 questions.png}%
+}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[c][\textheight][c]{0.49\textwidth}
+    \centering
+    \trackerCAN
+\end{minipage}
+\hfill
+\begin{minipage}[c][\textheight][c]{0.49\textwidth}
+    \centering
+    \trackerCAN
+\end{minipage}
+
+\end{document}

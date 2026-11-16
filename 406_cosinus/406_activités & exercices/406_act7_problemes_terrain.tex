@@ -1,0 +1,142 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,angles,quotes,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{\noindent\dotfill\par\vspace{0.45em}}
+
+\newcommand{\lignesreponse}[1]{%
+\begin{tcolorbox}[
+enhanced,colback=white,colframe=NeutreC!40,boxrule=0.5pt,
+arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=1mm,
+before skip=2pt,after skip=2pt]
+\foreach \i in {1,...,#1}{\lignepointillee}
+\end{tcolorbox}}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+{\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}}
+
+\begin{document}
+
+\titreseq{Activité 7 -- Mesurer sans pouvoir atteindre}
+
+\section*{Problème 1 -- Le câble de haubanage}
+
+Un câble de \(18\) m relie le sommet d'un mât au sol.
+Il forme un angle de \(58^\circ\) avec le sol.
+
+On cherche la distance horizontale entre le pied du mât et le point d'ancrage.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (8,0);
+  \coordinate (C) at (8,6.4);
+  \draw[line width=1pt] (A)--(B)--(C)--cycle;
+  \draw (7.6,0)--(7.6,0.4)--(8,0.4);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$58^\circ$"] {angle=B--A--C};
+  \node[below left] at (A) {ancrage};
+  \node[below right] at (B) {pied};
+  \node[above right] at (C) {sommet};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}
+  \item Complète la figure.
+  \item Quelle longueur est l'hypoténuse ?
+  \item Calcule la distance horizontale, arrondie au dixième de mètre.
+\end{enumerate}
+
+\lignesreponse{15}
+
+\newpage
+
+\section*{Problème 2 -- Une échelle contre un mur}
+
+Le pied d'une échelle est placé à \(2{,}4\) m du mur.
+L'échelle forme un angle de \(68^\circ\) avec le sol.
+
+Quelle longueur minimale doit avoir l'échelle pour atteindre le point visé sur le mur ?
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (5,0);
+  \coordinate (C) at (5,5.9);
+  \draw[line width=1pt] (A)--(B)--(C);
+  \draw[line width=1pt] (A)--(C);
+  \draw (4.65,0)--(4.65,0.35)--(5,0.35);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$68^\circ$"] {angle=B--A--C};
+  \node[below] at ($(A)!0.5!(B)$) {$2{,}4$ m};
+  \node[above left] at ($(A)!0.5!(C)$) {$?$};
+\end{tikzpicture}
+\end{center}
+
+\lignesreponse{20}
+
+\newpage
+
+\section*{Problème 3 -- La hauteur d'un arbre}
+
+Une observatrice regarde le sommet d'un arbre.
+Ses yeux sont à \(1{,}65\) m du sol.
+Elle se trouve à \(30\) m horizontalement du tronc.
+La ligne de visée forme un angle de \(35^\circ\) avec l'horizontale.
+
+On veut déterminer la hauteur de l'arbre.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.27]
+  \coordinate (S) at (0,1.65);
+  \coordinate (H) at (30,1.65);
+  \coordinate (A) at (30,{1.65+30*tan(35)});
+  \coordinate (P) at (30,0);
+  \draw[line width=1pt] (S)--(H)--(A)--cycle;
+  \draw[dashed] (H)--(P);
+  \draw[line width=1.2pt] (-2,0)--(34,0);
+  \draw (29,1.65)--(29,2.65)--(30,2.65);
+  \draw pic[draw=ActionC,fill=ActionC!15,angle radius=18mm,"$35^\circ$"] {angle=H--S--A};
+  \node[left] at (S) {$S$};
+  \node[right] at (H) {$H$};
+  \node[right] at (A) {$A$};
+  \node[right] at (P) {$P$};
+  \node[below] at ($(S|-P)!0.5!(P)$) {$30$ m};
+  \node[left] at ($(S|-P)!0.5!(S)$) {$1{,}65$ m};
+\end{tikzpicture}
+\end{center}
+
+Le cosinus ne donne pas directement la hauteur \(AH\).
+On procède en deux étapes.
+
+\begin{enumerate}
+  \item Dans le triangle \(SAH\) rectangle en \(H\), calcule la longueur \(SA\).
+  \item À l'aide du théorème de Pythagore, calcule \(AH\).
+  \item Déduis la hauteur totale \(AP\) de l'arbre.
+  \item Donne le résultat au centimètre près.
+\end{enumerate}
+
+\lignesreponse{15}
+
+\end{document}

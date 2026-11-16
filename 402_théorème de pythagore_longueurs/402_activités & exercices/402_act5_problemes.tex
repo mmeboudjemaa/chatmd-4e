@@ -1,0 +1,1321 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns}
+
+% =========================================================
+% MISE EN PAGE
+% =========================================================
+
+\geometry{
+  top=5mm,
+  bottom=5mm,
+  left=9mm,
+  right=9mm
+}
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayshortskip}{2pt}
+
+% =========================================================
+% TITRE FICHE ÉLÈVE
+% =========================================================
+
+\newcommand{\titreprobleme}[2]{%
+\noindent
+\begin{minipage}{\linewidth}
+\centering
+{\sffamily\LARGE\bfseries\color{TitreC}
+Résoudre un problème avec Pythagore}
+
+\vspace{0.5mm}
+
+{\sffamily\large\bfseries\color{SavoirC}
+Problème #1 -- #2}
+\end{minipage}
+
+\vspace{1mm}
+}
+
+% =========================================================
+% TITRE CORRECTION
+% =========================================================
+
+\newcommand{\titrecorrection}[1]{%
+\noindent
+\begin{minipage}{\linewidth}
+\centering
+{\sffamily\LARGE\bfseries\color{TitreC}
+Un exemple de correction complète}
+
+\vspace{0.5mm}
+
+{\sffamily\large\bfseries\color{SavoirC}
+#1}
+\end{minipage}
+
+\vspace{2mm}
+}
+
+% =========================================================
+% BOÎTES ÉLÈVE
+% =========================================================
+
+\newtcolorbox{enoncebox}{
+  enhanced,
+  colback=white,
+  colframe=ActionC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=1.5mm,
+  bottom=1.5mm,
+  height=4cm,
+  valign=center,
+  before skip=0pt,
+  after skip=0pt
+}
+
+\newtcolorbox{connaissancesbox}{
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=1.5mm,
+  bottom=1.2mm,
+  height=4.2cm,
+  before skip=0pt,
+  after skip=0pt
+}
+
+% =========================================================
+% CASE À COCHER
+% =========================================================
+
+\newcommand{\casecocher}[1]{%
+\noindent
+\(\square\)\hspace{0.35em}%
+\parbox[t]{0.89\linewidth}{#1}
+\par
+\vspace{0.15em}
+}
+
+% =========================================================
+% CADRES À POINTS
+%
+% #1 largeur
+% #2 hauteur
+% #3 titre
+% #4 couleur du titre
+% =========================================================
+
+\newcommand{\zonepoints}[4]{%
+\begin{tikzpicture}[x=1cm,y=1cm,baseline=(current bounding box.north)]
+
+  \fill[white]
+    (0,0) rectangle (#1,#2);
+
+  \fill[
+    pattern=dots,
+    pattern color=gray!25
+  ]
+    (0,0) rectangle (#1,#2);
+
+  \draw[
+    black!35,
+    line width=0.6pt,
+    rounded corners=1.5mm
+  ]
+    (0,0) rectangle (#1,#2);
+
+  \node[
+    anchor=north west,
+    font=\sffamily\bfseries,
+    text=#4,
+    fill=white,
+    inner xsep=3pt,
+    inner ysep=2pt
+  ]
+  at (0.25,#2-0.18)
+  {#3};
+
+\end{tikzpicture}%
+}
+
+% =========================================================
+% TROIS ZONES DE TRAVAIL
+% =========================================================
+
+\newcommand{\zonestravail}{%
+
+\noindent
+\begin{minipage}[t]{0.49\linewidth}
+\vspace{0pt}
+\centering
+
+\zonepoints{9.35}{9}{Brouillon}{black!60}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\vspace{0pt}
+\centering
+
+\zonepoints{9.35}{9}{Ma version}{ActionC}
+
+\end{minipage}
+
+\vspace{0.8mm}
+
+\noindent
+\makebox[\linewidth][c]{%
+\zonepoints{19.15}{8.6}{Notre version}{SavoirC}%
+}%
+}
+
+% =========================================================
+% PAGE DE CORRECTION
+% =========================================================
+
+\newtcolorbox{correctionbox}{
+  enhanced,
+  colback=SavoirBg!30,
+  colframe=SavoirC!40,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=7mm,
+  right=7mm,
+  top=5mm,
+  bottom=5mm,
+  height=26.2cm,
+  valign=top,
+  before skip=0pt,
+  after skip=0pt
+}
+
+\newcommand{\pagecorrection}[2]{%
+
+\titrecorrection{#1}
+
+\begin{correctionbox}
+
+#2
+
+\end{correctionbox}
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+
+\begin{document}
+
+% =========================================================
+% PROBLÈME 1 : LOSANGE
+% =========================================================
+
+\titreprobleme{1}{Le losange}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.64\linewidth}
+
+Un jardin a la forme d'un losange \(ABCD\).
+
+Chaque côté mesure \(27{,}4\) m et la diagonale \([AC]\)
+mesure \(42\) m.
+
+\smallskip
+
+\textbf{Quelle est la longueur de la diagonale \([BD]\) ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.31\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.57]
+
+\coordinate (A) at (-2.5,0);
+\coordinate (C) at (2.5,0);
+\coordinate (B) at (0,2.1);
+\coordinate (D) at (0,-2.1);
+
+\draw[thick] (A)--(B)--(C)--(D)--cycle;
+\draw[dashed] (A)--(C);
+\draw[dashed] (B)--(D);
+
+\node[left] at (A) {$A$};
+\node[above] at (B) {$B$};
+\node[right] at (C) {$C$};
+\node[below] at (D) {$D$};
+
+\node[above left] at ($(A)!0.5!(B)$)
+{$27{,}4$ m};
+
+\node[below] at ($(A)!0.5!(C)$)
+{$42$ m};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Les diagonales d'un losange se coupent en leur milieu.}
+
+\casecocher{Les diagonales d'un losange sont perpendiculaires.}
+
+\casecocher{Un losange a quatre côtés de même longueur.}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Le périmètre d'un losange vaut quatre fois la longueur d'un côté.}
+
+\casecocher{L'aire d'un triangle vaut
+\(\dfrac{\text{base}\times\text{hauteur}}{2}\).}
+
+\casecocher{Dans un triangle rectangle, on peut utiliser
+le théorème de Pythagore.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 1
+% =========================================================
+
+\pagecorrection{Problème 1 -- Le losange}{
+
+Les diagonales d'un losange sont perpendiculaires et se coupent
+en leur milieu.
+
+On note \(O\) leur point d'intersection.
+
+Comme \(O\) est le milieu de \([AC]\) :
+
+\[
+AO=\frac{AC}{2}
+=\frac{42}{2}
+=21\text{ m}.
+\]
+
+Le triangle \(AOB\) est rectangle en \(O\).
+
+D'après le théorème de Pythagore :
+
+\[
+AB^2=AO^2+OB^2
+\]
+
+\[
+27{,}4^2=21^2+OB^2
+\]
+
+\[
+750{,}76=441+OB^2
+\]
+
+\[
+OB^2=750{,}76-441
+\]
+
+\[
+OB^2=309{,}76
+\]
+
+\[
+OB=\sqrt{309{,}76}
+\]
+
+\[
+OB=17{,}6\text{ m}.
+\]
+
+Comme \(O\) est aussi le milieu de \([BD]\) :
+
+\[
+BD=2\times OB
+\]
+
+\[
+BD=2\times17{,}6
+\]
+
+\[
+\boxed{BD=35{,}2\text{ m}}
+\]
+
+La seconde diagonale du losange mesure donc
+\(\boxed{35{,}2\text{ m}}\).
+}
+
+\newpage
+
+% =========================================================
+% PROBLÈME 2 : TRAPÈZE
+% =========================================================
+
+\titreprobleme{2}{Le terrain à clôturer}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.62\linewidth}
+
+Un terrain a la forme du trapèze rectangle \(ABCD\).
+
+\[
+AB=9\text{ m},
+\qquad
+AD=12\text{ m},
+\qquad
+DC=14\text{ m}.
+\]
+
+On souhaite poser une clôture tout autour du terrain.
+
+\smallskip
+
+\textbf{Quelle longueur de grillage faut-il prévoir ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.32\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.54]
+
+\coordinate (D) at (0,0);
+\coordinate (A) at (0,3);
+\coordinate (B) at (3.3,3);
+\coordinate (C) at (5.1,0);
+
+\draw[thick] (A)--(B)--(C)--(D)--cycle;
+
+\draw[thick]
+(D) ++(0,0.35)
+-- ++(0.35,0)
+-- ++(0,-0.35);
+
+\draw[thick]
+(A) ++(0,-0.35)
+-- ++(0.35,0)
+-- ++(0,0.35);
+
+\node[above left] at (A) {$A$};
+\node[above right] at (B) {$B$};
+\node[below right] at (C) {$C$};
+\node[below left] at (D) {$D$};
+
+\node[above] at ($(A)!0.5!(B)$)
+{$9$ m};
+
+\node[left] at ($(A)!0.5!(D)$)
+{$12$ m};
+
+\node[below] at ($(D)!0.5!(C)$)
+{$14$ m};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Le périmètre d'une figure est la somme
+des longueurs de ses côtés.}
+
+\casecocher{Les côtés opposés d'un rectangle ont la même longueur.}
+
+\casecocher{Dans un triangle rectangle, on peut utiliser
+le théorème de Pythagore.}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{L'aire d'un trapèze dépend de ses deux bases
+et de sa hauteur.}
+
+\casecocher{Une longueur peut parfois être obtenue par différence.}
+
+\casecocher{Un rectangle possède quatre angles droits.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 2
+% =========================================================
+
+\pagecorrection{Problème 2 -- Le terrain à clôturer}{
+
+On trace la perpendiculaire à \([DC]\) passant par \(B\).
+Elle coupe \([DC]\) en \(H\).
+
+Le quadrilatère \(ABHD\) est un rectangle.
+
+On a donc :
+
+\[
+DH=AB=9\text{ m}
+\]
+
+et
+
+\[
+BH=AD=12\text{ m}.
+\]
+
+Ainsi :
+
+\[
+HC=DC-DH
+\]
+
+\[
+HC=14-9
+\]
+
+\[
+HC=5\text{ m}.
+\]
+
+Le triangle \(BHC\) est rectangle en \(H\).
+
+D'après le théorème de Pythagore :
+
+\[
+BC^2=BH^2+HC^2
+\]
+
+\[
+BC^2=12^2+5^2
+\]
+
+\[
+BC^2=144+25
+\]
+
+\[
+BC^2=169
+\]
+
+\[
+BC=\sqrt{169}
+\]
+
+\[
+BC=13\text{ m}.
+\]
+
+Le périmètre du terrain vaut :
+
+\[
+AB+BC+CD+DA
+\]
+
+\[
+9+13+14+12=48\text{ m}.
+\]
+
+\[
+\boxed{\text{Il faut prévoir }48\text{ m de grillage}.}
+\]
+}
+
+\newpage
+
+% =========================================================
+% PROBLÈME 3 : TREMPLIN
+% =========================================================
+
+\titreprobleme{3}{Le tremplin}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.63\linewidth}
+
+La surface inclinée d'un tremplin est un rectangle
+de largeur \(0{,}8\) m.
+
+Le tremplin s'élève de \(0{,}9\) m sur une longueur horizontale
+de \(1{,}2\) m.
+
+Le revêtement de la surface inclinée a coûté \(128{,}52\) €.
+
+\smallskip
+
+\textbf{Quel est le prix du revêtement au mètre carré ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.31\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.74]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (3.4,0);
+\coordinate (C) at (3.4,2.1);
+
+\draw[thick] (A)--(B)--(C)--cycle;
+
+\draw[thick]
+(B) ++(-0.28,0)
+-- ++(0,0.28)
+-- ++(0.28,0);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+
+\node[below] at ($(A)!0.5!(B)$)
+{$1{,}2$ m};
+
+\node[right] at ($(B)!0.5!(C)$)
+{$0{,}9$ m};
+
+\node[above left] at ($(A)!0.5!(C)$)
+{$?$};
+
+\end{tikzpicture}
+
+\smallskip
+
+Largeur : \(0{,}8\) m
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{L'aire d'un rectangle vaut
+longueur \(\times\) largeur.}
+
+\casecocher{Le volume d'un prisme droit vaut
+aire de la base \(\times\) hauteur.}
+
+\casecocher{Dans un triangle rectangle,
+on peut utiliser le théorème de Pythagore.}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Un prix au mètre carré peut être obtenu
+en divisant le prix total par l'aire.}
+
+\casecocher{Le périmètre d'un rectangle dépend
+de sa longueur et de sa largeur.}
+
+\casecocher{Deux droites perpendiculaires forment un angle droit.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 3
+% =========================================================
+
+\pagecorrection{Problème 3 -- Le tremplin}{
+
+Le triangle \(ABC\) est rectangle en \(B\).
+
+D'après le théorème de Pythagore :
+
+\[
+AC^2=AB^2+BC^2
+\]
+
+\[
+AC^2=1{,}2^2+0{,}9^2
+\]
+
+\[
+AC^2=1{,}44+0{,}81
+\]
+
+\[
+AC^2=2{,}25
+\]
+
+\[
+AC=\sqrt{2{,}25}
+\]
+
+\[
+AC=1{,}5\text{ m}.
+\]
+
+La surface inclinée du tremplin est un rectangle
+de longueur \(1{,}5\) m et de largeur \(0{,}8\) m.
+
+Son aire vaut :
+
+\[
+1{,}5\times0{,}8
+=1{,}2\text{ m}^2.
+\]
+
+Le prix du revêtement pour \(1\text{ m}^2\) vaut :
+
+\[
+128{,}52\div1{,}2
+=107{,}1.
+\]
+
+\[
+\boxed{\text{Le revêtement coûte }107{,}10\text{ € par m}^2.}
+\]
+}
+
+\newpage
+
+% =========================================================
+% PROBLÈME 4 : PARC
+% =========================================================
+
+\titreprobleme{4}{Le raccourci dans le parc}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.64\linewidth}
+
+Un parc rectangulaire mesure \(60\) m de large et \(80\) m de long.
+
+Pour aller de \(A\) à \(C\), on peut suivre les côtés \(AB\) puis \(BC\),
+ou traverser directement le parc par la diagonale \([AC]\).
+
+\smallskip
+
+\textbf{Combien de mètres gagne-t-on en prenant le raccourci ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.30\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.53]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4,0);
+\coordinate (C) at (4,3);
+\coordinate (D) at (0,3);
+
+\draw[thick] (A)--(B)--(C)--(D)--cycle;
+\draw[dashed,thick] (A)--(C);
+
+\node[below left] at (A) {$A$};
+\node[below right] at (B) {$B$};
+\node[above right] at (C) {$C$};
+\node[above left] at (D) {$D$};
+
+\node[below] at ($(A)!0.5!(B)$)
+{$80$ m};
+
+\node[right] at ($(B)!0.5!(C)$)
+{$60$ m};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Un rectangle possède quatre angles droits.}
+
+\casecocher{L'aire d'un rectangle vaut
+longueur \(\times\) largeur.}
+
+\casecocher{Dans un triangle rectangle,
+on peut utiliser le théorème de Pythagore.}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Pour connaître une distance gagnée,
+on peut comparer deux trajets.}
+
+\casecocher{Les diagonales d'un rectangle ont la même longueur.}
+
+\casecocher{Le périmètre d'un rectangle dépend
+de sa longueur et de sa largeur.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 4
+% =========================================================
+
+\pagecorrection{Problème 4 -- Le raccourci dans le parc}{
+
+Le trajet qui suit les deux côtés mesure :
+
+\[
+AB+BC
+\]
+
+\[
+80+60=140\text{ m}.
+\]
+
+Comme \(ABCD\) est un rectangle,
+le triangle \(ABC\) est rectangle en \(B\).
+
+D'après le théorème de Pythagore :
+
+\[
+AC^2=AB^2+BC^2
+\]
+
+\[
+AC^2=80^2+60^2
+\]
+
+\[
+AC^2=6400+3600
+\]
+
+\[
+AC^2=10000
+\]
+
+\[
+AC=\sqrt{10000}
+\]
+
+\[
+AC=100\text{ m}.
+\]
+
+Le raccourci mesure donc \(100\) m.
+
+La distance gagnée vaut :
+
+\[
+140-100=40\text{ m}.
+\]
+
+\[
+\boxed{\text{On gagne }40\text{ m en prenant le raccourci}.}
+\]
+}
+
+\newpage
+
+% =========================================================
+% PROBLÈME 5 : TOIT
+% =========================================================
+
+\titreprobleme{5}{Le toit de l'abri}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.62\linewidth}
+
+La façade d'un abri mesure \(8\) m de large.
+
+Le sommet \(S\) du toit est situé exactement au-dessus du milieu \(M\)
+de la façade, à \(3\) m au-dessus du haut des murs.
+
+Les plaques utilisées pour couvrir un versant mesurent \(4{,}8\) m.
+
+\smallskip
+
+\textbf{Une plaque est-elle assez longue pour couvrir un versant ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.33\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.47]
+
+% Façade
+\coordinate (A) at (-3,0);
+\coordinate (B) at (3,0);
+\coordinate (C) at (3,-2.1);
+\coordinate (D) at (-3,-2.1);
+
+% Toit
+\coordinate (M) at (0,0);
+\coordinate (S) at (0,2.5);
+
+% Murs
+\draw[thick]
+(A)--(B)--(C)--(D)--cycle;
+
+% Toit
+\draw[thick]
+(A)--(S)--(B);
+
+% Hauteur
+\draw[dashed]
+(S)--(M);
+
+% Angle droit
+\draw[thick]
+($(M)+(-0.28,0)$)
+-- ++(0,0.28)
+-- ++(0.28,0);
+
+% Milieu de AB
+\draw[thick]
+($(M)+(-0.13,-0.08)$)
+--
+($(M)+(0.13,0.08)$);
+
+% Noms
+\node[left] at (A) {$A$};
+\node[right] at (B) {$B$};
+\node[below right] at (M) {$M$};
+\node[above] at (S) {$S$};
+
+% Mesures
+\node[below] at ($(A)!0.5!(B)+(0,-0.28)$)
+{$8$ m};
+
+\node[right] at ($(M)!0.5!(S)$)
+{$3$ m};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Le milieu d'un segment partage ce segment
+en deux segments de même longueur.}
+
+\casecocher{Dans un triangle rectangle,
+on peut utiliser le théorème de Pythagore.}
+
+\casecocher{L'aire d'un triangle vaut
+\(\dfrac{\text{base}\times\text{hauteur}}{2}\).}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Une longueur peut être comparée à une autre
+pour savoir si elle est suffisante.}
+
+\casecocher{Un triangle isocèle possède deux côtés de même longueur.}
+
+\casecocher{Le périmètre d'un rectangle dépend
+de sa longueur et de sa largeur.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 5
+% =========================================================
+
+\pagecorrection{Problème 5 -- Le toit de l'abri}{
+
+Comme \(M\) est le milieu de \([AB]\) :
+
+\[
+AM=\frac{AB}{2}
+\]
+
+\[
+AM=\frac{8}{2}
+\]
+
+\[
+AM=4\text{ m}.
+\]
+
+Le sommet \(S\) est situé à la verticale de \(M\).
+
+Le triangle \(AMS\) est donc rectangle en \(M\).
+
+D'après le théorème de Pythagore :
+
+\[
+AS^2=AM^2+MS^2
+\]
+
+\[
+AS^2=4^2+3^2
+\]
+
+\[
+AS^2=16+9
+\]
+
+\[
+AS^2=25
+\]
+
+\[
+AS=\sqrt{25}
+\]
+
+\[
+AS=5\text{ m}.
+\]
+
+Un versant du toit mesure donc \(5\) m.
+
+Une plaque mesure \(4{,}8\) m.
+
+Or :
+
+\[
+4{,}8<5.
+\]
+
+\[
+\boxed{\text{Une plaque de }4{,}8\text{ m n'est pas assez longue}.}
+\]
+}
+
+\newpage
+
+% =========================================================
+% PROBLÈME 6 : JARDIN
+% =========================================================
+
+\titreprobleme{6}{Le jardin à engazonner}
+
+\begin{enoncebox}
+
+\begin{minipage}[c]{0.64\linewidth}
+
+Un jardin est constitué d'un rectangle
+et d'un triangle rectangle accolés.
+
+Le rectangle mesure \(12\) m sur \(8\) m.
+
+Dans le triangle rectangle, un côté mesure \(8\) m
+et l'hypoténuse mesure \(10\) m.
+
+Un sac permet d'engazonner \(35\text{ m}^2\).
+
+\smallskip
+
+\textbf{Combien de sacs faut-il acheter pour engazonner tout le jardin ?}
+
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.30\linewidth}
+
+\centering
+
+\begin{tikzpicture}[scale=0.44]
+
+\coordinate (A) at (0,0);
+\coordinate (B) at (4.5,0);
+\coordinate (C) at (4.5,3);
+\coordinate (D) at (0,3);
+\coordinate (E) at (6.75,0);
+
+\draw[thick]
+(A)--(B)--(E)--(C)--(D)--cycle;
+
+\draw[thick]
+(B)--(C);
+
+\draw[thick]
+(B) ++(0,0.32)
+-- ++(0.32,0)
+-- ++(0,-0.32);
+
+\node[below left] at (A) {$A$};
+\node[below] at (B) {$B$};
+\node[above] at (C) {$C$};
+\node[above left] at (D) {$D$};
+\node[below right] at (E) {$E$};
+
+\node[below] at ($(A)!0.5!(B)$)
+{$12$ m};
+
+\node[left] at ($(A)!0.5!(D)$)
+{$8$ m};
+
+\node[right] at ($(B)!0.5!(C)$)
+{$8$ m};
+
+\node[above right] at ($(C)!0.5!(E)$)
+{$10$ m};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\end{enoncebox}
+
+\vspace{0.8mm}
+
+\zonestravail
+
+\vspace{0.8mm}
+
+\begin{connaissancesbox}
+
+{\sffamily\bfseries\color{SavoirC}
+Point connaissances -- à consulter si besoin}
+
+\smallskip
+
+Parmi ces connaissances, lesquelles peuvent t'aider ?
+Coche celles que tu utilises.
+
+\smallskip
+
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Dans un triangle rectangle,
+on peut utiliser le théorème de Pythagore.}
+
+\casecocher{L'aire d'un rectangle vaut
+longueur \(\times\) largeur.}
+
+\casecocher{L'aire d'un triangle vaut
+\(\dfrac{\text{base}\times\text{hauteur}}{2}\).}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+
+\casecocher{Le périmètre d'une figure est la somme
+des longueurs de ses côtés.}
+
+\casecocher{Le nombre de sacs peut être obtenu
+à partir de l'aire totale du jardin.}
+
+\casecocher{Il faut acheter un nombre entier de sacs
+suffisant pour couvrir toute la surface.}
+
+\end{minipage}
+
+\end{connaissancesbox}
+
+\newpage
+
+% =========================================================
+% CORRECTION 6
+% =========================================================
+
+\pagecorrection{Problème 6 -- Le jardin à engazonner}{
+
+Le triangle \(BCE\) est rectangle en \(B\).
+
+D'après le théorème de Pythagore :
+
+\[
+CE^2=BC^2+BE^2
+\]
+
+\[
+10^2=8^2+BE^2
+\]
+
+\[
+100=64+BE^2
+\]
+
+\[
+BE^2=100-64
+\]
+
+\[
+BE^2=36
+\]
+
+\[
+BE=\sqrt{36}
+\]
+
+\[
+BE=6\text{ m}.
+\]
+
+L'aire du rectangle \(ABCD\) vaut :
+
+\[
+12\times8=96\text{ m}^2.
+\]
+
+L'aire du triangle rectangle \(BCE\) vaut :
+
+\[
+\frac{BE\times BC}{2}
+\]
+
+\[
+\frac{6\times8}{2}
+=24\text{ m}^2.
+\]
+
+L'aire totale du jardin vaut :
+
+\[
+96+24=120\text{ m}^2.
+\]
+
+Le nombre de sacs nécessaire vaut :
+
+\[
+120\div35\approx3{,}43.
+\]
+
+Trois sacs ne suffisent donc pas.
+
+\[
+\boxed{\text{Il faut acheter }4\text{ sacs}.}
+\]
+}
+
+\end{document}

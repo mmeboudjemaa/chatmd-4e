@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\geometry{left=8mm,right=8mm,top=7mm,bottom=7mm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% --- Palette pensée pour une impression noir et blanc ---
+\definecolor{canlight}{gray}{0.93}
+\definecolor{canmid}{gray}{0.72}
+\definecolor{candark}{gray}{0.22}
+\definecolor{answerblue}{RGB}{0,82,165}
+
+% --- Colonnes ---
+\newcolumntype{Q}{>{\centering\arraybackslash}X}
+\newcolumntype{N}{>{\centering\arraybackslash}m{6mm}}
+\newcolumntype{R}{>{\centering\arraybackslash}m{22mm}}
+
+% --- En-tête ---
+\newcommand{\canheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textbf{Score :} \rule{13mm}{0.45pt}\,/30
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Réponse uniquement \quad$\diamond$\quad Reporter le score sur la fiche annuelle.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+\newcommand{\qrow}[2]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowfig}[2]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & \\ \hline}
+\newcommand{\qrowcorr}[3]{\textbf{#1} & \parbox[c][15.0mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+\newcommand{\qrowfigcorr}[3]{\textbf{#1} & \parbox[c][27mm][c]{\linewidth}{\centering #2} & {\color{answerblue}\bfseries #3} \\ \hline}
+
+\newcommand{\cantable}[1]{%
+\arrayrulecolor{canmid}
+\begin{tabularx}{\linewidth}{N|Q|R}
+\rowcolor{canlight}\textbf{N\textsuperscript{o}}&\centering\textbf{Question}&\textbf{Réponse}\\\hline
+#1
+\end{tabularx}
+\arrayrulecolor{black}
+}
+
+\newcommand{\hypotfigure}{%
+\begin{tikzpicture}[baseline=(current bounding box.center),scale=0.72,line width=0.6pt]
+  \node[font=\bfseries\normalsize] at (1.6,2.55) {Quelle est l'hypoténuse ?};
+  \coordinate (A) at (0,0); \coordinate (B) at (0,1.85); \coordinate (C) at (3.2,0);
+  \draw (A)--(B)--(C)--cycle;
+  \draw (0,0) rectangle (0.32,0.32);
+  \node[below left] at (A) {\small A};
+  \node[above left] at (B) {\small B};
+  \node[below right] at (C) {\small C};
+\end{tikzpicture}}
+
+
+\newcommand{\canheadercorr}[1]{%
+  \begin{center}
+    {\LARGE\bfseries COURSE AUX NOMBRES}\par
+    \vspace{0.7mm}
+    {\color{canmid}\rule{27mm}{0.45pt}\hspace{2mm}\color{black}$\diamond$\hspace{1.4mm}{\large\bfseries #1}\hspace{1.4mm}$\diamond$\hspace{2mm}\color{canmid}\rule{27mm}{0.45pt}\color{black}}
+  \end{center}
+  \vspace{0.8mm}
+  \renewcommand{\arraystretch}{1.25}%
+  \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}m{40mm}}
+    \rowcolor{canlight}
+    \footnotesize\textbf{30 questions} -- 9 minutes &
+    \footnotesize\textbf{Sans calculatrice} &
+    \footnotesize\textcolor{answerblue}{\textbf{CORRIGÉ}}
+  \end{tabularx}
+  \renewcommand{\arraystretch}{1.05}%
+  \vspace{1mm}
+  \begin{center}
+    {\scriptsize Les réponses apparaissent en \textcolor{answerblue}{\textbf{bleu}}.}
+  \end{center}
+  \vspace{1.2mm}
+}
+
+
+\begin{document}
+\canheader{CAN 2}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{1}{$72\div8$}
+\qrow{2}{Écrire en chiffres : quinze unités et trois centièmes.}
+\qrow{3}{$5-(-2)$}
+\qrow{4}{Compléter : $47+\ldots=100$}
+\qrow{5}{$10\,\%$ de 350}
+\qrow{6}{La différence entre le double de 9 et le tiers de 12}
+\qrow{7}{$0{,}8+1{,}35$}
+\qrow{8}{Quel est le nombre qui, multiplié par 3, donne 7 ? Donner une fraction.}
+\qrow{9}{$3{,}6\div100$}
+\qrow{10}{Dans la série 4 ; 6 ; 6 ; 7 ; 9, quel est l'effectif de 6 ?}
+\qrow{11}{Le plus grand : $-3$ ou $-7$ ?}
+\qrow{12}{Quelle est la distance à zéro de $-6$ ?}
+\qrow{13}{$\dfrac25$ de 35}
+\qrow{14}{135 min = $\ldots$ h $\ldots$ min}
+\qrow{15}{$(18-6)\div3$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrow{16}{Le plus grand : $\dfrac34$ ou $\dfrac58$ ?}
+\qrow{17}{Aire d'un rectangle de 8 cm sur 3 cm}
+\qrow{18}{Moyenne de 7 ; 8 ; 9 ; 12}
+\qrow{19}{Compléter : $1{,}2=\dfrac{\ldots}{10}$}
+\qrow{20}{$1\,\mathrm{m}^2$ correspond à combien de carrés de $1\,\mathrm{cm}^2$ ?}
+\qrow{21}{Quel est le reste de la division de 29 par 4 ?}
+\qrow{22}{$2{,}5\times4$}
+\qrow{23}{$4\,500$ cm = $\ldots$ m}
+\qrow{24}{4 cahiers coûtent 6 \texteuro. Combien coûtent 10 cahiers ?}
+\qrow{25}{Dans un triangle, deux angles mesurent $90^\circ$ et $35^\circ$. Le troisième mesure :}
+\qrow{26}{$11^2$}
+\qrow{27}{Un carré de côté 8 cm peut-il avoir une aire de $70\,\mathrm{cm}^2$ ?}
+\qrow{28}{Réduire : $x+x+x$}
+\qrow{29}{$5(x+2)$ est-il une somme ou un produit ?}
+\qrow{30}{La température passe de $-4\,^{\circ}\mathrm C$ à $3\,^{\circ}\mathrm C$. De combien augmente-t-elle ?}
+}
+\end{minipage}
+
+\clearpage
+
+\canheadercorr{CAN 2}
+
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{1}{$72\div8$}{$9$}
+\qrowcorr{2}{Écrire en chiffres : quinze unités et trois centièmes.}{$15{,}03$}
+\qrowcorr{3}{$5-(-2)$}{$7$}
+\qrowcorr{4}{Compléter : $47+\ldots=100$}{$53$}
+\qrowcorr{5}{$10\,\%$ de 350}{$35$}
+\qrowcorr{6}{La différence entre le double de 9 et le tiers de 12}{$14$}
+\qrowcorr{7}{$0{,}8+1{,}35$}{$2{,}15$}
+\qrowcorr{8}{Quel est le nombre qui, multiplié par 3, donne 7 ? Donner une fraction.}{$\dfrac73$}
+\qrowcorr{9}{$3{,}6\div100$}{$0{,}036$}
+\qrowcorr{10}{Dans la série 4 ; 6 ; 6 ; 7 ; 9, quel est l'effectif de 6 ?}{$2$}
+\qrowcorr{11}{Le plus grand : $-3$ ou $-7$ ?}{$-3$}
+\qrowcorr{12}{Quelle est la distance à zéro de $-6$ ?}{$6$}
+\qrowcorr{13}{$\dfrac25$ de 35}{$14$}
+\qrowcorr{14}{135 min = $\ldots$ h $\ldots$ min}{2 h 15 min}
+\qrowcorr{15}{$(18-6)\div3$}{$4$}
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.493\textwidth}
+\normalsize
+\cantable{
+\qrowcorr{16}{Le plus grand : $\dfrac34$ ou $\dfrac58$ ?}{$\dfrac34$}
+\qrowcorr{17}{Aire d'un rectangle de 8 cm sur 3 cm}{24 cm$^2$}
+\qrowcorr{18}{Moyenne de 7 ; 8 ; 9 ; 12}{$9$}
+\qrowcorr{19}{Compléter : $1{,}2=\dfrac{\ldots}{10}$}{$12$}
+\qrowcorr{20}{$1\,\mathrm{m}^2$ correspond à combien de carrés de $1\,\mathrm{cm}^2$ ?}{$10\,000$}
+\qrowcorr{21}{Quel est le reste de la division de 29 par 4 ?}{$1$}
+\qrowcorr{22}{$2{,}5\times4$}{$10$}
+\qrowcorr{23}{$4\,500$ cm = $\ldots$ m}{45 m}
+\qrowcorr{24}{4 cahiers coûtent 6 \texteuro. Combien coûtent 10 cahiers ?}{15 \texteuro}
+\qrowcorr{25}{Dans un triangle, deux angles mesurent $90^\circ$ et $35^\circ$. Le troisième mesure :}{$55^\circ$}
+\qrowcorr{26}{$11^2$}{$121$}
+\qrowcorr{27}{Un carré de côté 8 cm peut-il avoir une aire de $70\,\mathrm{cm}^2$ ?}{non ($64\,\mathrm{cm}^2$)}
+\qrowcorr{28}{Réduire : $x+x+x$}{$3x$}
+\qrowcorr{29}{$5(x+2)$ est-il une somme ou un produit ?}{produit}
+\qrowcorr{30}{La température passe de $-4\,^{\circ}\mathrm C$ à $3\,^{\circ}\mathrm C$. De combien augmente-t-elle ?}{$7\,^{\circ}\mathrm C$}
+}
+\end{minipage}
+\end{document}

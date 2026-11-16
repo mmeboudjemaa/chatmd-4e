@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontawesome5}
+\providecommand{\faPencilAlt}{\faIcon{pencil-alt}}
+
+\usepackage{styles/couleurs}
+\usepackage{styles/mise_en_page}
+\usepackage{styles/boites}
+\usepackage{styles/maths}
+\usepackage{styles/figures}
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xparse}
+
+\usetikzlibrary{calc,arrows.meta}
+
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.15em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.22em,topsep=0.25em}
+
+\newcommand{\lignepointillee}{%
+  \noindent\dotfill\par
+  \vspace{0.45em}
+}
+
+\newcommand{\lignesreponse}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=NeutreC!40,
+    boxrule=0.5pt,
+    arc=1.5mm,
+    left=3mm,
+    right=3mm,
+    top=2mm,
+    bottom=1mm,
+    before skip=2pt,
+    after skip=2pt
+  ]
+    \foreach \i in {1,...,#1}{\lignepointillee}
+  \end{tcolorbox}
+}
+
+\newcommand{\imageactivite}[3]{%
+  \IfFileExists{#3}{%
+    \includegraphics[width=#1,height=#2,keepaspectratio]{#3}%
+  }{%
+    \fbox{%
+      \parbox[c][#2][c]{#1}{%
+        \centering\sffamily\small
+        Image à intégrer\par
+        \vspace{0.3em}
+        \texttt{\detokenize{#3}}
+      }%
+    }%
+  }%
+}
+
+\newcommand{\titreseq}[1]{%
+\begin{center}
+  {\sffamily\LARGE\bfseries\color{TitreC}
+  Séquence 5 -- Statistiques et proportionnalité}\\[0.2em]
+  {\sffamily\large\bfseries\color{SavoirC}#1}
+\end{center}
+}
+
+\begin{document}
+
+\titreseq{Activité 4 -- Quelles grandeurs faut-il utiliser ?}
+
+\section*{Partie A -- L'exercice des fruits}
+
+Un marchand vend des ananas à l'unité, à \(2\) € pièce.
+Il vend des oranges au poids, à \(1\) € le kilogramme.
+
+Bob achète deux ananas qui pèsent ensemble \(1{,}5\) kg,
+ainsi que huit oranges qui pèsent ensemble \(2\) kg.
+
+\begin{enumerate}
+  \item Pour calculer le prix des ananas, quelle information est utile ?
+  \item Quelle information sur les ananas est inutile ?
+  \item Pour calculer le prix des oranges, quelle information est utile ?
+  \item Quelle information sur les oranges est inutile ?
+  \item Combien Bob paie-t-il ?
+\end{enumerate}
+
+\lignesreponse{7}
+
+\section*{Partie B -- L'exercice du boucher}
+
+Le rôti de bœuf coûte \(20\) € par kilogramme.
+
+\begin{enumerate}
+  \item Combien pèse un rôti qui coûte \(30\) € ?
+  \item Combien pèse un rôti qui coûte \(18\) € ?
+  \item Combien pèse un rôti qui coûte \(37\) € ?
+\end{enumerate}
+
+Présente les données dans un tableau de proportionnalité.
+
+\lignesreponse{7}
+
+\section*{Partie C -- Une maquette du Belem}
+
+Le voilier \emph{Le Belem} mesure \(58\) m de long.
+Une maquette mesure \(0{,}29\) m de long et \(0{,}17\) m de haut.
+
+\begin{enumerate}
+  \item Quel est le coefficient permettant de passer des dimensions de la maquette
+        aux dimensions réelles ?
+  \item Quelle est la hauteur réelle du Belem ?
+  \item Le tirant d'eau réel est de \(3{,}60\) m.
+        Quel est le tirant d'eau de la maquette ?
+\end{enumerate}
+
+\lignesreponse{7}
+
+\aretenir{Avant de calculer, il faut identifier les grandeurs utiles,
+leurs unités et le sens dans lequel on passe d'une grandeur à l'autre.}
+
+\end{document}
