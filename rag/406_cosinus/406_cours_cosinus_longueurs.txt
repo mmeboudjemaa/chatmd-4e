@@ -1,0 +1,367 @@
+Cours -- Calculer des longueurs dans un triangle rectangle
+
+Vocabulaire du triangle rectangle
+
+Dans un triangle rectangle :
+
+   l'hypoténuse est le côté opposé à l'angle droit ;
+   c'est aussi le plus long côté du triangle ;
+   pour un angle aigu donné, le côté adjacent est le côté de l'angle droit
+        qui touche cet angle.
+
+[scale=0.9]
+   (A) at (0,0);
+   (B) at (5.5,0);
+   (C) at (5.5,3.8);
+   (A)--(B)--(C)--cycle;
+   (5.15,0)--(5.15,0.35)--(5.5,0.35);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=8mm] angle=B--A--C;
+   at (A) $A$;
+   at (B) $B$;
+   at (C) $C$;
+   at ($(A)!0.5!(B)$) côté adjacent à \( A\);
+   at ($(A)!0.55!(C)$) hypoténuse;
+
+Le côté adjacent dépend de l'angle étudié.
+Dans le même triangle, le côté adjacent à \( A\) n'est pas
+le côté adjacent à \( C\).
+
+Définition du cosinus
+
+Dans un triangle rectangle, le cosinus d'un angle aigu est le quotient :
+
+\[
+(angle)
+=
+côté adjacenthypoténuse.
+\]
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\[
+( A)=AB AC
+\]
+
+et
+
+\[
+( C)=BC AC.
+\]
+
+Le cosinus d'un angle aigu est un nombre sans unité compris entre \(0\) et \(1\).
+
+Le cosinus dépend de l'angle, mais pas de la taille du triangle.
+Des triangles rectangles ayant le même angle aigu donnent le même quotient
+« côté adjacent divisé par hypoténuse ».
+
+[t]0.31
+
+Famille 1 : \(35^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(7.7,0);
+   (O)--(8*cos(35),8*sin(35));
+   / in 4/A,6/B,8/C
+     () at (cos(35),sin(35));
+     (-p) at (cos(35),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$35^$"] angle=C-p--O--C;
+
+[t]0.31
+
+Famille 2 : \(50^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(5.3,0);
+   (O)--(8*cos(50),8*sin(50));
+   / in 4/D,6/E,8/F
+     () at (cos(50),sin(50));
+     (-p) at (cos(50),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$50^$"] angle=F-p--O--F;
+
+[t]0.31
+
+Famille 3 : \(70^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(3,0);
+   (O)--(8*cos(70),8*sin(70));
+   / in 4/G,6/H,8/I
+     () at (cos(70),sin(70));
+     (-p) at (cos(70),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$70^$"] angle=I-p--O--I;
+
+Utiliser la calculatrice
+
+Avant tout calcul :
+
+[label=.]
+   vérifier que la calculatrice est en mode degré ;
+   utiliser la touche \(\) avec la mesure de l'angle ;
+   conserver la valeur affichée jusqu'à la dernière étape ;
+   arrondir seulement le résultat final.
+
+Contrôle rapide du mode degré :
+
+\[
+ 60^=0,5.
+\]
+
+Si la calculatrice n'affiche pas \(0,5\), son réglage doit être vérifié.
+
+Calculer le côté adjacent
+
+À partir de la définition :
+
+\[
+(angle)
+=
+adjacenthypoténuse,
+\]
+
+on obtient :
+
+\[
+
+côté adjacent
+=
+hypoténuse(angle)
+
+\]
+
+Pour calculer le côté adjacent :
+
+[label=.]
+   nommer le triangle rectangle ;
+   repérer l'hypoténuse et le côté adjacent ;
+   écrire la relation du cosinus avec les noms des segments ;
+   multiplier l'hypoténuse par le cosinus de l'angle ;
+   arrondir et écrire l'unité.
+
+Dans le triangle \(DEF\) rectangle en \(E\),
+on connaît \(DF=12\) cm et \( D=38^\).
+On cherche \(DE\).
+
+\[
+( D)=DE DF.
+\]
+
+Donc :
+
+\[
+DE=DF( D).
+\]
+
+\[
+DE=12 38^9,5.
+\]
+
+Ainsi :
+
+\[
+DE9,5 cm.
+\]
+
+Calculer l'hypoténuse
+
+Comme :
+
+\[
+adjacent
+=
+hypoténuse(angle),
+\]
+
+on défait la multiplication en divisant :
+
+\[
+
+hypoténuse
+=
+côté adjacent(angle)
+
+\]
+
+Pour calculer l'hypoténuse :
+
+[label=.]
+   nommer le triangle rectangle ;
+   repérer l'hypoténuse et le côté adjacent ;
+   écrire la relation du cosinus avec les noms des segments ;
+   diviser le côté adjacent par le cosinus de l'angle ;
+   arrondir et écrire l'unité.
+
+Dans le triangle \(GHI\) rectangle en \(H\),
+on connaît \(GH=7\) cm et \( G=41^\).
+On cherche \(GI\).
+
+\[
+( G)=GH GI.
+\]
+
+Donc :
+
+\[
+GI=GH( G).
+\]
+
+\[
+GI=7 41^9,3.
+\]
+
+Ainsi :
+
+\[
+GI9,3 cm.
+\]
+
+Choisir entre multiplier et diviser
+
+1.5
+
+0.9
+|>X
+|>p5cm|
+
+Longueur cherchée & Calcul\\
+
+Côté adjacent &
+\(hypoténuse(angle)\)\\
+
+Hypoténuse &
+\(côté adjacent(angle)\)\\
+
+Il est préférable de repartir de la phrase :
+
+\[
+adjacent
+=
+hypoténuse(angle)
+\]
+
+plutôt que de mémoriser deux formules sans les comprendre.
+
+Rédiger et contrôler
+
+Une rédaction complète contient :
+
+[label=.]
+   le nom du triangle et le sommet de l'angle droit ;
+   la relation du cosinus avec les noms des segments ;
+   l'égalité donnant la longueur cherchée ;
+   le calcul à la calculatrice ;
+   l'arrondi, l'unité et une phrase de conclusion.
+
+Dans un triangle rectangle :
+
+   l'hypoténuse est plus longue que chacun des deux autres côtés ;
+   le côté adjacent est donc plus petit que l'hypoténuse ;
+   multiplier l'hypoténuse par un cosinus compris entre \(0\) et \(1\)
+        donne une longueur plus petite ;
+   diviser le côté adjacent par un cosinus compris entre \(0\) et \(1\)
+        donne une longueur plus grande.
+
+Erreurs fréquentes :
+
+   utiliser le cosinus dans un triangle qui n'est pas rectangle ;
+   choisir un côté adjacent sans préciser l'angle étudié ;
+   confondre côté adjacent et hypoténuse ;
+   multiplier alors que l'on cherche l'hypoténuse ;
+   utiliser la calculatrice en mode radian ;
+   arrondir les valeurs intermédiaires ;
+   oublier l'unité ou obtenir un côté adjacent plus long que l'hypoténuse.
+
+Dans un problème
+
+Pour résoudre un problème :
+
+[label=.]
+   faire un schéma simple et codé ;
+   repérer ou construire le triangle rectangle utile ;
+   traduire les données dans ce triangle ;
+   choisir le calcul de cosinus adapté ;
+   utiliser, si nécessaire, une autre propriété ensuite,
+        par exemple le théorème de Pythagore ;
+   interpréter le résultat dans la situation.
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  title=
+    \ Calculatrice : vérifier le mode degré,
+  coltitle=SavoirC,
+  fonttitle=
+]
+
+Avant d'effectuer un calcul avec un cosinus, vérifie que la calculatrice
+est réglée en degrés.
+
+0.3em
+
+1.35
+
+  @
+  >TitreCp3.2cm
+  X
+  @
+
+Casio fx-92
+&
+CONFIG
+\(\)
+Unité d'angle
+\(\)
+Degré
+\\
+
+TI-Collège Plus
+&
+MODE
+\(\)
+sélectionner DEG
+\(\)
+valider
+
+  
+  L'écran doit afficher
+  D ou DEG.
+
+Test rapide :
+
+\[
+(60^)=0,5.
+\]
+
+Si la calculatrice n'affiche pas \(0,5\), vérifie à nouveau le mode.
+
+La phrase essentielle :
+
+\[
+
+côté adjacent
+=
+hypoténuse(angle aigu)
+
+\]
+
+Le cosinus ne s'utilise que dans un triangle rectangle.
+Le côté adjacent dépend de l'angle étudié.
+On contrôle toujours le mode degré, la cohérence du résultat, l'arrondi et l'unité.

@@ -1,0 +1,176 @@
+910.5
+
+bleu
+Séquence 2 -- Théorème de Pythagore : exercices hors classe
+
+0.1em
+
+À faire dans le cahier.
+Ne faire que l'exercice indiqué par le professeur.
+Calculatrice autorisée.
+
+0.25em
+
+[t]0.242
+
+1
+Le triangle \(MNP\) est rectangle en \(N\).
+
+1. Quelle est son hypoténuse ?
+
+2. Écris l'égalité de Pythagore avec les lettres.
+
+[t]0.242
+
+2
+Le triangle \(ABC\) est rectangle en \(A\).
+
+\[
+AB=6 cm
+
+AC=8 cm
+\]
+
+Un élève affirme que \(BC=7\) cm.
+
+Peut-il avoir raison ? Justifie en une phrase.
+
+[t]0.242
+
+3
+Le triangle \(RST\) est rectangle en \(S\).
+
+\[
+RS=6 cm
+
+ST=8 cm
+\]
+
+Calcule la longueur \(RT\).
+
+[t]0.242
+
+4
+Le triangle \(DEF\) est rectangle en \(E\).
+
+\[
+DF=13 cm
+
+EF=5 cm
+\]
+
+Calcule la longueur \(DE\).
+
+0.16cm
+
+[t]0.242
+
+5
+Le triangle \(GHI\) est rectangle en \(H\).
+
+\[
+GH=7,2 cm
+
+HI=9,6 cm
+\]
+
+Calcule la longueur \(GI\).
+
+[t]0.242
+
+6
+Le triangle \(JKL\) est rectangle en \(K\).
+
+\[
+JL=7,3 cm
+
+KL=4,8 cm
+\]
+
+Calcule la longueur \(JK\).
+
+[t]0.242
+
+7
+Complète :
+
+\[
+9^2=81
+donc
+81=
+\]
+
+\[
+12^2=144
+donc
+144=
+\]
+
+\[
+1,5^2=2,25
+donc
+2,25=
+\]
+
+[t]0.242
+
+8
+Le triangle \(PQR\) est rectangle en \(Q\) et isocèle en \(Q\).
+
+\[
+PQ=QR=6 cm
+\]
+
+Donne la valeur exacte de \(PR\), puis un arrondi au dixième de cm.
+
+0.16cm
+
+[t]0.242
+
+9
+Le triangle \(UVW\) est rectangle en \(V\).
+
+\[
+UW=10 cm
+
+VW=7 cm
+\]
+
+Donne la valeur exacte de \(UV\), puis un arrondi au dixième de cm.
+
+[t]0.242
+
+10
+Complète les phrases.
+
+Le carré de \(7\) est 
+
+La racine carrée de \(49\) est 
+
+Le nombre  a pour carré \(36\).
+
+Le nombre  est la racine carrée de \(16\).
+
+[t]0.242
+
+11
+Écris chaque phrase sous forme d'une égalité.
+
+1. \(9\) est la racine carrée de \(81\).
+
+2. \(49\) est le carré de \(7\).
+
+3. \(5\) est la racine carrée de \(25\).
+
+[t]0.242
+
+12
+Le triangle \(IJK\) est rectangle en \(K\) avec
+
+\[
+IK=7 cm
+
+JK=2,4 cm.
+\]
+
+Calcule \(IJ\) en rédigeant une solution complète.

@@ -1,0 +1,34 @@
+4eStatistiques et diagrammes15 min12
+
+4[Calculer]
+Une enquête porte sur \(40\) élèves.
+
+\[
+
+c|cccc
+Choix & A & B & C & D\\
+
+Effectif & 16 & 10 & 8 & 6
+
+\]
+
+Calcule le pourcentage correspondant à chaque choix. 4
+
+5
+
+4[Calculer]
+Calcule l'angle du secteur correspondant à chaque choix. 4
+
+5
+
+2[Raisonner]
+Un diagramme annonce \(42\%\), \(31\%\), \(18\%\) et \(14\%\).
+Peut-il représenter une répartition complète ? Justifie. 2
+
+3
+
+2[Communiquer]
+Cite deux informations qui doivent accompagner un diagramme
+pour qu'il soit correctement interprété. 2
+
+2

@@ -1,0 +1,99 @@
+Automatismes -- Séries courtes
+
+Série 1 -- Triangle rectangle
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+   nomme l'hypoténuse ;
+   nomme les deux angles aigus ;
+   nomme le côté adjacent à \( A\) ;
+   nomme le côté adjacent à \( C\).
+
+Série 2 -- Écrire un cosinus
+
+Dans le triangle \(DEF\) rectangle en \(E\), complète :
+
+\[
+( D)=
+\]
+
+\[
+( F)=
+\]
+
+Série 3 -- Calculatrice
+
+Donne une valeur approchée au centième.
+
+\[
+ 20^
+
+ 35^
+
+ 60^
+
+ 75^
+\]
+
+Quel calcul permet de contrôler rapidement que la calculatrice est en mode degré ?
+
+Série 4 -- Multiplier ou diviser ?
+
+Pour chaque cas, indique seulement l'opération.
+
+   Hypoténuse \(=12\) cm, angle \(=40^\), côté adjacent cherché.
+   Côté adjacent \(=7\) cm, angle \(=52^\), hypoténuse cherchée.
+   Hypoténuse \(=5,4\) m, angle \(=18^\), côté adjacent cherché.
+
+Série 5 -- Calcul direct
+
+Calcule au dixième.
+
+\[
+8 37^
+
+15 64^
+\]
+
+\[
+6 42^
+
+3,5 70^
+\]
+
+Série 6 -- Compléter une rédaction
+
+Dans le triangle \(GHI\) rectangle en \(H\), on connaît
+\(GI=9\) cm et \( G=31^\).
+
+\[
+( G)=
+\]
+
+\[
+GH=
+\]
+
+\[
+GH cm.
+\]
+
+Série 7 -- Vrai ou faux ?
+
+   Le cosinus d'un angle aigu est une longueur.
+   Le côté adjacent est toujours plus petit que l'hypoténuse.
+   Pour calculer une hypoténuse, on multiplie le côté adjacent par le cosinus.
+   Si l'angle augmente, son cosinus diminue.
+
+Série 8 -- Repérer une erreur
+
+Un élève écrit :
+
+\[
+Dans ABC rectangle en B,
+AC=6 40^=4,6 cm.
+\]
+
+On sait que \(AB=6\) cm et que \(AC\) est l'hypoténuse.
+
+Explique l'erreur et corrige le calcul.

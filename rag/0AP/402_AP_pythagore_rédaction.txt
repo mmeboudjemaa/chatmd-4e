@@ -1,0 +1,163 @@
+Théorème de Pythagore : rédiger
+
+0.15em
+
+Étape 1 : Maîtriser la formule
+
+Complète le tableau en utilisant la figure.
+
+[t]0.59
+0pt
+
+1.12
+
+|>p1.35cm|
+ >p1.8cm|
+ >X|
+
+Triangle
+&
+Rectangle en
+&
+Égalité de Pythagore
+\\
+
+ACI & C & $AI^2=AC^2+CI^2$ \\ 
+DEI & & \\ 
+CHI & & \\ 
+HIM & & \\ 
+JLM & & \\ 
+JLK & & \\ 
+JKM & & \\ 
+HJK & & \\ 
+GFH & & \\ 
+GFB & & \\ 
+BGH & & \\ 
+BCH & & \\ 
+
+[t]0.38
+0pt
+
+images/ap pythagore rédaction.png
+
+0.45em
+
+Étape 2 : Maîtriser les éléments de langage
+
+On considère le triangle \(ACI\) de l'étape 1 avec
+\(AC=3\) cm et \(CI=4\) cm.
+
+Dans la liste ci-dessous, surligne les phrases que tu garderais
+pour rédiger correctement la solution.
+
+[
+  enhanced,
+  colback=white,
+  colframe=black!55,
+  boxrule=0.5pt,
+  arc=0mm,
+  left=3mm,
+  right=3mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+[t]0.49
+
+1) Le triangle est rectangle
+
+2) D'après Pythagore
+
+3) On sait que \(AI=5\) cm donc
+\(AI^2=AC^2+CI^2\)
+
+4) \(AI^2=25\)
+
+5) \(AI^2=3^2+4^2\)
+
+6) D'après le théorème de Pythagore
+
+7) Le triangle \(ACI\) est un rectangle
+
+8) On utilise le thm de Pithagaure
+
+[t]0.49
+
+9) \(AI=25\)
+
+10) \(AI^2=33+44\)
+
+11) Donc : \(AI=5\) cm
+
+12) \(AI^2=9+16\)
+
+13) \(ACI\) est un triangle rectangle en \(C\)
+
+14) \(AI^2=25\)
+
+15) \(AI^2=AC^2+CI^2\)
+
+0.35em
+
+[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=1.3mm,
+  bottom=1.3mm
+]
+
+ActionC
+Remets les phrases dans l'ordre.
+
+Écris les numéros des phrases choisies pour reconstruire
+une rédaction complète.
+
+13
+\;\;
+13
+\;\;
+13
+\;\;
+13
+\;\;
+13
+\;\;
+13
+\;\;
+13
+\;\;
+13
+
+0.45em
+
+Étape 3 : Synthèse
+
+Sur ton cahier, rédige en utilisant ce que tu as appris
+la solution de l'exercice suivant.
+
+[
+  enhanced,
+  colback=NeutreBg,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=1.4mm,
+  bottom=1.4mm
+]
+
+\(IJK\) est un triangle rectangle en \(K\) tel que :
+
+\[
+IK=7 cm
+et
+JK=2,4 cm.
+\]
+
+Calculer la longueur \(IJ\).

@@ -1,0 +1,330 @@
+TitreC
+  Séquence 3 -- Nombres relatifs\\[0.2em]
+
+  SavoirC
+  Produits, quotients et enchaînements de calculs
+
+Multiplier deux nombres relatifs
+
+Déterminer le signe du produit
+
+Le produit de deux nombres relatifs :
+
+   de même signe est positif ;
+   de signes différents est négatif.
+
+1.45
+
+0.82
+|>X
+|>X|
+
+Signes des facteurs
+&
+Signe du produit
+\\
+
+\((+)(+)\)
+&
+\((+)\)
+\\
+
+\((- )(- )\)
+&
+\((+)\)
+\\
+
+\((+)(- )\)
+&
+\((- )\)
+\\
+
+\((- )(+)\)
+&
+\((- )\)
+\\
+
+Calculer un produit
+
+\[
+(-3)(+7)
+\]
+
+Les deux facteurs ont des signes différents : le produit est négatif.
+
+\[
+37=21
+\]
+
+Donc :
+
+\[
+(-3)(+7)=-21.
+\]
+
+De même :
+
+\[
+(-2,5)(-4)=+10.
+\]
+
+Il ne faut pas mélanger les règle des signes.
+
+Par exemple :
+
+\[
+(-6)(-5)=+30
+\]
+
+et non \(-30\), car les deux facteurs ont le même signe.
+
+Multiplier plusieurs nombres relatifs
+
+Déterminer le signe
+
+Dans un produit comportant plusieurs facteurs :
+
+   le produit est positif si le nombre de facteurs négatifs est pair ;
+   le produit est négatif si le nombre de facteurs négatifs est impair ;
+   le produit est nul si l'un des facteurs est nul.
+
+\[
+A=(-2)3(-5)4
+\]
+
+Il y a deux facteurs négatifs. Comme \(2\) est pair, le produit est positif.
+
+\[
+A=2354=120.
+\]
+
+Donc :
+
+\[
+A=+120.
+\]
+
+Pour :
+
+\[
+B=(-2)(-3)(-4),
+\]
+
+il y a trois facteurs négatifs. Comme \(3\) est impair, le produit est négatif :
+
+\[
+B=-24.
+\]
+
+\[
+(-8)0(-21)=0.
+\]
+
+La présence d'un facteur nul suffit pour conclure.
+
+Diviser deux nombres relatifs
+
+Le quotient comme facteur manquant
+
+Pour calculer :
+
+\[
+(-42)(+6),
+\]
+
+on cherche le nombre qui vérifie :
+
+\[
+(+6)=-42.
+\]
+
+Comme :
+
+\[
+(+6)(-7)=-42,
+\]
+
+on obtient :
+
+\[
+(-42)(+6)=-7.
+\]
+
+Règle des signes
+
+Le quotient de deux nombres relatifs :
+
+   de même signe est positif ;
+   de signes différents est négatif.
+
+1.45
+
+0.82
+|>X
+|>X|
+
+Signes du dividende et du diviseur
+&
+Signe du quotient
+\\
+
+\((+)(+)\)
+&
+\((+)\)
+\\
+
+\((- )(- )\)
+&
+\((+)\)
+\\
+
+\((+)(- )\)
+&
+\((- )\)
+\\
+
+\((- )(+)\)
+&
+\((- )\)
+\\
+
+\[
+(-35)(-5)=+7
+\]
+
+car les deux nombres ont le même signe.
+
+\[
+7,2(-4)=-1,8
+\]
+
+car les deux nombres ont des signes différents.
+
+On ne peut jamais diviser par zéro.
+
+Dans une division, on ne compte pas les signes comme dans un produit de plusieurs facteurs.
+On compare seulement le signe du dividende et celui du diviseur.
+
+Effectuer des enchaînements de calculs
+
+Priorités opératoires
+
+Dans une expression numérique :
+
+[label=.]
+   on commence par les calculs placés entre parenthèses ;
+   on effectue ensuite les multiplications et les divisions, de gauche à droite ;
+   on effectue enfin les additions et les soustractions, de gauche à droite.
+
+Pour rédiger correctement un enchaînement :
+
+   effectuer une seule étape à la fois ;
+   recopier sans les modifier les parties qui ne sont pas encore calculées ;
+   écrire une nouvelle ligne après chaque transformation ;
+   conserver les parenthèses autour des nombres négatifs tant qu'elles sont utiles.
+
+\[
+A=(-24)(-6)+5(-2)
+\]
+
+On effectue d'abord la division et la multiplication :
+
+\[
+
+A&=4+(-10)\\
+ &=-6.
+
+\]
+
+\[
+B=(8-3(-2))(-7)
+\]
+
+\[
+
+B
+&=(8-(-6))(-7)\\
+&=14(-7)\\
+&=-2.
+
+\]
+
+\[
+C=(-3)(4-7)-18(-6)
+\]
+
+\[
+
+C
+&=(-3)(-3)-(-3)\\
+&=9-(-3)\\
+&=12.
+
+\]
+
+On ne regroupe pas une addition avec une multiplication sans parenthèses.
+
+Par exemple :
+
+\[
+18-(-3)4
+\]
+
+ne devient pas :
+
+\[
+(18-(-3))4.
+\]
+
+Le calcul correct est :
+
+\[
+18-(-3)4
+=
+18-(-12)
+=
+30.
+\]
+
+Multiplications et divisions successives
+
+La multiplication et la division ont la même priorité.
+On les effectue donc de gauche à droite.
+
+\[
+24(-6)(-2)
+\]
+
+\[
+
+24(-6)(-2)
+&=(-4)(-2)\\
+&=8.
+
+\]
+
+\[
+24(-6)(-2)
+
+24((-6)(-2)).
+\]
+
+Synthèse
+
+   Pour un produit ou un quotient de deux relatifs :
+        même signe \(\) résultat positif ;
+        signes différents \(\) résultat négatif.
+   Pour un produit de plusieurs facteurs :
+        un nombre pair de facteurs négatifs donne un produit positif ;
+        un nombre impair donne un produit négatif.
+   Un produit comportant un facteur nul vaut \(0\).
+   Dans un enchaînement, on respecte les parenthèses puis les priorités opératoires.
+   Avant d'utiliser la calculatrice, on prévoit le signe et un ordre de grandeur.
+
+0.5cm
+
+Synthèse -- Carte mentale
+
+1cm
+
+    images/cm_relatifs.png

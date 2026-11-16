@@ -1,0 +1,118 @@
+Activité 2 -- Un même angle, un même multiplicateur ?
+
+Les mesures sont approximatives. Les petits écarts entre groupes sont normaux :
+ils viennent de la précision du tracé et de la mesure.
+
+Partie A -- Trois familles de triangles
+
+Chaque groupe étudie une famille de triangles rectangles ayant le même angle aigu.
+
+[t]0.31
+
+Famille 1 : \(35^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(7.7,0);
+   (O)--(8*cos(35),8*sin(35));
+   / in 4/A,6/B,8/C
+     () at (cos(35),sin(35));
+     (-p) at (cos(35),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$35^$"] angle=C-p--O--C;
+
+[t]0.31
+
+Famille 2 : \(50^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(5.3,0);
+   (O)--(8*cos(50),8*sin(50));
+   / in 4/D,6/E,8/F
+     () at (cos(50),sin(50));
+     (-p) at (cos(50),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$50^$"] angle=F-p--O--F;
+
+[t]0.31
+
+Famille 3 : \(70^\)
+
+[scale=0.62]
+   (O) at (0,0);
+   (O)--(3,0);
+   (O)--(8*cos(70),8*sin(70));
+   / in 4/G,6/H,8/I
+     () at (cos(70),sin(70));
+     (-p) at (cos(70),0);
+     ()--(-p);
+     ($(-p)+(-0.28,0)$)--($(-p)+(-0.28,0.28)$)--($(-p)+(0,0.28)$);
+  
+   pic[draw=ActionC,angle radius=8mm,"$70^$"] angle=I-p--O--I;
+
+Partie B -- Mesurer et calculer
+
+Pour les trois triangles de ta famille :
+
+   mesure l'hypoténuse ;
+   mesure le côté de l'angle droit qui touche l'angle étudié ;
+   Calcule :
+  \[
+  côté adjacenthypoténuse,
+  \]
+  puis arrondis au centième.
+
+Famille n° ...
+
+1.55
+
+|>p2.3cm
+|>X
+|>X
+|>X|
+
+Triangle & Hypoténuse & Côté adjacent &
+Adjacent \(\) hypoténuse\\
+
+1 & & & \\
+
+2 & & & \\
+
+3 & & & \\
+
+4 & & & \\
+
+5 & & & \\
+
+6 & & & \\
+
+Partie C -- Conjecturer
+
+   Que remarques-tu dans une même famille ?
+   Le nombre obtenu dépend-il de la taille du triangle ?
+   Compare ce nombre avec celui des autres familles.
+   De quoi ce nombre semble-t-il dépendre ?
+
+8
+
+Partie D -- Utiliser la conjecture
+
+Dans une famille de triangles rectangles ayant un angle de \(35^\),
+le nombre obtenu est environ \(0,82\).
+
+   Si l'hypoténuse mesure \(10\) cm, estime le côté adjacent.
+   Si l'hypoténuse mesure \(25\) cm, estime le côté adjacent.
+   Retrouve la logique du calcul effectué.
+
+7
+
+Pour un angle aigu fixé, le quotient
+\[
+côté adjacenthypoténuse
+\]
+semble constant. Ce nombre dépend de l'angle, pas de la taille du triangle.

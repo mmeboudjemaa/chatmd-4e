@@ -1,0 +1,36 @@
+TitreCSéquence 1 -- Statistiques\\[0.2em]
+  SavoirCActivité 1 -- Bowling
+
+Treize élèves jouent une partie de bowling.
+
+Équipe des Verts -- 7 joueurs
+\[
+105  120  104  121  99  127  108
+\]
+
+Équipe des Bleus -- 6 joueurs
+\[
+93  181  89  98  117  94
+\]
+
+   Calculer puis interpréter la moyenne des deux équipes.
+
+   des Verts =
+
+  1.1em
+
+   des Bleus =
+
+  4
+
+   Les élèves de l'équipe verte étudient leurs résultats.
+  Après avoir calculé la moyenne, ils utilisent le nombre \(108\)
+  pour parler de leur performance.
+
+  Comment ont-ils choisi ce nombre ?
+
+  7
+
+   Calculer la médiane de l'équipe bleue.
+
+  5

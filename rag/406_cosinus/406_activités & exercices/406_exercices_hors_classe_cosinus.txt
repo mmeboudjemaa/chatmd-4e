@@ -1,0 +1,153 @@
+TitreCExercices hors classe\\[0.2em]
+  ActionC
+  Cosinus d'un angle aigu -- Calculer des longueurs
+
+A. Vocabulaire et formule
+
+4
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+[label=)]
+   nomme l'hypoténuse ;
+   nomme le côté adjacent à \( A\) ;
+   nomme le côté adjacent à \( C\).
+
+4
+Dans le triangle \(DEF\) rectangle en \(E\), complète :
+
+\[
+( D)=
+\]
+
+\[
+( F)=
+\]
+
+4
+Donne une valeur approchée au centième :
+
+\[
+ 25^
+
+ 48^
+
+ 72^.
+\]
+
+Puis vérifie que \( 60^=0,5\).
+
+B. Calculer le côté adjacent
+
+6
+Dans le triangle \(GHI\) rectangle en \(H\),
+
+\[
+GI=8 cm
+
+ G=37^.
+\]
+
+Calcule \(GH\), arrondi au dixième de centimètre.
+
+6
+Dans le triangle \(JKL\) rectangle en \(K\),
+
+\[
+JL=15 m
+
+ L=64^.
+\]
+
+Calcule \(KL\), arrondi au dixième de mètre.
+
+6
+Dans le triangle \(MNP\) rectangle en \(N\),
+
+\[
+MP=5,6 km
+
+ M=18^.
+\]
+
+Calcule \(MN\), arrondi au centième de kilomètre.
+
+C. Calculer l'hypoténuse
+
+6
+Dans le triangle \(RST\) rectangle en \(S\),
+
+\[
+RS=6 cm
+
+ R=42^.
+\]
+
+Calcule \(RT\), arrondi au dixième de centimètre.
+
+6
+Dans le triangle \(UVW\) rectangle en \(V\),
+
+\[
+VW=3,5 m
+
+ W=70^.
+\]
+
+Calcule \(UW\), arrondi au dixième de mètre.
+
+6
+Dans le triangle \(XYZ\) rectangle en \(Y\),
+
+\[
+XY=12,4 mm
+
+ X=53^.
+\]
+
+Calcule \(XZ\), arrondi au millimètre.
+
+D. Choisir l'opération et contrôler
+
+6
+Sans calculer d'abord, indique s'il faut multiplier ou diviser.
+
+[label=)]
+   On connaît l'hypoténuse et on cherche le côté adjacent.
+   On connaît le côté adjacent et on cherche l'hypoténuse.
+   Explique le choix à l'aide de la relation
+  \[
+  adjacent=hypoténuse(angle).
+  \]
+
+6
+Un élève obtient \(11,8\) cm pour le côté adjacent
+d'un triangle rectangle dont l'hypoténuse mesure \(9\) cm.
+
+Sans refaire le calcul, explique pourquoi le résultat est impossible.
+
+E. Petits problèmes
+
+7
+Une échelle fait un angle de \(67^\) avec le sol.
+Son pied est à \(1,8\) m du mur.
+
+Calcule la longueur de l'échelle nécessaire,
+arrondie au dixième de mètre.
+
+7
+Un câble de \(24\) m est tendu entre le sommet d'un pylône
+et un point du sol. Il forme un angle de \(62^\) avec le sol.
+
+Calcule la distance horizontale entre le pylône et le point d'ancrage,
+arrondie au dixième de mètre.
+
+8
+Une observatrice se trouve à \(20\) m d'un arbre.
+Ses yeux sont à \(1,60\) m du sol.
+La ligne de visée vers le sommet forme un angle de \(40^\)
+avec l'horizontale.
+
+[label=)]
+   Calcule la longueur de la ligne de visée avec le cosinus.
+   Calcule ensuite la différence de hauteur avec Pythagore.
+   Déduis la hauteur de l'arbre.

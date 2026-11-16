@@ -1,0 +1,59 @@
+Activité 1 -- Ce que nous savons déjà... et ce qui manque
+
+Partie A -- Un calcul que nous savons faire
+
+Dans le triangle \(GHI\) rectangle en \(H\), on connaît :
+
+\[
+GH=6 cm
+et
+HI=8 cm.
+\]
+
+Calcule \(GI\). Indique la propriété utilisée.
+
+9
+
+Partie B -- Le problème de la rampe
+
+Une rampe rectiligne mesure \(5\) m.
+Elle forme un angle de \(28^\) avec le sol horizontal.
+
+On cherche la longueur au sol \(AB\).
+
+[scale=1]
+   (A) at (0,0);
+   (B) at (6,0);
+   (C) at (6,3.2);
+   (A)--(B)--(C)--cycle;
+   (5.65,0)--(5.65,0.35)--(6,0.35);
+   pic[draw=ActionC,fill=ActionC!20,angle radius=9mm,"$28^$"] angle=B--A--C;
+   at (A) $A$;
+   at (B) $B$;
+   at (C) $C$;
+   at ($(A)!0.5!(C)$) $5$ m;
+   at ($(A)!0.5!(B)$) $?$;
+
+   Le théorème de Pythagore permet-il de calculer \(AB\) avec ces seules données ?
+   Quelles informations connaît-on dans le triangle ?
+   Quelle longueur cherche-t-on par rapport à l'angle de \(28^\) ?
+   Propose une estimation raisonnable de \(AB\), sans chercher une valeur précise.
+
+4
+
+7
+
+Partie C -- Un cas particulier accessible
+
+Construis un triangle équilatéral de côté \(10\) cm puis trace une hauteur.
+
+Tu obtiens deux triangles rectangles possédant un angle de \(60^\).
+
+   Quelle est la longueur de l'hypoténuse de l'un de ces triangles ?
+   Quelle est la longueur du côté adjacent à l'angle de \(60^\) ?
+   Par quel nombre faut-il multiplier l'hypoténuse pour obtenir ce côté adjacent ?
+
+16
+
+Avec une longueur et un angle aigu, il manque un outil nouveau.
+Dans le cas particulier de \(60^\), le côté adjacent vaut la moitié de l'hypoténuse.

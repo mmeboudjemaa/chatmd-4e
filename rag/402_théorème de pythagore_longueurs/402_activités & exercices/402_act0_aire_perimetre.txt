@@ -1,0 +1,46 @@
+Activité 0 -- Aire, périmètre et côté d'un carré
+
+Cette activité est courte. Elle sert seulement à réactiver les idées indispensables au puzzle.
+
+   Dessine deux figures formées de carreaux qui ont la même aire mais des périmètres différents.
+
+   Dessine deux figures formées de carreaux qui ont le même périmètre mais des aires différentes.
+
+   Complète :
+  
+[label=)]
+     Le périmètre d'un carré vaut $36$ cm. Son côté mesure 
+     L'aire d'un carré vaut $36$ cm$^2$. Son côté mesure 
+     L'aire d'un carré vaut $49$ cm$^2$. Son côté mesure 
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.6pt,arc=2mm]
+
+Bilan.
+5
+
+0.5cm
+
+Activité 0 -- Aire, périmètre et côté d'un carré
+
+Cette activité est courte. Elle sert seulement à réactiver les idées indispensables au puzzle.
+
+   Dessine deux figures formées de carreaux qui ont la même aire mais des périmètres différents.
+
+   Dessine deux figures formées de carreaux qui ont le même périmètre mais des aires différentes.
+
+   Complète :
+  
+[label=)]
+     Le périmètre d'un carré vaut $36$ cm. Son côté mesure 
+     L'aire d'un carré vaut $36$ cm$^2$. Son côté mesure 
+     L'aire d'un carré vaut $49$ cm$^2$. Son côté mesure 
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.6pt,arc=2mm]
+
+Bilan.
+5
+
+Bilan.
+Le périmètre mesure le contour d'une figure. L'aire mesure la surface intérieure.
+Si un carré a pour côté $c$, son aire vaut $c^2$.
+Chercher le côté d'un carré à partir de son aire revient à chercher le nombre dont le carré est cette aire.

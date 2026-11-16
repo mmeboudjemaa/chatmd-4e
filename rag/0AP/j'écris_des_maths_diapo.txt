@@ -1,0 +1,182 @@
+[plain]
+
+TitreC
+J'écris des maths
+
+0.3cm
+
+SavoirC
+Étude de productions d'élèves
+
+1cm
+
+\(+\)
+quelque chose qui m'aide
+
+\(?\)
+quelque chose qui m'interroge
+
+\(\)
+quelque chose que je modifierais
+
+[t]
+Problème de géométrie
+
+-0.15cm
+
+[T,onlytextwidth]
+
+0.53
+
+\(ABC\) est un triangle rectangle en \(B\) tel que
+
+\[
+BAC=50^
+et
+AC=4 cm.
+\]
+
+\(BCD\) est un triangle équilatéral.
+
+\(CDE\) est un triangle tel que
+
+\[
+DCE=80^
+et
+CE=2,4 cm.
+\]
+
+ Calculer la longueur \(AE\).
+
+0.44
+
+problème de longueur figure.png
+
+0.25cm
+
+[
+  wd=,
+  sep=0.18cm,
+  rounded=true
+]block body
+
+Correction éclair
+
+\[
+ACB=40^,
+
+BCD=60^,
+
+40^+60^+80^=180^.
+\]
+
+Donc \(A,C,E\) sont alignés et
+
+\[
+AE=4+2,4=6,4 cm.
+\]
+
+[t]
+Production 1
+
+production 1.png
+
+[t]
+Production 3
+
+production 3 (1).png
+
+[t]
+Production 3 -- suite
+
+production 3 (2).png
+
+[t]
+Production 4 -- brouillon
+
+production 4.png
+
+[t]
+Production 5
+
+production 5 (1).png
+
+[t]
+Production 5 -- suite
+
+production 5 (2).png
+
+[t]
+Production 6
+
+production 6.png
+
+[t]
+Problème des allumettes
+
+0.1cm
+
+[T,onlytextwidth]
+
+0.49
+
+allumettes maisons.png
+
+0.48
+
+On construit des maisons avec des allumettes
+comme sur la figure.
+
+Il fallait :
+
+   trouver le nombre d'allumettes aux étapes
+  \(4\), \(10\) et \(2007\) ;
+   donner une méthode valable pour une
+  étape quelconque.
+
+0.25cm
+
+[
+  wd=,
+  sep=0.18cm,
+  rounded=true
+]block body
+
+Correction éclair
+
+\[
+5+4(n-1)=4n+1
+\]
+
+\[
+Étape 4 : 17
+
+Étape 10 : 41
+
+Étape 2007 : 8029
+\]
+
+[t]
+Réponse 2
+
+reponse 2.png
+
+[t]
+Réponse 4
+
+reponse 4.png
+
+[t]
+Réponse 6
+
+reponse 6.png
+
+[t]
+Réponse 7
+
+reponse 7.png
+
+[t]
+Réponse 8
+
+reponse 8.png

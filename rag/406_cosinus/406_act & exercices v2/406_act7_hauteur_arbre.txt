@@ -1,0 +1,82 @@
+Activité 7 -- Mesurer une hauteur inaccessible
+
+Une observatrice se tient à \(30\) m d'un arbre.
+Ses yeux sont à \(1,75\) m du sol.
+La ligne horizontale passant par ses yeux rencontre le tronc en \(H\).
+Elle voit le sommet \(A\) sous un angle de \(35^\).
+
+On suppose le sol horizontal et le tronc vertical.
+
+[scale=0.13]
+   (S) at (0,12);
+   (H) at (30,12);
+   (A) at (30,33);
+   (P) at (0,0);
+   (T) at (30,0);
+
+   (-3,0)--(34,0);
+   (T)--(A);
+   (S)--(H);
+   (S)--(A);
+   (P)--(S);
+   (H)--(T);
+
+   (30,12)--(28.2,12)--(28.2,13.8);
+
+   at (S) $S$;
+   at (H) $H$;
+   at (A) $A$;
+   at (P) $P$;
+   at (T) $T$;
+
+   at (15,0) $PT=30$ m;
+   at (0,6) $PS=1,75$ m;
+
+   (4,12) arc[start angle=0,end angle=35,radius=4];
+   at (5.3,14) $35^$;
+
+Partie A -- Comprendre la figure
+
+   Pourquoi le triangle \(SHA\) est-il rectangle en \(H\) ?
+   Quelle longueur vaut \(30\) m dans ce triangle ?
+   La hauteur cherchée est-elle directement \(AH\) ? Explique.
+   Quelle est l'hypoténuse du triangle \(SHA\) ?
+
+5
+
+Partie B -- Première étape : calculer la ligne de visée
+
+Dans le triangle \(SHA\) rectangle en \(H\), écris le cosinus de l'angle
+\(HSA=35^\).
+
+Déduis la longueur \(SA\), arrondie seulement pour l'affichage,
+mais conserve la valeur complète dans la calculatrice pour la suite.
+
+6
+
+Partie C -- Deuxième étape : calculer la hauteur au-dessus des yeux
+
+Utilise le théorème de Pythagore dans le triangle \(SHA\)
+pour calculer \(AH\).
+
+6
+
+Partie D -- Conclure
+
+Calcule la hauteur totale \(AT\) de l'arbre.
+
+Donne un résultat arrondi au centimètre et rédige une phrase de conclusion.
+
+5
+
+Partie E -- Contrôler le résultat
+
+   La ligne de visée \(SA\) doit-elle être plus grande ou plus petite que \(SH\) ?
+   Pourquoi \(AH\) est-il inférieur à \(SA\) ?
+   Que se passerait-il si l'on oubliait la hauteur des yeux ?
+
+4
+
+Dans un problème complexe, le cosinus ne donne pas toujours directement
+la longueur finale. Il peut fournir une longueur intermédiaire,
+puis un autre outil géométrique permet de poursuivre.

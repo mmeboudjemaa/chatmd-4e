@@ -1,0 +1,108 @@
+TitreC
+  Point rédaction -- Calculer une moyenne
+
+-0.25em
+
+Une moyenne est un quotient :
+on additionne toutes les valeurs, puis on divise par le nombre de valeurs.
+
+Dans une chaîne de calculs, le signe \(=\) relie toujours des expressions
+qui ont la même valeur.
+
+[
+  mathsbox,
+  colback=SavoirBg,
+  colframe=SavoirC,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+SavoirC
+Méthode 1 -- En une seule expression
+
+Pour les valeurs
+\[
+7 \ ;\ 12 \ ;\ 10 \ ;\ 5 \ ;\ 9 \ ;\ 8,
+\]
+on peut écrire avec une barre de fraction :
+
+\[
+M=
+7+12+10+5+9+86
+=
+516
+=
+8,5.
+\]
+
+Ou avec le symbole \(\) :
+
+\[
+M=
+(7+12+10+5+9+8) 6
+=
+51 6
+=
+8,5.
+\]
+
+Attention : avec \(\), les parenthèses permettent de montrer
+que l'on divise toute la somme par \(6\).
+
+À privilégier : cette écriture permet de s'entraîner à lire
+et à manipuler une expression numérique complète.
+
+[
+  mathsbox,
+  colback=NeutreBg,
+  colframe=NeutreC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+NeutreC
+Méthode 2 -- En deux étapes
+
+Cette rédaction est tout aussi correcte :
+
+\[
+7+12+10+5+9+8=51
+\]
+
+Il y a \(6\) valeurs.
+
+\[
+M=51 6=8,5.
+\]
+
+[
+  mathsbox,
+  colback=ActionBg,
+  colframe=ActionC,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+]
+ActionC
+Et avec un tableau d'effectifs ?
+
+Même principe : chaque valeur est multipliée par son effectif.
+
+\[
+M=
+357+369+375+382+397
+     7+9+5+2+7
+=
+110330
+
+36,8.
+\]

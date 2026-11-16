@@ -1,0 +1,83 @@
+Activité 6 -- Enchaînements avec les quatre opérations
+
+Partie A -- Trois copies
+
+On veut calculer :
+
+\[
+A=(-24)(-6)+5(-2).
+\]
+
+[t]0.31
+Copie 1
+\[
+A=4+(-10)=-6.
+\]
+
+[t]0.31
+Copie 2
+\[
+A=(-24)(-1)(-2)=-48.
+\]
+
+[t]0.31
+Copie 3
+\[
+A=(-4)+(-10)=-14.
+\]
+
+   Quelle copie est correcte ?
+   Explique l'erreur des deux autres copies.
+
+6
+
+Partie B -- La méthode
+
+Complète.
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Dans un enchaînement, on calcule d'abord les 
+
+0.4cm
+
+Puis les  et les  de gauche à droite.
+
+0.4cm
+
+Enfin les  et les  de gauche à droite.
+
+Partie C -- Corriger une erreur
+
+Un élève écrit :
+
+\[
+18-(-3)4=(18-(-3))4=214=84.
+\]
+
+Explique l'erreur et corrige.
+
+5
+
+Partie D -- Calculer en rédigeant
+
+\[
+B=5+(-3)4
+\]
+
+\[
+C=7-(-4)(-3)
+\]
+
+\[
+D=(8-3(-2))(-7)
+\]
+
+\[
+E=(-3)(4-7)-18(-6)
+\]
+
+[t]0.49
+26
+
+[t]0.49
+26

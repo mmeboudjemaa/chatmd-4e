@@ -1,0 +1,155 @@
+Activité 3 -- Nommer avant de calculer
+
+Partie A -- Le côté adjacent dépend de l'angle
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+[scale=1]
+   (A) at (0,0);
+   (B) at (5,0);
+   (C) at (5,3.5);
+   (A)--(B)--(C)--cycle;
+   (4.65,0)--(4.65,0.35)--(5,0.35);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=8mm] angle=B--A--C;
+   pic[draw=SavoirC,fill=SavoirC!12,angle radius=7mm] angle=A--C--B;
+   at (A) $A$;
+   at (B) $B$;
+   at (C) $C$;
+
+Complète.
+
+1.55
+
+0.88
+|>p4.2cm
+|>X
+|>X|
+
+ & Angle en \(A\) & Angle en \(C\)\\
+
+Hypoténuse & & \\
+
+Côté adjacent & & \\
+
+0.3cm
+
+Explique pourquoi l'hypoténuse ne change pas, mais le côté adjacent change.
+
+0.3cm
+
+5
+
+Partie B -- Définition du cosinus
+
+Dans un triangle rectangle, pour un angle aigu donné :
+
+\[
+(angle)
+=
+côté adjacenthypoténuse.
+\]
+
+0.3cm
+
+Complète dans le triangle précédent :
+
+\[
+(A)
+=
+
+\]
+
+\[
+(C)
+=
+
+\]
+
+Partie C -- Un protocole qui évite les confusions
+
+Remets les étapes dans l'ordre.
+
+   Je repère l'angle aigu étudié.
+   Je nomme le triangle rectangle dans lequel je travaille.
+   Je repère le côté adjacent à cet angle.
+   Je repère l'hypoténuse, opposée à l'angle droit.
+   J'écris le cosinus avec les noms des segments.
+
+Partie D -- La calculatrice en mode degré
+
+Vérifie que la calculatrice est en mode degré, puis complète au centième.
+
+\[
+ 20^
+
+ 35^
+\]
+
+\[
+ 60^=
+
+ 80^
+\]
+
+Que remarques-tu lorsque l'angle aigu augmente ?
+
+4
+
+Le cosinus d'un angle aigu est un nombre sans unité compris entre \(0\) et \(1\).
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!65,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  title=
+    \ Calculatrice : vérifier le mode degré,
+  coltitle=SavoirC,
+  fonttitle=
+]
+
+Avant d'effectuer un calcul avec un cosinus, vérifie que la calculatrice
+est réglée en degrés.
+
+0.3em
+
+1.35
+
+  @
+  >TitreCp3.2cm
+  X
+  @
+
+Casio fx-92
+&
+CONFIG
+\(\)
+Unité d'angle
+\(\)
+Degré
+\\
+
+TI-Collège Plus
+&
+MODE
+\(\)
+sélectionner DEG
+\(\)
+valider
+
+  
+  L'écran doit afficher
+  D ou DEG.
+
+Test rapide :
+
+\[
+(60^)=0,5.
+\]
+
+Si la calculatrice n'affiche pas \(0,5\), vérifie à nouveau le mode.

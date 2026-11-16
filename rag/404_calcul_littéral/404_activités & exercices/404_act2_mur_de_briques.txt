@@ -1,0 +1,62 @@
+Activité 2 -- Le mur de briques
+
+Le contenu d'une brique est la somme des deux briques placées juste en dessous.
+Les deux briques grises contiennent le même nombre, noté \(x\).
+
+[scale=1.05]
+  1.7
+  0.75
+   // in 0/2/white,1/\(x\)/NeutreC!20,2/\(x\)/NeutreC!20,3/3/white
+     (,0) rectangle ++(,);
+     (,0) rectangle ++(,);
+     at (+0.5*,0.5*) ;
+  
+    in 0,1,2 (+0.5*,) rectangle ++(,);
+    in 0,1 (+,2*) rectangle ++(,);
+   (1.5*,3*) rectangle ++(,);
+
+Partie A -- Essayer avec des nombres
+
+Complète le mur pour \(x=1\) et \(x=10\).
+
+1.5
+
+0.8|>X|>X|
+
+Valeur de \(x\) & Sommet\\
+
+\(1\) & \\
+
+\(10\) & \\
+
+Partie B -- Compléter avec des expressions
+
+Ecris une expression dans chaque brique.
+
+1cm
+
+[scale=2.5]
+  1.7
+  0.75
+   // in 0/2/white,1/\(x\)/NeutreC!20,2/\(x\)/NeutreC!20,3/3/white
+     (,0) rectangle ++(,);
+     (,0) rectangle ++(,);
+     at (+0.5*,0.5*) ;
+  
+    in 0,1,2 (+0.5*,) rectangle ++(,);
+    in 0,1 (+,2*) rectangle ++(,);
+   (1.5*,3*) rectangle ++(,);
+
+Partie C -- Trouver une formule courte
+
+Montre que le sommet peut s'écrire \(6x+5\).
+
+Explique pourquoi \(x+x=2x\) et \(2x+2x+2x=6x\).
+
+6
+
+Partie D -- Utiliser la formule
+
+Calcule rapidement le sommet pour \(x=100\), \(x=-15\) et \(x=2,5\).
+
+3

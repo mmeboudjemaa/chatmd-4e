@@ -1,0 +1,47 @@
+4eQuotients et enchaînements15 min12
+
+3[Calculer]
+Calculer les quotients. 3
+
+\[
+(-42)(+6)
+
+(-35)(-5)
+
+7,2(-4)
+\]
+
+4
+
+2[Raisonner]
+Déterminer le signe du produit, puis calculer. 2
+
+\[
+(-2)3(-5)(-1)
+\]
+
+3
+
+4[Calculer]
+Calculer en détaillant les étapes. 4
+
+\[
+A=(-24)(-6)+5(-2)
+\]
+
+\[
+B=7-(-4)(-3)
+\]
+
+7
+
+3[Raisonner]
+Un élève écrit :
+
+\[
+18-(-3)4=(18-(-3))4=214=84.
+\]
+
+Expliquer l'erreur et corriger le calcul. 3
+
+5

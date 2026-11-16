@@ -1,0 +1,78 @@
+Activité 7 -- Mission nombres
+
+Cette activité de synthèse se réalise par équipes.
+Chaque mission validée donne un chiffre du code final.
+
+Mission 1 -- Les nombres premiers
+
+Parmi les nombres suivants, recopie uniquement les nombres premiers :
+
+\[
+51 53 57 61
+67 69 71 77.
+\]
+
+Pour chaque nombre écarté, donne un diviseur différent de \(1\)
+et de lui-même.
+
+Le premier chiffre du code est le nombre de nombres premiers trouvés.
+
+5
+
+Mission 2 -- Le nombre mystérieux
+
+Je suis un entier compris entre \(100\) et \(400\).
+
+   Je suis pair.
+   Je suis divisible par \(11\).
+   \(3\) et \(5\) sont aussi mes diviseurs.
+
+Qui suis-je ? Justifie sans tester tous les entiers.
+
+Le deuxième chiffre du code est mon chiffre des dizaines.
+
+5
+
+Mission 3 -- Décomposition
+
+Décompose \(396\) en produit de facteurs premiers.
+
+Le troisième chiffre du code est le nombre total de facteurs premiers
+écrits dans la décomposition, en comptant les répétitions.
+
+5
+
+Mission 4 -- Fraction
+
+Simplifie :
+
+\[
+84126.
+\]
+
+Le quatrième chiffre du code est le dénominateur de la fraction obtenue.
+
+5
+
+Mission 5 -- Vrai ou faux ?
+
+Pour chaque affirmation, réponds par vrai ou faux et justifie.
+
+   Tout nombre impair est premier.
+   Le seul nombre premier pair est \(2\).
+   Si un nombre est divisible par \(6\), alors il est divisible par \(3\).
+   La somme de deux nombres premiers est toujours première.
+   Un entier supérieur à \(1\) peut toujours être décomposé
+        en produit de facteurs premiers.
+
+7
+
+Bilan individuel
+
+Rédige deux phrases :
+
+   une méthode pour montrer qu'un nombre n'est pas premier ;
+   une méthode pour simplifier une fraction à l'aide
+        des facteurs premiers.
+
+4

@@ -1,0 +1,73 @@
+Activité 7 -- Formule Celsius-Fahrenheit
+
+Cette activité sert de synthèse : elle mobilise les produits, les sommes, les différences, les quotients et l'interprétation du résultat.
+
+En France, on mesure la température en degrés Celsius. Dans d'autres pays, elle se mesure en degrés Fahrenheit.
+
+La formule est :
+
+\[
+t_F=1,8 t_C+32.
+\]
+
+Partie A -- Calculer une température en degrés Fahrenheit
+
+Calcule la température en degrés Fahrenheit correspondant à :
+
+\[
+10^C
+
+0^C
+
+-10^C.
+\]
+
+7
+
+Partie B -- Retrouver une température en degrés Celsius
+
+On sait que :
+
+\[
+t_F=59.
+\]
+
+Complète le programme inverse.
+
+\[
+59-32=
+\]
+
+\[
+1,8=
+\]
+
+Donc :
+
+\[
+59^F=^C.
+\]
+
+4
+
+Partie C -- Écrire une expression unique
+
+Écris une seule expression permettant de retrouver la température en degrés Celsius correspondant à \(59^F\).
+
+\[
+
+\]
+
+Calcule-la.
+
+3
+
+Partie D -- Calculatrice raisonnée
+
+Une journée d'hiver, une ville américaine annonce \(-4^F\).
+
+   Avant de calculer, penses-tu que la température en Celsius sera positive ou négative ?
+   Calcule la température en Celsius avec une expression unique.
+   Interprète le résultat.
+
+6

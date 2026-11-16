@@ -1,0 +1,100 @@
+Activité 5 -- Calculer l'hypoténuse
+
+Partie A -- Défaire une multiplication
+
+Dans le triangle \(MNP\) rectangle en \(N\), on donne :
+
+\[
+MN=7 cm
+
+ M=41^.
+\]
+
+On cherche l'hypoténuse \(MP\).
+
+[scale=0.95]
+   (M) at (0,0);
+   (N) at (5.5,0);
+   (P) at (5.5,4.8);
+   (M)--(N)--(P)--cycle;
+   (5.15,0)--(5.15,0.35)--(5.5,0.35);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$41^$"] angle=N--M--P;
+   at (M) $M$;
+   at (N) $N$;
+   at (P) $P$;
+   at ($(M)!0.5!(N)$) $7$ cm;
+   at ($(M)!0.5!(P)$) $?$;
+
+On sait que :
+
+\[
+MN=MP( M).
+\]
+
+Complète le programme inverse :
+
+\[
+MP=MN( M).
+\]
+
+Puis calcule \(MP\), arrondi au dixième de centimètre.
+
+6
+
+Partie B -- Deux cas à ne pas confondre
+
+1.55
+
+|>p5.5cm
+|>X
+|>X|
+
+ & Longueur cherchée & Opération\\
+
+Hypoténuse et angle connus & côté adjacent & \\
+
+Côté adjacent et angle connus & hypoténuse & \\
+
+Complète les deux phrases.
+
+\[
+adjacent
+=
+hypoténuse(angle)
+\]
+
+\[
+hypoténuse
+=
+adjacent(angle)
+\]
+
+Partie C -- Calculer
+
+   Dans le triangle \(RST\) rectangle en \(R\),
+        \(ST\) est l'hypoténuse, \(RT=6\) cm et \( T=55^\).
+        Calculer \(ST\).
+   Dans le triangle \(UVW\) rectangle en \(V\),
+        \(UW\) est l'hypoténuse, \(UV=9,5\) m et \( U=32^\).
+        Calculer \(UW\).
+   Dans le triangle \(XYZ\) rectangle en \(Y\),
+        \(XZ\) est l'hypoténuse, \(XY=2,4\) km et \( X=76^\).
+        Calculer \(XZ\).
+
+10
+
+Partie D -- Vraisemblance
+
+Pourquoi une hypoténuse calculée doit-elle être plus grande que le côté adjacent connu ?
+
+3
+
+Ne choisis pas l'opération uniquement parce que tu veux obtenir
+un nombre plus grand ou plus petit.
+
+Pars toujours de la relation :
+\[
+adjacent
+=
+hypoténuse(angle).
+\]

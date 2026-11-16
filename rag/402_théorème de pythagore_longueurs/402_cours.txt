@@ -1,0 +1,421 @@
+Cours
+
+Rappel : le carré d'un nombre
+
+Le carré d'un nombre \(c\) est le produit de ce nombre par lui-même :
+
+\[
+c^2=c c
+\]
+
+Par exemple :
+\[
+5^2=25
+et
+3^2=9.
+\]
+
+Si un carré a pour côté \(c\), alors son aire est \(c^2\).
+
+L'hypoténuse
+
+Dans un triangle rectangle, le côté situé
+en face de l'angle droit
+s'appelle l'hypoténuse.
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=0.8mm,
+  bottom=0.8mm,
+  before skip=1mm,
+  after skip=1mm
+]
+Propriété :
+l'hypoténuse est le plus long côté d'un triangle rectangle.
+
+Dans le triangle \(ABC\) rectangle en \(A\),
+l'hypoténuse est \([BC]\).
+
+Du puzzle au théorème
+
+[c]0.35
+
+images/puzzle_original_triangle_carrés.png
+
+[c]0.61
+
+Le puzzle montre que :
+
+\[
+
+c
+aire du carré sur l'hypoténuse\\
+=\\[-0.2em]
+somme des aires des deux autres carrés
+
+\]
+
+Dans le triangle \(ABC\) rectangle en \(A\) :
+
+\[
+BC^2=AB^2+AC^2.
+\]
+
+Dans un triangle rectangle,
+le carré de la longueur de l'hypoténuse
+est égal à la somme des carrés des longueurs
+des deux autres côtés.
+
+Si \(ABC\) est rectangle en \(A\), alors :
+\[
+BC^2=AB^2+AC^2
+\]
+
+La racine carrée
+
+Lors de l'activité, nous avons cherché le côté d'un carré
+d'aire \(50\ cm^2\) :
+
+\[
+7,077,07=49,9849
+
+7,087,08=50,1264.
+\]
+
+[
+  enhanced,
+  colback=white,
+  colframe=SavoirC!45,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+SavoirC
+Carré d'un nombre et racine carrée
+
+[c]0.46
+
+ Du côté vers l'aire
+
+0.2em
+
+[scale=0.68]
+ (0,0) rectangle (2.5,2.5);
+ at (1.25,1.25)  \(36\ cm^2\);
+ at (1.25,0)  \(6\ cm\);
+
+\[
+66=36
+
+6^2=36
+\]
+
+\[
+
+côté
+\ carré\
+aire
+
+\]
+
+[c]0.46
+
+ De l'aire vers le côté
+
+0.2em
+
+[scale=0.68]
+ (0,0) rectangle (2.5,2.5);
+ at (1.25,1.25)  \(36\ cm^2\);
+ at (1.25,0)  côté \(=?\);
+
+\[
+36=6
+
+côté=6 cm
+\]
+
+\[
+
+aire
+\ racine carrée\
+côté
+
+\]
+
+La racine carrée d'un nombre positif \(a\)
+est le nombre positif dont le carré est égal à \(a\).
+
+\[
+a
+
+49=7
+
+81=9
+
+507,07
+\]
+
+Avec la calculatrice
+
+[t]0.485
+0pt
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1mm,
+  bottom=1mm
+]
+
+SavoirC
+CASIO fx-92+ Spéciale Collège
+
+\[
+50 :
+
+SECONDE\;
+\(x^2\)\;
+50\;
+EXE
+\]
+
+\[
+\(S D\)
+
+507,07
+\]
+
+[t]0.485
+0pt
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1mm,
+  bottom=1mm
+]
+
+SavoirC
+Nouvelle CASIO fx-92 Collège
+
+ Modèle à touches rondes
+
+\[
+50 :
+
+\(0\)\;
+50\;
+EXE
+\]
+
+\[
+FORMAT
+
+Décimal
+
+507,07
+\]
+
+Arrondir au dixième
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+Pour arrondir au dixième, je garde un chiffre après la virgule
+et je regarde le chiffre suivant :
+
+\[
+
+ccl
+0,\ 1,\ 2,\ 3,\ 4 && je garde le dixième\\[0.2em]
+5,\ 6,\ 7,\ 8,\ 9 && j'ajoute 1 au dixième
+
+\]
+
+\[
+507,07
+
+507,1
+\]
+
+\[
+557,41
+
+557,4
+\]
+
+Un arrondi n'est pas exact :
+\[
+507,1
+et non
+50=7,1.
+\]
+
+0.4em
+
+Rédiger avec le théorème de Pythagore
+
+[t]0.485
+0pt
+
+[
+  enhanced,
+  colback=white,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+ActionC
+Chercher l'hypoténuse
+
+\(MNP\) est rectangle en \(M\), avec
+\(MN=5\) cm et \(MP=7\) cm.
+
+Calculer \(NP\).
+
+Rédaction
+
+Le triangle \(MNP\) est rectangle en \(M\).
+
+D'après le théorème de Pythagore :
+
+\[
+NP^2=MN^2+MP^2
+\]
+
+\[
+
+NP^2 &= 5^2+7^2\\
+NP^2 &= 25+49\\
+NP^2 &= 74
+
+\]
+
+\[
+NP=74
+\]
+
+\[
+NP8,6 cm
+\]
+
+[t]0.485
+0pt
+
+[
+  enhanced,
+  colback=white,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+ActionC
+Chercher un côté de l'angle droit
+
+\(RST\) est rectangle en \(R\), avec
+\(ST=9\) cm et \(RS=4\) cm.
+
+Calculer \(RT\).
+
+Rédaction
+
+Le triangle \(RST\) est rectangle en \(R\).
+
+D'après le théorème de Pythagore :
+
+\[
+ST^2=RS^2+RT^2
+\]
+
+\[
+
+9^2 &= 4^2+RT^2\\
+81 &= 16+RT^2\\
+RT^2 &= 81-16\\
+RT^2 &= 65
+
+\]
+
+\[
+RT=65
+\]
+
+\[
+RT8,1 cm
+\]
+
+0.3em
+
+Ma checklist Pythagore
+
+[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=4mm,
+  right=4mm,
+  top=1.2mm,
+  bottom=1.2mm
+]
+
+[t]0.48
+
+\(\) Le triangle est rectangle.
+
+\(\) J'ai repéré l'hypoténuse.
+
+\(\) L'hypoténuse est seule d'un côté de l'égalité.
+
+\(\) J'écris d'abord l'égalité avec les lettres.
+
+[t]0.48
+
+\(\) Je prends la racine carrée.
+
+\(\) Si j'arrondis, j'écris \(\).
+
+\(\) J'écris l'unité.
+
+\(\) Je vérifie : l'hypoténuse est le plus long côté.

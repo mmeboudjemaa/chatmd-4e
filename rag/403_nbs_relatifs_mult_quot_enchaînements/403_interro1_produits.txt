@@ -1,0 +1,51 @@
+4eProduits de nombres relatifs10 min10
+
+2[Calculer]
+Indiquer le signe de chaque produit, sans calculer la distance à zéro. 2
+
+\[
+(-7)3
+
+(-2,5)(-4)
+
+6(-8)(-2)
+
+(-1)(-2)(-3)
+\]
+
+3
+
+4[Calculer]
+Calculer. 4
+
+\[
+(-8)3
+
+(-4)(-7)
+
+(-2,5)4
+
+(-0,4)(-30)
+\]
+
+5
+
+2[Raisonner]
+Déterminer le signe des produits suivants. Justifier brièvement. 2
+
+\[
+(-3)5(-2)(-7)
+
+(-8)0(-21)
+\]
+
+3
+
+2[Communiquer]
+Compléter la phrase. 2
+
+Pour multiplier deux nombres relatifs, je détermine d'abord 
+
+puis je multiplie 
+
+2

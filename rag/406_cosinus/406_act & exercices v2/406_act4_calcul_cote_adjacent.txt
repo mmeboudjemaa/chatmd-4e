@@ -1,0 +1,145 @@
+Activité 4 -- Calculer le côté adjacent
+
+Partie A -- Comprendre l'opération
+
+Dans le triangle \(ABC\) rectangle en \(B\) :
+
+\[
+AC=12 cm
+et
+BAC=37^.
+\]
+
+On cherche \(AB\).
+
+[scale=0.85]
+   (A) at (0,0);
+   (B) at (5.2,0);
+   (C) at (5.2,3.9);
+
+   (A)--(B)--(C)--cycle;
+   (4.82,0)--(4.82,0.38)--(5.2,0.38);
+
+   at (A) $A$;
+   at (B) $B$;
+   at (C) $C$;
+
+   at (2.7,2.2) $12$ cm;
+   at (2.7,0) $AB\,?$;
+
+   (0.8,0) arc[start angle=0,end angle=37,radius=0.8];
+   at (1.15,0.43) $37^$;
+
+Complète.
+
+\[
+(37^)=
+\]
+
+Le cosinus est le nombre qui multiplie l'hypoténuse pour obtenir le côté adjacent :
+
+\[
+AB=AC(37^).
+\]
+
+Donc :
+
+\[
+AB=12(37^) cm.
+\]
+
+Le résultat est-il cohérent avec \(AB<AC\) ?
+
+Partie B -- Méthode de rédaction
+
+Complète le modèle.
+
+[colback=white,colframe=SavoirC,boxrule=0.7pt,arc=2mm]
+Dans le triangle \(ABC\) rectangle en \(B\), on a :
+
+\[
+(BAC)=ABAC.
+\]
+
+Donc :
+
+\[
+AB=AC(BAC).
+\]
+
+Ainsi :
+
+\[
+AB=12(37^)
+ cm.
+\]
+
+Partie C -- S'entraîner
+
+Pour chaque figure :
+
+   nomme le triangle rectangle ;
+   écris le cosinus de l'angle donné ;
+   calcule la longueur demandée ;
+   arrondis au dixième et contrôle le résultat.
+
+[t]0.31
+
+[scale=0.55]
+   (J) at (0,0);
+   (V) at (4.5,0);
+   (K) at (4.5,2.2);
+   (J)--(V)--(K)--cycle;
+   (4.15,0)--(4.15,0.35)--(4.5,0.35);
+   at (J) $J$;
+   at (V) $V$;
+   at (K) $K$;
+   at (2.3,1.25) $8$ cm;
+   at (2.4,0) $JV\,?$;
+   (0.75,0) arc[start angle=0,end angle=26,radius=0.75];
+   at (1.05,0.35) $20^$;
+
+[t]0.31
+
+[scale=0.55]
+   (R) at (0,0);
+   (S) at (4.4,0);
+   (T) at (4.4,3.1);
+   (R)--(S)--(T)--cycle;
+   (4.05,0)--(4.05,0.35)--(4.4,0.35);
+   at (R) $R$;
+   at (S) $S$;
+   at (T) $T$;
+   at (2.3,1.65) $15$ cm;
+   at (2.3,0) $RS\,?$;
+   (0.75,0) arc[start angle=0,end angle=35,radius=0.75];
+   at (1.05,0.42) $35^$;
+
+[t]0.31
+
+[scale=0.55]
+   (D) at (0,0);
+   (E) at (4.2,0);
+   (F) at (4.2,4.3);
+   (D)--(E)--(F)--cycle;
+   (3.85,0)--(3.85,0.35)--(4.2,0.35);
+   at (D) $D$;
+   at (E) $E$;
+   at (F) $F$;
+   at (2.2,2.3) $9,5$ cm;
+   at (2.2,0) $DE\,?$;
+   (0.75,0) arc[start angle=0,end angle=46,radius=0.75];
+   at (1.02,0.5) $46^$;
+
+10
+
+Pour calculer le côté adjacent :
+
+\[
+côté adjacent
+=
+hypoténuse(angle)
+\]
+
+Comme le cosinus d'un angle aigu est inférieur à \(1\),
+le résultat doit être plus petit que l'hypoténuse.

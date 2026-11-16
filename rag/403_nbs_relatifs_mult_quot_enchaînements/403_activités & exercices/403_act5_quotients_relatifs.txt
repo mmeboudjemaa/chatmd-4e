@@ -1,0 +1,153 @@
+Activité 5 -- Quotients de nombres relatifs
+
+[t]0.49
+
+Partie A -- Facteur manquant
+
+Complète les égalités.
+
+\[
+(+6)=-42
+\]
+
+\[
+(-5)=-35
+\]
+
+\[
+(-8)=40
+\]
+
+\[
+(+4)=18
+\]
+
+[t]0.49
+
+Partie B -- Relier à une division
+
+À partir de la partie A, complète.
+
+\[
+(-42)(+6)=
+\]
+
+\[
+(-35)(-5)=
+\]
+
+\[
+40(-8)=
+\]
+
+\[
+18(+4)=
+\]
+
+Partie C -- Règle des signes du quotient
+
+Complète.
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Le quotient de deux nombres de même signe est 
+
+0.4cm
+
+Le quotient de deux nombres de signes différents est 
+
+0.4cm
+
+Pour calculer un quotient, je détermine d'abord le , puis je divise les distances à zéro.
+
+Partie D -- Calculatrice raisonnée
+
+Avant d'utiliser la calculatrice, écris le signe attendu et un ordre de grandeur.
+
+1.7
+
+|>p4cm|>p3cm|>p4cm|>X|
+
+Calcul & Signe attendu & Ordre de grandeur & Résultat\\
+
+\((-12,8)2\) & & & \\
+
+\((-63)(-0,7)\) & & & \\
+
+\(7,2(-5)\) & & & \\
+
+Activité 5 -- Quotients de nombres relatifs
+
+[t]0.49
+
+Partie A -- Facteur manquant
+
+Complète les égalités.
+
+\[
+(+6)=-42
+\]
+
+\[
+(-5)=-35
+\]
+
+\[
+(-8)=40
+\]
+
+\[
+(+4)=18
+\]
+
+[t]0.49
+
+Partie B -- Relier à une division
+
+À partir de la partie A, complète.
+
+\[
+(-42)(+6)=
+\]
+
+\[
+(-35)(-5)=
+\]
+
+\[
+40(-8)=
+\]
+
+\[
+18(+4)=
+\]
+
+Partie C -- Règle des signes du quotient
+
+Complète.
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+Le quotient de deux nombres de même signe est 
+
+0.4cm
+
+Le quotient de deux nombres de signes différents est 
+
+0.4cm
+
+Pour calculer un quotient, je détermine d'abord le , puis je divise les distances à zéro.
+
+Partie D -- Calculatrice raisonnée
+
+Avant d'utiliser la calculatrice, écris le signe attendu et un ordre de grandeur.
+
+1.7
+
+|>p4cm|>p3cm|>p4cm|>X|
+
+Calcul & Signe attendu & Ordre de grandeur & Résultat\\
+
+\((-12,8)2\) & & & \\
+
+\((-63)(-0,7)\) & & & \\
+
+\(7,2(-5)\) & & & \\

@@ -1,0 +1,189 @@
+Cours -- Tableaux et diagrammes circulaires
+
+Reconnaître une situation de proportionnalité
+
+Une grandeur est une quantité que l'on peut mesurer,
+compter ou calculer. Une grandeur possède souvent une unité.
+
+Dans une situation d'achat de pommes au poids, les grandeurs sont :
+
+\[
+masse en kilogrammes
+et
+prix en euros.
+\]
+
+Deux grandeurs sont proportionnelles lorsque les valeurs
+de l'une s'obtiennent en multipliant les valeurs de l'autre par un même nombre.
+
+Ce nombre est appelé coefficient de proportionnalité.
+
+Si \(1\) kg de pommes coûte \(2,50\) €, alors :
+
+\[
+prix=masse2,50.
+\]
+
+Le coefficient permettant de passer de la masse au prix est \(2,50\).
+
+Deux grandeurs qui augmentent ensemble ne sont pas nécessairement proportionnelles.
+
+Par exemple, l'âge d'un enfant et l'âge de sa mère augmentent ensemble,
+mais ne sont pas multipliés par un même nombre.
+
+Tableaux de proportionnalité
+
+Un tableau est un tableau de proportionnalité lorsque
+ses deux lignes contiennent les valeurs correspondantes de deux grandeurs proportionnelles.
+
+\[
+
+c|ccc
+Masse en kg & 1 & 3 & 5\\
+
+Prix en € & 2,5 & 7,5 & 12,5
+
+\]
+
+Méthodes pour compléter un tableau
+
+Utiliser le coefficient de proportionnalité
+
+On multiplie toutes les valeurs d'une ligne par le même nombre pour obtenir l'autre ligne.
+
+\[
+32,5=7,5.
+\]
+
+Revenir à l'unité
+
+On cherche d'abord la valeur correspondant à \(1\), puis on calcule la valeur demandée.
+
+Si \(4\) kg coûtent \(10\) € :
+
+\[
+104=2,5.
+\]
+
+Un kilogramme coûte \(2,50\) €. Donc \(7\) kg coûtent :
+
+\[
+72,5=17,5 €.
+\]
+
+Multiplier ou diviser une colonne
+
+Si une valeur d'une colonne est multipliée ou divisée par un nombre,
+la valeur correspondante doit subir la même opération.
+
+Utiliser l'additivité ou la soustraction
+
+On peut additionner ou soustraire deux colonnes complètes.
+
+Si \(3\) objets coûtent \(6\) € et \(4\) objets coûtent \(8\) €,
+alors \(7\) objets coûtent :
+
+\[
+6+8=14 €.
+\]
+
+Plusieurs méthodes peuvent être correctes.
+On choisit celle qui est la plus simple avec les nombres du problème.
+
+Calcul avec trois valeurs connues
+
+Dans un tableau de proportionnalité :
+
+\[
+
+c|cc
+ & a & b\\
+
+ & c & x
+
+\]
+
+on a :
+
+\[
+a x=b c.
+\]
+
+Lorsque \(a0\) :
+
+\[
+x=(b c) a.
+\]
+
+Cette propriété ne doit être utilisée que si la situation
+est bien proportionnelle et si les grandeurs sont correctement placées dans le tableau.
+
+Diagrammes circulaires
+
+Un diagramme circulaire représente une répartition par des secteurs.
+L'angle de chaque secteur est proportionnel à l'effectif, à la fréquence
+ou au pourcentage de la modalité.
+
+Le cercle entier représente le total :
+
+\[
+360^
+
+effectif total
+
+100\%.
+\]
+
+Pour calculer l'angle d'un secteur à partir d'un effectif :
+
+\[
+angle
+=
+effectif de la modalité
+
+360
+
+effectif total.
+\]
+
+Pour calculer l'angle à partir d'un pourcentage :
+
+\[
+angle
+=
+pourcentage
+
+360
+
+100.
+\]
+
+Pour une modalité représentant \(25\%\) du total :
+
+\[
+25360100=90.
+\]
+
+Le secteur mesure \(90^\).
+
+Construire un diagramme circulaire
+
+[label=.]
+   calculer l'angle de chaque secteur ;
+   vérifier que la somme des angles vaut \(360^\) ;
+   tracer un cercle et un premier rayon ;
+   reporter les angles successivement au rapporteur ;
+   ajouter un titre, une légende, les unités, la source et l'effectif total.
+
+Lire un diagramme avec esprit critique
+
+Avant de faire confiance à un diagramme circulaire, on vérifie :
+
+   que les catégories forment bien une répartition complète ;
+   que la somme des pourcentages vaut \(100\%\) ;
+   que la somme des angles vaut \(360^\) ;
+   que la taille des secteurs correspond aux nombres annoncés ;
+   que le titre, la source, la date et l'effectif étudié sont indiqués.
+
+Un secteur plus grand doit représenter une proportion plus grande.
+Une représentation en perspective ou en volume peut donner une impression trompeuse.

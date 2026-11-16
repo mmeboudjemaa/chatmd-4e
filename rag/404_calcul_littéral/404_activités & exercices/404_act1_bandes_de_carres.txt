@@ -1,0 +1,75 @@
+Activité 1 -- Combien de segments pour une bande de carrés ?
+
+On accole des carrés de même taille. Deux carrés voisins partagent un côté.
+
+[scale=0.9]
+   / in 0/1,4/2,9/3
+      in 0,...,
+      <
+         (+,0) rectangle ++(1,1);
+
+     at (+0.5*,-0.25) \(\) carré>1 s;
+
+Partie A -- Compter
+
+1.55
+
+0.85|>X|>X|
+
+Nombre de carrés & Nombre de segments visibles\\
+
+\(1\) & \\
+
+\(2\) & \\
+
+\(3\) & \\
+
+\(4\) & \\
+
+\(10\) & \\
+
+Partie B -- Calculer stratégiquement
+
+Combien de segments sont visibles lorsqu'il y a 236 carrés?
+
+6
+
+Partie C -- Décrire une stratégie
+
+Explique ta statégie.
+
+6
+
+Partie D -- Comparer les stratégies
+
+Les propositions des groupes :
+
+[t]0.31
+
+[colback=SavoirBg, colframe=SavoirC, boxrule=0.6pt, arc=2mm]
+
+[t]0.31
+
+[colback=ActionBg, colframe=ActionC, boxrule=0.6pt, arc=2mm]
+
+[t]0.31
+
+[colback=NeutreBg, colframe=NeutreC, boxrule=0.6pt, arc=2mm]
+
+[t]0.31
+
+[colback=ActionBg, colframe=ActionC, boxrule=0.6pt, arc=2mm]
+
+[t]0.31
+
+[colback=NeutreBg, colframe=NeutreC, boxrule=0.6pt, arc=2mm]
+
+[t]0.31
+
+[colback=SavoirBg, colframe=SavoirC, boxrule=0.6pt, arc=2mm]
+
+   Explique la stratégie correspondant à chaque formule.
+   Vérifie qu'elles donnent le même résultat pour 5 carrés.
+   Cette vérification suffit-elle à prouver qu'elles sont toujours égales ?
+
+7

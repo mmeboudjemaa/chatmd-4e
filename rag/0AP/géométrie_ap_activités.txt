@@ -1,0 +1,947 @@
+Rendez-vous 1 -- Transmettre une figure
+Modèles A et B -- à couper
+
+\(57+29\)
+\(403-197\)
+\(397\)
+\(4205\)
+
+0.2cm
+
+[t]0.485
+
+[
+  enhanced,
+  height=14.7cm,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  title=TitreCModèle A,
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+]
+
+Le dessin ci-dessous est exact.
+
+Tu peux utiliser tes instruments pour l'analyser.
+
+0.2cm
+
+[scale=0.83]
+
+ (A) at (0,0);
+ (B) at (8,0);
+ (C) at (8,5);
+ (D) at (0,5);
+
+ (M) at (4,0);
+ (N) at (4,5);
+ (O) at (4,2.5);
+
+ (A)--(B)--(C)--(D)--cycle;
+ (A)--(C);
+ (B)--(D);
+ (M)--(N);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+ at (M) $M$;
+ at (N) $N$;
+ at (O) $O$;
+
+Ta mission
+
+Sur une feuille à part, réalise un croquis à main levée
+qui permette à un camarade de reconstruire ce dessin.
+
+Ton croquis n'a pas besoin d'être à l'échelle.
+
+Tu peux écrire et coder toutes les informations
+que tu juges nécessaires.
+
+Ne montre pas le modèle à ton camarade.
+
+0.3cm
+
+Quand ton croquis est prêt, rends ce modèle au professeur
+et donne seulement ton croquis à un élève qui avait le modèle B.
+
+S'il lui manque une information,
+il doit écrire sa question au lieu de deviner.
+
+[t]0.485
+
+[
+  enhanced,
+  height=14.7cm,
+  colback=white,
+  colframe=NeutreC!55,
+  boxrule=0.7pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  title=TitreCModèle B,
+  coltitle=TitreC,
+  colbacktitle=NeutreBg
+]
+
+Le dessin ci-dessous est exact.
+
+Tu peux utiliser tes instruments pour l'analyser.
+
+0.2cm
+
+[scale=1]
+
+ (A) at (0,0);
+ (B) at (4,0);
+ (C) at (6,3.464);
+ (D) at (2,3.464);
+
+ (O) at (3,1.732);
+
+ (A)--(B)--(C)--(D)--cycle;
+ (A)--(C);
+ (B)--(D);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+ at (O) $O$;
+
+Ta mission
+
+Sur une feuille à part, réalise un croquis à main levée
+qui permette à un camarade de reconstruire ce dessin.
+
+Ton croquis n'a pas besoin d'être à l'échelle.
+
+Tu peux écrire et coder toutes les informations
+que tu juges nécessaires.
+
+Ne montre pas le modèle à ton camarade.
+
+0.3cm
+
+Quand ton croquis est prêt, rends ce modèle au professeur
+et donne seulement ton croquis à un élève qui avait le modèle A.
+
+S'il lui manque une information,
+il doit écrire sa question au lieu de deviner.
+
+Rendez-vous 2 -- Le dessin n'est pas la figure
+Deux tâches courtes
+
+\(2544\)
+\(645\)
+\(12516\)
+\(9823\)
+
+0.15cm
+
+A. Le même croquis, des informations différentes
+
+Les trois croquis sont identiques.
+
+Ils ne sont pas à l'échelle.
+
+0.15cm
+
+[t]0.32
+
+1
+
+[scale=0.6]
+
+ (A) at (0,0);
+ (B) at (4.6,0.35);
+ (C) at (5.4,2.2);
+ (D) at (0.8,1.85);
+
+ (A)--(B)--(C)--(D)--cycle;
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+Aucune autre information.
+
+Nature la plus précise :
+
+0.25cm
+
+5cm0.4pt
+
+[t]0.32
+
+2
+
+[scale=0.6]
+
+ (A) at (0,0);
+ (B) at (4.6,0.35);
+ (C) at (5.4,2.2);
+ (D) at (0.8,1.85);
+
+ (A)--(B)--(C)--(D)--cycle;
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+\[
+(AB)(CD)
+
+(AD)(BC)
+\]
+
+Nature la plus précise :
+
+0.25cm
+
+5cm0.4pt
+
+[t]0.32
+
+3
+
+[scale=0.6]
+
+ (A) at (0,0);
+ (B) at (4.6,0.35);
+ (C) at (5.4,2.2);
+ (D) at (0.8,1.85);
+
+ (A)--(B)--(C)--(D)--cycle;
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+\[
+AB=BC=CD=DA
+\]
+
+Nature la plus précise :
+
+0.25cm
+
+5cm0.4pt
+
+0.15cm
+
+B. Des croquis différents, les mêmes informations
+
+Dans les trois cas :
+
+\[
+AB=AC.
+\]
+
+Les croquis ne sont pas à l'échelle.
+
+[c]0.26
+
+Écris une affirmation qui est
+certaine dans les trois cas.
+
+0.5cm
+
+0.4pt
+
+0.5cm
+
+0.4pt
+
+[c]0.70
+
+[scale=0.72]
+
+[shift=(0,0)]
+ (A) at (1.7,2.5);
+ (B) at (0,0);
+ (C) at (3.4,0);
+
+ (A)--(B);
+ (A)--(C);
+ (B)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+
+[shift=(5.2,0)]
+ (A) at (0.6,2.3);
+ (B) at (0,0);
+ (C) at (4.4,0.5);
+
+ (A)--(B);
+ (A)--(C);
+ (B)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+
+[shift=(11.5,0)]
+ (A) at (3.4,1.0);
+ (B) at (0,0);
+ (C) at (0.5,3.2);
+
+ (A)--(B);
+ (A)--(C);
+ (B)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+
+Rendez-vous 3 -- A-t-on assez d'informations ?
+Construction
+
+[c]0.27
+
+[scale=0.7]
+
+ at (0,0) ;
+ at (2.2,0.05) ;
+ at (4.5,0) ;
+
+[c]0.69
+
+Affirmation :
+\(A\), \(B\) et \(C\) sont alignés.
+
+$$ Certain
+
+$$ Faux
+
+$$ On ne peut pas savoir
+
+0.15cm
+
+Deux figures possibles
+
+On veut construire un quadrilatère \(ABCD\) tel que :
+
+\[
+AB=CD=4 cm
+et
+BC=DA=3 cm.
+\]
+
+0.15cm
+
+Construis deux quadrilatères différents
+qui respectent ces informations
+et qui ne sont pas superposables.
+
+0.25cm
+
+[t]0.48
+
+Construction 1
+
+[
+  colback=white,
+  colframe=NeutreC!30,
+  boxrule=0.4pt,
+  height=7.5cm
+]
+
+[t]0.48
+
+Construction 2
+
+[
+  colback=white,
+  colframe=NeutreC!30,
+  boxrule=0.4pt,
+  height=7.5cm
+]
+
+0.35cm
+
+Ajoute une seule information pour être certain que \(ABCD\) est un rectangle :
+
+0.25cm
+
+15cm0.4pt
+
+Rendez-vous 4 -- Les propriétés deviennent des outils
+Restauration
+
+\(6=4,8\)
+\(7=9\)
+\(42=6\)
+\(20\% de =14\)
+
+0.15cm
+
+Le losange effacé
+
+[t]0.30
+
+On sait que \(ABCD\) était un losange.
+
+Trois sommets ont été conservés.
+
+Restaure la figure.
+
+Instruments autorisés :
+
+\[
+règle non graduée
+
+compas
+\]
+
+0.5cm
+
+Quand tu penses avoir terminé,
+demande le calque de validation.
+
+0.7cm
+
+Après validation :
+
+Quelle propriété du losange
+t'a permis de placer \(D\) ?
+
+0.35cm
+
+0.4pt
+
+0.4cm
+
+0.4pt
+
+[t]0.66
+
+[scale=1.6]
+
+ (B) at (0,0);
+ (A) at (-2.5,0);
+ (C) at (1.5,2);
+
+ at (A) ;
+ at (B) ;
+ at (C) ;
+
+ (A)--(B)--(C);
+
+0.4cm
+
+[
+  colback=white,
+  colframe=NeutreC!20,
+  boxrule=0.4pt,
+  height=5.8cm
+]
+Traces de recherche
+
+Rendez-vous 5 -- Donné, déduit, non garanti
+Deux tâches intermédiaires
+
+\(0,574\)
+\(50\% de 46\)
+\(34 de 44\)
+\(0,2568\)
+
+0.15cm
+
+A. Quel est le statut de chaque affirmation ?
+
+[c]0.32
+
+On sait que \(ABCD\) est un rectangle.
+
+\(O\) est le point d'intersection de ses diagonales.
+
+Le dessin est un croquis.
+
+[scale=0.75]
+
+ (A) at (0,0);
+ (B) at (4.8,0.4);
+ (C) at (4.45,2.5);
+ (D) at (-0.35,2.1);
+ (O) at (2.22,1.25);
+
+ (A)--(B)--(C)--(D)--cycle;
+ (A)--(C);
+ (B)--(D);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+ at (O) $O$;
+
+[c]0.64
+
+Pour chaque affirmation, écris :
+
+\[
+Donnée
+
+Déduite
+
+Non garantie
+\]
+
+1.4
+
+|X|p4cm|
+
+\(ABCD\) est un rectangle. & \\ 
+\((AB)(BC)\) & \\ 
+\(AC=BD\) & \\ 
+\(AO=OC\) & \\ 
+\((AC)(BD)\) & \\ 
+\(AB=BC\) & \\ 
+
+0.15cm
+
+B. Organiser un raisonnement
+
+Remets les trois informations dans un ordre logique.
+
+0.35cm
+
+ at (0,0)
+\(AB=AC\);
+
+ at (8,0)
+\(ABC\) est isocèle en \(A\);
+
+ at (16,0)
+\(ABC=BCA\);
+
+0.45cm
+
+Qu'est-ce qui permet de passer d'une affirmation à la suivante ?
+
+0.25cm
+
+0.4pt
+
+Rendez-vous 6 -- Vrai parce que... faux parce que...
+Travail en groupe
+
+\(186+184\)
+\(2563+2537\)
+\(322,5\)
+\(12532\)
+
+0.15cm
+
+Convaincre
+
+Choisissez deux affirmations.
+
+Si vous pensez qu'elle est fausse,
+fabriquez un contre-exemple.
+
+Si vous pensez qu'elle est vraie,
+expliquez pourquoi elle doit toujours être vraie.
+
+0.3cm
+
+[t]0.48
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+A
+
+0.3cm
+
+Si un quadrilatère a quatre côtés de même longueur,
+alors c'est un carré.
+
+Recherche :
+
+0.2cm
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+C
+
+0.3cm
+
+Si un triangle a deux côtés de même longueur,
+alors il a deux angles de même mesure.
+
+Recherche :
+
+[t]0.48
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+B
+
+0.3cm
+
+Si un quadrilatère a quatre angles droits,
+alors c'est un carré.
+
+Recherche :
+
+0.2cm
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=5.3cm
+]
+D
+
+0.3cm
+
+Si deux droites sont perpendiculaires
+à une même droite,
+alors elles sont parallèles.
+
+Recherche :
+
+Rendez-vous 7 -- Exactement ou à peu près ?
+Situation de recherche
+
+[c]0.45
+
+[scale=0.65]
+
+ (A) at (0,0);
+ (B) at (3,0);
+ (C) at (6,0);
+ (D) at (1.3,2.3);
+
+ (A)--(D);
+ (D)--(B);
+ (A)--(B);
+ (D)--(C);
+ (B)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+[c]0.51
+
+Ce dessin est un croquis.
+
+Les quatre segments marqués ont la même longueur.
+
+Écris une question mathématique
+à laquelle on peut répondre exactement.
+
+0.3cm
+
+0.4pt
+
+0.15cm
+
+Quelle est la nature exacte du triangle \(ACD\) ?
+
+[c]0.34
+
+Le dessin est un croquis.
+
+Les points \(A\), \(B\) et \(C\) sont alignés.
+
+Les quatre segments marqués ont la même longueur.
+
+0.7cm
+
+Quelle est la nature exacte du triangle \(ACD\) ?
+
+0.8cm
+
+Tu peux écrire, coder et ajouter
+des mesures sur le croquis.
+
+0.8cm
+
+Conclusion :
+
+0.35cm
+
+8cm0.5pt
+
+[c]0.62
+
+[scale=1.45]
+
+ (A) at (0,0);
+ (B) at (3,0);
+ (C) at (6,0);
+ (D) at (1.15,2.45);
+
+ (A)--(D);
+ (D)--(B);
+ (D)--(C);
+ (A)--(B);
+ (B)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+0.3cm
+
+[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=5.2cm
+]
+Recherche
+
+Rendez-vous 8 -- Où le raisonnement casse-t-il ?
+Retour sur la situation précédente
+
+\(31,22,9 ?\)
+\(6029 ?\)
+\(25\% de 96=48\ ?\)
+\(4,0824,9 ?\)
+
+0.15cm
+
+A. Trouver la première erreur
+
+Voici trois productions concernant la figure du rendez-vous précédent.
+
+Pour chaque production :
+entoure la première phrase qui n'est pas justifiée.
+
+Si tout est correct, écris correct.
+
+0.25cm
+
+[t]0.315
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+Production 1
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(ADB=60^\).
+
+4. \(A,B,C\) sont alignés.
+
+5. Donc \(DBC=120^\).
+
+6. \(DB=BC\), donc \(DBC\) est isocèle en \(B\).
+
+7. Donc \(BDC=30^\).
+
+8. Donc \(ADC=90^\).
+
+[t]0.315
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+Production 2
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(ADB=60^\).
+
+4. \(DB=BC\).
+
+5. Donc \(DBC\) est équilatéral.
+
+6. Donc \(BDC=60^\).
+
+7. Donc \(ADC=120^\).
+
+[t]0.315
+
+[
+  colback=white,
+  colframe=NeutreC!45,
+  boxrule=0.5pt,
+  height=7.2cm
+]
+Production 3
+
+1. \(AD=DB=AB\).
+
+2. Donc \(ADB\) est équilatéral.
+
+3. Donc \(ADB=60^\).
+
+4. \(A,B,C\) sont alignés.
+
+5. Donc \(DBC=120^\).
+
+6. \(DB=BC\), donc \(DBC\) est isocèle en \(B\).
+
+7. Donc \(BDC=60^\).
+
+0.15cm
+
+B. Réparer
+
+Choisis une des deux productions incorrectes.
+
+Change le moins possible pour la rendre correcte.
+
+0.3cm
+
+[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=3.2cm
+]
+
+Rendez-vous 9 -- Chercher, organiser, communiquer
+Situation de transfert
+
+>X
+>X
+
+Calcul 1 &
+Calcul 2 \\[0.1cm]
+
+\(2825\) &
+\(75\% de 64\) \\[0.2cm]
+
+1c
+Trouve deux façons différentes.
+
+&
+1c
+Trouve deux façons différentes.
+
+\\[0.3cm]
+
+7cm0.4pt
+&
+7cm0.4pt
+
+0.15cm
+
+Une nouvelle figure
+
+[c]0.37
+
+Le dessin est un croquis.
+
+Les points \(A\), \(B\) et \(C\) sont alignés.
+
+\[
+AB=AD
+\]
+
+\[
+DB=BC
+\]
+
+\[
+BAD=40^
+\]
+
+0.45cm
+
+Détermine la mesure de l'angle \(ADC\).
+
+0.6cm
+
+[
+  colback=white,
+  colframe=NeutreC!25,
+  boxrule=0.4pt,
+  height=4.8cm
+]
+Recherche
+
+[c]0.59
+
+[scale=1.4]
+
+ (A) at (0,0);
+ (B) at (3,0);
+ (C) at (6,0);
+ (D) at (1.35,2.55);
+
+ (A)--(D);
+ (A)--(B);
+
+ (D)--(B);
+ (B)--(C);
+
+ (D)--(C);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+ at (D) $D$;
+
+ at (0.75,0.35) $40^$;
+
+0.35cm
+
+Quand ta recherche est terminée :
+
+Explique ton raisonnement en quelques lignes.
+
+0.3cm
+
+0.4pt
+
+0.4cm
+
+0.4pt
+
+0.4cm
+
+0.4pt
+
+0.4cm
+
+0.4pt

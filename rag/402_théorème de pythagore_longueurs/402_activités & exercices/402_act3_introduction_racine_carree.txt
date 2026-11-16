@@ -1,0 +1,53 @@
+Activité 3 -- Introduction rapide à la racine carrée
+
+On veut construire un carré dont l'aire est $50$ cm$^2$.
+On cherche la longueur de son côté.
+
+   Complète :
+  \[
+  7^2=
+  et
+  8^2=
+  \]
+  Entre quels deux entiers se trouve la longueur cherchée ?
+  3
+
+   Calcule :
+  \[
+  7,0^2=
+  
+  7,1^2=
+  
+  7,2^2=
+  \]
+  Donne un encadrement au dixième de la longueur cherchée.
+  3
+
+   La longueur cherchée se note $50$.
+  Complète :
+
+  La racine carrée de $50$ est le nombre positif qui, multiplié par lui-même, donne 
+
+   À la calculatrice, donne une valeur approchée au dixième de $50$.
+  2
+
+La racine carrée d'un nombre positif $a$ est le nombre positif dont le carré vaut $a$.
+On la note $a$.
+
+\[
+25=5
+
+49=7
+
+81=9.
+\]
+
+Retour à Pythagore
+
+Le triangle $RST$ est rectangle en $R$, avec $RS=2$ cm et $RT=7$ cm.
+
+   Calcule $ST^2$.
+   Donne la valeur exacte de $ST$.
+   Donne une valeur approchée au dixième de $ST$.
+
+7

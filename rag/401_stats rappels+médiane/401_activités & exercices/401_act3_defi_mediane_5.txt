@@ -1,0 +1,24 @@
+TitreCSéquence 1 -- Statistiques\\[0.2em]
+  SavoirCActivité 3 -- Défi : médiane 5
+
+Dans cette activité, il ne s'agit pas de calculer une médiane à partir d'une série donnée : c'est à toi de construire des séries qui respectent une contrainte.
+
+C'est quoi déjà?
+
+À quoi sait-on qu'une série a bien pour médiane \(5\) ?
+4
+
+Défi A
+
+Construis une série de sept nombres tous différents dont la médiane est \(5\).
+3
+
+Défi B
+
+Construis une série de six nombres dont la médiane est \(5\) et dont au moins un nombre est égal à \(5\).
+3
+
+Défi C
+
+Construis une série de huit nombres, tous différents de \(5\), dont la médiane est \(5\).
+4

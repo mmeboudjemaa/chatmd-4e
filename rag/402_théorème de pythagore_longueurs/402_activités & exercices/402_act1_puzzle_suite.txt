@@ -1,0 +1,189 @@
+TitreC
+  Séquence 2 -- Théorème de Pythagore\\[-0.05em]
+
+  SavoirC
+  Activité 2 -- Le puzzle : suite
+
+-0.3em
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!45,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  left=3mm,
+  right=3mm,
+  top=1mm,
+  bottom=1mm,
+  before skip=0mm,
+  after skip=2mm
+]
+
+Consigne :
+Dans chaque cas, le triangle \(ABC\) est rectangle en \(A\).
+À l'aide de la découverte du puzzle, calcule la longueur demandée.
+
+Tu peux annoter la figure et utiliser les carrés pour t'aider à raisonner.
+
+[c]
+
+[t]0.315
+0pt
+
+[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=2mm,
+  right=2mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+ActionC
+Cas 1
+
+0.25em
+
+\[
+AB=2,8\ cm
+
+AC=9,6\ cm
+\]
+
+-0.5em
+
+images/puzzle_original_triangle_carrés.png
+
+0.15em
+
+Calculer \(BC\).
+
+0.15em
+
+[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!35,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  height=6cm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+NeutreC
+Recherche et calculs
+
+5mm
+
+[t]0.315
+0pt
+
+[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=2mm,
+  right=2mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+ActionC
+Cas 2
+
+0.25em
+
+\[
+AB=1,4\ cm
+
+AC=4,8\ cm
+\]
+
+-0.5em
+
+images/puzzle_original_triangle_carrés.png
+
+0.15em
+
+Calculer \(BC\).
+
+0.15em
+
+[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!35,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  height=6cm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+NeutreC
+Recherche et calculs
+
+5mm
+
+[t]0.315
+0pt
+
+[
+  enhanced,
+  colback=ActionC!5,
+  colframe=ActionC!55,
+  boxrule=0.6pt,
+  arc=2mm,
+  left=2mm,
+  right=2mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+ActionC
+Cas 3
+
+0.25em
+
+\[
+BC=5,8\ cm
+
+AC=4,2\ cm
+\]
+
+-0.5em
+
+images/puzzle_original_triangle_carrés.png
+
+0.15em
+
+Calculer \(AB\).
+
+0.15em
+
+[
+  enhanced,
+  colback=white,
+  colframe=NeutreC!35,
+  boxrule=0.5pt,
+  arc=1.5mm,
+  height=6cm,
+  left=2.5mm,
+  right=2.5mm,
+  top=1.5mm,
+  bottom=1.5mm
+]
+
+NeutreC
+Recherche et calculs

@@ -1,0 +1,136 @@
+Automatismes -- Séries courtes
+
+Chaque série est prévue pour environ cinq minutes.
+La justification demandée tient généralement en une phrase ou une égalité.
+
+Série 1 -- Multiple ou diviseur ?
+
+Complète avec « multiple » ou « diviseur ».
+
+   \(7\) est un  de \(42\).
+   \(60\) est un  de \(12\).
+   \(5\) est un  de \(35\).
+   \(81\) est un  de \(9\).
+
+Série 2 -- Division euclidienne
+
+Complète :
+
+\[
+157=12+
+\]
+
+\[
+304=25+
+\]
+
+Le reste doit toujours vérifier : \(\).
+
+Série 3 -- Critères de divisibilité
+
+Sans poser de division, indique si \(4\,590\) est divisible par :
+
+\[
+2 3 5 9 10.
+\]
+
+Justifie chaque réponse par un critère.
+
+Série 4 -- Lister
+
+   Donne les six premiers multiples de \(7\).
+   Donne tous les diviseurs de \(24\).
+   Donne trois multiples communs à \(4\) et \(6\).
+
+Série 5 -- Premier ou composé ?
+
+Indique si chaque entier est premier.
+S'il ne l'est pas, donne un diviseur non trivial.
+
+\[
+29 39 47 51 73 91.
+\]
+
+Série 6 -- Liste des nombres premiers
+
+Complète les nombres premiers manquants :
+
+\[
+2,\ 3,\ 5,\ 7,\ 11,\ ,\ 17,\ 19,\ ,\ 29.
+\]
+
+\[
+31,\ 37,\ ,\ 43,\ 47,\ .
+\]
+
+Série 7 -- Décomposer
+
+Décompose en produit de facteurs premiers :
+
+\[
+36 45 70 84.
+\]
+
+Série 8 -- Vérifier une décomposition
+
+Pour chaque égalité, indique si elle est correcte.
+
+\[
+90=2335
+\]
+
+\[
+126=2373
+\]
+
+\[
+75=355
+\]
+
+\[
+44=2211.
+\]
+
+Série 9 -- Simplifier une fraction
+
+Simplifie en utilisant les facteurs premiers :
+
+\[
+1830
+
+4263
+
+70105.
+\]
+
+Série 10 -- Fractions égales
+
+Parmi les fractions suivantes, lesquelles sont égales ?
+
+\[
+615
+
+1025
+
+1435
+
+1536.
+\]
+
+Série 11 -- Groupes identiques
+
+On veut répartir \(36\) objets rouges et \(48\) objets bleus
+dans des groupes identiques sans reste.
+
+   Peut-on faire \(6\) groupes ?
+   Peut-on faire \(8\) groupes ?
+   Donne deux autres nombres de groupes possibles.
+
+Série 12 -- Vrai ou faux ?
+
+Justifie en une ligne.
+
+   Tous les nombres premiers sont impairs.
+   Si \(3\) divise un nombre, alors ce nombre est un multiple de \(3\).
+   Un nombre divisible par \(10\) est divisible par \(5\).
+   \(1\) est premier.

@@ -1,0 +1,85 @@
+Activité 6 -- Développer puis réduire
+
+On considère un rectangle de hauteur \(4\) cm et de longueur \(x+3\) cm.
+
+[scale=0.8]
+   (0,0) rectangle (8,3);
+   (5,0)--(5,3);
+   at (2.5,0) \(x\);
+   at (6.5,0) \(3\);
+   at (0,1.5) \(4\);
+   at (2.5,1.5) \(4x\);
+   at (6.5,1.5) \(12\);
+
+Partie A -- Deux méthodes pour une même aire
+
+Écris l'aire :
+
+   avec la longueur totale \(x+3\) ;
+   en additionnant les aires des deux rectangles.
+
+\[
+
+\]
+
+Complète :
+
+\[
+4(x+3)=+
+\]
+
+Partie B -- Généraliser
+
+[colback=SavoirC!5,colframe=SavoirC!60,boxrule=0.7pt,arc=2mm]
+\[
+k(a+b)=
+\]
+
+\[
+k(a-b)=
+\]
+
+Développer, c'est transformer un  en une 
+
+Partie C -- Développer
+
+\[
+A=5(x+2)
+
+B=3(2x+7)
+\]
+
+\[
+C=-2(x+4)
+
+D=4(3x-5)
+\]
+
+6
+
+Partie D -- Développer puis réduire
+
+\[
+E=3(x+4)+2x
+\]
+
+\[
+F=5(2x-1)-3x
+\]
+
+\[
+G=-2(x+3)+7x-4
+\]
+
+\[
+H=4(2x-5)-3(x+1)
+\]
+
+9
+
+Partie E -- Vérifier
+
+Choisis une valeur de \(x\) et vérifie que \(G\) et sa forme réduite
+ont la même valeur.
+
+4

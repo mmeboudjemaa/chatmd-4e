@@ -1,0 +1,81 @@
+Activité 7 -- Mesurer sans pouvoir atteindre
+
+Problème 1 -- Le câble de haubanage
+
+Un câble de \(18\) m relie le sommet d'un mât au sol.
+Il forme un angle de \(58^\) avec le sol.
+
+On cherche la distance horizontale entre le pied du mât et le point d'ancrage.
+
+[scale=0.85]
+   (A) at (0,0);
+   (B) at (8,0);
+   (C) at (8,6.4);
+   (A)--(B)--(C)--cycle;
+   (7.6,0)--(7.6,0.4)--(8,0.4);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$58^$"] angle=B--A--C;
+   at (A) ancrage;
+   at (B) pied;
+   at (C) sommet;
+
+   Complète la figure.
+   Quelle longueur est l'hypoténuse ?
+   Calcule la distance horizontale, arrondie au dixième de mètre.
+
+15
+
+Problème 2 -- Une échelle contre un mur
+
+Le pied d'une échelle est placé à \(2,4\) m du mur.
+L'échelle forme un angle de \(68^\) avec le sol.
+
+Quelle longueur minimale doit avoir l'échelle pour atteindre le point visé sur le mur ?
+
+[scale=0.95]
+   (A) at (0,0);
+   (B) at (5,0);
+   (C) at (5,5.9);
+   (A)--(B)--(C);
+   (A)--(C);
+   (4.65,0)--(4.65,0.35)--(5,0.35);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=9mm,"$68^$"] angle=B--A--C;
+   at ($(A)!0.5!(B)$) $2,4$ m;
+   at ($(A)!0.5!(C)$) $?$;
+
+20
+
+Problème 3 -- La hauteur d'un arbre
+
+Une observatrice regarde le sommet d'un arbre.
+Ses yeux sont à \(1,65\) m du sol.
+Elle se trouve à \(30\) m horizontalement du tronc.
+La ligne de visée forme un angle de \(35^\) avec l'horizontale.
+
+On veut déterminer la hauteur de l'arbre.
+
+[scale=0.27]
+   (S) at (0,1.65);
+   (H) at (30,1.65);
+   (A) at (30,1.65+30*tan(35));
+   (P) at (30,0);
+   (S)--(H)--(A)--cycle;
+   (H)--(P);
+   (-2,0)--(34,0);
+   (29,1.65)--(29,2.65)--(30,2.65);
+   pic[draw=ActionC,fill=ActionC!15,angle radius=18mm,"$35^$"] angle=H--S--A;
+   at (S) $S$;
+   at (H) $H$;
+   at (A) $A$;
+   at (P) $P$;
+   at ($(S|-P)!0.5!(P)$) $30$ m;
+   at ($(S|-P)!0.5!(S)$) $1,65$ m;
+
+Le cosinus ne donne pas directement la hauteur \(AH\).
+On procède en deux étapes.
+
+   Dans le triangle \(SAH\) rectangle en \(H\), calcule la longueur \(SA\).
+   À l'aide du théorème de Pythagore, calcule \(AH\).
+   Déduis la hauteur totale \(AP\) de l'arbre.
+   Donne le résultat au centimètre près.
+
+15

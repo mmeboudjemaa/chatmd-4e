@@ -1,0 +1,150 @@
+TitreC
+AP -- Je rédige avec le théorème de Pythagore
+
+1mm
+
+[
+  enhanced,
+  colback=SavoirBg,
+  colframe=SavoirC!50,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm
+]
+
+Pour chaque situation :
+
+1. Fais un schéma à main levée et code l'angle droit.
+
+2. Rédige toutes les étapes du théorème de Pythagore.
+
+3mm
+
+[t]0.485
+
+Triangle ABC
+Le triangle \(ABC\) est rectangle en \(A\).
+
+\[
+AB=6 cm
+
+AC=9 cm
+\]
+
+Calculer \(BC\).
+
+Donner une valeur approchée au dixième.
+
+[t]0.485
+
+Triangle DEF
+Le triangle \(DEF\) est rectangle en \(E\).
+
+\[
+DF=14 cm
+
+DE=5 cm
+\]
+
+Calculer \(EF\).
+
+Donner une valeur approchée au centième.
+
+3mm
+
+[t]0.485
+
+Triangle GHI
+Le triangle \(GHI\) est rectangle en \(H\).
+
+\[
+GH=7 cm
+
+HI=12 cm
+\]
+
+Calculer \(GI\).
+
+Donner une valeur approchée au centième.
+
+[t]0.485
+
+Triangle JKL
+Le triangle \(JKL\) est rectangle en \(K\).
+
+\[
+JL=18 cm
+
+JK=7 cm
+\]
+
+Calculer \(KL\).
+
+Donner une valeur approchée au dixième.
+
+3mm
+
+[t]0.485
+
+Triangle MNP
+Le triangle \(MNP\) est rectangle en \(N\).
+
+\[
+MN=8 cm
+
+NP=13 cm
+\]
+
+Calculer \(MP\).
+
+Donner une valeur approchée au dixième.
+
+[t]0.485
+
+Triangle QRS
+Le triangle \(QRS\) est rectangle en \(Q\).
+
+\[
+RS=19 cm
+
+QS=12 cm
+\]
+
+Calculer \(QR\).
+
+Donner une valeur approchée au centième.
+
+3mm
+
+[t]0.485
+
+Triangle TUV
+Le triangle \(TUV\) est rectangle en \(V\).
+
+\[
+TV=9 cm
+
+UV=14 cm
+\]
+
+Calculer \(TU\).
+
+Donner une valeur approchée au centième.
+
+[t]0.485
+
+Triangle XYZ
+Le triangle \(XYZ\) est rectangle en \(Y\).
+
+\[
+XZ=20 cm
+
+XY=7 cm
+\]
+
+Calculer \(YZ\).
+
+Donner une valeur approchée au dixième.

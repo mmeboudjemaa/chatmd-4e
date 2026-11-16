@@ -1,0 +1,154 @@
+TitreCExercices hors classe\\[0.2em]
+  ActionCArithmétique
+
+Cette fiche est donnée à l'avance.
+Ne faire que les exercices indiqués par le professeur.
+Le mot d'ordre est : exercices courts, réguliers et correctement justifiés.
+
+A. Multiples, diviseurs et division euclidienne
+
+5
+Complète avec « multiple » ou « diviseur ».
+
+[label=)]
+   \(8\) est un  de \(56\).
+   \(72\) est un  de \(9\).
+   \(5\) est un  de \(45\).
+   \(63\) est un  de \(7\).
+
+5
+Écris les égalités de division euclidienne.
+
+\[
+17312
+
+45825
+
+1\,00217
+\]
+
+5
+Sans poser de division, indique si \(8\,370\) est divisible par :
+
+\[
+2, 3, 5, 9, 10.
+\]
+
+Justifie avec les critères de divisibilité.
+
+5
+
+[label=)]
+   Donne les huit premiers multiples de \(6\).
+   Donne tous les diviseurs de \(36\).
+
+B. Nombres premiers
+
+5
+Indique si chaque nombre est premier.
+S'il ne l'est pas, donne un diviseur différent de \(1\) et de lui-même.
+
+\[
+31 49 57 71 87.
+\]
+
+5
+Écris tous les nombres premiers compris entre \(40\) et \(70\).
+
+6
+Réponds par vrai ou faux en justifiant.
+
+[label=)]
+   Tous les nombres impairs sont premiers.
+   Le seul nombre premier pair est \(2\).
+   Aucun multiple de \(5\), supérieur à \(5\), n'est premier.
+
+C. Décomposition en facteurs premiers
+
+6
+Décompose en produit de facteurs premiers :
+
+\[
+60 84 150.
+\]
+
+6
+Décompose en produit de facteurs premiers :
+
+\[
+126 196 330.
+\]
+
+5
+Une élève écrit :
+
+\[
+180=2330.
+\]
+
+Est-ce une décomposition en produit de facteurs premiers ?
+Explique puis termine la décomposition.
+
+D. Fractions égales et simplification
+
+6
+Simplifie à l'aide des facteurs premiers :
+
+\[
+4263
+
+70105
+
+84126.
+\]
+
+6
+Parmi les fractions suivantes, regroupe celles qui sont égales :
+
+\[
+615
+
+1025
+
+1435
+
+1536.
+\]
+
+5
+Complète avec deux fractions égales à \(820\).
+
+\[
+820
+=
+
+=
+.
+\]
+
+E. Petits problèmes
+
+7
+On veut répartir \(54\) objets rouges et \(72\) objets bleus
+dans des groupes identiques, sans reste.
+
+[label=)]
+   Peut-on réaliser \(6\) groupes ?
+   Peut-on réaliser \(9\) groupes ?
+   Donne tous les nombres de groupes possibles.
+
+7
+Un panneau rectangulaire mesure \(240\) cm sur \(360\) cm.
+On veut le recouvrir avec des carreaux carrés identiques,
+sans découpe et sans espace.
+
+[label=)]
+   Peut-on utiliser des carreaux de \(15\) cm de côté ?
+   Peut-on utiliser des carreaux de \(14\) cm de côté ?
+   Donne trois autres longueurs possibles pour le côté d'un carreau.
+
+7
+Je suis un entier compris entre \(100\) et \(400\).
+Je suis pair, divisible par \(11\), par \(3\) et par \(5\).
+
+Qui suis-je ? Justifie sans tester tous les entiers.

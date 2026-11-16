@@ -1,0 +1,186 @@
+[t,plain]
+
+0.12cm
+
+bleufonce
+Je m'entraîne à calculer avec le théorème de Pythagore
+
+0.05cm
+
+ Toutes les longueurs sont en cm.
+
+0.22cm
+
+ABC
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=-8]
+ (A) at (0,0);
+ (B) at (0,3);
+ (C) at (4.3,0);
+
+ (A)--(B)--(C)--cycle;
+ (A) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (A) $A$;
+ at (B) $B$;
+ at (C) $C$;
+
+ at ($(A)!0.5!(B)$) $8$;
+ at ($(A)!0.5!(C)$) $15$;
+ at ($(B)!0.5!(C)$) $?$;
+
+BC
+
+DEF
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=15]
+ (E) at (0,0);
+ (D) at (0,3);
+ (F) at (4.2,0);
+
+ (D)--(E)--(F)--cycle;
+ (E) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (D) $D$;
+ at (E) $E$;
+ at (F) $F$;
+
+ at ($(D)!0.5!(E)$) $9$;
+ at ($(D)!0.5!(F)$) $41$;
+ at ($(E)!0.5!(F)$) $?$;
+
+EF
+
+GHI
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=-15]
+ (G) at (0,0);
+ (H) at (0,3);
+ (I) at (4.2,0);
+
+ (G)--(H)--(I)--cycle;
+ (G) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (G) $G$;
+ at (H) $H$;
+ at (I) $I$;
+
+ at ($(G)!0.5!(H)$) $12$;
+ at ($(G)!0.5!(I)$) $35$;
+ at ($(H)!0.5!(I)$) $?$;
+
+HI
+
+JKL
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=12]
+ (J) at (0,0);
+ (K) at (0,3);
+ (L) at (4.2,0);
+
+ (J)--(K)--(L)--cycle;
+ (J) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (J) $J$;
+ at (K) $K$;
+ at (L) $L$;
+
+ at ($(J)!0.5!(K)$) $33$;
+ at ($(K)!0.5!(L)$) $65$;
+ at ($(J)!0.5!(L)$) $?$;
+
+JL
+
+0.18cm
+
+MNP
+
+[scale=0.46,every node/.style=font=]
+ (M) at (0,0);
+ (N) at (0,3);
+ (P) at (4.2,0);
+
+ (M)--(N)--(P)--cycle;
+ (M) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (M) $M$;
+ at (N) $N$;
+ at (P) $P$;
+
+ at ($(M)!0.5!(N)$) $2,4$;
+ at ($(M)!0.5!(P)$) $4,5$;
+ at ($(N)!0.5!(P)$) $?$;
+
+NP
+
+QRS
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=18]
+ (Q) at (0,0);
+ (R) at (0,3);
+ (S) at (4.2,0);
+
+ (Q)--(R)--(S)--cycle;
+ (Q) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (Q) $Q$;
+ at (R) $R$;
+ at (S) $S$;
+
+ at ($(Q)!0.5!(R)$) $1,8$;
+ at ($(Q)!0.5!(S)$) $8$;
+ at ($(R)!0.5!(S)$) $?$;
+
+RS
+
+TUV
+
+[scale=0.46,every node/.style=font=]
+
+[rotate=-14]
+ (U) at (0,0);
+ (T) at (0,3);
+ (V) at (4.2,0);
+
+ (T)--(U)--(V)--cycle;
+ (U) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (T) $T$;
+ at (U) $U$;
+ at (V) $V$;
+
+ at ($(T)!0.5!(U)$) $39$;
+ at ($(U)!0.5!(V)$) $80$;
+ at ($(T)!0.5!(V)$) $?$;
+
+TV
+
+EFG
+
+[scale=0.46,every node/.style=font=]
+ (F) at (0,0);
+ (E) at (0,3);
+ (G) at (3,0);
+
+ (E)--(F)--(G)--cycle;
+ (F) ++(0,0.35) -- ++(0.35,0) -- ++(0,-0.35);
+
+ at (E) $E$;
+ at (F) $F$;
+ at (G) $G$;
+
+ at ($(E)!0.5!(F)$) $5$;
+ at ($(F)!0.5!(G)$) $5$;
+ at ($(E)!0.5!(G)$) $?$;
+
+EG

@@ -1,0 +1,70 @@
+Activité 3 -- Compléter un tableau de proportionnalité
+
+Partie A -- Additions et soustractions
+
+Un marchand vend des crêpes au même prix à l'unité.
+
+\[
+
+c|ccccccc
+Nombre de crêpes & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+
+Prix en euros & & & 1,8 & & & & 4,2
+
+\]
+
+Complète le tableau en utilisant d'abord uniquement des additions et des soustractions.
+Indique au moins deux relations utilisées entre les colonnes.
+
+5
+
+Partie B -- Multiplications et divisions
+
+Un marchand vend des galettes au même prix à l'unité.
+
+\[
+
+c|ccccccc
+Nombre de galettes & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+
+Prix en euros & & & 2,1 & 2,8 & & &
+
+\]
+
+Complète le tableau en utilisant des multiplications et des divisions.
+
+5
+
+Partie C -- Retour à l'unité
+
+Des pommes sont vendues au poids. Pour \(3\) kg, on paie \(6\) €.
+
+   Quel est le prix de \(1\) kg ?
+   Complète le tableau.
+
+\[
+
+c|ccccc
+Masse en kg & 1 & 2,5 & 7 & 1,8 & 0,175\\
+
+Prix en euros & & & & &
+
+\]
+
+6
+
+Partie D -- Choisir une méthode
+
+Pour chaque partie, nomme la méthode qui t'a semblé la plus efficace :
+
+\[
+additivité
+
+multiplication d'une colonne
+
+coefficient
+
+retour à l'unité.
+\]
+
+3

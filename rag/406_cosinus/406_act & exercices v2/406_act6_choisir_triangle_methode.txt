@@ -1,0 +1,94 @@
+Activité 6 -- Choisir le bon triangle et la bonne méthode
+
+Partie A -- Préparer avant de calculer
+
+Pour chaque situation, complète le tableau avant d'effectuer les calculs.
+
+1.45
+
+|>p1.1cm
+|>p3cm
+|>p2.6cm
+|>p2.6cm
+|>p2.2cm
+|X|
+
+ & Triangle rectangle & Hypoténuse &
+Côté adjacent & Longueur cherchée &
+Multiplier ou diviser ?\\
+
+A & \(ABC\), rectangle en \(B\), \(AC=11\) cm,
+\(BAC=42^\), chercher \(AB\). & & & & \\
+
+B & \(DEF\), rectangle en \(E\), \(DE=6,3\) cm,
+\(EDF=51^\), chercher \(DF\). & & & & \\
+
+C & \(RST\), rectangle en \(S\), \(RT=14\) cm,
+\(SRT=67^\), chercher \(RS\). & & & & \\
+
+D & \(JKL\), rectangle en \(K\), \(JK=9,1\) cm,
+\(KJL=25^\), chercher \(JL\). & & & & \\
+
+Partie B -- Calculer et rédiger
+
+Calcule les quatre longueurs. Arrondis au dixième.
+
+12
+
+Partie C -- Une figure composée
+
+Le toit \(MNP\) est isocèle en \(M\).
+La hauteur \([MH]\) coupe \([NP]\) en \(H\).
+
+On donne :
+
+\[
+MN=7,8 m
+et
+MNH=34^.
+\]
+
+[scale=0.85]
+   (N) at (0,0);
+   (P) at (8,0);
+   (H) at (4,0);
+   (M) at (4,4.3);
+
+   (N)--(M)--(P)--cycle;
+   (M)--(H);
+   (4,0.38)--(4.38,0.38)--(4.38,0);
+
+   at (N) $N$;
+   at (P) $P$;
+   at (M) $M$;
+   at (H) $H$;
+
+   at (2,2.35) $7,8$ m;
+   at (2,0) $NH\,?$;
+
+   (0.85,0) arc[start angle=0,end angle=34,radius=0.85];
+   at (1.2,0.42) $34^$;
+
+   Dans quel triangle rectangle faut-il travailler ?
+   Calcule \(NH\).
+   Déduis la largeur totale \(NP\).
+   Explique pourquoi on ne peut pas appliquer directement le cosinus
+        dans le triangle \(MNP\).
+
+8
+
+Partie D -- Trois erreurs fréquentes
+
+Associe chaque erreur à une explication, puis corrige.
+
+   \(( A)=côté opposéhypoténuse\).
+   Pour trouver une hypoténuse, on multiplie le côté adjacent par le cosinus.
+   On arrondit \((37^)\) à \(0,8\) avant de poursuivre le calcul.
+
+Explications possibles :
+
+   le résultat risque d'être trop imprécis ;
+   la définition du cosinus n'utilise pas le côté opposé ;
+   le résultat obtenu serait plus petit que le côté adjacent.
+
+6
