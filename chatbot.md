@@ -8,7 +8,7 @@ useLLM:
   userCanCallLLM: false
   useHistory: true
   maxTokensInHistory: 2500
-  maxTokens: 500
+  maxTokens: 250
   stream: false
   simulateStream: true
   
