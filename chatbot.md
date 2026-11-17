@@ -12,7 +12,7 @@ useLLM:
   maxTokensInHistory: 2500
   maxTokens: 250
   stream: false
-  simulateStream: true
+  simulateStream: false
   
   RAGinformations: "https://raw.githubusercontent.com/mmeboudjemaa/chatmd-4e/refs/heads/main/rag/corpus_4e.md"
 
