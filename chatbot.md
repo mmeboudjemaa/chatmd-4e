@@ -9,7 +9,9 @@ useLLM:
   useHistory: true
   maxTokensInHistory: 2500
   maxTokens: 500
-
+  stream: false
+  simulateStream: true
+  
   RAGinformations: "https://raw.githubusercontent.com/mmeboudjemaa/chatmd-4e/refs/heads/main/rag/corpus_4e.md"
 
   RAGseparator: "\n\n"
