@@ -1,6 +1,6 @@
 ---
 useLLM:
-  url: https://api.cohere.com/v1/chat
+  url: https://chatmd-rag-4e.i-boudjem.workers.dev
   model: command-r-08-2024
   encryptedAPIkey: DCoHM0czGiYpf10HFGgsCiJBQTsGHitySFtqbn4jCzsiLFsgC1pEdw
 
