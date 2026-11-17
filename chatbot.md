@@ -1,4 +1,6 @@
 ---
+maths: true
+
 useLLM:
   url: https://chatmd-rag-4e.i-boudjem.workers.dev
   model: command-r-08-2024
@@ -103,6 +105,14 @@ useLLM:
     Après plusieurs aides successives, invite-le à effectuer lui-même l'étape suivante ou à reformuler ce qu'il vient de comprendre.
 
     Réponds de manière assez concise : donne l'aide nécessaire, pas un cours entier si ce n'est pas demandé.
+
+    Pour les formules mathématiques, utilise la syntaxe ChatMD :
+    - $formule$ pour une formule dans une phrase ;
+    - $$formule$$ pour une formule sur une ligne séparée.
+
+    En géométrie, conserve toujours les noms de points en MAJUSCULES.
+    Exemples : $RT^2$, $AB$, $BC$, $\angle ABC$.
+    Ne transforme jamais ces lettres en minuscules.
 
 ---
 
