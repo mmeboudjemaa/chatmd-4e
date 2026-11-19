@@ -2,7 +2,7 @@
 maths: true
 
 useLLM:
-  url: https://chatmd-rag-4e.i-boudjem.workers.dev
+  url: https://chatmd-rag-4e.i-boudjem.workers.dev/cohere/v1/chat
   model: command-r-08-2024
   encryptedAPIkey: DCoHM0czGiYpf10HFGgsCiJBQTsGHitySFtqbn4jCzsiLFsgC1pEdw
 
