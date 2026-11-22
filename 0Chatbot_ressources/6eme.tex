@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=19mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{longtable,tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\definecolor{navy}{HTML}{18436B}
+\definecolor{slate}{HTML}{39495B}
+\definecolor{soft}{HTML}{E8F0F7}
+\setlist[itemize]{leftmargin=*,itemsep=3pt,topsep=3pt}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\hypersetup{pdftitle={Dossier de references en mathematiques},pdfauthor={Dossier de travail, syntheses originales}}
+\newcommand{\etat}[1]{\textsf{\textcolor{navy}{\textbf{[#1]}}}}
+\newcommand{\refsource}[1]{\textsf{\textcolor{slate}{[#1]}}}
+\newcommand{\sectionref}[2]{\section{#1}\textit{Références : #2.}\par}
+\newcommand{\avertissement}[1]{\par\medskip\noindent\fcolorbox{navy}{soft}{\parbox{0.92\linewidth}{\textbf{Attention :} #1}}\par\medskip}
+\newcommand{\entreesource}[5]{\par\noindent\textbf{\refsource{#1} #2}\\[-2pt]\textit{Statut : #3.} #4\\[-2pt]\href{#5}{\textcolor{navy}{\underline{Consulter le PDF officiel}}}\par\smallskip}
+\newcommand{\entreelivre}[4]{\par\noindent\textbf{\refsource{#1} #2}\quad\textit{#3}\\[-2pt]#4\par\smallskip}
+\renewcommand{\contentsname}{Sommaire}
+\begin{document}
+\begin{center}\LARGE\bfseries Dossier de références mathématiques --- 6e\end{center}
+\begin{center}\small État des références : novembre 2026 --- Année scolaire 2026--2027\end{center}
+\avertissement{Ce document est une synthèse de travail et un index de PDF, pas une reproduction des PDF. Les prescriptions viennent exclusivement du programme applicable. Les ressources pédagogiques anciennes et les propositions pour ChatMD ne créent aucune nouvelle exigence.}
+\textbf{Programme de référence :} Programme de mathématiques du cycle 3 (2025). En vigueur en 6e pour 2026-2027.
+\tableofcontents\newpage
+\section{Comment lire ce dossier}
+Ce dossier organise les sources \emph{sans en reproduire intégralement le contenu}. Chaque fiche synthétise un point de vigilance pour la préparation des cours ou pour un chatbot pédagogique. Les conseils opérationnels ne doivent pas être pris pour des citations littérales.\par
+\textbf{Hiérarchie :} (1) programme en vigueur, (2) exemples/attendus de son année, (3) ressources didactiques, (4) propositions d’usage pour ChatMD. La 4e source, \emph{Des maths ensemble et pour chacun}, est complémentaire et peut refléter un ancien programme.\par
+\section{Bibliothèque des PDF propres au niveau}
+\entreesource{E6-01}{Programme de mathématiques du cycle 3 (2025)}{reglementaire}{En vigueur en 6e à la rentrée 2026 ; objectifs annuels, progressivité et exigences.}{https://www.education.gouv.fr/sites/default/files/programme-de-math-matiques-pour-le-cycle-3-439827.pdf}
+\entreesource{E6-02}{Exemples de réussite pour la 6e (2025)}{accompagnement recent}{Illustre les objectifs d’apprentissage et les réussites observables, sans constituer un second programme.}{https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvre6e-mathpdf-111549.pdf}
+\entreesource{E6-03}{Livret d’accompagnement du programme de mathématiques, 6e (2026)}{accompagnement recent}{Propose des exemples de séquences pédagogiques ; ne remplace pas le programme.}{https://eduscol.education.gouv.fr/sites/default/files/document/2026livretaccompagnementmaths6e-pdf-126656.pdf}
+\entreesource{E6-04}{Fractions et nombres décimaux au cycle 3}{didactique ancien}{Obstacles sur l’unité, la fraction, les écritures et la numération décimale.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathfracdecdocmaitrev2681601pdf-76887.pdf}
+\entreesource{E6-05}{Le calcul en ligne au cycle 3}{didactique ancien}{Calcul réfléchi et propriétés des opérations, diversité des procédures.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathcalcullignec3nd601002pdf-76884.pdf}
+\entreesource{E6-06}{Résoudre des problèmes de proportionnalité au cycle 3}{didactique ancien}{Reconnaître les situations et raisonner par des procédures variées.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathdocmaitreproportnd576955pdf-76899.pdf}
+\sectionref{Organisation des apprentissages}{E6-01, E6-02, E6-03, T-07, T-01}
+\begin{itemize}
+\item Construire les notions dans des problèmes variés, puis stabiliser le vocabulaire, les représentations et les méthodes. Les exemples de réussite aident à apprécier le niveau d’autonomie attendu ; ils ne remplacent pas le texte du programme.
+\item Le travail quotidien articule recherche, calcul réfléchi, argumentation à l’oral, écrits de recherche et traces de cours. Les automatismes servent les problèmes : ils ne doivent pas s’y substituer.
+\item Au moment d’évaluer une tâche, distinguer : ce qui est prescrit en 6e, ce qui prépare le sens d’une notion et ce qui constitue un enrichissement facultatif.
+\end{itemize}
+\sectionref{Nombres entiers, décimaux et numération}{E6-01, E6-02, E6-04, E6-05}
+\begin{itemize}
+\item Travailler la valeur de position des chiffres et les différentes représentations des nombres. Un tableau de numération permet d’expliciter les changements d’unités plutôt que d’apprendre que « la virgule bouge ».
+\item Donner du sens aux écritures décimales et aux comparaisons ; distinguer chiffre, nombre et quantité. Solliciter une estimation et une vérification de vraisemblance avant de valider un calcul.
+\item En calcul en ligne, accepter plusieurs procédures correctes ; faire expliciter les propriétés utilisées quand cela contribue à la compréhension.
+\end{itemize}
+\sectionref{Fractions et liens avec les nombres décimaux}{E6-01, E6-02, E6-04}
+\begin{itemize}
+\item Identifier explicitement l’unité de référence et ne pas confondre nombre de parts coloriées et valeur de la fraction. Mobiliser des dessins, des partages, la droite graduée et des écritures numériques.
+\item Distinguer fraction comme nombre et comme moyen de repérer une quantité ; éviter les seuls automatismes sur les numérateurs et les dénominateurs sans compréhension.
+\item Privilégier l’expression des raisonnements personnels, puis institutionnaliser les propriétés compatibles avec le programme 2025.
+\end{itemize}
+\sectionref{Calcul, opérations et résolution de problèmes}{E6-01, E6-03, E6-05, T-07}
+\begin{itemize}
+\item Choisir une opération au regard du sens de la situation, et non de mots-clés isolés. Examiner les résultats en fonction des unités, des ordres de grandeur et du contexte.
+\item Distinguer recherche de solution et rédaction finale ; ne pas confondre erreur d’écriture, erreur de calcul et erreur de modélisation.
+\end{itemize}
+\sectionref{Proportionnalité}{E6-01, E6-06}
+\begin{itemize}
+\item Partir des situations et de leur reconnaissance ; comparer avec des situations non proportionnelles. Conserver des procédures diverses, y compris l’usage de rapports simples ou le retour à l’unité lorsqu’ils ont du sens.
+\item Ne pas présupposer la proportionnalité sans indice ; demander ce qui justifie ce modèle.
+\end{itemize}
+\sectionref{Grandeurs, mesures, géométrie et espace}{E6-01, E6-02, E6-03}
+\begin{itemize}
+\item Distinguer mesure, grandeur et unité ; relier figures, constructions et propriétés. Éviter de déduire une propriété d’une simple apparence graphique.
+\item En géométrie, séparer observation, conjecture, construction et justification. L’attendu exact doit être vérifié dans le programme 2025.
+\end{itemize}
+\sectionref{Conseils pour le futur corpus ChatMD}{E6-01, E6-02, T-01 à T-10}
+\begin{itemize}
+\item Lorsqu’un élève pose une question, extraire séparément les données, la demande et les hypothèses. Ne jamais ajouter une condition absente (triangle rectangle, proportionnalité, unité, etc.).
+\item Lorsqu’une donnée manque, poser une question courte portant sur l’information décisive. Ne pas donner la solution complète avant que l’élève ait tenté une démarche.
+\item Étiqueter dans l’index documentaire : programme en vigueur / exemple de réussite / ressource didactique / suggestion ChatMD. Un document ancien ne fixe pas les attendus actuels.
+\end{itemize}
+\section{Références communes : dix documents transversaux}
+\entreesource{T-01}{Chercher}{competence, didactique 2016}{Extraire des informations ; essayer, questionner et tester des pistes.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathchercher552125pdf-77583.pdf}
+
+\entreesource{T-02}{Modéliser}{competence, didactique 2016}{Traduire une situation, examiner les hypothèses et la pertinence du modèle.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathmodelisernd566177pdf-77586.pdf}
+
+\entreesource{T-03}{Représenter}{competence, didactique 2016}{Choisir et changer des registres de représentation.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathrepresenternd566207pdf-77589.pdf}
+
+\entreesource{T-04}{Raisonner}{competence, didactique 2016}{Émettre, argumenter, justifier, vérifier des hypothèses.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathraisonner547836pdf-77592.pdf}
+
+\entreesource{T-05}{Calculer}{competence, didactique 2016}{Conduire des calculs et contrôler les résultats.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcompcalculer554370pdf-77595.pdf}
+
+\entreesource{T-06}{Communiquer}{competence, didactique 2016}{Expliquer à l’oral et à l’écrit ; comprendre les formulations.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcommecritoralpourmontage548548pdf-77598.pdf}
+
+\entreesource{T-07}{Guide Résolution de problèmes mathématiques au collège}{guide transversal}{Résolution, erreurs, stratégies et interprétation des résultats.}{https://eduscol.education.gouv.fr/sites/default/files/document/guide-resolution-de-problemes-mathematiques-au-college-73914.pdf}
+
+\entreesource{T-08}{Trace écrite de cours en mathématiques}{guide transversal}{Fonctions de la trace écrite, construction et organisation du cours.}{https://eduscol.education.gouv.fr/sites/default/files/document/trace-ecrite-de-cours-en-mathspdf-91731.pdf}
+
+\entreesource{T-09}{Les pratiques orales dans l’enseignement des mathématiques}{guide transversal}{Oral de recherche, explication, échanges et relances.}{https://eduscol.education.gouv.fr/sites/default/files/document/les-pratiques-orales-dans-lenseignement-des-mathspdf-91728.pdf}
+
+\entreesource{T-10}{Les automatismes}{guide transversal}{Développer, entretenir et rendre disponibles les connaissances de base.}{https://eduscol.education.gouv.fr/sites/default/files/document/automatismes-mathematiquespdf-91875.pdf}
+\subsection{Les six compétences : repères de lecture pour ChatMD}
+\begin{itemize}
+\item \textbf{Chercher :} identifier des informations pertinentes, formuler une question, essayer une piste ; ne pas imposer trop tôt une méthode.
+\item \textbf{Modéliser :} expliciter le modèle choisi et ses conditions d'emploi ; distinguer fait observé et hypothèse.
+\item \textbf{Représenter :} choisir schéma, tableau, droite graduée, figure ou écriture ; relier les représentations.
+\item \textbf{Raisonner :} justifier une affirmation à partir des données et des propriétés, ou produire un contre-exemple.
+\item \textbf{Calculer :} effectuer une transformation valide puis contrôler signes, unités, ordre de grandeur et égalité.
+\item \textbf{Communiquer :} rendre une démarche intelligible ; distinguer échanges, essais et rédaction mathématique stabilisée.
+\end{itemize}
+\textit{Ces repères sont une reformulation de travail issue des ressources transversales, et non une grille officielle d'évaluation.}
+
+\section{Mode d’emploi dans Overleaf et ChatMD}
+\begin{itemize}\item Ce fichier \texttt{.tex} est compilable de façon autonome sous pdfLaTeX.\item Les liens conduisent aux PDF officiels : ils ne téléchargent pas les PDF dans le projet Overleaf.\item Pour que ChatMD exploite ce contenu, intégrer le texte dans l’index RAG ; la simple présence du \texttt{.tex} dans Overleaf ne suffit pas.\item Revalider le calendrier réglementaire à chaque rentrée scolaire.\end{itemize}
+\end{document}

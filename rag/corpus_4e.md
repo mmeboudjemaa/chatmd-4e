@@ -1952,6 +1952,191 @@ Calculer $YZ$.
 
 ----------------------------------------
 
+# Source : 0CAN 3.0/entraînement_01.tex
+
+:::::::::::::: frame
+Activité rapide de début d'heure Entraînement 1
+
+::: beamercolorbox
+normal text **Installe-toi rapidement !** **Écris seulement tes réponses.** **Sans calculatrice.**
+:::
+
+5 questions • minutes
+
+::: minipage
+[ ]{style="background-color: pale"} $7\times 8$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $(-7)+(+12)$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Calculer $\dfrac 13$ de $24$.
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Sur $25$ élèves, $5$ viennent à vélo. Fréquence en % ?
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $\sqrt{49}=\ldots$
+:::
+
+::: minipage
+:::
+::::::::::::::
+
+:::::::::::::: frame
+Activité rapide de début d'heure Entraînement 2
+
+::: beamercolorbox
+normal text **Installe-toi rapidement !** **Écris seulement tes réponses.** **Sans calculatrice.**
+:::
+
+5 questions • minutes
+
+::: minipage
+[ ]{style="background-color: pale"} $90-37$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $(-6)-(-14)$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Calculer $\dfrac 34$ de $20$.
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Sur $20$ personnes, $8$ portent des lunettes. Fréquence en % ?
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $\sqrt{81}=\ldots$
+:::
+
+::: minipage
+:::
+::::::::::::::
+
+:::::::::::::: frame
+Activité rapide de début d'heure Entraînement 3
+
+::: beamercolorbox
+normal text **Installe-toi rapidement !** **Écris seulement tes réponses.** **Sans calculatrice.**
+:::
+
+5 questions • minutes
+
+::: minipage
+[ ]{style="background-color: pale"} $6\times 9$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $(-9)+(+4)$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Calculer $\dfrac 25$ de $30$.
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Sur $40$ valeurs, $10$ sont égales à $3$. Fréquence de $3$ en % ?
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $\sqrt{144}=\ldots$
+:::
+
+::: minipage
+:::
+::::::::::::::
+
+:::::::::::::: frame
+Activité rapide de début d'heure Entraînement 4
+
+::: beamercolorbox
+normal text **Installe-toi rapidement !** **Écris seulement tes réponses.** **Sans calculatrice.**
+:::
+
+5 questions • minutes
+
+::: minipage
+[ ]{style="background-color: pale"} $120\div 4$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $(+5)-(-8)$
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Calculer $\dfrac 34$ de $28$.
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} Sur $50$ valeurs, $15$ sont égales à $7$. Fréquence de $7$ en % ?
+:::
+
+::: minipage
+:::
+
+::: minipage
+[ ]{style="background-color: pale"} $\sqrt{121}=\ldots$
+:::
+
+::: minipage
+:::
+::::::::::::::
+
+
+----------------------------------------
+
 # Source : 0CAN/CAN_4e_01_avec_corrige.tex
 
 ::: center
@@ -3809,6 +3994,1323 @@ $3x+2$ est-il une somme ou un produit ?
 & **somme**\
 :::
 ::::
+
+
+----------------------------------------
+
+# Source : 0Chatbot_ressources/4eme.tex
+
+::: center
+**Dossier de références mathématiques --- 4e**
+:::
+
+::: center
+État des références : novembre 2026 --- Année scolaire 2026--2027
+:::
+
+**Programme de référence :** Programme de mathématiques du cycle 4 (2020). En vigueur en 4e en 2026-2027 ; le programme 2026 s'appliquera en 4e en 2027-2028.
+
+# Comment lire ce dossier
+
+Ce dossier organise les sources *sans en reproduire intégralement le contenu*. Chaque fiche synthétise un point de vigilance pour la préparation des cours ou pour un chatbot pédagogique. Les conseils opérationnels ne doivent pas être pris pour des citations littérales.
+
+**Hiérarchie :** (1) programme en vigueur, (2) exemples/attendus de son année, (3) ressources didactiques, (4) propositions d'usage pour ChatMD. La 4e source, *Des maths ensemble et pour chacun*, est complémentaire et peut refléter un ancien programme.
+
+# Bibliothèque des PDF propres au niveau
+
+**[[\[E4-01\]]{style="color: slate"}]{.sans-serif} Programme de mathématiques du cycle 4 (2020)**\
+*Statut : reglementaire.* Programme encore applicable en 4e en 2026-2027 ; programme 2026 seulement à partir de 2027-2028.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.fr/document/621/download)
+
+**[[\[E4-02\]]{style="color: slate"}]{.sans-serif} Attendus de fin d'année de mathématiques en 4e**\
+*Statut : accompagnement actuel.* Niveau de maîtrise attendu, avec exemples de réussite.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/16-maths-4e-attendus-eduscol1114746pdf-74682.pdf)
+
+**[[\[E4-03\]]{style="color: slate"}]{.sans-serif} Repères annuels de progression en mathématiques au cycle 4**\
+*Statut : accompagnement actuel.* Progressivité associée au programme 2020 pour les 4e et 3e.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/26-maths-c4-reperes-eduscol1114756pdf-74694.pdf)
+
+**[[\[E4-04\]]{style="color: slate"}]{.sans-serif} Utiliser le calcul littéral (ressource cycle 4)**\
+*Statut : didactique ancien.* Expression procédurale et structurelle, variable, justification et équations.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathnombrescalculcalcullitteraldocmaitre548358pdf-77631.pdf)
+
+**[[\[E4-05\]]{style="color: slate"}]{.sans-serif} Géométrie plane (ressource cycle 4)**\
+*Statut : didactique ancien.* Propriétés, recherche de preuves et raisonnement géométrique.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathgeoplanedocmaitre574312pdf-77673.pdf)
+
+**[[\[E4-06\]]{style="color: slate"}]{.sans-serif} Traitement des données (ressource cycle 4)**\
+*Statut : didactique ancien.* Lecture, représentation, interprétation et comparaison de données.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathdocmaitre564036pdf-77637.pdf)
+
+# Référence réglementaire et limite temporelle
+
+*Références : E4-01, E4-02, E4-03.*
+
+- En 2026-2027, le texte de référence reste le programme de mathématiques du cycle 4 de 2020, complété par les attendus de fin d'année de 4e et les repères de progression applicables.
+
+- Le programme de cycle 4 publié le 5 mars 2026 entrera en vigueur en 4e en 2027-2028 : ne pas anticiper ses nouvelles exigences dans les évaluations de 2026-2027.
+
+- Pour toute notion sensible, toujours distinguer exigence de fin d'année, procédé d'enseignement choisi et approfondissement possible.
+
+# Pythagore et raisonnement géométrique
+
+*Références : E4-01, E4-02, E4-05, T-04.*
+
+- Le théorème de Pythagore ne s'applique qu'à un triangle rectangle ; identifier l'hypoténuse comme le côté opposé à l'angle droit.
+
+- Si l'énoncé donne seulement AB=6 cm et AC=8 cm dans ABC, la présence d'un angle droit n'est pas établie. Il faut demander si la figure ou l'énoncé l'indique ; ne pas supposer « rectangle en A ».
+
+- Dire « le triangle n'est pas rectangle en A » ne signifie pas « le triangle n'est pas rectangle » : il peut éventuellement être rectangle en B ou en C.
+
+- Le calcul d'un côté peut demander une addition ou une soustraction selon la position de l'inconnue. Distinguer choix de méthode, application correcte, calcul et rédaction.
+
+# Calcul littéral : égalité, structure, développement
+
+*Références : E4-01, E4-02, E4-04, T-05.*
+
+- Une expression a une structure algébrique : 3(x+5) est un produit d'un nombre par une somme ; 3x+5 est une somme de deux termes.
+
+- La distributivité s'applique pour développer le premier exemple, pas pour « développer » le second, déjà écrit sous forme de somme. Ne jamais inventer une parenthèse absente.
+
+- L'égalité entre deux expressions doit conserver la valeur pour toutes les valeurs pertinentes de la lettre. Dans une chaîne, ne jamais écrire un signe égal entre deux étapes non égales.
+
+- La lettre peut être nombre variable ou inconnue. Vérifier le rôle qu'elle prend dans la situation avant de choisir la procédure.
+
+# Résolution d'équations et statut de l'égalité
+
+*Références : E4-01, E4-02, E4-04.*
+
+- L'égalité est une relation entre deux expressions ; une transformation doit préserver l'ensemble des solutions. Pour 3x+5=17, retirer 5 aux deux membres est justifié ; écrire 3x=22 est incorrect.
+
+- Aider l'élève à identifier l'étape erronée et lui demander de la corriger, sans effectuer toutes les étapes restantes lorsqu'il demande seulement une vérification.
+
+- Faire distinguer recherche par essais, raisonnement et rédaction mathématique finale.
+
+# Fractions, relatifs, puissances, racines carrées
+
+*Références : E4-01, E4-02, E4-03, T-05.*
+
+- Conserver la distinction entre valeur exacte et valeur approchée : « = » n'a pas le même sens que « $\approx$ ». Pour la racine carrée, contrôler le sens et l'encadrement avant une approximation.
+
+- Pour les calculs sur les relatifs, vérifier d'abord les opérations et les signes en jeu ; les parenthèses peuvent éviter toute ambiguïté.
+
+- Les automatismes sont importants, mais la procédure exigible doit être recoupée avec le programme 2020 et les attendus 4e, pas avec un manuel ancien.
+
+# Statistiques et traitement des données
+
+*Références : E4-01, E4-02, E4-06.*
+
+- Distinguer lire une donnée, calculer un indicateur et interpréter son sens dans la situation.
+
+- Pour une moyenne ou une médiane, préciser la série étudiée, l'unité et l'objet de la question. Éviter de présenter une mesure isolée comme une interprétation suffisante.
+
+- La représentation et les nombres doivent être comparés dans leur contexte ; le jugement sur une affirmation repose sur les données disponibles.
+
+# Rédaction, dialogue et autocontrôle
+
+*Références : T-01 à T-10, E4-05.*
+
+- Distinguer : données de l'énoncé ; hypothèses ; propriété applicable ; opérations ; réponse dans son contexte.
+
+- Préférer une question de relance décisive à une cascade de sous-questions qui effectuent le raisonnement à la place de l'élève.
+
+- Faire vérifier la cohérence d'un résultat, son unité et sa plausibilité. La trace rédigée n'est pas forcément identique aux essais de recherche.
+
+# Références communes : dix documents transversaux
+
+**[[\[T-01\]]{style="color: slate"}]{.sans-serif} Chercher**\
+*Statut : competence, didactique 2016.* Extraire des informations ; essayer, questionner et tester des pistes.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathchercher552125pdf-77583.pdf)
+
+**[[\[T-02\]]{style="color: slate"}]{.sans-serif} Modéliser**\
+*Statut : competence, didactique 2016.* Traduire une situation, examiner les hypothèses et la pertinence du modèle.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathmodelisernd566177pdf-77586.pdf)
+
+**[[\[T-03\]]{style="color: slate"}]{.sans-serif} Représenter**\
+*Statut : competence, didactique 2016.* Choisir et changer des registres de représentation.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathrepresenternd566207pdf-77589.pdf)
+
+**[[\[T-04\]]{style="color: slate"}]{.sans-serif} Raisonner**\
+*Statut : competence, didactique 2016.* Émettre, argumenter, justifier, vérifier des hypothèses.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathraisonner547836pdf-77592.pdf)
+
+**[[\[T-05\]]{style="color: slate"}]{.sans-serif} Calculer**\
+*Statut : competence, didactique 2016.* Conduire des calculs et contrôler les résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcompcalculer554370pdf-77595.pdf)
+
+**[[\[T-06\]]{style="color: slate"}]{.sans-serif} Communiquer**\
+*Statut : competence, didactique 2016.* Expliquer à l'oral et à l'écrit ; comprendre les formulations.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcommecritoralpourmontage548548pdf-77598.pdf)
+
+**[[\[T-07\]]{style="color: slate"}]{.sans-serif} Guide Résolution de problèmes mathématiques au collège**\
+*Statut : guide transversal.* Résolution, erreurs, stratégies et interprétation des résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/guide-resolution-de-problemes-mathematiques-au-college-73914.pdf)
+
+**[[\[T-08\]]{style="color: slate"}]{.sans-serif} Trace écrite de cours en mathématiques**\
+*Statut : guide transversal.* Fonctions de la trace écrite, construction et organisation du cours.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/trace-ecrite-de-cours-en-mathspdf-91731.pdf)
+
+**[[\[T-09\]]{style="color: slate"}]{.sans-serif} Les pratiques orales dans l'enseignement des mathématiques**\
+*Statut : guide transversal.* Oral de recherche, explication, échanges et relances.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/les-pratiques-orales-dans-lenseignement-des-mathspdf-91728.pdf)
+
+**[[\[T-10\]]{style="color: slate"}]{.sans-serif} Les automatismes**\
+*Statut : guide transversal.* Développer, entretenir et rendre disponibles les connaissances de base.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/automatismes-mathematiquespdf-91875.pdf)
+
+## Les six compétences : repères de lecture pour ChatMD
+
+- **Chercher :** identifier des informations pertinentes, formuler une question, essayer une piste ; ne pas imposer trop tôt une méthode.
+
+- **Modéliser :** expliciter le modèle choisi et ses conditions d'emploi ; distinguer fait observé et hypothèse.
+
+- **Représenter :** choisir schéma, tableau, droite graduée, figure ou écriture ; relier les représentations.
+
+- **Raisonner :** justifier une affirmation à partir des données et des propriétés, ou produire un contre-exemple.
+
+- **Calculer :** effectuer une transformation valide puis contrôler signes, unités, ordre de grandeur et égalité.
+
+- **Communiquer :** rendre une démarche intelligible ; distinguer échanges, essais et rédaction mathématique stabilisée.
+
+*Ces repères sont une reformulation de travail issue des ressources transversales, et non une grille officielle d'évaluation.*
+
+# Mode d'emploi dans Overleaf et ChatMD
+
+- Ce fichier `.tex` est compilable de façon autonome sous pdfLaTeX.
+
+- Les liens conduisent aux PDF officiels : ils ne téléchargent pas les PDF dans le projet Overleaf.
+
+- Pour que ChatMD exploite ce contenu, intégrer le texte dans l'index RAG ; la simple présence du `.tex` dans Overleaf ne suffit pas.
+
+- Revalider le calendrier réglementaire à chaque rentrée scolaire.
+
+
+----------------------------------------
+
+# Source : 0Chatbot_ressources/5eme.tex
+
+::: center
+**Dossier de références mathématiques --- 5e**
+:::
+
+::: center
+État des références : novembre 2026 --- Année scolaire 2026--2027
+:::
+
+**Programme de référence :** Programme de mathématiques du cycle 4 (2026), objectifs de 5e. En vigueur en 5e à partir de 2026-2027.
+
+# Comment lire ce dossier
+
+Ce dossier organise les sources *sans en reproduire intégralement le contenu*. Chaque fiche synthétise un point de vigilance pour la préparation des cours ou pour un chatbot pédagogique. Les conseils opérationnels ne doivent pas être pris pour des citations littérales.
+
+**Hiérarchie :** (1) programme en vigueur, (2) exemples/attendus de son année, (3) ressources didactiques, (4) propositions d'usage pour ChatMD. La 4e source, *Des maths ensemble et pour chacun*, est complémentaire et peut refléter un ancien programme.
+
+# Bibliothèque des PDF propres au niveau
+
+**[[\[E5-01\]]{style="color: slate"}]{.sans-serif} Programme de mathématiques du cycle 4 (2026), partie 5e**\
+*Statut : reglementaire.* En vigueur en 5e en 2026-2027 : objectifs et automatismes précisés par niveau.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://www.education.gouv.fr/sites/default/files/document/Annexe%202%20%E2%80%93%20Programme%20de%20math%C3%A9matiques%20pour%20le%20cycle%204-480716.pdf)
+
+**[[\[E5-02\]]{style="color: slate"}]{.sans-serif} Exemples pour la mise en œuvre du programme de cycle 4 (2026), rubriques 5e**\
+*Statut : accompagnement recent.* Exemples de réussite associés aux objectifs d'apprentissage du programme 2026.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/media/126080/download?attachment=)
+
+**[[\[E5-03\]]{style="color: slate"}]{.sans-serif} Les fractions (ressource cycle 4)**\
+*Statut : didactique ancien.* Sens des nombres rationnels, quotient, procédures et résolution de problèmes.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathfractionsdocmaitrecomp-calresoudre554225pdf-77607.pdf)
+
+**[[\[E5-04\]]{style="color: slate"}]{.sans-serif} Les nombres relatifs (ressource cycle 4)**\
+*Statut : didactique ancien.* Comparaison, calcul et passage des contextes concrets aux écritures.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathdocmaitrenombresrelatifscomparercalculerresoudrend552028pdf-77613.pdf)
+
+**[[\[E5-05\]]{style="color: slate"}]{.sans-serif} La proportionnalité (ressource cycle 4)**\
+*Statut : didactique ancien.* Reconnaissance et résolution de situations proportionnelles.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathresoupropo555092pdf-77649.pdf)
+
+# Cadre de référence de la 5e
+
+*Références : E5-01, E5-02.*
+
+- Le programme du cycle 4 publié en 2026 s'applique à la 5e dès 2026-2027. Il est organisé en objectifs d'apprentissage par classe et automatismes associés.
+
+- Les tableaux d'exemples de réussite donnent des illustrations utiles. Ne pas transférer à la 5e les objectifs des colonnes 4e ou 3e, même si elles figurent dans le même PDF.
+
+- La place de l'oral, du raisonnement, des écrits de recherche et de l'évaluation formative participe à la construction de la compréhension.
+
+# Nombres relatifs
+
+*Références : E5-01, E5-02, E5-04.*
+
+- Introduire et consolider les nombres relatifs en lien avec le repérage et les contextes avant de généraliser les écritures. Donner un sens aux nombres opposés.
+
+- Distinguer les différents rôles du signe « moins » : signe d'un nombre, soustraction, opposé. Signaler les écritures ambiguës ; justifier les transformations.
+
+- Les opérations à traiter et automatiser doivent être celles de la rubrique 5e du programme 2026 et non de l'ensemble du cycle.
+
+# Fractions et nombres rationnels
+
+*Références : E5-01, E5-02, E5-03.*
+
+- Développer le lien entre fraction et quotient ; conserver le travail sur l'unité, le partage et la droite graduée. Expliquer et justifier les propriétés utilisées dans les calculs.
+
+- Proposer plusieurs représentations et contrôler la vraisemblance des résultats (ordre, taille, approximations).
+
+# Algèbre et statut de la lettre
+
+*Références : E5-01, E5-02, T-06.*
+
+- Accompagner la transition du calcul numérique au calcul littéral par des programmes de calcul et des situations de généralisation ; distinguer la lettre variable, inconnue et éventuellement abréviation.
+
+- Reconnaître la structure d'une expression : 3(x+5) est un produit et 3x+5 est une somme ; ces deux écritures ne sont pas égales en général.
+
+- Utiliser les règles sur les égalités uniquement lorsque les opérations sont justifiées et préservent la valeur. Adapter la technique exigée au programme 2026 de 5e.
+
+# Proportionnalité, premières fonctions et statistiques
+
+*Références : E5-01, E5-02, E5-05.*
+
+- Distinguer situation proportionnelle et non proportionnelle ; faire exprimer la raison d'un choix de modèle.
+
+- Lire, représenter et interpréter des données en s'appuyant sur des unités et une question précise. Vérifier les attendus 2026 spécifiques à la 5e avant de faire calculer un indicateur.
+
+- Les objectifs liés aux fonctions apparaissent dans le nouveau programme : respecter leur formulation et leur niveau d'introduction en 5e.
+
+# Puissances et nouveauté du programme 2026
+
+*Références : E5-01, E5-02.*
+
+- La rubrique de 5e du programme 2026 comporte un travail sur les puissances. Vérifier dans le texte officiel le vocabulaire, les exemples et les automatismes propres à la 5e avant de proposer des exercices.
+
+- Séparer la découverte d'une notation, les propriétés justifiées et les automatismes effectivement demandés ; ne pas transposer tels quels les attendus d'une ancienne classe de 4e.
+
+# Géométrie et justification
+
+*Références : E5-01, E5-02, T-04.*
+
+- Travailler constructions, figures, transformations et propriétés ; distinguer le constat sur un dessin de la justification valide.
+
+- Ne pas transformer une conjecture ou une apparence en propriété acquise. Faire expliciter les données nécessaires avant de proposer une méthode.
+
+# Utilisation dans ChatMD
+
+*Références : E5-01, E5-02, T-01 à T-10.*
+
+- Le corpus doit distinguer les faits effectivement écrits par l'élève de sa question. Les critères d'applicabilité d'une méthode doivent être vérifiés avant d'accepter un avis de l'IA.
+
+- Une difficulté encore non exigible en 5e peut être montrée pour donner du sens, mais ne doit pas devenir une compétence évaluée par défaut.
+
+- Préférer une relance précise qui remet l'élève en activité à un développement solutionné immédiatement.
+
+# Références communes : dix documents transversaux
+
+**[[\[T-01\]]{style="color: slate"}]{.sans-serif} Chercher**\
+*Statut : competence, didactique 2016.* Extraire des informations ; essayer, questionner et tester des pistes.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathchercher552125pdf-77583.pdf)
+
+**[[\[T-02\]]{style="color: slate"}]{.sans-serif} Modéliser**\
+*Statut : competence, didactique 2016.* Traduire une situation, examiner les hypothèses et la pertinence du modèle.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathmodelisernd566177pdf-77586.pdf)
+
+**[[\[T-03\]]{style="color: slate"}]{.sans-serif} Représenter**\
+*Statut : competence, didactique 2016.* Choisir et changer des registres de représentation.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathrepresenternd566207pdf-77589.pdf)
+
+**[[\[T-04\]]{style="color: slate"}]{.sans-serif} Raisonner**\
+*Statut : competence, didactique 2016.* Émettre, argumenter, justifier, vérifier des hypothèses.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathraisonner547836pdf-77592.pdf)
+
+**[[\[T-05\]]{style="color: slate"}]{.sans-serif} Calculer**\
+*Statut : competence, didactique 2016.* Conduire des calculs et contrôler les résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcompcalculer554370pdf-77595.pdf)
+
+**[[\[T-06\]]{style="color: slate"}]{.sans-serif} Communiquer**\
+*Statut : competence, didactique 2016.* Expliquer à l'oral et à l'écrit ; comprendre les formulations.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcommecritoralpourmontage548548pdf-77598.pdf)
+
+**[[\[T-07\]]{style="color: slate"}]{.sans-serif} Guide Résolution de problèmes mathématiques au collège**\
+*Statut : guide transversal.* Résolution, erreurs, stratégies et interprétation des résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/guide-resolution-de-problemes-mathematiques-au-college-73914.pdf)
+
+**[[\[T-08\]]{style="color: slate"}]{.sans-serif} Trace écrite de cours en mathématiques**\
+*Statut : guide transversal.* Fonctions de la trace écrite, construction et organisation du cours.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/trace-ecrite-de-cours-en-mathspdf-91731.pdf)
+
+**[[\[T-09\]]{style="color: slate"}]{.sans-serif} Les pratiques orales dans l'enseignement des mathématiques**\
+*Statut : guide transversal.* Oral de recherche, explication, échanges et relances.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/les-pratiques-orales-dans-lenseignement-des-mathspdf-91728.pdf)
+
+**[[\[T-10\]]{style="color: slate"}]{.sans-serif} Les automatismes**\
+*Statut : guide transversal.* Développer, entretenir et rendre disponibles les connaissances de base.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/automatismes-mathematiquespdf-91875.pdf)
+
+## Les six compétences : repères de lecture pour ChatMD
+
+- **Chercher :** identifier des informations pertinentes, formuler une question, essayer une piste ; ne pas imposer trop tôt une méthode.
+
+- **Modéliser :** expliciter le modèle choisi et ses conditions d'emploi ; distinguer fait observé et hypothèse.
+
+- **Représenter :** choisir schéma, tableau, droite graduée, figure ou écriture ; relier les représentations.
+
+- **Raisonner :** justifier une affirmation à partir des données et des propriétés, ou produire un contre-exemple.
+
+- **Calculer :** effectuer une transformation valide puis contrôler signes, unités, ordre de grandeur et égalité.
+
+- **Communiquer :** rendre une démarche intelligible ; distinguer échanges, essais et rédaction mathématique stabilisée.
+
+*Ces repères sont une reformulation de travail issue des ressources transversales, et non une grille officielle d'évaluation.*
+
+# Mode d'emploi dans Overleaf et ChatMD
+
+- Ce fichier `.tex` est compilable de façon autonome sous pdfLaTeX.
+
+- Les liens conduisent aux PDF officiels : ils ne téléchargent pas les PDF dans le projet Overleaf.
+
+- Pour que ChatMD exploite ce contenu, intégrer le texte dans l'index RAG ; la simple présence du `.tex` dans Overleaf ne suffit pas.
+
+- Revalider le calendrier réglementaire à chaque rentrée scolaire.
+
+
+----------------------------------------
+
+# Source : 0Chatbot_ressources/6eme.tex
+
+::: center
+**Dossier de références mathématiques --- 6e**
+:::
+
+::: center
+État des références : novembre 2026 --- Année scolaire 2026--2027
+:::
+
+**Programme de référence :** Programme de mathématiques du cycle 3 (2025). En vigueur en 6e pour 2026-2027.
+
+# Comment lire ce dossier
+
+Ce dossier organise les sources *sans en reproduire intégralement le contenu*. Chaque fiche synthétise un point de vigilance pour la préparation des cours ou pour un chatbot pédagogique. Les conseils opérationnels ne doivent pas être pris pour des citations littérales.
+
+**Hiérarchie :** (1) programme en vigueur, (2) exemples/attendus de son année, (3) ressources didactiques, (4) propositions d'usage pour ChatMD. La 4e source, *Des maths ensemble et pour chacun*, est complémentaire et peut refléter un ancien programme.
+
+# Bibliothèque des PDF propres au niveau
+
+**[[\[E6-01\]]{style="color: slate"}]{.sans-serif} Programme de mathématiques du cycle 3 (2025)**\
+*Statut : reglementaire.* En vigueur en 6e à la rentrée 2026 ; objectifs annuels, progressivité et exigences.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://www.education.gouv.fr/sites/default/files/programme-de-math-matiques-pour-le-cycle-3-439827.pdf)
+
+**[[\[E6-02\]]{style="color: slate"}]{.sans-serif} Exemples de réussite pour la 6e (2025)**\
+*Statut : accompagnement recent.* Illustre les objectifs d'apprentissage et les réussites observables, sans constituer un second programme.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvre6e-mathpdf-111549.pdf)
+
+**[[\[E6-03\]]{style="color: slate"}]{.sans-serif} Livret d'accompagnement du programme de mathématiques, 6e (2026)**\
+*Statut : accompagnement recent.* Propose des exemples de séquences pédagogiques ; ne remplace pas le programme.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/2026livretaccompagnementmaths6e-pdf-126656.pdf)
+
+**[[\[E6-04\]]{style="color: slate"}]{.sans-serif} Fractions et nombres décimaux au cycle 3**\
+*Statut : didactique ancien.* Obstacles sur l'unité, la fraction, les écritures et la numération décimale.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathfracdecdocmaitrev2681601pdf-76887.pdf)
+
+**[[\[E6-05\]]{style="color: slate"}]{.sans-serif} Le calcul en ligne au cycle 3**\
+*Statut : didactique ancien.* Calcul réfléchi et propriétés des opérations, diversité des procédures.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathcalcullignec3nd601002pdf-76884.pdf)
+
+**[[\[E6-06\]]{style="color: slate"}]{.sans-serif} Résoudre des problèmes de proportionnalité au cycle 3**\
+*Statut : didactique ancien.* Reconnaître les situations et raisonner par des procédures variées.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c3mathdocmaitreproportnd576955pdf-76899.pdf)
+
+# Organisation des apprentissages
+
+*Références : E6-01, E6-02, E6-03, T-07, T-01.*
+
+- Construire les notions dans des problèmes variés, puis stabiliser le vocabulaire, les représentations et les méthodes. Les exemples de réussite aident à apprécier le niveau d'autonomie attendu ; ils ne remplacent pas le texte du programme.
+
+- Le travail quotidien articule recherche, calcul réfléchi, argumentation à l'oral, écrits de recherche et traces de cours. Les automatismes servent les problèmes : ils ne doivent pas s'y substituer.
+
+- Au moment d'évaluer une tâche, distinguer : ce qui est prescrit en 6e, ce qui prépare le sens d'une notion et ce qui constitue un enrichissement facultatif.
+
+# Nombres entiers, décimaux et numération
+
+*Références : E6-01, E6-02, E6-04, E6-05.*
+
+- Travailler la valeur de position des chiffres et les différentes représentations des nombres. Un tableau de numération permet d'expliciter les changements d'unités plutôt que d'apprendre que « la virgule bouge ».
+
+- Donner du sens aux écritures décimales et aux comparaisons ; distinguer chiffre, nombre et quantité. Solliciter une estimation et une vérification de vraisemblance avant de valider un calcul.
+
+- En calcul en ligne, accepter plusieurs procédures correctes ; faire expliciter les propriétés utilisées quand cela contribue à la compréhension.
+
+# Fractions et liens avec les nombres décimaux
+
+*Références : E6-01, E6-02, E6-04.*
+
+- Identifier explicitement l'unité de référence et ne pas confondre nombre de parts coloriées et valeur de la fraction. Mobiliser des dessins, des partages, la droite graduée et des écritures numériques.
+
+- Distinguer fraction comme nombre et comme moyen de repérer une quantité ; éviter les seuls automatismes sur les numérateurs et les dénominateurs sans compréhension.
+
+- Privilégier l'expression des raisonnements personnels, puis institutionnaliser les propriétés compatibles avec le programme 2025.
+
+# Calcul, opérations et résolution de problèmes
+
+*Références : E6-01, E6-03, E6-05, T-07.*
+
+- Choisir une opération au regard du sens de la situation, et non de mots-clés isolés. Examiner les résultats en fonction des unités, des ordres de grandeur et du contexte.
+
+- Distinguer recherche de solution et rédaction finale ; ne pas confondre erreur d'écriture, erreur de calcul et erreur de modélisation.
+
+# Proportionnalité
+
+*Références : E6-01, E6-06.*
+
+- Partir des situations et de leur reconnaissance ; comparer avec des situations non proportionnelles. Conserver des procédures diverses, y compris l'usage de rapports simples ou le retour à l'unité lorsqu'ils ont du sens.
+
+- Ne pas présupposer la proportionnalité sans indice ; demander ce qui justifie ce modèle.
+
+# Grandeurs, mesures, géométrie et espace
+
+*Références : E6-01, E6-02, E6-03.*
+
+- Distinguer mesure, grandeur et unité ; relier figures, constructions et propriétés. Éviter de déduire une propriété d'une simple apparence graphique.
+
+- En géométrie, séparer observation, conjecture, construction et justification. L'attendu exact doit être vérifié dans le programme 2025.
+
+# Conseils pour le futur corpus ChatMD
+
+*Références : E6-01, E6-02, T-01 à T-10.*
+
+- Lorsqu'un élève pose une question, extraire séparément les données, la demande et les hypothèses. Ne jamais ajouter une condition absente (triangle rectangle, proportionnalité, unité, etc.).
+
+- Lorsqu'une donnée manque, poser une question courte portant sur l'information décisive. Ne pas donner la solution complète avant que l'élève ait tenté une démarche.
+
+- Étiqueter dans l'index documentaire : programme en vigueur / exemple de réussite / ressource didactique / suggestion ChatMD. Un document ancien ne fixe pas les attendus actuels.
+
+# Références communes : dix documents transversaux
+
+**[[\[T-01\]]{style="color: slate"}]{.sans-serif} Chercher**\
+*Statut : competence, didactique 2016.* Extraire des informations ; essayer, questionner et tester des pistes.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathchercher552125pdf-77583.pdf)
+
+**[[\[T-02\]]{style="color: slate"}]{.sans-serif} Modéliser**\
+*Statut : competence, didactique 2016.* Traduire une situation, examiner les hypothèses et la pertinence du modèle.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathmodelisernd566177pdf-77586.pdf)
+
+**[[\[T-03\]]{style="color: slate"}]{.sans-serif} Représenter**\
+*Statut : competence, didactique 2016.* Choisir et changer des registres de représentation.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathrepresenternd566207pdf-77589.pdf)
+
+**[[\[T-04\]]{style="color: slate"}]{.sans-serif} Raisonner**\
+*Statut : competence, didactique 2016.* Émettre, argumenter, justifier, vérifier des hypothèses.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathraisonner547836pdf-77592.pdf)
+
+**[[\[T-05\]]{style="color: slate"}]{.sans-serif} Calculer**\
+*Statut : competence, didactique 2016.* Conduire des calculs et contrôler les résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcompcalculer554370pdf-77595.pdf)
+
+**[[\[T-06\]]{style="color: slate"}]{.sans-serif} Communiquer**\
+*Statut : competence, didactique 2016.* Expliquer à l'oral et à l'écrit ; comprendre les formulations.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcommecritoralpourmontage548548pdf-77598.pdf)
+
+**[[\[T-07\]]{style="color: slate"}]{.sans-serif} Guide Résolution de problèmes mathématiques au collège**\
+*Statut : guide transversal.* Résolution, erreurs, stratégies et interprétation des résultats.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/guide-resolution-de-problemes-mathematiques-au-college-73914.pdf)
+
+**[[\[T-08\]]{style="color: slate"}]{.sans-serif} Trace écrite de cours en mathématiques**\
+*Statut : guide transversal.* Fonctions de la trace écrite, construction et organisation du cours.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/trace-ecrite-de-cours-en-mathspdf-91731.pdf)
+
+**[[\[T-09\]]{style="color: slate"}]{.sans-serif} Les pratiques orales dans l'enseignement des mathématiques**\
+*Statut : guide transversal.* Oral de recherche, explication, échanges et relances.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/les-pratiques-orales-dans-lenseignement-des-mathspdf-91728.pdf)
+
+**[[\[T-10\]]{style="color: slate"}]{.sans-serif} Les automatismes**\
+*Statut : guide transversal.* Développer, entretenir et rendre disponibles les connaissances de base.\
+[[[Consulter le PDF officiel]{.underline}]{style="color: navy"}](https://eduscol.education.gouv.fr/sites/default/files/document/automatismes-mathematiquespdf-91875.pdf)
+
+## Les six compétences : repères de lecture pour ChatMD
+
+- **Chercher :** identifier des informations pertinentes, formuler une question, essayer une piste ; ne pas imposer trop tôt une méthode.
+
+- **Modéliser :** expliciter le modèle choisi et ses conditions d'emploi ; distinguer fait observé et hypothèse.
+
+- **Représenter :** choisir schéma, tableau, droite graduée, figure ou écriture ; relier les représentations.
+
+- **Raisonner :** justifier une affirmation à partir des données et des propriétés, ou produire un contre-exemple.
+
+- **Calculer :** effectuer une transformation valide puis contrôler signes, unités, ordre de grandeur et égalité.
+
+- **Communiquer :** rendre une démarche intelligible ; distinguer échanges, essais et rédaction mathématique stabilisée.
+
+*Ces repères sont une reformulation de travail issue des ressources transversales, et non une grille officielle d'évaluation.*
+
+# Mode d'emploi dans Overleaf et ChatMD
+
+- Ce fichier `.tex` est compilable de façon autonome sous pdfLaTeX.
+
+- Les liens conduisent aux PDF officiels : ils ne téléchargent pas les PDF dans le projet Overleaf.
+
+- Pour que ChatMD exploite ce contenu, intégrer le texte dans l'index RAG ; la simple présence du `.tex` dans Overleaf ne suffit pas.
+
+- Revalider le calendrier réglementaire à chaque rentrée scolaire.
+
+
+----------------------------------------
+
+# Source : 0Chatbot_ressources/maths_ensemble.tex
+
+::: center
+**Des maths ensemble et pour chacun --- 4e**
+:::
+
+::: center
+Dossier de synthèse des douze extraits transmis (fichiers 04 à 15)
+:::
+
+**Provenance :** douze PDF fournis dans la conversation, comprenant des pages numérisées de *Des maths ensemble et pour chacun -- 4e*. Les fiches suivantes sont de brefs résumés analytiques et non une transcription complète.
+
+# Principes pédagogiques dégagés des séquences examinées
+
+- Confronter les élèves à une tâche dont le sens peut être construit avant l'introduction de la technique.
+
+- Donner du temps à la recherche individuelle, puis aux comparaisons de procédures et aux échanges collectifs.
+
+- Rendre explicites les propriétés mobilisées et distinguer constat, conjecture, preuve et institutionnalisation.
+
+- Différer certaines exigences de rédaction et de technique jusqu'à ce que la notion soit comprise.
+
+- Revenir dans la durée sur les notions et les automatismes, tout en évitant de réduire la séance à des exercices mécaniques.
+
+- Séparer le programme ancien cité dans l'ouvrage de la réglementation actuelle.
+
+# Catalogue des 12 PDF fournis
+
+## L-04 --- Théorème de Pythagore
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 78 ; 15 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Articuler aires, figures et relation entre les côtés du triangle rectangle ; développer le sens avant de formaliser le théorème.
+
+**Démarche repérée (synthèse) :** Révision aire/périmètre, question du lien des côtés, puzzle d'aires, exploration dynamique, institutionnalisation, racine carrée, puis rédaction.
+
+**Utilisation possible pour ChatMD :** Pythagore : demander si le triangle est rectangle et où se trouve l'angle droit ; ne pas sélectionner le côté à calculer à la place de l'élève.
+
+## L-05 --- Addition, soustraction et multiplication de nombres positifs en écriture fractionnaire
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 93 ; 11 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Donner le sens des opérations à partir de partages, de l'unité et de la comparaison de procédures.
+
+**Démarche repérée (synthèse) :** Distinguer dénominateurs multiples ou non ; articuler schémas, calcul mental et écriture symbolique ; progression vers la multiplication.
+
+**Utilisation possible pour ChatMD :** Fractions : demander quelle est l'unité, ce que représente l'écriture et pourquoi l'opération choisie convient.
+
+## L-06 --- Quadrilatères particuliers
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 104 ; 9 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Réactiver les propriétés connues, puis faire passer de la construction et de l'observation à la justification.
+
+**Démarche repérée (synthèse) :** Constructions, propriétés, arguments et discussions ; la séquence rappelle explicitement des acquis antérieurs.
+
+**Utilisation possible pour ChatMD :** Quadrilatères : distinguer ce qui se voit sur le dessin de ce qui est établi par les données ou une propriété.
+
+## L-07 --- Multiplication des nombres relatifs en écriture décimale
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 113 ; 7 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Réactiver le sens des relatifs et les liens avec addition/soustraction avant de justifier les signes des produits.
+
+**Démarche repérée (synthèse) :** Situations de températures, usage de la distributivité comme appui au produit de deux nombres négatifs ; pas de calculatrice dans cette séquence.
+
+**Utilisation possible pour ChatMD :** Multiplication relative : demander d'expliquer le signe d'un produit plutôt que de faire seulement rappeler une règle.
+
+## L-08 --- Théorèmes relatifs aux milieux de deux côtés d'un triangle
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 120 ; 15 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Faire émerger des propriétés à partir de conjectures, figures, contre-exemples et démonstrations.
+
+**Démarche repérée (synthèse) :** Aires de triangles comme point d'appui ; géométrie dynamique et distinctions des hypothèses ; propriétés démontrées.
+
+**Utilisation possible pour ChatMD :** Milieux et triangles : reformuler les hypothèses utiles et distinguer conjecture sur la figure et démonstration.
+
+## L-09 --- Puissances d'exposant positif
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 135 ; 8 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Introduire progressivement la notation puissance et ses propriétés sur des exemples numériques compréhensibles.
+
+**Démarche repérée (synthèse) :** Situation concrète, définition, propriétés approchées par calculs, entraînement ; traitement spécifique des puissances de 10 différé.
+
+**Utilisation possible pour ChatMD :** Puissances : vérifier la différence entre répétition de facteurs et multiplication du nombre par l'exposant.
+
+## L-10 --- Pyramides
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 143 ; 10 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Passer de l'observation de solides aux représentations en perspective et aux patrons.
+
+**Démarche repérée (synthèse) :** Manipulations, visualisation spatiale et volume ; mise en place progressive de représentations, attention aux images mentales.
+
+**Utilisation possible pour ChatMD :** Pyramides : inviter à décrire le solide, ses faces ou son patron avant de demander une formule.
+
+## L-11 --- Calcul littéral : égalité, développement et réduction
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 153 ; 20 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Faire émerger le sens des lettres et la conservation de l'égalité avant de systématiser les techniques.
+
+**Démarche repérée (synthèse) :** Programmes de calcul ; introduction de la lettre ; fabrication, développement, réduction ; distinction entre expression et équation.
+
+**Utilisation possible pour ChatMD :** Calcul littéral : faire expliciter le rôle de la lettre et reconnaître la structure de l'expression avant de développer.
+
+## L-12 --- Théorème de Thalès de quatrième
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 173 ; 14 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Articuler la proportionnalité, les configurations géométriques et la recherche d'arguments.
+
+**Démarche repérée (synthèse) :** Découverte avec configurations, conjectures et justification ; laisser plusieurs voies de calcul et construire les preuves.
+
+**Utilisation possible pour ChatMD :** Thalès : faire repérer l'alignement et le parallélisme avant de valider un calcul de longueurs.
+
+## L-13 --- Calcul littéral : développement de la technique
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 187 ; 11 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Installer les techniques dans la durée, en reliant écriture, propriété et signification des signes.
+
+**Démarche repérée (synthèse) :** Opposé, moins devant des parenthèses, différentes significations du signe moins, réduction et entraînement progressif.
+
+**Utilisation possible pour ChatMD :** Technique algébrique : aider à vérifier chaque égalité et le rôle des signes devant les parenthèses.
+
+## L-14 --- Cosinus d'un angle aigu dans un triangle rectangle
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 198 ; 16 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Faire construire le rapport cosinus par des expériences sur des triangles rectangles.
+
+**Démarche repérée (synthèse) :** Recherche du côté adjacent, conjectures avec géométrie dynamique, institutionnalisation du rapport, réinvestissement.
+
+**Utilisation possible pour ChatMD :** Cosinus : rappeler le contexte de triangle rectangle, faire choisir l'angle et identifier les côtés concernés.
+
+## L-15 --- Résolution de problèmes conduisant à une équation
+
+**Fichier source :** .
+
+**Repère dans l'ouvrage :** début page 214 ; 15 pages dans le PDF transmis.
+
+**Intention de la séquence (synthèse) :** Faire comprendre ce que représente une inconnue et quand une équation est un outil pertinent.
+
+**Démarche repérée (synthèse) :** Résolutions artisanales, essais et contraintes, mise en équation, discussion de l'égalité, méthodes de résolution et vérification.
+
+**Utilisation possible pour ChatMD :** Équation : vérifier le sens de l'inconnue et la conservation de l'égalité, puis inviter à corriger une seule étape.
+
+# Attention aux correspondances avec les programmes actuels
+
+- Toutes les séquences appartiennent à un ouvrage intitulé 4e ; cela ne prouve pas qu'elles correspondent au programme de 4e en vigueur en 2026--2027. Certaines compétences ont changé de niveau.
+
+- Pour les contenus évaluables, consulter `4eme.tex` et ses références au programme 2020 ainsi qu'aux attendus 4e.
+
+- Pour un réemploi en 5e, se référer au programme 2026 et à ses exemples de réussite avant de retenir un objectif.
+
+- Ne pas faire passer un intérêt didactique ou une phase de recherche pour une compétence obligatoire à entraîner ou à évaluer.
+
+# Exploitation par un chatbot mathématique
+
+1.  Identifier l'intention de l'élève : comprendre une notion, tester une méthode, poursuivre une démarche, vérifier une étape, justifier une propriété.
+
+2.  Extraire les faits donnés sans introduire de prémisse non formulée.
+
+3.  Comparer les conditions d'application à la situation réelle.
+
+4.  Proposer une relance unique et informative qui laisse le choix d'une démarche personnelle.
+
+5.  Respecter la distinction entre écrit de recherche, formulation orale et rédaction mathématique de référence.
+
+# Fichiers sources et limites de l'importation
+
+Les douze PDF doivent être importés séparément dans Overleaf si vous souhaitez pouvoir les consulter ou les inclure comme pièces jointes : ce fichier LaTeX ne les contient pas. En présence de scans, une indexation RAG automatique peut demander une extraction de texte fiable. Ne pas utiliser la reconnaissance de caractères non vérifiée comme source de règles de calcul.
+
+
+----------------------------------------
+
+# Source : 0Chatbot_ressources/maths_ensemble_formulations.tex
+
+::: center
+**[Des maths ensemble et pour chacun]{style="color: ink"}**\
+[Formulations, relances et gestes professionnels]{style="color: blue"}\
+Répertoire pour le professeur et pour la conception de ChatMD --- établi à partir des douze PDF fournis
+:::
+
+::: tcolorbox
+**Objet du dossier**
+
+Ce fichier **n'est pas un résumé des progressions ou des activités**. Il privilégie la manière dont les auteurs *mettent les élèves au travail, interviennent, expliquent autrement, font expliciter, confrontent des démarches et construisent une trace écrite*. Les exemples de phrases proposés ici sont **des reformulations originales**, et non des citations littérales du livre. Chaque geste est relié à des pages vérifiées des PDF transmis.
+:::
+
+::: tcolorbox
+**Statut des références**
+
+Les sources L04 à L15 sont des extraits du livre *Des maths ensemble et pour chacun -- 4e* transmis par l'utilisatrice. Les tableaux de « programme » reproduits dans ces extraits renvoient à des prescriptions plus anciennes : ils **ne définissent pas les exigences du programme de 4e applicable en 2026--2027**. Les propositions de conduite de classe peuvent être adaptées à d'autres niveaux en vérifiant les acquis et le programme visé.
+:::
+
+**Mode de lecture.** Chaque fiche distingue : **(1) geste attesté et paraphrasé**, **(2) paroles possibles, rédigées pour ce dossier**, **(3) vigilance**, **(4) source avec page imprimée du livre**. Il ne s'agit ni d'un script obligatoire ni d'une banque de réponses à fournir automatiquement à l'élève.
+
+# Mettre en activité sans donner la méthode
+
+## Poser une question qui fait naître le besoin d'un outil
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour Pythagore, la relation des carrés est présentée et l'élève doit chercher à quoi elle pourrait servir dans un triangle donné. L'usage de la relation apparaît comme réponse à un problème, avant le nom du théorème.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Que pourrait-on chercher avec cette découverte ? » ; « À quoi ces informations pourraient-elles servir ? » ; « Qu'est-ce que nous ne savons pas encore calculer ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas annoncer d'emblée le théorème ou l'opération si la situation permet aux élèves de les identifier.
+
+[[Source : L04, p. 81--82]{.sans-serif}]{style="color: blue"}
+
+## Accorder une vraie place aux essais personnels
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans la découverte de la racine carrée, les élèves cherchent par essais avant de disposer de la touche spécifique ; les tâtonnements sont ensuite discutés pour les rendre plus efficaces.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle valeur essaierais-tu d'abord ? » ; « Ton résultat est-il trop grand ou trop petit ? » ; « Comment réduire le nombre d'essais ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas remplacer toute recherche par la touche de calculatrice ; introduire l'outil au moment où il résout une difficulté devenue sensible.
+
+[[Source : L04, p. 88]{.sans-serif}]{style="color: blue"}
+
+## Partir d'une situation concrète sans figer les méthodes
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Les programmes de calcul précèdent le formalisme littéral ; pour les problèmes conduisant à une équation, diverses méthodes de tâtonnement et de calcul littéral sont d'abord présentées sans hiérarchie.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Comment t'y prendrais-tu avec un nombre choisi ? » ; « Peut-on expliquer la même opération sans lettre ? » ; « Quelle stratégie as-tu envie d'essayer ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas exiger l'équation dès le début si l'enjeu est d'en construire le besoin et le sens.
+
+[[Source : L11, p. 155--157 ; L15, p. 214--216]{.sans-serif}]{style="color: blue"}
+
+## Faire agir sur une représentation manipulable
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** L'étude des pyramides utilise solides, perspectives et patrons ; les élèves proposent et confrontent des façons de représenter un cube ou une pyramide.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle face vois-tu ici ? » ; « Quelles arêtes resteront de même longueur ? » ; « Comment vérifier que ton patron se replie correctement ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Une représentation en perspective n'est pas une photographie métriquement fidèle du solide.
+
+[[Source : L10, p. 143--145, 149]{.sans-serif}]{style="color: blue"}
+
+## Faire précéder la formule par une conjecture
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans le travail sur le cosinus, les élèves construisent et comparent des triangles, observent un phénomène et cherchent une régularité avant l'institutionnalisation.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'est-ce qui semble rester constant ? » ; « Qu'observes-tu si l'angle change ? » ; « Quelle conjecture pourrait-on proposer ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Nommer le statut de *conjecture* ; ne pas présenter une observation comme une démonstration.
+
+[[Source : L14, p. 198--200, 202]{.sans-serif}]{style="color: blue"}
+
+## Construire la technique à partir du sens des opérations
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Les fractions sont réintroduites à travers unités, partages, schémas et calcul mental ; la technique est justifiée à partir des opérations réellement effectuées.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle quantité représente cette fraction ? » ; « Peut-on découper les parts autrement ? » ; « Quel schéma rend ton calcul compréhensible ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas privilégier immédiatement l'algorithme du dénominateur commun sans identifier l'unité concernée.
+
+[[Source : L05, p. 93--97, 99]{.sans-serif}]{style="color: blue"}
+
+# Relancer un élève bloqué sans résoudre à sa place
+
+## Revenir à la quantité ou à l'objet mathématique étudié
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour Pythagore, un croquis avec des carrés peut aider un élève à retrouver le sens du calcul ; ces représentations sont progressivement abandonnées selon les besoins de chacun.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quel carré correspond à la longueur cherchée ? » ; « Peux-tu représenter ce dont tu parles ? » ; « Qu'est-ce qui est connu sur la figure ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas imposer le même degré d'abstraction à tous les élèves au même moment.
+
+[[Source : L04, p. 82--83]{.sans-serif}]{style="color: blue"}
+
+## Faire raconter les données et la recherche
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** En géométrie avec les milieux, l'ouvrage fait travailler sur la distinction des théorèmes ; pour Thalès, la recherche d'un rapport demande d'identifier les points, longueurs et relations mobilisées.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelles informations sont certaines ? » ; « Que dois-tu obtenir ? » ; « Sur quelle propriété pourrais-tu t'appuyer, et pourquoi ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas transformer chaque problème en succession de questions fermées donnant implicitement l'ordre des calculs.
+
+[[Source : L08, p. 120, 124 ; L12, p. 175--177]{.sans-serif}]{style="color: blue"}
+
+## Réactiver une méthode plus élémentaire
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** La multiplication des relatifs est préparée par un retour à l'addition et à la soustraction ; les auteurs réemploient les opérations connues avant de justifier la règle des signes.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Peux-tu retrouver ce résultat par des additions ? » ; « Quel calcul plus simple permettrait de vérifier le signe ? » ; « Quelle opération connais-tu déjà qui ressemble à celle-ci ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Une règle mémorisée ne suffit pas lorsqu'un élève n'en comprend pas la portée.
+
+[[Source : L07, p. 113--117]{.sans-serif}]{style="color: blue"}
+
+## Proposer un palier temporaire, sans l'imposer comme solution unique
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour certaines activités de calcul littéral, les auteurs aident les élèves qui s'attardent sur un comptage en proposant une démarche intermédiaire ; la recherche personnelle reprend ensuite.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Peux-tu tester ton idée sur un cas plus petit ? » ; « Si tu continues ainsi, combien d'étapes faudra-t-il ? » ; « Une écriture plus courte permettrait-elle d'exprimer la même idée ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Le palier ne doit pas faire perdre à l'élève l'initiative de sa recherche.
+
+[[Source : L11, p. 159 ; L13, p. 187, 193]{.sans-serif}]{style="color: blue"}
+
+## Renvoi au collectif plutôt que correction individuelle immédiate
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans le calcul littéral, une question formulée par une équipe est parfois renvoyée à la classe ; le professeur organise une courte recherche avant une régulation.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Cette question peut-elle être discutée par les autres ? » ; « Qui a une autre manière de voir ? » ; « Que faudrait-il vérifier ensemble ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas se contenter de faire répéter une réponse par les élèves qui savent déjà.
+
+[[Source : L13, p. 189]{.sans-serif}]{style="color: blue"}
+
+## Aider à se représenter un objet dans l'espace
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les pyramides, la manipulation et la construction de représentations soutiennent les images mentales ; les élèves reviennent au solide pour interpréter les arêtes et faces cachées.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Imagine la figure vue d'un autre côté. » ; « Quelle arête devient visible si tu tournes le solide ? » ; « Quelle longueur peux-tu contrôler grâce à l'objet ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Éviter de déduire une orthogonalité ou une égalité de longueurs de la seule allure du dessin.
+
+[[Source : L10, p. 143--149]{.sans-serif}]{style="color: blue"}
+
+# Faire expliciter, reformuler et comprendre les mots
+
+## Faire passer de la description orale à une formulation mathématique
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour l'énoncé de Pythagore, les propositions des élèves sont comparées : si elles restent seulement en français, les auteurs invitent à chercher une formulation mathématique équivalente.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Peux-tu exprimer ton idée avec les longueurs du triangle ? » ; « Que signifie ce calcul en mots ? » ; « Peux-tu donner les deux formulations ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas valoriser uniquement la forme symbolique au détriment du sens.
+
+[[Source : L04, p. 86--87]{.sans-serif}]{style="color: blue"}
+
+## Faire écrire pour quelqu'un qui n'a pas encore appris
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Lors de l'institutionnalisation de Pythagore, l'ouvrage demande que le texte soit compréhensible par un autre élève de 4e découvrant la propriété.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Si un camarade découvre cette règle, de quoi a-t-il besoin pour comprendre ? » ; « Quels mots manquent pour que la phrase soit précise ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Une formulation courte peut être pertinente, mais doit conserver les hypothèses utiles.
+
+[[Source : L04, p. 86--87]{.sans-serif}]{style="color: blue"}
+
+## Faire distinguer valeur approchée et valeur exacte
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Une longueur mesurée ne suffit pas à prouver une égalité ; la racine carrée est distinguée de l'écriture décimale approchée.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'as-tu obtenu : une mesure ou un calcul exact ? » ; « Ton résultat est-il une approximation ? » ; « Quel symbole convient ici ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas confondre $=$ et $\approx$, ni transformer un résultat expérimental en preuve.
+
+[[Source : L04, p. 82, 88]{.sans-serif}]{style="color: blue"}
+
+## Reformuler la signification d'une lettre
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Les programmes de calcul et problèmes d'équations amènent à donner à la lettre divers statuts : nombre choisi, nombre recherché ou nombre quelconque.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Que représente la lettre dans ce problème ? » ; « Est-ce un nombre fixé ou un nombre qu'on cherche ? » ; « Cette égalité doit-elle être vraie pour tous les nombres ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Éviter d'utiliser le mot « inconnue » de façon automatique dans une identité ou une expression.
+
+[[Source : L11, p. 155--159 ; L15, p. 214--218]{.sans-serif}]{style="color: blue"}
+
+## Faire nommer le sens d'une expression avant sa transformation
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Le calcul littéral est abordé à partir de la fabrication d'expressions et de programmes de calcul, puis des développements et réductions.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle opération est effectuée en dernier ? » ; « Que décrit cette écriture ? » ; « En quoi la nouvelle écriture exprimerait-elle le même nombre ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas affirmer qu'une somme déjà développée se développe à nouveau par distributivité.
+
+[[Source : L11, p. 153--159 ; L13, p. 187--189]{.sans-serif}]{style="color: blue"}
+
+## Faire décrire une propriété et son champ d'application
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les quadrilatères, les caractéristiques sont réactivées avec une distinction entre les données connues et le type de figure qu'on peut en déduire.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle propriété utilises-tu exactement ? » ; « Est-ce une condition suffisante ? » ; « Que peux-tu affirmer à partir de ces seules indications ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas déduire une propriété parce qu'elle est simplement visible sur la figure.
+
+[[Source : L06, p. 104--110]{.sans-serif}]{style="color: blue"}
+
+# Faire confronter les démarches et exploiter les erreurs
+
+## Faire apparaître les positions différentes
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans la construction des triangles, l'ouvrage recueille les élèves qui pensent que la construction est possible et ceux qui la pensent impossible, puis donne place à leurs arguments.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qui pense que c'est possible ? Qui pense que ce n'est pas possible ? » ; « Qu'est-ce qui te fait dire cela ? » ; « Qui souhaite répondre à cet argument ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Éviter le vote sans demande de justification.
+
+[[Source : L04, p. 80]{.sans-serif}]{style="color: blue"}
+
+## Recueillir plusieurs résultats avant de corriger
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans le travail sur aire et périmètre, les réponses sont rassemblées au tableau pour examiner les erreurs collectivement ; les procédures se discutent après la recherche.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quels résultats différents avons-nous trouvés ? » ; « D'où vient cette différence ? » ; « Quel test pourrait départager ces réponses ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Une erreur recueillie est une ressource de discussion, pas une faute à disqualifier publiquement.
+
+[[Source : L04, p. 79]{.sans-serif}]{style="color: blue"}
+
+## Faire étudier une production erronée
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** L'ouvrage propose une fausse démonstration sur un parallélogramme et demande aux élèves d'en critiquer puis améliorer la rédaction.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle partie du raisonnement est justifiée ? » ; « Où l'argument devient-il insuffisant ? » ; « Comment le corriger sans tout recommencer ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas corriger uniquement le résultat : identifier précisément la faille du raisonnement.
+
+[[Source : L04, p. 91]{.sans-serif}]{style="color: blue"}
+
+## Corriger une copie en confrontant les représentations
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans le chapitre sur les fractions, les élèves annotent une copie et confrontent ses calculs aux représentations de la situation, puis révisent la production.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle ligne te semble discutable ? » ; « Comment le dessin permet-il de le vérifier ? » ; « Que garderais-tu de ce travail ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas considérer la représentation comme un simple décor : elle doit aider à contrôler le calcul.
+
+[[Source : L05, p. 99]{.sans-serif}]{style="color: blue"}
+
+## Faire rechercher l'origine des proportions proposées
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les premières rencontres avec Thalès, plusieurs rapports sont exposés ; le professeur demande d'où viennent les proportions et compare les démarches.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« D'où vient ton rapport ? » ; « Quelle longueur correspond à celle-ci ? » ; « Peux-tu relier les nombres à la figure ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas éliminer trop tôt les procédures différentes lorsqu'elles reposent sur des relations correctes.
+
+[[Source : L12, p. 175--177]{.sans-serif}]{style="color: blue"}
+
+## Comparer la portée de deux affirmations
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Les quadrilatères servent à examiner des propositions vraies ou fausses et à mobiliser propriétés caractéristiques et contre-exemples.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Est-ce vrai pour tous les quadrilatères concernés ? » ; « Peux-tu chercher un contre-exemple ? » ; « Qu'est-ce qui suffirait à prouver l'affirmation ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** La seule présence d'un exemple favorable n'établit pas une affirmation générale.
+
+[[Source : L06, p. 106--110]{.sans-serif}]{style="color: blue"}
+
+## Donner un statut aux stratégies de tâtonnement
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour les équations, les productions par essais et les démarches littérales sont présentées initialement sans hiérarchie, puis leurs limites sont explicitées.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'a permis ton essai ? » ; « Combien d'essais seraient nécessaires ? » ; « Dans quel cas ta méthode reste-t-elle efficace ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas rejeter une bonne stratégie simplement parce qu'elle n'est pas encore algébrique.
+
+[[Source : L15, p. 214--216]{.sans-serif}]{style="color: blue"}
+
+## Accueillir les remarques d'élèves sans perdre l'objectif
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans l'étude des puissances, des élèves proposent des règles générales ; les auteurs accueillent les remarques, tout en revenant à la définition et aux exemples vérifiables.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Intéressante hypothèse : sur quels exemples fonctionne-t-elle ? » ; « Comment la relier à la définition ? » ; « Que faudrait-il encore vérifier ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas institutionnaliser une généralisation non vérifiée parce qu'elle est formulée avec assurance.
+
+[[Source : L09, p. 137--139]{.sans-serif}]{style="color: blue"}
+
+# Réguler le collectif et différencier dans la durée
+
+## Alterner court temps individuel, équipe et plénière
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** De nombreuses séquences reposent sur cette alternance ; les mises en commun arrivent après un temps où chacun a pu s'engager dans une recherche.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Cherchez d'abord seul une piste. » ; « En équipe, comparez les idées plutôt que les seuls résultats. » ; « Qu'allons-nous retenir de nos désaccords ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas transformer la phase collective en correction magistrale sans prendre appui sur les productions.
+
+[[Source : L04, p. 79--80, 82 ; L05, p. 95--97]{.sans-serif}]{style="color: blue"}
+
+## Prévoir un travail autonome pour ceux qui avancent vite
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Les activités sur les fractions et sur les pyramides prévoient un prolongement ou un exercice indépendant afin que les élèves rapides restent actifs.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Peux-tu vérifier ta solution autrement ? » ; « Peux-tu proposer un cas plus difficile ? » ; « Quelle erreur pourrait-on faire ici ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Éviter que les élèves rapides monopolisent la parole pendant que les autres cherchent.
+
+[[Source : L05, p. 95 ; L10, p. 149]{.sans-serif}]{style="color: blue"}
+
+## Aller au bout de ce que chacun peut faire avant la régulation
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour Pythagore, l'ouvrage attend que les élèves aient exploré leurs possibilités avant une plénière qui relance la recherche suivante.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Même si tu n'as pas fini, quelle étape as-tu comprise ? » ; « Quelle information te manque pour poursuivre ? » ; « Quelle idée entendue peux-tu maintenant tester ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** La plénière ne doit pas remplacer tout le travail personnel.
+
+[[Source : L04, p. 82]{.sans-serif}]{style="color: blue"}
+
+## Faire varier la place des outils
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les puissances et les racines, la calculatrice est parfois retardée pour que les écritures conservent leur sens ; dans d'autres situations, elle est explicitement autorisée.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quel calcul peux-tu comprendre avant de le confier à l'outil ? » ; « Qu'obtiens-tu par la calculatrice : un résultat exact ou affiché ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Le statut de la calculatrice dépend de l'objectif de l'activité, non d'une interdiction générale.
+
+[[Source : L04, p. 82, 88 ; L09, p. 135--137]{.sans-serif}]{style="color: blue"}
+
+## Réactiver sur plusieurs séances et en petites quantités
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** L'ouvrage place des calculs et révisions au début des séances ou à distance de l'apprentissage initial, sans demander de longues séries d'un coup.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quelle idée de la dernière fois peut servir aujourd'hui ? » ; « Peux-tu refaire mentalement ce petit calcul ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Éviter de confondre entraînement technique et construction initiale du sens.
+
+[[Source : L04, p. 83, 86 ; L07, p. 119 ; L13, p. 187, 191]{.sans-serif}]{style="color: blue"}
+
+## Reprendre une erreur sans repartir de zéro
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** En calcul littéral, les auteurs montrent des cas où l'élève peut garder une partie de sa démarche et rectifier localement une justification ou un calcul.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Jusqu'où ton écriture est-elle correcte ? » ; « Quelle égalité reste valable ? » ; « Quelle seule étape faudrait-il changer ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas imposer une réécriture complète si le raisonnement est récupérable.
+
+[[Source : L13, p. 189--193]{.sans-serif}]{style="color: blue"}
+
+# Construire une justification et une trace écrite
+
+## Différer la rédaction quand elle masque la compréhension
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Pour les premiers calculs avec Pythagore, l'ouvrage n'exige pas de rédaction longue ; elle apparaît plus tard dans les tâches suffisamment complexes pour la justifier.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Cherchons d'abord comment obtenir la longueur. » ; « Nous organiserons ensuite l'explication pour qu'elle soit lisible. »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas confondre *résoudre* et *rédiger la résolution*.
+
+[[Source : L04, p. 82, 89]{.sans-serif}]{style="color: blue"}
+
+## Rendre visibles les critères d'une bonne rédaction
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les problèmes ultérieurs de géométrie, plusieurs productions sont étudiées ; la classe dégage des critères : triangle étudié, propriété, application, calculs et conclusion.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Quel triangle utilises-tu ? » ; « Sur quelle propriété t'appuies-tu ? » ; « Qu'est-ce que la conclusion doit répondre ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas imposer une seule rédaction-type si plusieurs formes sont mathématiquement correctes.
+
+[[Source : L04, p. 89--90]{.sans-serif}]{style="color: blue"}
+
+## Coécrire une propriété à partir des découvertes
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** À l'institutionnalisation de Pythagore, les élèves rappellent d'abord ce qu'ils savent faire, puis cherchent comment exprimer précisément les propriétés.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'avons-nous appris à faire ? » ; « Quelles hypothèses faut-il indiquer ? » ; « Notre phrase serait-elle vraie dans tous les cas ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas distribuer systématiquement la définition avant d'avoir traité les idées produites en classe.
+
+[[Source : L04, p. 86--87]{.sans-serif}]{style="color: blue"}
+
+## Distinguer conjecture, preuve et résultat utilisé
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les travaux de géométrie dynamique sur les milieux, les élèves formulent une conjecture puis construisent une démonstration ; la difficulté de justification est prise en charge progressivement.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'as-tu observé ? » ; « Pourquoi penses-tu que c'est toujours vrai ? » ; « Que faut-il démontrer exactement ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** L'utilisation de GeoGebra ne suffit pas à prouver une propriété générale.
+
+[[Source : L08, p. 120--126]{.sans-serif}]{style="color: blue"}
+
+## Utiliser les productions d'élèves comme support de synthèse
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Certaines réponses d'équipes sont améliorées en plénière puis conservées ; les élèves voient des formes de rédaction diverses à condition que les critères soient respectés.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Cette explication est-elle compréhensible par quelqu'un d'autre ? » ; « Quel mot ou calcul faut-il ajouter ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Une trace écrite ne doit pas simplement imiter la production du professeur en effaçant les stratégies des élèves.
+
+[[Source : L04, p. 85--87, 90]{.sans-serif}]{style="color: blue"}
+
+## Justifier une égalité plutôt que l'affirmer
+
+**[Dans l'ouvrage (synthèse).]{style="color: ink"}** Dans les problèmes algébriques, l'ouvrage relie les opérations effectuées aux deux membres et fait vérifier le statut de la solution ; les élèves doivent distinguer une recherche de valeur et une égalité vraie pour tout nombre.
+
+**[Formulations possibles (propositions de ce dossier).]{style="color: ink"}** *« Qu'as-tu fait des deux côtés ? » ; « Cette étape conserve-t-elle les solutions ? » ; « Comment vérifier la valeur proposée ? »*
+
+**[À éviter / à surveiller.]{style="color: ink"}** Ne pas autoriser des passages entre lignes qui rompent l'égalité ou introduisent une règle imaginaire.
+
+[[Source : L15, p. 214--220 ; L13, p. 187--189]{.sans-serif}]{style="color: blue"}
+
+# Banque de formulations prêtes à adapter
+
+*Toutes les phrases de cette section sont des créations de ce dossier inspirées par les gestes précédents. Elles ne sont pas citées mot pour mot dans l'ouvrage. Sélectionner **une ou deux relances**, pas toute la liste.*
+
+## Pour faire commencer
+
+- « Que peux-tu déjà dire avec certitude ? »
+
+- « Quelle question essaies-tu de résoudre ? »
+
+- « Que pourrais-tu dessiner, calculer ou essayer pour avancer ? »
+
+- « Avant de choisir une technique, quel sens donnes-tu à la situation ? »
+
+## Pour faire réexpliquer
+
+- « Explique-moi ce que représente ce nombre dans ton calcul. »
+
+- « Peux-tu dire la même chose sans utiliser la formule ? »
+
+- « Si ton camarade n'avait pas suivi ta recherche, que faudrait-il lui préciser ? »
+
+- « Quelle étape veux-tu reprendre avec tes propres mots ? »
+
+## Pour soutenir sans souffler la solution
+
+- « Quelle partie de ton travail te semble correcte ? »
+
+- « Peux-tu chercher un cas plus simple qui garde la même idée ? »
+
+- « Quel dessin ou quelle propriété pourrait t'aider à vérifier ? »
+
+- « Quel choix as-tu encore à faire toi-même ? »
+
+## Pour confronter et discuter
+
+- « Deux méthodes donnent-elles nécessairement deux résultats différents ? »
+
+- « Qu'est-ce qui te convainc dans cette explication ? »
+
+- « Quel contre-exemple pourrait mettre cette idée en défaut ? »
+
+- « Est-ce une observation sur le dessin ou une propriété démontrée ? »
+
+## Pour faire corriger une erreur
+
+- « Où l'égalité cesse-t-elle d'être justifiée ? »
+
+- « Laquelle de tes étapes voudrais-tu tester avec une valeur numérique ? »
+
+- « Peut-on garder le début de ton raisonnement et ne corriger que la suite ? »
+
+- « À quelle condition la propriété que tu cites est-elle applicable ? »
+
+## Pour institutionnaliser sans écraser la recherche
+
+- « Qu'avons-nous découvert que nous ne savions pas utiliser auparavant ? »
+
+- « Dans quels cas cette règle fonctionne-t-elle ? »
+
+- « Comment écrire cette propriété pour qu'un autre élève puisse la comprendre ? »
+
+- « Quelle différence fais-tu entre le résultat obtenu et sa justification ? »
+
+# Repères par notion : quel geste mobiliser ?
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Notion**                **Conseil prioritaire pour l'enseignant**                                                                                       **Pages vérifiées**
+  ------------------------- ------------------------------------------------------------------------------------------------------------------------------- ----------------------------
+  Aire / Pythagore          Laisser le sens des carrés guider l'addition ou la soustraction ; distinguer calcul et mesure ; différer la rédaction longue.   L04, p. 79, 82, 88--90
+
+  Fractions                 Faire expliciter l'unité et relier calculs, partages et représentations ; comparer les techniques.                              L05, p. 93--97, 99
+
+  Quadrilatères             Passer des propriétés connues aux propriétés caractéristiques ; chercher contre-exemples et justifications.                     L06, p. 104, 106, 108, 110
+
+  Relatifs                  Revenir au sens de l'addition / soustraction avant la règle des signes ; faire dicter et justifier les calculs.                 L07, p. 113, 115, 117, 119
+
+  Milieux / démonstration   Susciter une conjecture ; isoler les hypothèses ; étayer la démonstration progressivement.                                      L08, p. 120, 122, 124--126
+
+  Puissances                Interpréter la multiplication répétée avant la notation ; accueillir puis tester les généralisations.                           L09, p. 135, 137, 139
+
+  Pyramides                 Revenir au solide et au patron pour comprendre les dessins et les longueurs ; utiliser des images mentales.                     L10, p. 143, 145, 147, 149
+
+  Lettres / égalités        Donner un rôle à la lettre par des programmes et situations concrètes ; préserver le sens des signes.                           L11, p. 153, 155, 157, 159
+
+  Thalès                    Faire discuter l'origine des proportions ; rendre visibles les correspondances de longueurs.                                    L12, p. 173, 175, 177, 179
+
+  Développement             Faire interpréter les écritures, les opposés et les parenthèses ; tester les égalités.                                          L13, p. 187, 189, 191, 193
+
+  Cosinus                   Favoriser l'expérimentation / conjecture ; passer progressivement à la relation, en distinguant observation et preuve.          L14, p. 198, 200, 202, 204
+
+  Équations                 Confronter essais et calcul littéral ; expliciter le rôle de la lettre et la conservation de l'égalité.                         L15, p. 214, 216, 218, 220
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Usage prudent pour ChatMD
+
+::: tcolorbox
+**Ce que l'assistant peut réemployer**
+
+Le **type de relance**, la manière de faire préciser une donnée, la demande de justification et la progressivité de l'étayage. En particulier : une réponse brève, une seule question utile à la fois, et pas de solution entière par défaut.
+:::
+
+- **Repérer l'état de la recherche :** compréhension de l'énoncé, choix d'une méthode, calcul, vérification ou rédaction.
+
+- **Proposer la relance la moins directive :** question ouverte ou reformulation ; puis un indice plus concret seulement si nécessaire.
+
+- **Préserver les procédures personnelles :** comparer et contrôler avant de substituer la méthode attendue.
+
+- **Ne jamais affirmer une condition non donnée :** une figure qui *semble* rectangle ne prouve pas qu'elle l'est ; une expression ne change pas de structure parce que le modèle la réinterprète.
+
+- **Séparer la résolution et la rédaction :** travailler la justification formelle au moment utile, sans masquer la recherche.
+
+- **Références documentaires :** les conseils de cet ouvrage ne remplacent pas le programme officiel applicable au niveau concerné.
+
+# Index des douze PDF originaux
+
+*Les références L04--L15 désignent les fichiers fournis dans la conversation ; les numéros de pages ci-dessus sont ceux imprimés dans le livre, et non les numéros de pages du lecteur PDF.*
+
+::: description
+Théorème de Pythagore --- p. 78--92 ---
+
+Opérations sur nombres positifs en écriture fractionnaire --- p. 93--103 ---
+
+Quadrilatères particuliers --- p. 104--112 ---
+
+Multiplication des nombres relatifs --- p. 113--119 ---
+
+Théorèmes relatifs aux milieux d'un triangle --- p. 120--134 ---
+
+Puissances d'exposant positif --- p. 135--142 ---
+
+Pyramides --- p. 143--152 ---
+
+Calcul littéral : égalité, développement et réduction --- p. 153--172 ---
+
+Théorème de Thalès de quatrième --- p. 173--186 ---
+
+Calcul littéral : développement de la technique --- p. 187--197 ---
+
+Cosinus dans le triangle rectangle --- p. 198--213 ---
+
+Problèmes conduisant à une équation --- p. 214--228 ---
+:::
+
+*Périmètre de consultation :* conseils et exemples des pages expressément référencées, notamment celles contenant les phases de recherche, de régulation et de mise en commun ; le dossier est une sélection raisonnée, pas un relevé exhaustif de toutes les interventions du livre.
 
 
 ----------------------------------------
@@ -7135,7 +8637,7 @@ block body **1. Trouve l'opération qui traduit la situation.**
 
 ----------------------------------------
 
-# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act2et3_produits_deux_négatifs.tex
+# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act2_produits_deux_négatifs.tex
 
 :::: minipage
 ::: center
@@ -7194,11 +8696,11 @@ $$t_F = 1{,}8\times t_C + 32$$
 
 ----------------------------------------
 
-# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act4_produits_plusieurs_facteurs.tex
+# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act3_produits_plusieurs_facteurs.tex
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**
@@ -7217,7 +8719,7 @@ $$t_F = 1{,}8\times t_C + 32$$
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**
@@ -7236,7 +8738,7 @@ $$t_F = 1{,}8\times t_C + 32$$
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**
@@ -7259,7 +8761,7 @@ $$t_F = 1{,}8\times t_C + 32$$
 # Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act5_quotients_relatifs.tex
 
 ::: center
-**Activité 5 -- Quotients de nombres relatifs**
+**Activité 4 -- Quotients de nombres relatifs**
 :::
 
 ::: minipage

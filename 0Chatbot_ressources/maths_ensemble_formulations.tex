@@ -1,0 +1,197 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=18mm,headheight=15pt]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{longtable,tabularx}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{fancyhdr}
+\definecolor{ink}{HTML}{1B334E}
+\definecolor{blue}{HTML}{245B89}
+\definecolor{mist}{HTML}{EEF4F8}
+\definecolor{pale}{HTML}{F7F9FC}
+\definecolor{orange}{HTML}{89541B}
+\hypersetup{pdftitle={Des maths ensemble et pour chacun : gestes professionnels et formulations},pdfauthor={Dossier de travail pedagogique}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlist[itemize]{leftmargin=*,itemsep=2pt,topsep=2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{ink}{Formulations et gestes professionnels}}
+\fancyhead[R]{\small\textcolor{blue}{Des maths ensemble et pour chacun}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\src}[1]{\textcolor{blue}{\textsf{\footnotesize Source : #1}}}
+\newcommand{\rub}[1]{\par\textbf{\textcolor{ink}{#1}}\;}
+\newcommand{\geste}[5]{%
+  \subsection{#1}
+  \rub{Dans l'ouvrage (synthèse).} #2\par
+  \rub{Formulations possibles (propositions de ce dossier).} \emph{#3}\par
+  \rub{À éviter / à surveiller.} #4\par
+  \src{#5}\par\medskip
+}
+\newcommand{\sourcebox}[2]{\begin{tcolorbox}[colback=mist,colframe=blue,boxrule=0.35pt,arc=1mm,left=2mm,right=2mm,top=1.5mm,bottom=1.5mm]\textbf{#1}\par #2\end{tcolorbox}}
+\newcommand{\schemarelance}[4]{\par\textbf{#1}\;---\;\emph{#2}\\[-2pt] \textit{Appui :} #3. \src{#4}\par\smallskip}
+\renewcommand{\contentsname}{Sommaire}
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries\textcolor{ink}{Des maths ensemble et pour chacun}}\\[5pt]
+  {\Large\textcolor{blue}{Formulations, relances et gestes professionnels}}\\[4pt]
+  {\small Répertoire pour le professeur et pour la conception de ChatMD --- établi à partir des douze PDF fournis}
+\end{center}
+\sourcebox{Objet du dossier}{Ce fichier \textbf{n'est pas un résumé des progressions ou des activités}. Il privilégie la manière dont les auteurs \emph{mettent les élèves au travail, interviennent, expliquent autrement, font expliciter, confrontent des démarches et construisent une trace écrite}. Les exemples de phrases proposés ici sont \textbf{des reformulations originales}, et non des citations littérales du livre. Chaque geste est relié à des pages vérifiées des PDF transmis.}
+\sourcebox{Statut des références}{Les sources L04 à L15 sont des extraits du livre \emph{Des maths ensemble et pour chacun -- 4e} transmis par l'utilisatrice. Les tableaux de « programme » reproduits dans ces extraits renvoient à des prescriptions plus anciennes : ils \textbf{ne définissent pas les exigences du programme de 4e applicable en 2026--2027}. Les propositions de conduite de classe peuvent être adaptées à d'autres niveaux en vérifiant les acquis et le programme visé.}
+\textbf{Mode de lecture.} Chaque fiche distingue : \textbf{(1) geste attesté et paraphrasé}, \textbf{(2) paroles possibles, rédigées pour ce dossier}, \textbf{(3) vigilance}, \textbf{(4) source avec page imprimée du livre}. Il ne s'agit ni d'un script obligatoire ni d'une banque de réponses à fournir automatiquement à l'élève.
+\tableofcontents
+\newpage
+
+\section{Mettre en activité sans donner la méthode}
+\geste{Poser une question qui fait naître le besoin d'un outil}{Pour Pythagore, la relation des carrés est présentée et l'élève doit chercher à quoi elle pourrait servir dans un triangle donné. L'usage de la relation apparaît comme réponse à un problème, avant le nom du théorème.}{« Que pourrait-on chercher avec cette découverte ? » ; « À quoi ces informations pourraient-elles servir ? » ; « Qu'est-ce que nous ne savons pas encore calculer ? »}{Ne pas annoncer d'emblée le théorème ou l'opération si la situation permet aux élèves de les identifier.}{L04, p.~81--82}
+\geste{Accorder une vraie place aux essais personnels}{Dans la découverte de la racine carrée, les élèves cherchent par essais avant de disposer de la touche spécifique ; les tâtonnements sont ensuite discutés pour les rendre plus efficaces.}{« Quelle valeur essaierais-tu d'abord ? » ; « Ton résultat est-il trop grand ou trop petit ? » ; « Comment réduire le nombre d'essais ? »}{Ne pas remplacer toute recherche par la touche de calculatrice ; introduire l'outil au moment où il résout une difficulté devenue sensible.}{L04, p.~88}
+\geste{Partir d'une situation concrète sans figer les méthodes}{Les programmes de calcul précèdent le formalisme littéral ; pour les problèmes conduisant à une équation, diverses méthodes de tâtonnement et de calcul littéral sont d'abord présentées sans hiérarchie.}{« Comment t'y prendrais-tu avec un nombre choisi ? » ; « Peut-on expliquer la même opération sans lettre ? » ; « Quelle stratégie as-tu envie d'essayer ? »}{Ne pas exiger l'équation dès le début si l'enjeu est d'en construire le besoin et le sens.}{L11, p.~155--157 ; L15, p.~214--216}
+\geste{Faire agir sur une représentation manipulable}{L'étude des pyramides utilise solides, perspectives et patrons ; les élèves proposent et confrontent des façons de représenter un cube ou une pyramide.}{« Quelle face vois-tu ici ? » ; « Quelles arêtes resteront de même longueur ? » ; « Comment vérifier que ton patron se replie correctement ? »}{Une représentation en perspective n'est pas une photographie métriquement fidèle du solide.}{L10, p.~143--145, 149}
+\geste{Faire précéder la formule par une conjecture}{Dans le travail sur le cosinus, les élèves construisent et comparent des triangles, observent un phénomène et cherchent une régularité avant l'institutionnalisation.}{« Qu'est-ce qui semble rester constant ? » ; « Qu'observes-tu si l'angle change ? » ; « Quelle conjecture pourrait-on proposer ? »}{Nommer le statut de \emph{conjecture} ; ne pas présenter une observation comme une démonstration.}{L14, p.~198--200, 202}
+\geste{Construire la technique à partir du sens des opérations}{Les fractions sont réintroduites à travers unités, partages, schémas et calcul mental ; la technique est justifiée à partir des opérations réellement effectuées.}{« Quelle quantité représente cette fraction ? » ; « Peut-on découper les parts autrement ? » ; « Quel schéma rend ton calcul compréhensible ? »}{Ne pas privilégier immédiatement l'algorithme du dénominateur commun sans identifier l'unité concernée.}{L05, p.~93--97, 99}
+
+\section{Relancer un élève bloqué sans résoudre à sa place}
+\geste{Revenir à la quantité ou à l'objet mathématique étudié}{Pour Pythagore, un croquis avec des carrés peut aider un élève à retrouver le sens du calcul ; ces représentations sont progressivement abandonnées selon les besoins de chacun.}{« Quel carré correspond à la longueur cherchée ? » ; « Peux-tu représenter ce dont tu parles ? » ; « Qu'est-ce qui est connu sur la figure ? »}{Ne pas imposer le même degré d'abstraction à tous les élèves au même moment.}{L04, p.~82--83}
+\geste{Faire raconter les données et la recherche}{En géométrie avec les milieux, l'ouvrage fait travailler sur la distinction des théorèmes ; pour Thalès, la recherche d'un rapport demande d'identifier les points, longueurs et relations mobilisées.}{« Quelles informations sont certaines ? » ; « Que dois-tu obtenir ? » ; « Sur quelle propriété pourrais-tu t'appuyer, et pourquoi ? »}{Ne pas transformer chaque problème en succession de questions fermées donnant implicitement l'ordre des calculs.}{L08, p.~120, 124 ; L12, p.~175--177}
+\geste{Réactiver une méthode plus élémentaire}{La multiplication des relatifs est préparée par un retour à l'addition et à la soustraction ; les auteurs réemploient les opérations connues avant de justifier la règle des signes.}{« Peux-tu retrouver ce résultat par des additions ? » ; « Quel calcul plus simple permettrait de vérifier le signe ? » ; « Quelle opération connais-tu déjà qui ressemble à celle-ci ? »}{Une règle mémorisée ne suffit pas lorsqu'un élève n'en comprend pas la portée.}{L07, p.~113--117}
+\geste{Proposer un palier temporaire, sans l'imposer comme solution unique}{Pour certaines activités de calcul littéral, les auteurs aident les élèves qui s'attardent sur un comptage en proposant une démarche intermédiaire ; la recherche personnelle reprend ensuite.}{« Peux-tu tester ton idée sur un cas plus petit ? » ; « Si tu continues ainsi, combien d'étapes faudra-t-il ? » ; « Une écriture plus courte permettrait-elle d'exprimer la même idée ? »}{Le palier ne doit pas faire perdre à l'élève l'initiative de sa recherche.}{L11, p.~159 ; L13, p.~187, 193}
+\geste{Renvoi au collectif plutôt que correction individuelle immédiate}{Dans le calcul littéral, une question formulée par une équipe est parfois renvoyée à la classe ; le professeur organise une courte recherche avant une régulation.}{« Cette question peut-elle être discutée par les autres ? » ; « Qui a une autre manière de voir ? » ; « Que faudrait-il vérifier ensemble ? »}{Ne pas se contenter de faire répéter une réponse par les élèves qui savent déjà.}{L13, p.~189}
+\geste{Aider à se représenter un objet dans l'espace}{Dans les pyramides, la manipulation et la construction de représentations soutiennent les images mentales ; les élèves reviennent au solide pour interpréter les arêtes et faces cachées.}{« Imagine la figure vue d'un autre côté. » ; « Quelle arête devient visible si tu tournes le solide ? » ; « Quelle longueur peux-tu contrôler grâce à l'objet ? »}{Éviter de déduire une orthogonalité ou une égalité de longueurs de la seule allure du dessin.}{L10, p.~143--149}
+
+\section{Faire expliciter, reformuler et comprendre les mots}
+\geste{Faire passer de la description orale à une formulation mathématique}{Pour l'énoncé de Pythagore, les propositions des élèves sont comparées : si elles restent seulement en français, les auteurs invitent à chercher une formulation mathématique équivalente.}{« Peux-tu exprimer ton idée avec les longueurs du triangle ? » ; « Que signifie ce calcul en mots ? » ; « Peux-tu donner les deux formulations ? »}{Ne pas valoriser uniquement la forme symbolique au détriment du sens.}{L04, p.~86--87}
+\geste{Faire écrire pour quelqu'un qui n'a pas encore appris}{Lors de l'institutionnalisation de Pythagore, l'ouvrage demande que le texte soit compréhensible par un autre élève de 4e découvrant la propriété.}{« Si un camarade découvre cette règle, de quoi a-t-il besoin pour comprendre ? » ; « Quels mots manquent pour que la phrase soit précise ? »}{Une formulation courte peut être pertinente, mais doit conserver les hypothèses utiles.}{L04, p.~86--87}
+\geste{Faire distinguer valeur approchée et valeur exacte}{Une longueur mesurée ne suffit pas à prouver une égalité ; la racine carrée est distinguée de l'écriture décimale approchée.}{« Qu'as-tu obtenu : une mesure ou un calcul exact ? » ; « Ton résultat est-il une approximation ? » ; « Quel symbole convient ici ? »}{Ne pas confondre \(=\) et \(\approx\), ni transformer un résultat expérimental en preuve.}{L04, p.~82, 88}
+\geste{Reformuler la signification d'une lettre}{Les programmes de calcul et problèmes d'équations amènent à donner à la lettre divers statuts : nombre choisi, nombre recherché ou nombre quelconque.}{« Que représente la lettre dans ce problème ? » ; « Est-ce un nombre fixé ou un nombre qu'on cherche ? » ; « Cette égalité doit-elle être vraie pour tous les nombres ? »}{Éviter d'utiliser le mot « inconnue » de façon automatique dans une identité ou une expression.}{L11, p.~155--159 ; L15, p.~214--218}
+\geste{Faire nommer le sens d'une expression avant sa transformation}{Le calcul littéral est abordé à partir de la fabrication d'expressions et de programmes de calcul, puis des développements et réductions.}{« Quelle opération est effectuée en dernier ? » ; « Que décrit cette écriture ? » ; « En quoi la nouvelle écriture exprimerait-elle le même nombre ? »}{Ne pas affirmer qu'une somme déjà développée se développe à nouveau par distributivité.}{L11, p.~153--159 ; L13, p.~187--189}
+\geste{Faire décrire une propriété et son champ d'application}{Dans les quadrilatères, les caractéristiques sont réactivées avec une distinction entre les données connues et le type de figure qu'on peut en déduire.}{« Quelle propriété utilises-tu exactement ? » ; « Est-ce une condition suffisante ? » ; « Que peux-tu affirmer à partir de ces seules indications ? »}{Ne pas déduire une propriété parce qu'elle est simplement visible sur la figure.}{L06, p.~104--110}
+
+\section{Faire confronter les démarches et exploiter les erreurs}
+\geste{Faire apparaître les positions différentes}{Dans la construction des triangles, l'ouvrage recueille les élèves qui pensent que la construction est possible et ceux qui la pensent impossible, puis donne place à leurs arguments.}{« Qui pense que c'est possible ? Qui pense que ce n'est pas possible ? » ; « Qu'est-ce qui te fait dire cela ? » ; « Qui souhaite répondre à cet argument ? »}{Éviter le vote sans demande de justification.}{L04, p.~80}
+\geste{Recueillir plusieurs résultats avant de corriger}{Dans le travail sur aire et périmètre, les réponses sont rassemblées au tableau pour examiner les erreurs collectivement ; les procédures se discutent après la recherche.}{« Quels résultats différents avons-nous trouvés ? » ; « D'où vient cette différence ? » ; « Quel test pourrait départager ces réponses ? »}{Une erreur recueillie est une ressource de discussion, pas une faute à disqualifier publiquement.}{L04, p.~79}
+\geste{Faire étudier une production erronée}{L'ouvrage propose une fausse démonstration sur un parallélogramme et demande aux élèves d'en critiquer puis améliorer la rédaction.}{« Quelle partie du raisonnement est justifiée ? » ; « Où l'argument devient-il insuffisant ? » ; « Comment le corriger sans tout recommencer ? »}{Ne pas corriger uniquement le résultat : identifier précisément la faille du raisonnement.}{L04, p.~91}
+\geste{Corriger une copie en confrontant les représentations}{Dans le chapitre sur les fractions, les élèves annotent une copie et confrontent ses calculs aux représentations de la situation, puis révisent la production.}{« Quelle ligne te semble discutable ? » ; « Comment le dessin permet-il de le vérifier ? » ; « Que garderais-tu de ce travail ? »}{Ne pas considérer la représentation comme un simple décor : elle doit aider à contrôler le calcul.}{L05, p.~99}
+\geste{Faire rechercher l'origine des proportions proposées}{Dans les premières rencontres avec Thalès, plusieurs rapports sont exposés ; le professeur demande d'où viennent les proportions et compare les démarches.}{« D'où vient ton rapport ? » ; « Quelle longueur correspond à celle-ci ? » ; « Peux-tu relier les nombres à la figure ? »}{Ne pas éliminer trop tôt les procédures différentes lorsqu'elles reposent sur des relations correctes.}{L12, p.~175--177}
+\geste{Comparer la portée de deux affirmations}{Les quadrilatères servent à examiner des propositions vraies ou fausses et à mobiliser propriétés caractéristiques et contre-exemples.}{« Est-ce vrai pour tous les quadrilatères concernés ? » ; « Peux-tu chercher un contre-exemple ? » ; « Qu'est-ce qui suffirait à prouver l'affirmation ? »}{La seule présence d'un exemple favorable n'établit pas une affirmation générale.}{L06, p.~106--110}
+\geste{Donner un statut aux stratégies de tâtonnement}{Pour les équations, les productions par essais et les démarches littérales sont présentées initialement sans hiérarchie, puis leurs limites sont explicitées.}{« Qu'a permis ton essai ? » ; « Combien d'essais seraient nécessaires ? » ; « Dans quel cas ta méthode reste-t-elle efficace ? »}{Ne pas rejeter une bonne stratégie simplement parce qu'elle n'est pas encore algébrique.}{L15, p.~214--216}
+\geste{Accueillir les remarques d'élèves sans perdre l'objectif}{Dans l'étude des puissances, des élèves proposent des règles générales ; les auteurs accueillent les remarques, tout en revenant à la définition et aux exemples vérifiables.}{« Intéressante hypothèse : sur quels exemples fonctionne-t-elle ? » ; « Comment la relier à la définition ? » ; « Que faudrait-il encore vérifier ? »}{Ne pas institutionnaliser une généralisation non vérifiée parce qu'elle est formulée avec assurance.}{L09, p.~137--139}
+
+\section{Réguler le collectif et différencier dans la durée}
+\geste{Alterner court temps individuel, équipe et plénière}{De nombreuses séquences reposent sur cette alternance ; les mises en commun arrivent après un temps où chacun a pu s'engager dans une recherche.}{« Cherchez d'abord seul une piste. » ; « En équipe, comparez les idées plutôt que les seuls résultats. » ; « Qu'allons-nous retenir de nos désaccords ? »}{Ne pas transformer la phase collective en correction magistrale sans prendre appui sur les productions.}{L04, p.~79--80, 82 ; L05, p.~95--97}
+\geste{Prévoir un travail autonome pour ceux qui avancent vite}{Les activités sur les fractions et sur les pyramides prévoient un prolongement ou un exercice indépendant afin que les élèves rapides restent actifs.}{« Peux-tu vérifier ta solution autrement ? » ; « Peux-tu proposer un cas plus difficile ? » ; « Quelle erreur pourrait-on faire ici ? »}{Éviter que les élèves rapides monopolisent la parole pendant que les autres cherchent.}{L05, p.~95 ; L10, p.~149}
+\geste{Aller au bout de ce que chacun peut faire avant la régulation}{Pour Pythagore, l'ouvrage attend que les élèves aient exploré leurs possibilités avant une plénière qui relance la recherche suivante.}{« Même si tu n'as pas fini, quelle étape as-tu comprise ? » ; « Quelle information te manque pour poursuivre ? » ; « Quelle idée entendue peux-tu maintenant tester ? »}{La plénière ne doit pas remplacer tout le travail personnel.}{L04, p.~82}
+\geste{Faire varier la place des outils}{Dans les puissances et les racines, la calculatrice est parfois retardée pour que les écritures conservent leur sens ; dans d'autres situations, elle est explicitement autorisée.}{« Quel calcul peux-tu comprendre avant de le confier à l'outil ? » ; « Qu'obtiens-tu par la calculatrice : un résultat exact ou affiché ? »}{Le statut de la calculatrice dépend de l'objectif de l'activité, non d'une interdiction générale.}{L04, p.~82, 88 ; L09, p.~135--137}
+\geste{Réactiver sur plusieurs séances et en petites quantités}{L'ouvrage place des calculs et révisions au début des séances ou à distance de l'apprentissage initial, sans demander de longues séries d'un coup.}{« Quelle idée de la dernière fois peut servir aujourd'hui ? » ; « Peux-tu refaire mentalement ce petit calcul ? »}{Éviter de confondre entraînement technique et construction initiale du sens.}{L04, p.~83, 86 ; L07, p.~119 ; L13, p.~187, 191}
+\geste{Reprendre une erreur sans repartir de zéro}{En calcul littéral, les auteurs montrent des cas où l'élève peut garder une partie de sa démarche et rectifier localement une justification ou un calcul.}{« Jusqu'où ton écriture est-elle correcte ? » ; « Quelle égalité reste valable ? » ; « Quelle seule étape faudrait-il changer ? »}{Ne pas imposer une réécriture complète si le raisonnement est récupérable.}{L13, p.~189--193}
+
+\section{Construire une justification et une trace écrite}
+\geste{Différer la rédaction quand elle masque la compréhension}{Pour les premiers calculs avec Pythagore, l'ouvrage n'exige pas de rédaction longue ; elle apparaît plus tard dans les tâches suffisamment complexes pour la justifier.}{« Cherchons d'abord comment obtenir la longueur. » ; « Nous organiserons ensuite l'explication pour qu'elle soit lisible. »}{Ne pas confondre \emph{résoudre} et \emph{rédiger la résolution}.}{L04, p.~82, 89}
+\geste{Rendre visibles les critères d'une bonne rédaction}{Dans les problèmes ultérieurs de géométrie, plusieurs productions sont étudiées ; la classe dégage des critères : triangle étudié, propriété, application, calculs et conclusion.}{« Quel triangle utilises-tu ? » ; « Sur quelle propriété t'appuies-tu ? » ; « Qu'est-ce que la conclusion doit répondre ? »}{Ne pas imposer une seule rédaction-type si plusieurs formes sont mathématiquement correctes.}{L04, p.~89--90}
+\geste{Coécrire une propriété à partir des découvertes}{À l'institutionnalisation de Pythagore, les élèves rappellent d'abord ce qu'ils savent faire, puis cherchent comment exprimer précisément les propriétés.}{« Qu'avons-nous appris à faire ? » ; « Quelles hypothèses faut-il indiquer ? » ; « Notre phrase serait-elle vraie dans tous les cas ? »}{Ne pas distribuer systématiquement la définition avant d'avoir traité les idées produites en classe.}{L04, p.~86--87}
+\geste{Distinguer conjecture, preuve et résultat utilisé}{Dans les travaux de géométrie dynamique sur les milieux, les élèves formulent une conjecture puis construisent une démonstration ; la difficulté de justification est prise en charge progressivement.}{« Qu'as-tu observé ? » ; « Pourquoi penses-tu que c'est toujours vrai ? » ; « Que faut-il démontrer exactement ? »}{L'utilisation de GeoGebra ne suffit pas à prouver une propriété générale.}{L08, p.~120--126}
+\geste{Utiliser les productions d'élèves comme support de synthèse}{Certaines réponses d'équipes sont améliorées en plénière puis conservées ; les élèves voient des formes de rédaction diverses à condition que les critères soient respectés.}{« Cette explication est-elle compréhensible par quelqu'un d'autre ? » ; « Quel mot ou calcul faut-il ajouter ? »}{Une trace écrite ne doit pas simplement imiter la production du professeur en effaçant les stratégies des élèves.}{L04, p.~85--87, 90}
+\geste{Justifier une égalité plutôt que l'affirmer}{Dans les problèmes algébriques, l'ouvrage relie les opérations effectuées aux deux membres et fait vérifier le statut de la solution ; les élèves doivent distinguer une recherche de valeur et une égalité vraie pour tout nombre.}{« Qu'as-tu fait des deux côtés ? » ; « Cette étape conserve-t-elle les solutions ? » ; « Comment vérifier la valeur proposée ? »}{Ne pas autoriser des passages entre lignes qui rompent l'égalité ou introduisent une règle imaginaire.}{L15, p.~214--220 ; L13, p.~187--189}
+
+\section{Banque de formulations prêtes à adapter}
+\textit{Toutes les phrases de cette section sont des créations de ce dossier inspirées par les gestes précédents. Elles ne sont pas citées mot pour mot dans l'ouvrage. Sélectionner \textbf{une ou deux relances}, pas toute la liste.}
+\subsection{Pour faire commencer}
+\begin{itemize}
+\item « Que peux-tu déjà dire avec certitude ? »
+\item « Quelle question essaies-tu de résoudre ? »
+\item « Que pourrais-tu dessiner, calculer ou essayer pour avancer ? »
+\item « Avant de choisir une technique, quel sens donnes-tu à la situation ? »
+\end{itemize}
+\subsection{Pour faire réexpliquer}
+\begin{itemize}
+\item « Explique-moi ce que représente ce nombre dans ton calcul. »
+\item « Peux-tu dire la même chose sans utiliser la formule ? »
+\item « Si ton camarade n'avait pas suivi ta recherche, que faudrait-il lui préciser ? »
+\item « Quelle étape veux-tu reprendre avec tes propres mots ? »
+\end{itemize}
+\subsection{Pour soutenir sans souffler la solution}
+\begin{itemize}
+\item « Quelle partie de ton travail te semble correcte ? »
+\item « Peux-tu chercher un cas plus simple qui garde la même idée ? »
+\item « Quel dessin ou quelle propriété pourrait t'aider à vérifier ? »
+\item « Quel choix as-tu encore à faire toi-même ? »
+\end{itemize}
+\subsection{Pour confronter et discuter}
+\begin{itemize}
+\item « Deux méthodes donnent-elles nécessairement deux résultats différents ? »
+\item « Qu'est-ce qui te convainc dans cette explication ? »
+\item « Quel contre-exemple pourrait mettre cette idée en défaut ? »
+\item « Est-ce une observation sur le dessin ou une propriété démontrée ? »
+\end{itemize}
+\subsection{Pour faire corriger une erreur}
+\begin{itemize}
+\item « Où l'égalité cesse-t-elle d'être justifiée ? »
+\item « Laquelle de tes étapes voudrais-tu tester avec une valeur numérique ? »
+\item « Peut-on garder le début de ton raisonnement et ne corriger que la suite ? »
+\item « À quelle condition la propriété que tu cites est-elle applicable ? »
+\end{itemize}
+\subsection{Pour institutionnaliser sans écraser la recherche}
+\begin{itemize}
+\item « Qu'avons-nous découvert que nous ne savions pas utiliser auparavant ? »
+\item « Dans quels cas cette règle fonctionne-t-elle ? »
+\item « Comment écrire cette propriété pour qu'un autre élève puisse la comprendre ? »
+\item « Quelle différence fais-tu entre le résultat obtenu et sa justification ? »
+\end{itemize}
+
+\section{Repères par notion : quel geste mobiliser ?}
+\begin{longtable}{p{0.18\linewidth}p{0.50\linewidth}p{0.23\linewidth}}
+\textbf{Notion} & \textbf{Conseil prioritaire pour l'enseignant} & \textbf{Pages vérifiées}\\\hline
+\endhead
+Aire / Pythagore & Laisser le sens des carrés guider l'addition ou la soustraction ; distinguer calcul et mesure ; différer la rédaction longue. & L04, p.~79, 82, 88--90\\
+Fractions & Faire expliciter l'unité et relier calculs, partages et représentations ; comparer les techniques. & L05, p.~93--97, 99\\
+Quadrilatères & Passer des propriétés connues aux propriétés caractéristiques ; chercher contre-exemples et justifications. & L06, p.~104, 106, 108, 110\\
+Relatifs & Revenir au sens de l'addition / soustraction avant la règle des signes ; faire dicter et justifier les calculs. & L07, p.~113, 115, 117, 119\\
+Milieux / démonstration & Susciter une conjecture ; isoler les hypothèses ; étayer la démonstration progressivement. & L08, p.~120, 122, 124--126\\
+Puissances & Interpréter la multiplication répétée avant la notation ; accueillir puis tester les généralisations. & L09, p.~135, 137, 139\\
+Pyramides & Revenir au solide et au patron pour comprendre les dessins et les longueurs ; utiliser des images mentales. & L10, p.~143, 145, 147, 149\\
+Lettres / égalités & Donner un rôle à la lettre par des programmes et situations concrètes ; préserver le sens des signes. & L11, p.~153, 155, 157, 159\\
+Thalès & Faire discuter l'origine des proportions ; rendre visibles les correspondances de longueurs. & L12, p.~173, 175, 177, 179\\
+Développement & Faire interpréter les écritures, les opposés et les parenthèses ; tester les égalités. & L13, p.~187, 189, 191, 193\\
+Cosinus & Favoriser l'expérimentation / conjecture ; passer progressivement à la relation, en distinguant observation et preuve. & L14, p.~198, 200, 202, 204\\
+Équations & Confronter essais et calcul littéral ; expliciter le rôle de la lettre et la conservation de l'égalité. & L15, p.~214, 216, 218, 220\\
+\end{longtable}
+
+\section{Usage prudent pour ChatMD}
+\sourcebox{Ce que l'assistant peut réemployer}{Le \textbf{type de relance}, la manière de faire préciser une donnée, la demande de justification et la progressivité de l'étayage. En particulier : une réponse brève, une seule question utile à la fois, et pas de solution entière par défaut.}
+\begin{itemize}
+\item \textbf{Repérer l'état de la recherche :} compréhension de l'énoncé, choix d'une méthode, calcul, vérification ou rédaction.
+\item \textbf{Proposer la relance la moins directive :} question ouverte ou reformulation ; puis un indice plus concret seulement si nécessaire.
+\item \textbf{Préserver les procédures personnelles :} comparer et contrôler avant de substituer la méthode attendue.
+\item \textbf{Ne jamais affirmer une condition non donnée :} une figure qui \emph{semble} rectangle ne prouve pas qu'elle l'est ; une expression ne change pas de structure parce que le modèle la réinterprète.
+\item \textbf{Séparer la résolution et la rédaction :} travailler la justification formelle au moment utile, sans masquer la recherche.
+\item \textbf{Références documentaires :} les conseils de cet ouvrage ne remplacent pas le programme officiel applicable au niveau concerné.
+\end{itemize}
+
+\section{Index des douze PDF originaux}
+\textit{Les références L04--L15 désignent les fichiers fournis dans la conversation ; les numéros de pages ci-dessus sont ceux imprimés dans le livre, et non les numéros de pages du lecteur PDF.}
+\begin{description}[leftmargin=13mm,style=nextline]
+\raggedright\footnotesize\sloppy
+\item[L04] Théorème de Pythagore --- p.~78--92 --- \path{04_Partie_2_Les_Sequences_Theoreme_De_Pythagore(2).pdf}
+\item[L05] Opérations sur nombres positifs en écriture fractionnaire --- p.~93--103 --- \path{05_Partie_2_Les_Sequences_Addition_Soustraction_Et_Multiplication_Des_Nombres_Positifs_En_Ecriture_Fractionnaire.pdf}
+\item[L06] Quadrilatères particuliers --- p.~104--112 --- \path{06_Partie_2_Les_Sequences_Quadrilateres_Particuliers.pdf}
+\item[L07] Multiplication des nombres relatifs --- p.~113--119 --- \path{07_Partie_2_Les_Sequences_Multiplication_Des_Nombres_Relatifs_En_Ecriture_Decimale(2).pdf}
+\item[L08] Théorèmes relatifs aux milieux d'un triangle --- p.~120--134 --- \path{08_Partie_2_Les_Sequences_Theoremes_Relatifs_Aux_Milieux_De_Deux_Cotes_D_Un_Tirangle.pdf}
+\item[L09] Puissances d'exposant positif --- p.~135--142 --- \path{09_Partie_2_Les_Sequences_Puissances_D_Exposant_Positif.pdf}
+\item[L10] Pyramides --- p.~143--152 --- \path{10_Partie_2_Les_Sequences_Pyramides.pdf}
+\item[L11] Calcul littéral : égalité, développement et réduction --- p.~153--172 --- \path{11_Partie_2_Les_Sequences_Calcul_Litteral_Egalite_Developpement_et_Reduction(1).pdf}
+\item[L12] Théorème de Thalès de quatrième --- p.~173--186 --- \path{12_Partie_2_Les_Sequences_Theoreme_De_Thales_De_Quatrieme.pdf}
+\item[L13] Calcul littéral : développement de la technique --- p.~187--197 --- \path{13_Partie_2_Les_Sequences_Calcul_Litteral_Developpement_De_La_Technique.pdf}
+\item[L14] Cosinus dans le triangle rectangle --- p.~198--213 --- \path{14_Partie_2_Les_Sequences_Cosinus_D_Un_Angle_Aigu_Dans_Un_Triangle_Rectangle(1).pdf}
+\item[L15] Problèmes conduisant à une équation --- p.~214--228 --- \path{15_Partie_2_Les_Sequences_Resolution_De_Problemes_Conduisant_A_Une_Equation.pdf}
+\end{description}
+\normalsize
+\vspace{0.5em}
+\textit{Périmètre de consultation :} conseils et exemples des pages expressément référencées, notamment celles contenant les phases de recherche, de régulation et de mise en commun ; le dossier est une sélection raisonnée, pas un relevé exhaustif de toutes les interventions du livre.
+\end{document}

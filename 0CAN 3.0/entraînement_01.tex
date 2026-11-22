@@ -1,0 +1,210 @@
+
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% ==========================================
+% EXTENSIONS
+% ==========================================
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% ==========================================
+% COULEURS ET PRÉSENTATION
+% ==========================================
+
+\definecolor{bleu}{HTML}{2D6CB5}
+\definecolor{orange}{HTML}{D97C2B}
+\definecolor{gris}{HTML}{22303E}
+\definecolor{pale}{HTML}{EFF4FA}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+\setbeamercolor{normal text}{fg=gris,bg=white}
+\setbeamerfont{frametitle}{
+    size=\Large,
+    series=\bfseries
+}
+
+\setbeamertemplate{frametitle}{%
+    \vspace{0.12cm}
+    \hspace{0.28cm}\insertframetitle\par
+    \vspace{0.04cm}
+    \hspace{0.35cm}
+    {\color{bleu}\rule{12.55cm}{1.1pt}}
+    \vspace{0.12cm}
+}
+
+% ==========================================
+% CONSIGNES COMMUNES
+% ==========================================
+
+\newcommand{\consignes}{%
+    \begin{beamercolorbox}[
+        wd=\linewidth,
+        sep=0.15cm,
+        rounded=true
+    ]{normal text}
+        \centering
+        {\bfseries\color{bleu}
+        Installe-toi rapidement !}
+        \quad
+        {\bfseries
+        Écris seulement tes réponses.}
+        \quad
+        {\bfseries\color{orange}
+        Sans calculatrice.}
+    \end{beamercolorbox}
+    \vspace{0.10cm}
+}
+
+% ==========================================
+% QUESTION AVEC CASE DE CORRECTION
+% ==========================================
+
+\newcommand{\ligneq}[2]{%
+    \noindent
+    \begin{minipage}[c][0.80cm][c]{0.80\linewidth}
+        \colorbox{pale}{%
+            \makebox[0.58cm][c]{%
+                \color{bleu}\bfseries #1
+            }
+        }
+        \hspace{0.18cm}
+        {\large #2}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c][0.80cm][c]{0.17\linewidth}
+        \centering
+        \begin{tikzpicture}
+            \draw[
+                rounded corners=2pt,
+                draw=bleu!65,
+                line width=0.8pt
+            ]
+            (0,0) rectangle (1.75,0.64);
+        \end{tikzpicture}
+    \end{minipage}
+    \par\vspace{0.06cm}
+}
+
+% ==========================================
+% EN-TÊTE COMMUN
+% ==========================================
+
+\newcommand{\entetecan}[1]{%
+    \consignes
+    \hfill
+    {\small\color{bleu}
+    5 questions \quad\textbullet\quad 5 minutes}
+    \par\vspace{0.12cm}
+}
+
+\begin{document}
+
+% ==========================================
+% ENTRAÎNEMENT 1
+% ==========================================
+
+\begin{frame}[t]{
+    Activité rapide de début d'heure
+    \hfill
+    \normalsize Entraînement 1
+}
+
+\entetecan{1}
+
+\ligneq{1}{$7\times 8$}
+
+\ligneq{2}{$(-7)+(+12)$}
+
+\ligneq{3}{Calculer $\dfrac13$ de $24$.}
+
+\ligneq{4}{Sur $25$ élèves, $5$ viennent à vélo.
+Fréquence en \% ?}
+
+\ligneq{5}{$\sqrt{49}=\ldots$}
+
+\end{frame}
+
+% ==========================================
+% ENTRAÎNEMENT 2
+% ==========================================
+
+\begin{frame}[t]{
+    Activité rapide de début d'heure
+    \hfill
+    \normalsize Entraînement 2
+}
+
+\entetecan{2}
+
+\ligneq{1}{$90-37$}
+
+\ligneq{2}{$(-6)-(-14)$}
+
+\ligneq{3}{Calculer $\dfrac34$ de $20$.}
+
+\ligneq{4}{Sur $20$ personnes, $8$ portent
+des lunettes. Fréquence en \% ?}
+
+\ligneq{5}{$\sqrt{81}=\ldots$}
+
+\end{frame}
+
+% ==========================================
+% ENTRAÎNEMENT 3
+% ==========================================
+
+\begin{frame}[t]{
+    Activité rapide de début d'heure
+    \hfill
+    \normalsize Entraînement 3
+}
+
+\entetecan{3}
+
+\ligneq{1}{$6\times 9$}
+
+\ligneq{2}{$(-9)+(+4)$}
+
+\ligneq{3}{Calculer $\dfrac25$ de $30$.}
+
+\ligneq{4}{Sur $40$ valeurs, $10$ sont égales
+à $3$. Fréquence de $3$ en \% ?}
+
+\ligneq{5}{$\sqrt{144}=\ldots$}
+
+\end{frame}
+
+% ==========================================
+% ENTRAÎNEMENT 4
+% ==========================================
+
+\begin{frame}[t]{
+    Activité rapide de début d'heure
+    \hfill
+    \normalsize Entraînement 4
+}
+
+\entetecan{4}
+
+\ligneq{1}{$120\div 4$}
+
+\ligneq{2}{$(+5)-(-8)$}
+
+\ligneq{3}{Calculer $\dfrac34$ de $28$.}
+
+\ligneq{4}{Sur $50$ valeurs, $15$ sont égales
+à $7$. Fréquence de $7$ en \% ?}
+
+\ligneq{5}{$\sqrt{121}=\ldots$}
+
+\end{frame}
+
+\end{document}

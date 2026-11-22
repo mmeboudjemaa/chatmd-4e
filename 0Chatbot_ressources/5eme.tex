@@ -1,0 +1,121 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=19mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{longtable,tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\definecolor{navy}{HTML}{18436B}
+\definecolor{slate}{HTML}{39495B}
+\definecolor{soft}{HTML}{E8F0F7}
+\setlist[itemize]{leftmargin=*,itemsep=3pt,topsep=3pt}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\hypersetup{pdftitle={Dossier de references en mathematiques},pdfauthor={Dossier de travail, syntheses originales}}
+\newcommand{\etat}[1]{\textsf{\textcolor{navy}{\textbf{[#1]}}}}
+\newcommand{\refsource}[1]{\textsf{\textcolor{slate}{[#1]}}}
+\newcommand{\sectionref}[2]{\section{#1}\textit{Références : #2.}\par}
+\newcommand{\avertissement}[1]{\par\medskip\noindent\fcolorbox{navy}{soft}{\parbox{0.92\linewidth}{\textbf{Attention :} #1}}\par\medskip}
+\newcommand{\entreesource}[5]{\par\noindent\textbf{\refsource{#1} #2}\\[-2pt]\textit{Statut : #3.} #4\\[-2pt]\href{#5}{\textcolor{navy}{\underline{Consulter le PDF officiel}}}\par\smallskip}
+\newcommand{\entreelivre}[4]{\par\noindent\textbf{\refsource{#1} #2}\quad\textit{#3}\\[-2pt]#4\par\smallskip}
+\renewcommand{\contentsname}{Sommaire}
+\begin{document}
+\begin{center}\LARGE\bfseries Dossier de références mathématiques --- 5e\end{center}
+\begin{center}\small État des références : novembre 2026 --- Année scolaire 2026--2027\end{center}
+\avertissement{Ce document est une synthèse de travail et un index de PDF, pas une reproduction des PDF. Les prescriptions viennent exclusivement du programme applicable. Les ressources pédagogiques anciennes et les propositions pour ChatMD ne créent aucune nouvelle exigence.}
+\textbf{Programme de référence :} Programme de mathématiques du cycle 4 (2026), objectifs de 5e. En vigueur en 5e à partir de 2026-2027.
+\tableofcontents\newpage
+\section{Comment lire ce dossier}
+Ce dossier organise les sources \emph{sans en reproduire intégralement le contenu}. Chaque fiche synthétise un point de vigilance pour la préparation des cours ou pour un chatbot pédagogique. Les conseils opérationnels ne doivent pas être pris pour des citations littérales.\par
+\textbf{Hiérarchie :} (1) programme en vigueur, (2) exemples/attendus de son année, (3) ressources didactiques, (4) propositions d’usage pour ChatMD. La 4e source, \emph{Des maths ensemble et pour chacun}, est complémentaire et peut refléter un ancien programme.\par
+\section{Bibliothèque des PDF propres au niveau}
+\entreesource{E5-01}{Programme de mathématiques du cycle 4 (2026), partie 5e}{reglementaire}{En vigueur en 5e en 2026-2027 : objectifs et automatismes précisés par niveau.}{https://www.education.gouv.fr/sites/default/files/document/Annexe\%202\%20\%E2\%80\%93\%20Programme\%20de\%20math\%C3\%A9matiques\%20pour\%20le\%20cycle\%204-480716.pdf}
+\entreesource{E5-02}{Exemples pour la mise en œuvre du programme de cycle 4 (2026), rubriques 5e}{accompagnement recent}{Exemples de réussite associés aux objectifs d’apprentissage du programme 2026.}{https://eduscol.education.gouv.fr/media/126080/download?attachment=}
+\entreesource{E5-03}{Les fractions (ressource cycle 4)}{didactique ancien}{Sens des nombres rationnels, quotient, procédures et résolution de problèmes.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathfractionsdocmaitrecomp-calresoudre554225pdf-77607.pdf}
+\entreesource{E5-04}{Les nombres relatifs (ressource cycle 4)}{didactique ancien}{Comparaison, calcul et passage des contextes concrets aux écritures.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathdocmaitrenombresrelatifscomparercalculerresoudrend552028pdf-77613.pdf}
+\entreesource{E5-05}{La proportionnalité (ressource cycle 4)}{didactique ancien}{Reconnaissance et résolution de situations proportionnelles.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathresoupropo555092pdf-77649.pdf}
+\sectionref{Cadre de référence de la 5e}{E5-01, E5-02}
+\begin{itemize}
+\item Le programme du cycle 4 publié en 2026 s’applique à la 5e dès 2026-2027. Il est organisé en objectifs d’apprentissage par classe et automatismes associés.
+\item Les tableaux d’exemples de réussite donnent des illustrations utiles. Ne pas transférer à la 5e les objectifs des colonnes 4e ou 3e, même si elles figurent dans le même PDF.
+\item La place de l’oral, du raisonnement, des écrits de recherche et de l’évaluation formative participe à la construction de la compréhension.
+\end{itemize}
+\sectionref{Nombres relatifs}{E5-01, E5-02, E5-04}
+\begin{itemize}
+\item Introduire et consolider les nombres relatifs en lien avec le repérage et les contextes avant de généraliser les écritures. Donner un sens aux nombres opposés.
+\item Distinguer les différents rôles du signe « moins » : signe d’un nombre, soustraction, opposé. Signaler les écritures ambiguës ; justifier les transformations.
+\item Les opérations à traiter et automatiser doivent être celles de la rubrique 5e du programme 2026 et non de l’ensemble du cycle.
+\end{itemize}
+\sectionref{Fractions et nombres rationnels}{E5-01, E5-02, E5-03}
+\begin{itemize}
+\item Développer le lien entre fraction et quotient ; conserver le travail sur l’unité, le partage et la droite graduée. Expliquer et justifier les propriétés utilisées dans les calculs.
+\item Proposer plusieurs représentations et contrôler la vraisemblance des résultats (ordre, taille, approximations).
+\end{itemize}
+\sectionref{Algèbre et statut de la lettre}{E5-01, E5-02, T-06}
+\begin{itemize}
+\item Accompagner la transition du calcul numérique au calcul littéral par des programmes de calcul et des situations de généralisation ; distinguer la lettre variable, inconnue et éventuellement abréviation.
+\item Reconnaître la structure d’une expression : 3(x+5) est un produit et 3x+5 est une somme ; ces deux écritures ne sont pas égales en général.
+\item Utiliser les règles sur les égalités uniquement lorsque les opérations sont justifiées et préservent la valeur. Adapter la technique exigée au programme 2026 de 5e.
+\end{itemize}
+\sectionref{Proportionnalité, premières fonctions et statistiques}{E5-01, E5-02, E5-05}
+\begin{itemize}
+\item Distinguer situation proportionnelle et non proportionnelle ; faire exprimer la raison d’un choix de modèle.
+\item Lire, représenter et interpréter des données en s’appuyant sur des unités et une question précise. Vérifier les attendus 2026 spécifiques à la 5e avant de faire calculer un indicateur.
+\item Les objectifs liés aux fonctions apparaissent dans le nouveau programme : respecter leur formulation et leur niveau d’introduction en 5e.
+\end{itemize}
+\sectionref{Puissances et nouveauté du programme 2026}{E5-01, E5-02}
+\begin{itemize}
+\item La rubrique de 5e du programme 2026 comporte un travail sur les puissances. Vérifier dans le texte officiel le vocabulaire, les exemples et les automatismes propres à la 5e avant de proposer des exercices.
+\item Séparer la découverte d'une notation, les propriétés justifiées et les automatismes effectivement demandés ; ne pas transposer tels quels les attendus d'une ancienne classe de 4e.
+\end{itemize}
+
+\sectionref{Géométrie et justification}{E5-01, E5-02, T-04}
+\begin{itemize}
+\item Travailler constructions, figures, transformations et propriétés ; distinguer le constat sur un dessin de la justification valide.
+\item Ne pas transformer une conjecture ou une apparence en propriété acquise. Faire expliciter les données nécessaires avant de proposer une méthode.
+\end{itemize}
+\sectionref{Utilisation dans ChatMD}{E5-01, E5-02, T-01 à T-10}
+\begin{itemize}
+\item Le corpus doit distinguer les faits effectivement écrits par l’élève de sa question. Les critères d’applicabilité d’une méthode doivent être vérifiés avant d’accepter un avis de l’IA.
+\item Une difficulté encore non exigible en 5e peut être montrée pour donner du sens, mais ne doit pas devenir une compétence évaluée par défaut.
+\item Préférer une relance précise qui remet l’élève en activité à un développement solutionné immédiatement.
+\end{itemize}
+\section{Références communes : dix documents transversaux}
+\entreesource{T-01}{Chercher}{competence, didactique 2016}{Extraire des informations ; essayer, questionner et tester des pistes.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathchercher552125pdf-77583.pdf}
+
+\entreesource{T-02}{Modéliser}{competence, didactique 2016}{Traduire une situation, examiner les hypothèses et la pertinence du modèle.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathmodelisernd566177pdf-77586.pdf}
+
+\entreesource{T-03}{Représenter}{competence, didactique 2016}{Choisir et changer des registres de représentation.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathrepresenternd566207pdf-77589.pdf}
+
+\entreesource{T-04}{Raisonner}{competence, didactique 2016}{Émettre, argumenter, justifier, vérifier des hypothèses.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathraisonner547836pdf-77592.pdf}
+
+\entreesource{T-05}{Calculer}{competence, didactique 2016}{Conduire des calculs et contrôler les résultats.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcompcalculer554370pdf-77595.pdf}
+
+\entreesource{T-06}{Communiquer}{competence, didactique 2016}{Expliquer à l’oral et à l’écrit ; comprendre les formulations.}{https://eduscol.education.gouv.fr/sites/default/files/document/ra16c4mathcommecritoralpourmontage548548pdf-77598.pdf}
+
+\entreesource{T-07}{Guide Résolution de problèmes mathématiques au collège}{guide transversal}{Résolution, erreurs, stratégies et interprétation des résultats.}{https://eduscol.education.gouv.fr/sites/default/files/document/guide-resolution-de-problemes-mathematiques-au-college-73914.pdf}
+
+\entreesource{T-08}{Trace écrite de cours en mathématiques}{guide transversal}{Fonctions de la trace écrite, construction et organisation du cours.}{https://eduscol.education.gouv.fr/sites/default/files/document/trace-ecrite-de-cours-en-mathspdf-91731.pdf}
+
+\entreesource{T-09}{Les pratiques orales dans l’enseignement des mathématiques}{guide transversal}{Oral de recherche, explication, échanges et relances.}{https://eduscol.education.gouv.fr/sites/default/files/document/les-pratiques-orales-dans-lenseignement-des-mathspdf-91728.pdf}
+
+\entreesource{T-10}{Les automatismes}{guide transversal}{Développer, entretenir et rendre disponibles les connaissances de base.}{https://eduscol.education.gouv.fr/sites/default/files/document/automatismes-mathematiquespdf-91875.pdf}
+\subsection{Les six compétences : repères de lecture pour ChatMD}
+\begin{itemize}
+\item \textbf{Chercher :} identifier des informations pertinentes, formuler une question, essayer une piste ; ne pas imposer trop tôt une méthode.
+\item \textbf{Modéliser :} expliciter le modèle choisi et ses conditions d'emploi ; distinguer fait observé et hypothèse.
+\item \textbf{Représenter :} choisir schéma, tableau, droite graduée, figure ou écriture ; relier les représentations.
+\item \textbf{Raisonner :} justifier une affirmation à partir des données et des propriétés, ou produire un contre-exemple.
+\item \textbf{Calculer :} effectuer une transformation valide puis contrôler signes, unités, ordre de grandeur et égalité.
+\item \textbf{Communiquer :} rendre une démarche intelligible ; distinguer échanges, essais et rédaction mathématique stabilisée.
+\end{itemize}
+\textit{Ces repères sont une reformulation de travail issue des ressources transversales, et non une grille officielle d'évaluation.}
+
+\section{Mode d’emploi dans Overleaf et ChatMD}
+\begin{itemize}\item Ce fichier \texttt{.tex} est compilable de façon autonome sous pdfLaTeX.\item Les liens conduisent aux PDF officiels : ils ne téléchargent pas les PDF dans le projet Overleaf.\item Pour que ChatMD exploite ce contenu, intégrer le texte dans l’index RAG ; la simple présence du \texttt{.tex} dans Overleaf ne suffit pas.\item Revalider le calendrier réglementaire à chaque rentrée scolaire.\end{itemize}
+\end{document}

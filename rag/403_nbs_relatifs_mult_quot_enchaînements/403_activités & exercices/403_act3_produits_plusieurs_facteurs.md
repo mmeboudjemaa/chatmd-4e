@@ -1,8 +1,8 @@
-# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act4_produits_plusieurs_facteurs.tex
+# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act3_produits_plusieurs_facteurs.tex
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**
@@ -21,7 +21,7 @@
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**
@@ -40,7 +40,7 @@
 
 :::: minipage
 ::: center
-**Activité 4 -- Produits de plusieurs facteurs**
+**Activité 3 -- Produits de plusieurs facteurs**
 :::
 
 **Effectue les calculs suivants.**

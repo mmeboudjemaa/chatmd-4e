@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=19mm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{longtable,tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\definecolor{navy}{HTML}{18436B}
+\definecolor{slate}{HTML}{39495B}
+\definecolor{soft}{HTML}{E8F0F7}
+\setlist[itemize]{leftmargin=*,itemsep=3pt,topsep=3pt}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\hypersetup{pdftitle={Dossier de references en mathematiques},pdfauthor={Dossier de travail, syntheses originales}}
+\newcommand{\etat}[1]{\textsf{\textcolor{navy}{\textbf{[#1]}}}}
+\newcommand{\refsource}[1]{\textsf{\textcolor{slate}{[#1]}}}
+\newcommand{\sectionref}[2]{\section{#1}\textit{Références : #2.}\par}
+\newcommand{\avertissement}[1]{\par\medskip\noindent\fcolorbox{navy}{soft}{\parbox{0.92\linewidth}{\textbf{Attention :} #1}}\par\medskip}
+\newcommand{\entreesource}[5]{\par\noindent\textbf{\refsource{#1} #2}\\[-2pt]\textit{Statut : #3.} #4\\[-2pt]\href{#5}{\textcolor{navy}{\underline{Consulter le PDF officiel}}}\par\smallskip}
+\newcommand{\entreelivre}[4]{\par\noindent\textbf{\refsource{#1} #2}\quad\textit{#3}\\[-2pt]#4\par\smallskip}
+\renewcommand{\contentsname}{Sommaire}
+\begin{document}
+\begin{center}\LARGE\bfseries Des maths ensemble et pour chacun --- 4e\end{center}
+\begin{center}\small Dossier de synthèse des douze extraits transmis (fichiers 04 à 15)\end{center}
+\avertissement{Cet ouvrage est une source pédagogique distincte des textes réglementaires. Les encadrés « programme » reproduits dans l’ouvrage peuvent se référer à des programmes anciens : ils ne fixent pas les exigences 2026--2027. Ce fichier ne reproduit pas les pages du livre ni les illustrations.}
+\textbf{Provenance :} douze PDF fournis dans la conversation, comprenant des pages numérisées de \emph{Des maths ensemble et pour chacun -- 4e}. Les fiches suivantes sont de brefs résumés analytiques et non une transcription complète.\par
+\tableofcontents\newpage
+\section{Principes pédagogiques dégagés des séquences examinées}
+\begin{itemize}\item Confronter les élèves à une tâche dont le sens peut être construit avant l’introduction de la technique.\item Donner du temps à la recherche individuelle, puis aux comparaisons de procédures et aux échanges collectifs.\item Rendre explicites les propriétés mobilisées et distinguer constat, conjecture, preuve et institutionnalisation.\item Différer certaines exigences de rédaction et de technique jusqu’à ce que la notion soit comprise.\item Revenir dans la durée sur les notions et les automatismes, tout en évitant de réduire la séance à des exercices mécaniques.\item Séparer le programme ancien cité dans l’ouvrage de la réglementation actuelle.\end{itemize}
+\section{Catalogue des 12 PDF fournis}
+\subsection{L-04 — Théorème de Pythagore}
+\textbf{Fichier source :} \path{04_Partie_2_Les_Sequences_Theoreme_De_Pythagore(2).pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 78 ; 15 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Articuler aires, figures et relation entre les côtés du triangle rectangle ; développer le sens avant de formaliser le théorème.\par
+\textbf{Démarche repérée (synthèse) :} Révision aire/périmètre, question du lien des côtés, puzzle d’aires, exploration dynamique, institutionnalisation, racine carrée, puis rédaction.\par
+\textbf{Utilisation possible pour ChatMD :} Pythagore : demander si le triangle est rectangle et où se trouve l’angle droit ; ne pas sélectionner le côté à calculer à la place de l’élève.\par
+\subsection{L-05 — Addition, soustraction et multiplication de nombres positifs en écriture fractionnaire}
+\textbf{Fichier source :} \path{05_Partie_2_Les_Sequences_Addition_Soustraction_Et_Multiplication_Des_Nombres_Positifs_En_Ecriture_Fractionnaire.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 93 ; 11 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Donner le sens des opérations à partir de partages, de l’unité et de la comparaison de procédures.\par
+\textbf{Démarche repérée (synthèse) :} Distinguer dénominateurs multiples ou non ; articuler schémas, calcul mental et écriture symbolique ; progression vers la multiplication.\par
+\textbf{Utilisation possible pour ChatMD :} Fractions : demander quelle est l’unité, ce que représente l’écriture et pourquoi l’opération choisie convient.\par
+\subsection{L-06 — Quadrilatères particuliers}
+\textbf{Fichier source :} \path{06_Partie_2_Les_Sequences_Quadrilateres_Particuliers.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 104 ; 9 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Réactiver les propriétés connues, puis faire passer de la construction et de l’observation à la justification.\par
+\textbf{Démarche repérée (synthèse) :} Constructions, propriétés, arguments et discussions ; la séquence rappelle explicitement des acquis antérieurs.\par
+\textbf{Utilisation possible pour ChatMD :} Quadrilatères : distinguer ce qui se voit sur le dessin de ce qui est établi par les données ou une propriété.\par
+\subsection{L-07 — Multiplication des nombres relatifs en écriture décimale}
+\textbf{Fichier source :} \path{07_Partie_2_Les_Sequences_Multiplication_Des_Nombres_Relatifs_En_Ecriture_Decimale(2).pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 113 ; 7 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Réactiver le sens des relatifs et les liens avec addition/soustraction avant de justifier les signes des produits.\par
+\textbf{Démarche repérée (synthèse) :} Situations de températures, usage de la distributivité comme appui au produit de deux nombres négatifs ; pas de calculatrice dans cette séquence.\par
+\textbf{Utilisation possible pour ChatMD :} Multiplication relative : demander d’expliquer le signe d’un produit plutôt que de faire seulement rappeler une règle.\par
+\subsection{L-08 — Théorèmes relatifs aux milieux de deux côtés d’un triangle}
+\textbf{Fichier source :} \path{08_Partie_2_Les_Sequences_Theoremes_Relatifs_Aux_Milieux_De_Deux_Cotes_D_Un_Tirangle.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 120 ; 15 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Faire émerger des propriétés à partir de conjectures, figures, contre-exemples et démonstrations.\par
+\textbf{Démarche repérée (synthèse) :} Aires de triangles comme point d’appui ; géométrie dynamique et distinctions des hypothèses ; propriétés démontrées.\par
+\textbf{Utilisation possible pour ChatMD :} Milieux et triangles : reformuler les hypothèses utiles et distinguer conjecture sur la figure et démonstration.\par
+\subsection{L-09 — Puissances d’exposant positif}
+\textbf{Fichier source :} \path{09_Partie_2_Les_Sequences_Puissances_D_Exposant_Positif.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 135 ; 8 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Introduire progressivement la notation puissance et ses propriétés sur des exemples numériques compréhensibles.\par
+\textbf{Démarche repérée (synthèse) :} Situation concrète, définition, propriétés approchées par calculs, entraînement ; traitement spécifique des puissances de 10 différé.\par
+\textbf{Utilisation possible pour ChatMD :} Puissances : vérifier la différence entre répétition de facteurs et multiplication du nombre par l’exposant.\par
+\subsection{L-10 — Pyramides}
+\textbf{Fichier source :} \path{10_Partie_2_Les_Sequences_Pyramides.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 143 ; 10 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Passer de l’observation de solides aux représentations en perspective et aux patrons.\par
+\textbf{Démarche repérée (synthèse) :} Manipulations, visualisation spatiale et volume ; mise en place progressive de représentations, attention aux images mentales.\par
+\textbf{Utilisation possible pour ChatMD :} Pyramides : inviter à décrire le solide, ses faces ou son patron avant de demander une formule.\par
+\subsection{L-11 — Calcul littéral : égalité, développement et réduction}
+\textbf{Fichier source :} \path{11_Partie_2_Les_Sequences_Calcul_Litteral_Egalite_Developpement_et_Reduction(1).pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 153 ; 20 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Faire émerger le sens des lettres et la conservation de l’égalité avant de systématiser les techniques.\par
+\textbf{Démarche repérée (synthèse) :} Programmes de calcul ; introduction de la lettre ; fabrication, développement, réduction ; distinction entre expression et équation.\par
+\textbf{Utilisation possible pour ChatMD :} Calcul littéral : faire expliciter le rôle de la lettre et reconnaître la structure de l’expression avant de développer.\par
+\subsection{L-12 — Théorème de Thalès de quatrième}
+\textbf{Fichier source :} \path{12_Partie_2_Les_Sequences_Theoreme_De_Thales_De_Quatrieme.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 173 ; 14 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Articuler la proportionnalité, les configurations géométriques et la recherche d’arguments.\par
+\textbf{Démarche repérée (synthèse) :} Découverte avec configurations, conjectures et justification ; laisser plusieurs voies de calcul et construire les preuves.\par
+\textbf{Utilisation possible pour ChatMD :} Thalès : faire repérer l’alignement et le parallélisme avant de valider un calcul de longueurs.\par
+\subsection{L-13 — Calcul littéral : développement de la technique}
+\textbf{Fichier source :} \path{13_Partie_2_Les_Sequences_Calcul_Litteral_Developpement_De_La_Technique.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 187 ; 11 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Installer les techniques dans la durée, en reliant écriture, propriété et signification des signes.\par
+\textbf{Démarche repérée (synthèse) :} Opposé, moins devant des parenthèses, différentes significations du signe moins, réduction et entraînement progressif.\par
+\textbf{Utilisation possible pour ChatMD :} Technique algébrique : aider à vérifier chaque égalité et le rôle des signes devant les parenthèses.\par
+\subsection{L-14 — Cosinus d’un angle aigu dans un triangle rectangle}
+\textbf{Fichier source :} \path{14_Partie_2_Les_Sequences_Cosinus_D_Un_Angle_Aigu_Dans_Un_Triangle_Rectangle(1).pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 198 ; 16 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Faire construire le rapport cosinus par des expériences sur des triangles rectangles.\par
+\textbf{Démarche repérée (synthèse) :} Recherche du côté adjacent, conjectures avec géométrie dynamique, institutionnalisation du rapport, réinvestissement.\par
+\textbf{Utilisation possible pour ChatMD :} Cosinus : rappeler le contexte de triangle rectangle, faire choisir l’angle et identifier les côtés concernés.\par
+\subsection{L-15 — Résolution de problèmes conduisant à une équation}
+\textbf{Fichier source :} \path{15_Partie_2_Les_Sequences_Resolution_De_Problemes_Conduisant_A_Une_Equation.pdf}.\par
+\textbf{Repère dans l’ouvrage :} début page 214 ; 15 pages dans le PDF transmis.\par
+\textbf{Intention de la séquence (synthèse) :} Faire comprendre ce que représente une inconnue et quand une équation est un outil pertinent.\par
+\textbf{Démarche repérée (synthèse) :} Résolutions artisanales, essais et contraintes, mise en équation, discussion de l’égalité, méthodes de résolution et vérification.\par
+\textbf{Utilisation possible pour ChatMD :} Équation : vérifier le sens de l’inconnue et la conservation de l’égalité, puis inviter à corriger une seule étape.\par
+\section{Attention aux correspondances avec les programmes actuels}
+\begin{itemize}\item Toutes les séquences appartiennent à un ouvrage intitulé 4e ; cela ne prouve pas qu’elles correspondent au programme de 4e en vigueur en 2026--2027. Certaines compétences ont changé de niveau.\item Pour les contenus évaluables, consulter \texttt{4eme.tex} et ses références au programme 2020 ainsi qu’aux attendus 4e.\item Pour un réemploi en 5e, se référer au programme 2026 et à ses exemples de réussite avant de retenir un objectif.\item Ne pas faire passer un intérêt didactique ou une phase de recherche pour une compétence obligatoire à entraîner ou à évaluer.\end{itemize}
+\section{Exploitation par un chatbot mathématique}
+\begin{enumerate}\item Identifier l’intention de l’élève : comprendre une notion, tester une méthode, poursuivre une démarche, vérifier une étape, justifier une propriété.\item Extraire les faits donnés sans introduire de prémisse non formulée.\item Comparer les conditions d’application à la situation réelle.\item Proposer une relance unique et informative qui laisse le choix d’une démarche personnelle.\item Respecter la distinction entre écrit de recherche, formulation orale et rédaction mathématique de référence.\end{enumerate}
+\section{Fichiers sources et limites de l’importation}
+Les douze PDF doivent être importés séparément dans Overleaf si vous souhaitez pouvoir les consulter ou les inclure comme pièces jointes : ce fichier LaTeX ne les contient pas. En présence de scans, une indexation RAG automatique peut demander une extraction de texte fiable. Ne pas utiliser la reconnaissance de caractères non vérifiée comme source de règles de calcul.\par
+\end{document}

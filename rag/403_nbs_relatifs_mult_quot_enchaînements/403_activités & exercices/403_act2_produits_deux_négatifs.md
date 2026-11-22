@@ -1,4 +1,4 @@
-# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act2et3_produits_deux_négatifs.tex
+# Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act2_produits_deux_négatifs.tex
 
 :::: minipage
 ::: center

@@ -1,7 +1,7 @@
 # Source : 403_nbs_relatifs_mult_quot_enchaînements/403_activités & exercices/403_act5_quotients_relatifs.tex
 
 ::: center
-**Activité 5 -- Quotients de nombres relatifs**
+**Activité 4 -- Quotients de nombres relatifs**
 :::
 
 ::: minipage
